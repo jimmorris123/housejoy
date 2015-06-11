@@ -1,0 +1,187 @@
+
+// house cleaning page style
+
+.housing-wrapper {
+    position: relative;
+    .bg-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-image: url(../../images/housing_images/housing_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .page-content {
+        position: relative;
+        z-index: 1;
+
+        height: inherit;
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        background-color: #fff;
+        .top-heading {
+            padding: 15px 20px;
+
+            border-bottom: 1px solid #ccc;
+            .broom {
+                display: inline-block;
+                margin-right: 15px;
+
+                vertical-align: top;
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+            .top-title {
+                display: inline-block;
+
+                h2 {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_M;
+
+                    color: $black;
+
+                    @include rem(font-size, 24px);
+                }
+                p {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: $medium-gray;
+
+                    @include rem(font-size, 18px);
+                }
+                .amount {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: $green;
+
+                    @include rem(font-size, 22px);
+                }
+            }
+        }
+        .tabs-row {
+            padding: 15px 20px;
+            overflow-x: scroll;
+
+            .tabs {
+                width: 1500px;
+                li {
+                    display: inline-block;
+                    float: left;
+                    margin-right: 10px;
+                    // overflow: hidden;
+                    box-sizing: border-box;
+                    a {
+                        height: 40px;
+                        padding: 10px 0;
+                        padding-bottom: 3px;
+                        margin-right: 10px;
+
+                        font-family: $blogger_R;
+
+                        color: $dark-gray;
+
+                        @include rem(line-height, 24px);
+                        @include rem(font-size, 22px);
+                        @include transition(all .2s ease-in-out);
+                    }
+                    &:hover a,
+                    &:focus a,
+                    &:active a,
+                    &.active a {
+                        color: $green;
+                        border-bottom: 2px solid $green;
+                        // @include transition(.3s all);
+                        // @include transform(scale(1.1));
+
+                        @include rem(font-size, 24px);
+                    }
+                }
+            }
+        }
+        .house-type {
+            padding: 15px 20px ;
+            h2 {
+                position: relative;
+
+                margin-bottom: 20px;
+                .border-bottom {
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+
+                    width: 30px;
+                    height: 2px;
+
+                    background-color: #ffc400;
+                }
+            }
+            .dropdown-group {
+                padding-left: 0;
+                h4 {
+                    margin-bottom: 5px;
+
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 18px);
+                }
+            }
+            .services {
+                .total-amount {
+                    padding-bottom: 20px;
+                    .price {
+                        margin-bottom: 10px;
+
+                        font-family: $blogger_L;
+
+                        color: $medium-gray;
+
+                        @include rem(font-size, 30px);
+                    }
+                    .yellow-btn {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .service-info {
+                ul {
+                    list-style-type: none;
+                    li {
+                        margin-bottom: 10px;
+
+                        font-family: $blogger_R;
+
+                        color: $medium-gray;
+
+                        @include rem(font-size, 16px);
+                        &:before {
+                            float: left;
+                            width: 8px;
+                            height: 8px;
+                            margin: 3px 20px 0 10px;
+                            // line-height: 16px;
+
+                            content: "";
+
+                            border-radius: 50%;
+                            background-color: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
