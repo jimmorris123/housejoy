@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Housejoy | Checkout</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="stylesheets/checkout-tabs.css"> -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/checkout.css">
+	
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<div class="left-header">
+					<div class="logo-div">
+						<img src="../common_images/housejoy-logo.png" alt="">
+					</div>
+					<!-- <div class="dropdowns">
+						<div id="city" class="dropdown dropdown-product dl select">
+							<div class="dropdown-add dropdown-product dt">
+								<a class="dropdown-toggle dt-a">
+									<span class="pull-left select-span ">beauty <span class="i-span i-close"></span></span>							
+								</a>
+							</div>
+							<div class="dd">
+								<ul>
+									<li><span class="dropdown-item">appliances<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">beauty<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">carpentry<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">electrical<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">fitness<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">house cleaning<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">laptop repairs<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">laundry<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">mobile repairs<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">pest control<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">plumbing<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+								</ul>
+							</div>
+						</div>
+						<div id="city" class="dropdown dropdown-city dl select">
+							<div class="dropdown-add dropdown-city dt count-a">
+								<a class="dropdown-toggle dt-a text-left">
+									<span class="pull-left select-span">city <span class="i-span i-close"></span></span>
+								</a>
+							</div>
+							<div class="dd">
+								<ul>
+									<li><span class="dropdown-item">Bangalore<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">nagpur<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">jammu<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">mumbai<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">new delhi<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">yashwantpur<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">chennai<span class="value">BR</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">kolkata<span class="value">BG</span><span class="i-span i-close"></span></span></li>
+									<li><span class="dropdown-item">hyderabad<span class="value">BI</span><span class="i-span i-close"></span></span></li>
+								</ul>
+							</div>
+						</div>
+					</div> -->
+				</div>
+				<div class="right-header">
+					<li><a href="#">help</a></li>
+					<li><a href="#">login</a></li>
+					<li><a href="#">080 33 51 2156</a></li>
+				</div>
+			</div>
+			<nav class="page-nav">
+				<ul>
+					<li class="active">
+						<a href="checkout-schedule-appointment.html">
+							<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
+						</a>
+					</li>
+					<li>
+						<a href="checkout-personal-details.html">
+							<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
+						</a>
+					</li>
+					<li>
+						<a href="checkout-make-payment.html">
+							<span class="tab-icon no-border-right"><img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
+						</a>
+					</li>									
+				</ul>
+			</nav>
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<section id="one">
+						<div class="left-user-div">
+							<div class="left-section-head">Select Date &amp; Time</div>
+							<div class="sections schedule-dropdowns">
+								<div class="left-date">
+									<!-- dropdown for Date -->
+	                                <div class="dropdown location-dropdown mobi-dropdown">
+	                                    <!-- <button class="btn btn-default dropdown-toggle" type="button" id="datepicker">
+	                                        <span class="pull-left">10am to 11am</span>
+	                                        <span class="dropdown-icon pull-right"><i class="i-open"></i></span>
+	                                    </button> -->
+	                                    <p>Date: <input type="text" id="datepicker"></p>
+	                                    
+	                                </div>
+	                                <!-- dropdown ends -->
+								</div>
+								<div class="right-time-slot">
+									<!-- dropdown for location -->
+	                                <div class="dropdown location-dropdown dropdown-select mobi-dropdown">
+	                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+	                                        <span class="pull-left">10am to 11am</span>
+	                                        <span class="dropdown-icon pull-right"><i class="i-close"></i></span>
+	                                    </button>
+	                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+	                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11am to 12pm</a></li>
+	                                        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">12pm to 1pm</a></li>
+	                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4pm to 5pm</a></li>
+	                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5pm to 6pm</a></li>
+	                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6pm to 7pm</a></li>
+	                                    </ul>
+	                                </div>
+	                                <!-- dropdown ends -->
+								</div>
+							</div>
+							<div class="sections">
+								<div class="section-head">Special Instructions</div>
+								<input type="text" placeholder="Eg: Beware of Dogs">
+							</div>
+							<div class="sections">
+								<a href="#" class="submit-button">Continue</a>
+							</div>
+							
+						</div>
+						<div class="right-summary-div">
+							<span class="summary-head">Summary</span>
+							<span class="summary-sub-text">Selected Services for Plumbing</span>
+							<ul class="service-list">
+								<li>Leak Detection</li>
+								<li>Shower Repair</li>
+								<li>Tap Repair</li>									
+							</ul>
+							<div class="comments-text">
+								Comments
+							</div>
+							<div class="comments-input-div">
+								<input type="text" class="comments-input" placeholder="Beware of Dogs">
+							</div>									
+
+							<div class="time-and-price-div">
+								<div class="time-div">
+									for 2 hours
+								</div>
+								<div class="price-div">
+									$599
+								</div>
+							</div>
+						</div>
+						
+					</section>											
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+		
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="../common_jscheckout-tabs.js"></script>
+		<script src="../common_js/svg4everybody.ie8.min.js"></script>
+		<script src="js/checkout.js"></script>
+		
+		
+	</body>
+</html>

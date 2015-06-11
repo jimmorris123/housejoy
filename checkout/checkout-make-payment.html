@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Housejoy | Checkout-make Payment</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="stylesheets/checkout-tabs.css"> -->
+	<link rel="stylesheet" href="css/checkout.css">
+	
+	</head>
+	<body>
+		<div class="page-wrapper">
+			<div class="header">
+				<div class="left-header">
+					<div class="logo-div">
+						<img src="../images/housejoy-logo.png" alt="">
+					</div>
+					
+				</div>
+				<div class="right-header">
+					<li><a href="#">help</a></li>
+					<li><a href="#">login</a></li>
+					<li><a href="#">080 33 51 2156</a></li>
+				</div>
+			</div>
+			<!-- TAB TO ACCORDIAN -->
+			<!-- <div class="checkout-responsive-tabs"> -->
+				<!-- <div data-responsive-tabs> -->
+					<nav class="page-nav">
+						<ul>
+							<li>
+								<a href="checkout-schedule-appointment.html">
+									<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
+								</a>
+							</li>
+							<li>
+								<a href="checkout-personal-details.html">
+									<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
+								</a>
+							</li>
+							<li class="active">
+								<a href="checkout-make-payment.html">
+									<span class="tab-icon no-border-right"><img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
+								</a>
+							</li>									
+						</ul>
+					</nav>
+					<div class="page-content-wrapper">
+						<div class="page-content">
+							<section id="one">
+								<div class="left-user-div">								
+									<div class="left-section-head">Select your Preffered Payment</div>
+									<div class="sections">
+										<ul class="preferred-payment">										
+											<li>
+												<div class="radio-div">
+													<label for="preferred-payment1">
+														<span class="radio-button-div">
+															<input type="radio" value="preferred-payment1" name="preferred-payment" id="preferred-payment1">
+															<span class="radio-button"></span>
+														</span>
+														<span class="text-div">
+														Pay full amount after Task
+														</span>
+													</label>
+							                    </div>					                        
+												<a class="correction-icon"></a>
+												<a class="delete-icon"></a>
+											</li>
+
+											<li>
+												<div class="radio-div">
+													<label for="preferred-payment2">
+														<span class="radio-button-div">
+															<input type="radio" value="preferred-payment2" name="preferred-payment" id="preferred-payment2">
+															<span class="radio-button"></span>
+														</span>
+														<span class="text-div">
+														Pay $500 advance and get 20% off
+														</span>
+													</label>
+							                    </div>					                        
+												<a class="correction-icon"></a>
+												<a class="delete-icon"></a>
+											</li>
+										</ul>
+									</div>
+									<div class="left-section-head left-section-head-top-margin">Select your Payment method</div>
+									
+									<!-- <div class="checkout-responsive-tabs">
+										<div data-responsive-tabs> -->
+										<div class="sections payment-method-tabs">
+										<div data-responsive-tabs>
+											<nav>
+												<ul>
+													<li>
+														<a href="#credidt-debit-card-tab">
+															<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text">Credit / Debit Card</span>
+														</a>
+													</li>
+													<li>
+														<a href="#net-banking-tab">
+															<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text">Net Banking</span>
+														</a>
+													</li>
+													<li>
+														<a href="#housejoy-wallet-tab">
+															<span class="tab-icon"><img src="images/wallet.png" alt=""></span><span class="tab-text">HouseJoy Wallet</span>
+														</a>
+													</li>									
+												</ul>
+											</nav>
+											<div class="content">
+												<section id="credidt-debit-card-tab">
+													<div class="sections">
+														<div class="section-head">Card Number</div>
+														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
+													</div>
+													<div class="sections">
+														<div class="section-head">Name on the Card</div>
+														<input placeholder="Mr. / Mrs. / Miss" name="name-on-card">
+													</div>	
+																							
+													<div class="sections card-expiry-section">
+														<div class="col-xs-4">
+															<div class="section-head">Month</div>
+															<input name="card-expiry-month">
+														</div>
+														<div class="col-xs-4">
+															<div class="section-head">year</div>
+															<input name="card-expiry-year">
+														</div>
+														<div class="col-xs-4">
+															<div class="section-head">CVV</div>
+															<input name="card-cvv">
+														</div>
+													</div>
+													<div class="sections">
+														<div class="checkbox-div">
+															<div class="checkbox-icon-label-div">
+																<div class="checkbox-icon-div">
+																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
+																	<label class="checkbox-style" for="save-card-for-future">
+											                            <!-- <div class=""></div> -->
+											                        </label>
+										                        </div>
+										                        <div class="checkbox-label-text">
+										                        	<span class="same-address-label">Save this card for Future Checkout</span>
+										                        </div>
+									                        </div>
+														</div>
+													</div>
+													<div class="sections">
+														<a href="#" class="submit-button">Continue</a>
+													</div>
+												</section>
+
+												<section id="net-banking-tab">
+
+												Net banking content
+
+												</section>
+												<section id="housejoy-wallet-tab">
+
+												<div class="sections">
+														<div class="section-head">Card Number</div>
+														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
+													</div>
+													<div class="sections">
+														<div class="section-head">Name on the Card</div>
+														<input placeholder="Mr. / Mrs. / Miss" name="name-on-card">
+													</div>	
+																							
+													<div class="sections card-expiry-section">
+														<div class="col-xs-4">
+															<div class="section-head">Month</div>
+															<input name="card-expiry-month">
+														</div>
+														<div class="col-xs-4">
+															<div class="section-head">year</div>
+															<input name="card-expiry-year">
+														</div>
+														<div class="col-xs-4">
+															<div class="section-head">CVV</div>
+															<input name="card-cvv">
+														</div>
+													</div>
+													<div class="sections">
+														<div class="checkbox-div">
+															<div class="checkbox-icon-label-div">
+																<div class="checkbox-icon-div">
+																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
+																	<label class="checkbox-style" for="save-card-for-future">
+											                            <!-- <div class=""></div> -->
+											                        </label>
+										                        </div>
+										                        <div class="checkbox-label-text">
+										                        	<span class="same-address-label">Save this card for Future Checkout</span>
+										                        </div>
+									                        </div>
+														</div>
+													</div>
+													<div class="sections">
+														<a href="#" class="submit-button">Continue</a>
+													</div>
+
+												</section>
+											</div>
+										</div>
+										
+
+
+
+
+
+									</div>
+								</div>
+								<div class="right-summary-div">
+									<span class="summary-head">Summary</span>
+									<span class="summary-sub-text">Selected Services for Plumbing</span>
+									<ul class="service-list">
+										<li>Leak Detection</li>
+										<li>Shower Repair</li>
+										<li>Tap Repair</li>									
+									</ul>
+									<div class="comments-text">
+										Comments
+									</div>
+									<div class="comments-input-div">
+										<input type="text" class="comments-input" placeholder="Beware of Dogs">
+									</div>									
+
+									<div class="time-and-price-div">
+										<div class="time-div">
+											for 2 hours
+										</div>
+										<div class="price-div">
+											$599
+										</div>
+									</div>
+								</div>
+								
+							</section>
+						</div>
+					</div>
+				<!-- </div> -->
+			<!-- </div> -->
+		</div>
+		
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="../common_jscheckout-tabs.js"></script>
+		<script src="../common_js/svg4everybody.ie8.min.js"></script>
+		<script src="js/checkout.js"></script>
+		
+	</body>
+</html>
