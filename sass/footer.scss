@@ -1,0 +1,35 @@
+.footer-wrap {
+    padding: 15px;
+
+    border-top: 1px solid #ccc;
+    ul {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 10px;
+        li {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 5px;
+            a {
+                padding-right: 15px;
+                padding-left: 15px;
+
+                font-family: $blogger_R;
+
+                color: $medium-gray;
+
+                @include rem(font-size, 16px);
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    .reserve-rights {
+        font-family: $blogger_R;
+
+        color: #999;
+
+        @include rem(font-size, 14px);
+    }
+}

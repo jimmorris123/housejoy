@@ -1,0 +1,141 @@
+// mixin for rem font convertion
+@function parseInt($n) { // 2 
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin rem($property, $values) {
+  $px : (); // 3 
+  $rem: (); // 3 
+
+  @each $value in $values { // 4 
+
+    @if $value == 0 or $value == auto { // 5 
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else {
+      $unit: unit($value);    // 6 
+      $val: parseInt($value); // 6 
+
+      @if $unit == "px" {  // 7 
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+
+      @if $unit == "rem" { // 7 
+        $px : append($px,  ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {     // 8 
+    #{$property}: $px;  // 9 
+  } @else {
+    #{$property}: $px;  // 9 
+    #{$property}: $rem; // 9 
+  }
+}
+
+// mixin for media queries
+@mixin medmxn($mnw, $mxw) {
+    @media all and (min-width: $mnw) and (max-width: $mxw) {
+        @content;
+    }
+}
+@mixin medmx($mxw) {
+    @media all and (max-width: $mxw) {
+        @content;
+    }
+}
+@mixin medmn($mnw) {
+    @media all and (min-width: $mnw) {
+        @content;
+    }
+}
+
+// mixin for placeholder
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+
+// @keyframe mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+// mixin for border-radius
+@mixin border-radius($border-radius) {
+       -moz-border-radius: $border-radius;
+         -o-border-radius: $border-radius;
+        -ms-border-radius: $border-radius;
+    -webkit-border-radius: $border-radius;
+          border-radius: $border-radius;
+}
+// mixin for transform
+@mixin transform($transforms) {
+       -moz-transform: $transforms;
+         -o-transform: $transforms;
+        -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+          transform: $transforms;
+}
+
+// mixin for transition
+// @mixin transform($transition) {
+//        -moz-transition: $transition;
+//          -o-transition: $transition;
+//         -ms-transition: $transition;
+//     -webkit-transition: $transition;
+//           transition: $transition;
+// } //compass already has transition mixin
+
+// mixin for animation
+@mixin animation($animation) {
+       -moz-animation: $animation;
+         -o-animation: $animation;
+        -ms-animation: $animation;
+    -webkit-animation: $animation;
+          animation: $animation;
+}
+// mixin for animation iteration count
+@mixin animation-iteration-count($animation-iteration-count) {
+       -moz-animation-iteration-count: $animation-iteration-count;
+         -o-animation-iteration-count: $animation-iteration-count;
+        -ms-animation-iteration-count: $animation-iteration-count;
+    -webkit-animation-iteration-count: $animation-iteration-count;
+          animation-iteration-count: $animation-iteration-count;
+}
+

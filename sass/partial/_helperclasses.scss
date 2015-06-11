@@ -1,0 +1,91 @@
+a {
+    text-decoration: none;
+
+    color: $medium-gray;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+// color classes to extend or common use
+// text color
+.f-cl-gray {
+    color: $medium-gray;
+}
+.f-cl-gray-sharp {
+    color: $gray-sharp;
+}
+// background color
+.gray-bg {
+    background-color: $body-bg-color;
+}
+
+.white-bg-imp {
+    background-color: #fff !important;
+}
+
+.transparent-bg-imp {
+    background-color: transparent !important;
+}
+
+// padding
+.PD0 {
+    padding: 0;
+}
+.PD0-imp {
+    padding: 0 !important;
+}
+.PLR15 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+// common headings (Default style)
+.heading-h1 {
+    margin-bottom: 15px;
+
+    font-family: "blogger_sansmedium";
+
+    color: $green;
+
+    @include rem(font-size, 36px);
+}
+.heading-h2 {
+    margin-bottom: 15px;
+
+    font-family: "blogger_sanslight";
+
+    color: $medium-gray;
+
+    @include rem(font-size, 20px);
+}
+.helper-text {
+    margin-bottom: 15px;
+
+    font-family: "blogger_sanslight";
+
+    color: $medium-gray;
+
+    @include rem(font-size, 18px);
+}
+
+// gradient
+.gradient-white {
+    background: linear-gradient(to top, white, rgba(255, 255, 251, 0));
+}
+
+// blure effect
+.blur {
+    -webkit-transform: translateZ(0);
+       -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+            transform: translateZ(0);
+
+    -webkit-filter: blur(15px);
+       -moz-filter: blur(15px);
+        -ms-filter: blur(15px);
+         -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
+            filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+}
