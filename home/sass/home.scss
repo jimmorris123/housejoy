@@ -1,0 +1,157 @@
+// Basic style structure 
+@import "../../sass/_default";
+
+
+// About us page style is here
+.content-wrapper {
+    padding: 15px;
+    .label-title {
+        margin-top: 8px;
+
+        font-family: $blogger_R;
+
+        opacity: .3;
+        color: $dark-gray;
+
+        @include rem(font-size, 48px);
+    }
+    .about-us-content {
+        p {
+            margin-bottom: 20px;
+
+            font-family: $blogger_R;
+
+            color: $dark-gray;
+
+            @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
+        }
+        ul {
+            padding-left: 15px;
+            margin-bottom: 20px;
+            li {
+                position: relative;
+
+                padding-left: 20px;
+                margin-bottom: 10px;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
+                span {
+                    position: absolute;
+                    top: 5px;
+                    left: 0;
+
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// about-us tabs style
+.about-tabs {
+    border-top: 1px solid #ccc;
+    .tabs-scroll {
+        margin-bottom: 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+        -webkit-overflow-scrolling: touch;
+
+        .nav-tabs {
+            width: 1500px;
+
+            border: transparent;
+            li {
+                a {
+                    // margin-top: -2px;
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+                    border: transparent;
+                    border-top: 3px solid transparent;
+
+                    @include transition(.3s all);
+                    @include rem(font-size, 20px);
+                }
+                &:hover,
+                &:focus,
+                &:active {
+                    a {
+                        // margin-top: -2px;
+                        color: $green;
+                        border: transparent;
+                        border-top: 3px solid $green;
+                        // border-bottom: none;
+                        border-radius: 0;
+                        outline: none;
+                        background-color: transparent;
+                    }
+                }
+                &.active {
+                    a {
+                        // margin-top: -2px;
+                        color: $green;
+                        border: transparent;
+                        border-top: 3px solid $green;
+                        border-radius: 0;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .tab-banner {
+            position: relative;
+
+            height: 150px;
+            margin-bottom: 20px;
+
+            background-image: url(../../images/home_images/tabs_banner.jpg);
+            background-position-y: center;
+            .overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                background-color: rgba(0,0,0,.4);
+            }
+            .title {
+                position: absolute;
+                top: 50%;
+
+                width: 100%;
+
+                font-family: $blogger_R;
+
+                text-align: center;
+
+                color: $white;
+
+                @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
+                img {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        p {
+            margin-bottom: 20px;
+
+            font-family: $blogger_R;
+
+            color: $dark-gray;
+
+            @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
+        }
+    }
+}
