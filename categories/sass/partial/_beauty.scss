@@ -1,0 +1,51 @@
+.left-section {
+    .panel {
+        overflow: visible;
+        .panel-title {
+            a {
+                .price {
+                    font-family: $blogger_R;
+
+                    color: $medium-gray;
+
+                    @include rem(font-size, 18px);
+                }
+            }
+        }
+        .panel-body {
+            .dropdown-group {
+                margin-bottom: 10px;
+                h4 {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: $medium-gray;
+
+                    @include rem(font-size, 16px);
+                }
+            }
+            .info {
+                margin-bottom: 10px;
+
+                @include medmx(768px) {
+                    padding: 0;
+                }
+                p {
+                    font-family: $blogger_R;
+
+                    color: $medium-gray;
+
+                    @include rem(line-height, 20px);
+                    @include rem(font-size, 16px);
+                }
+            }
+            .action {
+                margin-bottom: 10px;
+                button {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
