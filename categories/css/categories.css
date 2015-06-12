@@ -712,19 +712,21 @@ a:hover, a:focus {
 .tabs-row {
   padding: 15px 20px;
   overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
-/* line 112, ../../sass/partial/_ui-elem.scss */
+/* line 115, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs {
   width: 1500px;
 }
-/* line 114, ../../sass/partial/_ui-elem.scss */
+/* line 117, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li {
   display: inline-block;
   float: left;
   margin-right: 10px;
   box-sizing: border-box;
 }
-/* line 120, ../../sass/partial/_ui-elem.scss */
+/* line 123, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li a {
   height: 40px;
   padding: 10px 0;
@@ -741,7 +743,7 @@ a:hover, a:focus {
   line-height: 24px;
   line-height: 2.4rem;
 }
-/* line 134, ../../sass/partial/_ui-elem.scss */
+/* line 137, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
   color: #009688;
   border-bottom: 2px solid #009688;
@@ -749,7 +751,7 @@ a:hover, a:focus {
   font-size: 2.4rem;
 }
 
-/* line 151, ../../sass/partial/_ui-elem.scss */
+/* line 154, ../../sass/partial/_ui-elem.scss */
 .yellow-btn {
   height: 40px;
   min-width: 170px;
@@ -767,7 +769,7 @@ a:hover, a:focus {
   font-size: 1.8rem;
 }
 
-/* line 170, ../../sass/partial/_ui-elem.scss */
+/* line 173, ../../sass/partial/_ui-elem.scss */
 .green-btn {
   width: 100%;
   height: 40px;
@@ -959,7 +961,7 @@ a:hover, a:focus {
   width: 100%;
   height: 60vh;
   padding-top: 60px;
-  background-image: url("../images/laundry_banner.jpg");
+  background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
 /* line 16, ../sass/partial/_laundry.scss */
 .laundry-wrapper .top-banner .gradient-white {
@@ -987,14 +989,105 @@ a:hover, a:focus {
 .laundry-wrapper .top-banner .facilities .f-block:last-child {
   border-right: none;
 }
+/* line 45, ../sass/partial/_laundry.scss */
+.laundry-wrapper .categories {
+  margin-top: -220px;
+  margin-bottom: 40px;
+}
+/* line 48, ../sass/partial/_laundry.scss */
+.laundry-wrapper .categories .cat-wrap {
+  padding: 10px;
+}
+/* line 50, ../sass/partial/_laundry.scss */
+.laundry-wrapper .categories .cat-wrap .cat-block {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+/* line 55, ../sass/partial/_laundry.scss */
+.laundry-wrapper .categories .cat-wrap .cat-block .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 64, ../sass/partial/_laundry.scss */
+.laundry-wrapper .categories .cat-wrap .cat-block .title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  font-family: "blogger_sansmedium";
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  -moz-transform: translate-Y(-50%);
+  -o-transform: translate-Y(-50%);
+  -ms-transform: translate-Y(-50%);
+  -webkit-transform: translate-Y(-50%);
+  transform: translate-Y(-50%);
+  font-size: 30px;
+  font-size: 3rem;
+}
+/* line 84, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .steps {
+  position: relative;
+  width: 70%;
+  height: 2px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #ccc;
+}
+/* line 94, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .steps span {
+  position: absolute;
+  top: -18px;
+  padding: 6px 15px;
+  margin: 0 auto;
+  margin-left: -20px;
+  font-family: "blogger_sansbold";
+  color: #777;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+/* line 110, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .steps span:first-child {
+  left: -5px;
+}
+/* line 113, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .steps span:last-child {
+  right: -5px;
+}
+/* line 120, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .step-contents .step h4 {
+  margin-bottom: 10px;
+  font-family: "blogger_sansregular";
+  text-align: center;
+  color: #555;
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 131, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps .step-contents .step p {
+  font-family: "blogger_sanslight";
+  color: #555;
+  line-height: 22px;
+  line-height: 2.2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
 
-/* line 47, ../sass/partial/_laundry.scss */
+/* line 144, ../sass/partial/_laundry.scss */
 .work-process {
   height: 350px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 53, ../sass/partial/_laundry.scss */
+/* line 150, ../sass/partial/_laundry.scss */
 .work-process .heading-h2 {
   width: 115px;
   padding-bottom: 10px;
@@ -1002,12 +1095,12 @@ a:hover, a:focus {
   margin-bottom: 40px;
   border-bottom: 2px solid #009688;
 }
-/* line 63, ../sass/partial/_laundry.scss */
+/* line 160, ../sass/partial/_laundry.scss */
 .work-process .W-block {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 66, ../sass/partial/_laundry.scss */
+/* line 163, ../sass/partial/_laundry.scss */
 .work-process .W-block img {
   margin-bottom: 20px;
 }

@@ -12,7 +12,7 @@
         height: 60vh;
         padding-top: 60px;
 
-        background-image: url("../images/laundry_banner.jpg");
+        background-image: url("../../images/laundry_images/laundry_banner.jpg");
         .gradient-white {
             position: absolute;
             top: 0;
@@ -38,6 +38,103 @@
                 }
                 p {
                     @extend .f-cl-gray-sharp;
+                }
+            }
+        }
+    }
+    .categories {
+        margin-top: -220px;
+        margin-bottom: 40px;
+        .cat-wrap {
+            padding: 10px;
+            .cat-block {
+                position: relative;
+
+                height: 240px;
+                overflow: hidden;
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+
+                    background-color: rgba(0,0,0,.4);
+                }
+                .title {
+                    position: absolute;
+                    top: 50%;
+
+                    width: 100%;
+
+                    font-family: $blogger_M;
+                    font-style: italic;
+
+                    text-align: center;
+
+                    color: $white;
+
+                    @include transform(translate-Y(-50%));
+                    @include rem(font-size, 30px);
+                }
+            }
+        }
+    }
+    .process-steps {
+        .steps {
+            position: relative;
+
+            width: 70%;
+            height: 2px;
+            margin: 50px auto;
+
+            text-align: center;
+
+            background-color: #ccc;
+            span {
+                position: absolute;
+                top: -18px;
+
+                padding: 6px 15px;
+                margin: 0 auto;
+                margin-left: -20px;
+
+                font-family: $blogger_B;
+
+                color: $medium-gray;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                background-color: #fff;
+
+                @include rem(font-size, 24px);
+                &:first-child {
+                    left: -5px;
+                }
+                &:last-child {
+                    right: -5px;
+                }
+            }
+        }
+        .step-contents {
+            .step {
+                h4 {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    text-align: center;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 20px);
+                }
+                p {
+                    font-family: $blogger_L;
+
+                    color: $dark-gray;
+
+                    @include rem(line-height, 22px);
+                    @include rem(font-size, 16px);
                 }
             }
         }
