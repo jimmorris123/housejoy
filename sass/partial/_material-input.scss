@@ -7,10 +7,10 @@
     position: relative;
     // float: left;
     // width: 100%;
+    // padding: 10px 0;
 
-    padding: 10px 0;
     margin-top: 20px;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     input[type="text"] {
         display: block;
@@ -19,7 +19,7 @@
         padding: 10px 10px 10px 5px;
         // margin-left: 15px;
 
-        font-family: "blogger_sansregular";
+        font-family: $blogger_R;
 
         color: #555;
         border: none;
@@ -38,7 +38,7 @@
         top: 10px;
         // left: 15px;
 
-        font-family: "blogger_sansregular";
+        font-family: $blogger_R;
         font-weight: normal;
 
         -webkit-transition: .2s ease all;
@@ -71,14 +71,14 @@
     .active-input {
         top: -20px;
 
-        color: #ffc107;
+        color: $green;
     }
 
     input[type="text"]:focus ~ .active-input,
     input[type="text"]:valid ~ .active-input {
         font-size: 16px;
 
-        color: #ffc107;
+        color: $green;
     }
     /* BOTTOM BARS ================================= */
     .bar {
@@ -102,7 +102,7 @@
            -moz-transition: .2s ease all;
                 transition: .2s ease all;
 
-        background: #ffc107;
+        background: $green;
     }
     .bar.pink-bg:before,
     .bar.pink-bg:after {
@@ -110,7 +110,7 @@
     }
     .bar.yellow-bg:before,
     .bar.yellow-bg:after {
-        background: #ffc107;
+        background: $green;
     }
     .bar:before {
         left: 50%;

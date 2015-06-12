@@ -70,46 +70,6 @@
                 }
             }
         }
-        .tabs-row {
-            padding: 15px 20px;
-            overflow-x: scroll;
-
-            .tabs {
-                width: 1500px;
-                li {
-                    display: inline-block;
-                    float: left;
-                    margin-right: 10px;
-                    // overflow: hidden;
-                    box-sizing: border-box;
-                    a {
-                        height: 40px;
-                        padding: 10px 0;
-                        padding-bottom: 3px;
-                        margin-right: 10px;
-
-                        font-family: $blogger_R;
-
-                        color: $dark-gray;
-
-                        @include transition(all .2s ease-in-out);
-                        @include rem(font-size, 22px);
-                        @include rem(line-height, 24px);
-                    }
-                    &:hover a,
-                    &:focus a,
-                    &:active a,
-                    &.active a {
-                        color: $green;
-                        border-bottom: 2px solid $green;
-                        // @include transition(.3s all);
-                        // @include transform(scale(1.1));
-
-                        @include rem(font-size, 24px);
-                    }
-                }
-            }
-        }
         .house-type {
             padding: 15px 20px ;
             h2 {

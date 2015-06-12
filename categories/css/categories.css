@@ -427,9 +427,9 @@ a:hover, a:focus {
   -moz-filter: blur(15px);
   -ms-filter: blur(15px);
   -o-filter: blur(15px);
+  filter: blur(15px);
+  filter: blur(15px);
   filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-  filter: blur(15px);
-  filter: blur(15px);
 }
 
 /* line 1, ../../sass/partial/_material-input.scss */
@@ -709,6 +709,47 @@ a:hover, a:focus {
 }
 
 /* line 108, ../../sass/partial/_ui-elem.scss */
+.tabs-row {
+  padding: 15px 20px;
+  overflow-x: scroll;
+}
+/* line 112, ../../sass/partial/_ui-elem.scss */
+.tabs-row .tabs {
+  width: 1500px;
+}
+/* line 114, ../../sass/partial/_ui-elem.scss */
+.tabs-row .tabs li {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+/* line 120, ../../sass/partial/_ui-elem.scss */
+.tabs-row .tabs li a {
+  height: 40px;
+  padding: 10px 0;
+  padding-bottom: 3px;
+  margin-right: 10px;
+  font-family: "blogger_sansregular";
+  color: #555;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+}
+/* line 134, ../../sass/partial/_ui-elem.scss */
+.tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
+  color: #009688;
+  border-bottom: 2px solid #009688;
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+
+/* line 151, ../../sass/partial/_ui-elem.scss */
 .yellow-btn {
   height: 40px;
   min-width: 170px;
@@ -726,7 +767,7 @@ a:hover, a:focus {
   font-size: 1.8rem;
 }
 
-/* line 127, ../../sass/partial/_ui-elem.scss */
+/* line 170, ../../sass/partial/_ui-elem.scss */
 .green-btn {
   width: 100%;
   height: 40px;
@@ -1041,58 +1082,18 @@ a:hover, a:focus {
   font-size: 2.2rem;
 }
 /* line 73, ../sass/partial/_house_cleaning.scss */
-.housing-wrapper .page-content .tabs-row {
-  padding: 15px 20px;
-  overflow-x: scroll;
-}
-/* line 77, ../sass/partial/_house_cleaning.scss */
-.housing-wrapper .page-content .tabs-row .tabs {
-  width: 1500px;
-}
-/* line 79, ../sass/partial/_house_cleaning.scss */
-.housing-wrapper .page-content .tabs-row .tabs li {
-  display: inline-block;
-  float: left;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-/* line 85, ../sass/partial/_house_cleaning.scss */
-.housing-wrapper .page-content .tabs-row .tabs li a {
-  height: 40px;
-  padding: 10px 0;
-  padding-bottom: 3px;
-  margin-right: 10px;
-  font-family: "blogger_sansregular";
-  color: #555;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
-}
-/* line 99, ../sass/partial/_house_cleaning.scss */
-.housing-wrapper .page-content .tabs-row .tabs li:hover a, .housing-wrapper .page-content .tabs-row .tabs li:focus a, .housing-wrapper .page-content .tabs-row .tabs li:active a, .housing-wrapper .page-content .tabs-row .tabs li.active a {
-  color: #009688;
-  border-bottom: 2px solid #009688;
-  font-size: 24px;
-  font-size: 2.4rem;
-}
-/* line 113, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type {
   padding: 15px 20px;
 }
-/* line 115, ../sass/partial/_house_cleaning.scss */
+/* line 75, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type h2 {
   margin-bottom: 20px;
 }
-/* line 118, ../sass/partial/_house_cleaning.scss */
+/* line 78, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .dropdown-group {
   padding-left: 0;
 }
-/* line 120, ../sass/partial/_house_cleaning.scss */
+/* line 80, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .dropdown-group h4 {
   margin-bottom: 5px;
   font-family: "blogger_sansregular";
@@ -1100,11 +1101,11 @@ a:hover, a:focus {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 131, ../sass/partial/_house_cleaning.scss */
+/* line 91, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .services .total-amount {
   padding-bottom: 20px;
 }
-/* line 133, ../sass/partial/_house_cleaning.scss */
+/* line 93, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .services .total-amount .price {
   margin-bottom: 10px;
   font-family: "blogger_sanslight";
@@ -1112,15 +1113,15 @@ a:hover, a:focus {
   font-size: 30px;
   font-size: 3rem;
 }
-/* line 142, ../sass/partial/_house_cleaning.scss */
+/* line 102, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .services .total-amount .yellow-btn {
   margin-bottom: 0;
 }
-/* line 148, ../sass/partial/_house_cleaning.scss */
+/* line 108, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .service-info ul {
   list-style-type: none;
 }
-/* line 150, ../sass/partial/_house_cleaning.scss */
+/* line 110, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .service-info ul li {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -1128,7 +1129,7 @@ a:hover, a:focus {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 158, ../sass/partial/_house_cleaning.scss */
+/* line 118, ../sass/partial/_house_cleaning.scss */
 .housing-wrapper .page-content .house-type .service-info ul li:before {
   float: left;
   width: 8px;

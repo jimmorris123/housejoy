@@ -60,6 +60,8 @@ a {
     @include rem(font-size, 20px);
 }
 .helper-text {
+    position: relative;
+
     margin-bottom: 15px;
 
     font-family: "blogger_sanslight";
@@ -67,6 +69,16 @@ a {
     color: $medium-gray;
 
     @include rem(font-size, 18px);
+    .border-bottom {
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+
+        width: 30px;
+        height: 2px;
+
+        background-color: #ffc400;
+    }
 }
 
 // gradient
