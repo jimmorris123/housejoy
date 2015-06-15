@@ -130,9 +130,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -188,4 +188,30 @@
     background-color: $green;
 
     @include rem(font-size, 18px);
+}
+
+.heading {
+    position: relative;
+
+    display: inline-block;
+    margin-bottom: 20px;
+
+    font-family: $blogger_L;
+
+    color: $medium-gray;
+
+    @include rem(font-size, 18px);
+    .border-inner-bottom {
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+
+        width: 90%;
+        height: 3px;
+        margin: 0 auto;
+
+        background-color: $green;
+
+        @include transform(translateX(-50%));
+    }
 }
