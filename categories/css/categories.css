@@ -68,6 +68,13 @@ html,
 body {
   font-size: 62.5%;
 }
+@media (max-width: 767px) {
+  /* line 1, ../../sass/partial/_typography.scss */
+  html,
+  body {
+    font-size: 50%;
+  }
+}
 
 @font-face {
   font-family: Barkentina;
@@ -322,6 +329,204 @@ a {
   color: #fffefe;
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 241, ../../sass/partial/_navigation.scss */
+  .side-collapse-container {
+    position: relative;
+    left: 0;
+    width: 100%;
+    transition: left .4s;
+  }
+
+  /* line 249, ../../sass/partial/_navigation.scss */
+  .side-collapse-container.out {
+    left: 200px;
+  }
+
+  /* line 252, ../../sass/partial/_navigation.scss */
+  .side-collapse {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    overflow: hidden;
+    transition: width .4s;
+  }
+
+  /* line 263, ../../sass/partial/_navigation.scss */
+  .side-collapse.in {
+    width: 0;
+  }
+}
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+/* line 272, ../../sass/partial/_navigation.scss */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  z-index: 999;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+  border: none;
+  background: transparent;
+}
+
+/* line 285, ../../sass/partial/_navigation.scss */
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+  outline: none;
+}
+
+/* line 290, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:before {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  line-height: 32px;
+  content: "";
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+}
+
+/* line 305, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover:before {
+  display: block;
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  opacity: 1;
+}
+
+/* line 314, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+/* line 326, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom {
+  background-color: #fff;
+}
+
+/* line 331, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top {
+  top: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 336, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-middle {
+  top: 50%;
+  margin-top: -2px;
+}
+
+/* line 341, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-bottom {
+  bottom: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 347, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover .hamb-top {
+  top: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 352, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover .hamb-bottom {
+  bottom: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 357, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  background-color: #fff;
+}
+
+/* line 362, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+  top: 50%;
+  margin-top: -2px;
+}
+
+/* line 368, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transform: rotate(45deg);
+}
+
+/* line 372, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-middle {
+  display: none;
+}
+
+/* line 375, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-bottom {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* line 379, ../../sass/partial/_navigation.scss */
+.hamburger.is-open:before {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  line-height: 32px;
+  content: "";
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+}
+
+/* line 394, ../../sass/partial/_navigation.scss */
+.hamburger.is-open:hover:before {
+  display: block;
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  opacity: 1;
+}
+
+/* line 405, ../../sass/partial/_navigation.scss */
+.navbar-inverse {
+  border: none;
+  background-color: transparent;
+}
+/* line 408, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-collapse {
+  border: none;
+}
+/* line 410, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-collapse .navbar-nav {
+  background-color: #fff;
+}
+
+/* line 416, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
 }
 
 /* line 1, ../../sass/partial/_helperclasses.scss */
@@ -734,14 +939,14 @@ a:hover, a:focus {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
 }
 /* line 137, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
@@ -785,6 +990,32 @@ a:hover, a:focus {
   background-color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+/* line 193, ../../sass/partial/_ui-elem.scss */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "blogger_sanslight";
+  color: #777;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 204, ../../sass/partial/_ui-elem.scss */
+.heading .border-inner-bottom {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #009688;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 1, ../../sass/partial/_testimonials.scss */
@@ -1001,10 +1232,17 @@ a:hover, a:focus {
 /* line 50, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block {
   position: relative;
-  height: 240px;
+  height: auto;
+  max-height: 240px;
   overflow: hidden;
 }
-/* line 55, ../sass/partial/_laundry.scss */
+@media all and (max-width: 768px) {
+  /* line 50, ../sass/partial/_laundry.scss */
+  .laundry-wrapper .categories .cat-wrap .cat-block {
+    max-height: 115px;
+  }
+}
+/* line 60, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block .overlay {
   position: absolute;
   top: 0;
@@ -1013,7 +1251,7 @@ a:hover, a:focus {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 64, ../sass/partial/_laundry.scss */
+/* line 69, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block .title {
   position: absolute;
   top: 50%;
@@ -1030,16 +1268,21 @@ a:hover, a:focus {
   font-size: 30px;
   font-size: 3rem;
 }
-/* line 84, ../sass/partial/_laundry.scss */
+/* line 88, ../sass/partial/_laundry.scss */
+.laundry-wrapper .process-steps {
+  padding: 30px 15px;
+  margin-bottom: 40px;
+}
+/* line 91, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps {
   position: relative;
   width: 70%;
-  height: 2px;
+  height: 1px;
   margin: 50px auto;
   text-align: center;
-  background-color: #ccc;
+  background-color: #333;
 }
-/* line 94, ../sass/partial/_laundry.scss */
+/* line 101, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span {
   position: absolute;
   top: -18px;
@@ -1048,21 +1291,21 @@ a:hover, a:focus {
   margin-left: -20px;
   font-family: "blogger_sansbold";
   color: #777;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 50%;
   background-color: #fff;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 110, ../sass/partial/_laundry.scss */
+/* line 117, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span:first-child {
   left: -5px;
 }
-/* line 113, ../sass/partial/_laundry.scss */
+/* line 120, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span:last-child {
   right: -5px;
 }
-/* line 120, ../sass/partial/_laundry.scss */
+/* line 127, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .step-contents .step h4 {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -1071,7 +1314,7 @@ a:hover, a:focus {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 131, ../sass/partial/_laundry.scss */
+/* line 138, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .step-contents .step p {
   font-family: "blogger_sanslight";
   color: #555;
@@ -1081,13 +1324,13 @@ a:hover, a:focus {
   font-size: 1.6rem;
 }
 
-/* line 144, ../sass/partial/_laundry.scss */
+/* line 151, ../sass/partial/_laundry.scss */
 .work-process {
   height: 350px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-/* line 150, ../sass/partial/_laundry.scss */
+/* line 157, ../sass/partial/_laundry.scss */
 .work-process .heading-h2 {
   width: 115px;
   padding-bottom: 10px;
@@ -1095,12 +1338,12 @@ a:hover, a:focus {
   margin-bottom: 40px;
   border-bottom: 2px solid #009688;
 }
-/* line 160, ../sass/partial/_laundry.scss */
+/* line 167, ../sass/partial/_laundry.scss */
 .work-process .W-block {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 163, ../sass/partial/_laundry.scss */
+/* line 170, ../sass/partial/_laundry.scss */
 .work-process .W-block img {
   margin-bottom: 20px;
 }
