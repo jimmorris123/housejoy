@@ -50,8 +50,13 @@
             .cat-block {
                 position: relative;
 
-                height: 240px;
+                height: auto;
+                max-height: 240px;
                 overflow: hidden;
+
+                @include medmx(768px) {
+                    max-height: 115px;
+                }
                 .overlay {
                     position: absolute;
                     top: 0;
@@ -81,16 +86,18 @@
         }
     }
     .process-steps {
+        padding: 30px 15px;
+        margin-bottom: 40px;
         .steps {
             position: relative;
 
             width: 70%;
-            height: 2px;
+            height: 1px;
             margin: 50px auto;
 
             text-align: center;
 
-            background-color: #ccc;
+            background-color: #333;
             span {
                 position: absolute;
                 top: -18px;
@@ -102,7 +109,7 @@
                 font-family: $blogger_B;
 
                 color: $medium-gray;
-                border: 1px solid #ccc;
+                border: 2px solid #ccc;
                 border-radius: 50%;
                 background-color: #fff;
 
