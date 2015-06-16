@@ -16,6 +16,10 @@ a {
 .f-cl-gray-sharp {
     color: $gray-sharp;
 }
+// text-transform
+.text-uppercase {
+    text-transform: uppercase;
+}
 // background color
 .gray-bg {
     background-color: $body-bg-color;
@@ -97,7 +101,7 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
-            filter: blur(15px);
-            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+            filter: blur(15px);
+            filter: blur(15px);
 }
