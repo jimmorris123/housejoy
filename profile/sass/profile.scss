@@ -1,0 +1,182 @@
+// Basic style structure 
+@import "../../sass/_default";
+
+.profile-img-div {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    clear: both;
+
+    text-align: center;
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+
+        @include border-radius(120px);
+    }
+    .profile-name {
+        margin-top: 20px;
+
+        font-family: $blogger_R;
+
+        color: $medium-gray;
+
+        @include rem(font-size, 22px);
+    }
+}
+
+a.account-links {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-top: 2px;
+
+    font-family: $blogger_R;
+
+    text-transform: capitalize;
+
+    color: $dark-gray;
+    border-left: 2px solid transparent;
+    background: $white;
+
+    @include rem(font-size, 18px);
+
+    &:hover {
+        border-left: 2px solid $green;
+    }
+}
+
+.profile-tabs {
+    display: block;
+    width: 100%;
+    margin: 30px auto 0;
+
+    @include medmx(768px) {
+        margin: 0 auto 0;
+    }
+    @include medmx(1024px) {
+        width: 100%;
+        margin-left: auto;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+
+        border-bottom: 1px solid $green;
+
+        @include medmx(768px) {
+            height: 100px;
+
+            border-bottom: 1px solid $green;
+            // background-color: $white
+        }
+        &:after {
+            display: table;
+            clear: both;
+
+            content: "";
+        }
+
+        li {
+            float: left;
+            // margin-bottom: 20px;
+            width: calc(100% / 3);
+
+            font-family: $blogger_R;
+
+            border-bottom: 0;
+
+            @include medmx(768px) {
+                border-right: none;
+            }
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                display: block;
+                // background:#fff;
+                padding: 20px;
+
+                text-align: center;
+                text-decoration: none;
+                text-transform: capitalize;
+
+                color: $dark-gray;
+
+                @include medmx(768px) {
+                    display: none;
+                }
+                @include rem(font-size, 18px);
+            }
+        }
+        .active > a {
+            color: $green;
+            border-right: none;
+            border-bottom: 2px solid $green;
+        }
+    }
+}
+
+.address-row {
+    display: block;
+    padding: 30px 0;
+    margin: 0 25px;
+    .text-div {
+        float: left;
+        width: calc(100% - 72px);
+
+        font-family: $blogger_R;
+        line-height: 2rem;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 16px);
+    }
+    .icon-div {
+        float: left;
+        margin-left: 20px;
+
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+.address-bottom-border {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.section-head {
+    font-family: $blogger_R;
+
+    text-transform: capitalize;
+
+    color: $dark-gray;
+
+    @include rem(font-size, 18px);
+}
+
+.row-head {
+    display: block;
+    // padding: 30px 0;
+    margin: 0 25px;
+
+    font-family: $blogger_L;
+
+    text-transform: capitalize;
+
+    color: $dark-gray;
+
+    @include rem(font-size, 16px);
+}
+
+.address-input {
+    margin: 10px 25px 20px;
+}
