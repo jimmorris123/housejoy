@@ -1,9 +1,13 @@
 // Basic style structure 
 @import "../../sass/_default";
 
+.body-color {
+    background: $body-bg-color;
+}
+
 .profile-img-div {
-    padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 30px;
     overflow: hidden;
     clear: both;
 
@@ -50,17 +54,21 @@ a.account-links {
     }
 }
 
+.account-active-link {
+    border-left: 2px solid $green;
+}
+
 .profile-tabs {
     display: block;
     width: 100%;
     margin: 30px auto 0;
 
+    @include medmx(768px) {
+        margin: 0 auto 0;
+    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
-    }
-    @include medmx(768px) {
-        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -110,10 +118,10 @@ a.account-links {
 
                 color: $dark-gray;
 
-                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     display: none;
                 }
+                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -195,8 +203,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
 
-    @include rem(font-size, 18px);
     @include border-radius(4px);
+    @include rem(font-size, 18px);
 }
 
 a.submit-button {
@@ -214,7 +222,7 @@ a.submit-button {
     color: $white;
     background-color: #ffc400;
 
-    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -222,5 +230,5 @@ a.submit-button {
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
+    @include border-radius(4px);
 }
