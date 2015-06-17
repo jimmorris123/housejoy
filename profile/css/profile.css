@@ -68,6 +68,13 @@ html,
 body {
   font-size: 62.5%;
 }
+@media (max-width: 767px) {
+  /* line 1, ../../sass/partial/_typography.scss */
+  html,
+  body {
+    font-size: 50%;
+  }
+}
 
 @font-face {
   font-family: Barkentina;
@@ -322,6 +329,204 @@ a {
   color: #fffefe;
   font-size: 16px;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 241, ../../sass/partial/_navigation.scss */
+  .side-collapse-container {
+    position: relative;
+    left: 0;
+    width: 100%;
+    transition: left .4s;
+  }
+
+  /* line 249, ../../sass/partial/_navigation.scss */
+  .side-collapse-container.out {
+    left: 200px;
+  }
+
+  /* line 252, ../../sass/partial/_navigation.scss */
+  .side-collapse {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    overflow: hidden;
+    transition: width .4s;
+  }
+
+  /* line 263, ../../sass/partial/_navigation.scss */
+  .side-collapse.in {
+    width: 0;
+  }
+}
+/*-------------------------------*/
+/*       Hamburger-Cross         */
+/*-------------------------------*/
+/* line 272, ../../sass/partial/_navigation.scss */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  z-index: 999;
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+  border: none;
+  background: transparent;
+}
+
+/* line 285, ../../sass/partial/_navigation.scss */
+.hamburger:hover,
+.hamburger:focus,
+.hamburger:active {
+  outline: none;
+}
+
+/* line 290, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:before {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  line-height: 32px;
+  content: "";
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+}
+
+/* line 305, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover:before {
+  display: block;
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  opacity: 1;
+}
+
+/* line 314, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom,
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+/* line 326, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top,
+.hamburger.is-closed .hamb-middle,
+.hamburger.is-closed .hamb-bottom {
+  background-color: #fff;
+}
+
+/* line 331, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-top {
+  top: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 336, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-middle {
+  top: 50%;
+  margin-top: -2px;
+}
+
+/* line 341, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed .hamb-bottom {
+  bottom: 5px;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 347, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover .hamb-top {
+  top: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 352, ../../sass/partial/_navigation.scss */
+.hamburger.is-closed:hover .hamb-bottom {
+  bottom: 0;
+  -webkit-transition: all .35s ease-in-out;
+}
+
+/* line 357, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-middle,
+.hamburger.is-open .hamb-bottom {
+  background-color: #fff;
+}
+
+/* line 362, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top,
+.hamburger.is-open .hamb-bottom {
+  top: 50%;
+  margin-top: -2px;
+}
+
+/* line 368, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-top {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transform: rotate(45deg);
+}
+
+/* line 372, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-middle {
+  display: none;
+}
+
+/* line 375, ../../sass/partial/_navigation.scss */
+.hamburger.is-open .hamb-bottom {
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* line 379, ../../sass/partial/_navigation.scss */
+.hamburger.is-open:before {
+  display: block;
+  width: 100px;
+  font-size: 14px;
+  line-height: 32px;
+  content: "";
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+}
+
+/* line 394, ../../sass/partial/_navigation.scss */
+.hamburger.is-open:hover:before {
+  display: block;
+  -webkit-transition: all .35s ease-in-out;
+  -webkit-transform: translate3d(-100px, 0, 0);
+  opacity: 1;
+}
+
+/* line 405, ../../sass/partial/_navigation.scss */
+.navbar-inverse {
+  border: none;
+  background-color: transparent;
+}
+/* line 408, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-collapse {
+  border: none;
+}
+/* line 410, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-collapse .navbar-nav {
+  background-color: #fff;
+}
+
+/* line 416, ../../sass/partial/_navigation.scss */
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: transparent;
 }
 
 /* line 1, ../../sass/partial/_helperclasses.scss */
@@ -734,14 +939,14 @@ a:hover, a:focus {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
 }
 /* line 137, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
@@ -785,6 +990,32 @@ a:hover, a:focus {
   background-color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
+}
+
+/* line 193, ../../sass/partial/_ui-elem.scss */
+.heading {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: "blogger_sanslight";
+  color: #777;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 204, ../../sass/partial/_ui-elem.scss */
+.heading .border-inner-bottom {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 90%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #009688;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 1, ../../sass/partial/_testimonials.scss */
@@ -1011,17 +1242,17 @@ a.account-links:hover {
   width: 100%;
   margin: 30px auto 0;
 }
-@media all and (max-width: 768px) {
-  /* line 53, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
-  }
-}
 @media all and (max-width: 1024px) {
   /* line 53, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 53, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
   }
 }
 /* line 65, ../sass/profile.scss */
@@ -1140,4 +1371,56 @@ a.account-links:hover {
 /* line 180, ../sass/profile.scss */
 .address-input {
   margin: 10px 25px 20px;
+}
+
+/* line 184, ../sass/profile.scss */
+input {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-family: "blogger_sanslight";
+  line-height: 44px;
+  color: #777;
+  color: #555;
+  border: none;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 18px;
+  font-size: 1.8rem;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 202, ../sass/profile.scss */
+a.submit-button {
+  display: block;
+  float: right;
+  width: 120px;
+  margin-bottom: 25px;
+  font-family: "blogger_sansregular";
+  line-height: 36px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #ffc400;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+@media all and (max-width: 768px) {
+  /* line 202, ../sass/profile.scss */
+  a.submit-button {
+    float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+  }
 }

@@ -55,12 +55,12 @@ a.account-links {
     width: 100%;
     margin: 30px auto 0;
 
-    @include medmx(768px) {
-        margin: 0 auto 0;
-    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
+    }
+    @include medmx(768px) {
+        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -110,10 +110,10 @@ a.account-links {
 
                 color: $dark-gray;
 
+                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     display: none;
                 }
-                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -179,4 +179,48 @@ a.account-links {
 
 .address-input {
     margin: 10px 25px 20px;
+}
+
+input {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    font-family: "blogger_sanslight";
+    line-height: 44px;
+
+    color: #777;
+    color: #555;
+    border: none;
+    border: 1px solid #ccc;
+    outline: none;
+
+    @include rem(font-size, 18px);
+    @include border-radius(4px);
+}
+
+a.submit-button {
+    display: block;
+    float: right;
+    width: 120px;
+    margin-bottom: 25px;
+
+    font-family: "blogger_sansregular";
+    line-height: 36px;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: $white;
+    background-color: #ffc400;
+
+    @include border-radius(4px);
+    @include medmx(768px) {
+        float: none;
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        clear: both;
+    }
+    @include rem(font-size, 16px);
 }
