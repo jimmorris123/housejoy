@@ -1088,15 +1088,24 @@ a:hover, a:focus {
   background: #f1f5f9;
 }
 
-/* line 8, ../sass/profile.scss */
+/* line 7, ../sass/profile.scss */
+.section-padding {
+  padding-top: 30px;
+}
+
+/* line 11, ../sass/profile.scss */
+.mrtp20 {
+  margin-top: 20px !important;
+}
+
+/* line 15, ../sass/profile.scss */
 .profile-img-div {
   padding-bottom: 30px;
-  margin-top: 30px;
   overflow: hidden;
   clear: both;
   text-align: center;
 }
-/* line 15, ../sass/profile.scss */
+/* line 22, ../sass/profile.scss */
 .profile-img-div .profile-img {
   width: 120px;
   height: 120px;
@@ -1110,7 +1119,7 @@ a:hover, a:focus {
   -webkit-border-radius: 120px;
   border-radius: 120px;
 }
-/* line 25, ../sass/profile.scss */
+/* line 32, ../sass/profile.scss */
 .profile-img-div .profile-name {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -1119,7 +1128,7 @@ a:hover, a:focus {
   font-size: 2.2rem;
 }
 
-/* line 36, ../sass/profile.scss */
+/* line 43, ../sass/profile.scss */
 a.account-links {
   display: block;
   width: 100%;
@@ -1128,41 +1137,42 @@ a.account-links {
   font-family: "blogger_sansregular";
   text-transform: capitalize;
   color: #555;
+  border-color: transparent;
   border-left: 2px solid transparent;
   background: #fff;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 52, ../sass/profile.scss */
+/* line 60, ../sass/profile.scss */
 a.account-links:hover {
-  border-left: 2px solid #009688;
+  border-color: #009688;
 }
 
-/* line 57, ../sass/profile.scss */
+/* line 65, ../sass/profile.scss */
 .account-active-link {
-  border-left: 2px solid #009688;
+  border-color: #009688 !important;
 }
 
-/* line 61, ../sass/profile.scss */
+/* line 69, ../sass/profile.scss */
 .profile-tabs {
   display: block;
   width: 100%;
-  margin: 30px auto 0;
-}
-@media all and (max-width: 768px) {
-  /* line 61, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
-  }
+  margin: 0 auto;
 }
 @media all and (max-width: 1024px) {
-  /* line 61, ../sass/profile.scss */
+  /* line 69, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
   }
 }
-/* line 73, ../sass/profile.scss */
+@media all and (max-width: 768px) {
+  /* line 69, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
+  }
+}
+/* line 81, ../sass/profile.scss */
 .profile-tabs ul {
   padding: 0;
   margin: 0;
@@ -1170,19 +1180,19 @@ a.account-links:hover {
   border-bottom: 1px solid #009688;
 }
 @media all and (max-width: 768px) {
-  /* line 73, ../sass/profile.scss */
+  /* line 81, ../sass/profile.scss */
   .profile-tabs ul {
     height: 100px;
     border-bottom: 1px solid #009688;
   }
 }
-/* line 87, ../sass/profile.scss */
+/* line 95, ../sass/profile.scss */
 .profile-tabs ul:after {
   display: table;
   clear: both;
   content: "";
 }
-/* line 94, ../sass/profile.scss */
+/* line 102, ../sass/profile.scss */
 .profile-tabs ul li {
   float: left;
   width: calc(100% / 3);
@@ -1190,16 +1200,16 @@ a.account-links:hover {
   border-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 94, ../sass/profile.scss */
+  /* line 102, ../sass/profile.scss */
   .profile-tabs ul li {
     border-right: none;
   }
 }
-/* line 106, ../sass/profile.scss */
+/* line 114, ../sass/profile.scss */
 .profile-tabs ul li:first-child {
   margin-left: 0;
 }
-/* line 110, ../sass/profile.scss */
+/* line 118, ../sass/profile.scss */
 .profile-tabs ul li a {
   display: block;
   padding: 20px;
@@ -1211,25 +1221,25 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 110, ../sass/profile.scss */
+  /* line 118, ../sass/profile.scss */
   .profile-tabs ul li a {
     display: none;
   }
 }
-/* line 127, ../sass/profile.scss */
+/* line 135, ../sass/profile.scss */
 .profile-tabs ul .active > a {
   color: #009688;
   border-right: none;
   border-bottom: 2px solid #009688;
 }
 
-/* line 135, ../sass/profile.scss */
+/* line 143, ../sass/profile.scss */
 .address-row {
   display: block;
   padding: 30px 0;
   margin: 0 25px;
 }
-/* line 139, ../sass/profile.scss */
+/* line 147, ../sass/profile.scss */
 .address-row .text-div {
   float: left;
   width: calc(100% - 72px);
@@ -1239,23 +1249,23 @@ a.account-links:hover {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 150, ../sass/profile.scss */
+/* line 158, ../sass/profile.scss */
 .address-row .icon-div {
   float: left;
   margin-left: 20px;
 }
-/* line 154, ../sass/profile.scss */
+/* line 162, ../sass/profile.scss */
 .address-row .icon-div svg {
   width: 16px;
   height: 16px;
 }
 
-/* line 160, ../sass/profile.scss */
+/* line 168, ../sass/profile.scss */
 .address-bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 164, ../sass/profile.scss */
+/* line 172, ../sass/profile.scss */
 .section-head {
   font-family: "blogger_sansregular";
   text-transform: capitalize;
@@ -1264,7 +1274,7 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 
-/* line 174, ../sass/profile.scss */
+/* line 182, ../sass/profile.scss */
 .row-head {
   display: block;
   margin: 0 25px;
@@ -1275,12 +1285,12 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 
-/* line 188, ../sass/profile.scss */
+/* line 196, ../sass/profile.scss */
 .address-input {
   margin: 10px 25px 20px;
 }
 
-/* line 192, ../sass/profile.scss */
+/* line 200, ../sass/profile.scss */
 input {
   width: 100%;
   padding-right: 20px;
@@ -1292,37 +1302,38 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
+  font-size: 18px;
+  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 18px;
-  font-size: 1.8rem;
 }
 
-/* line 210, ../sass/profile.scss */
+/* line 218, ../sass/profile.scss */
 a.submit-button {
   display: block;
-  float: right;
+  float: left;
   width: 120px;
   margin-bottom: 25px;
+  margin-left: 20px;
   font-family: "blogger_sansregular";
   line-height: 36px;
   text-align: center;
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
-  font-size: 16px;
-  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 210, ../sass/profile.scss */
+  /* line 218, ../sass/profile.scss */
   a.submit-button {
     float: none;
     margin-top: 20px;
@@ -1330,4 +1341,113 @@ a.submit-button {
     margin-left: auto;
     clear: both;
   }
+}
+/* line 243, ../sass/profile.scss */
+a.submit-button:first-child {
+  margin-left: 0;
+}
+
+/* line 247, ../sass/profile.scss */
+.green-icon-button {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #009688;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 256, ../sass/profile.scss */
+.green-icon-button .button-icon {
+  display: inline-block;
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+/* line 262, ../sass/profile.scss */
+.green-icon-button .button-icon svg {
+  width: 100%;
+  height: 100%;
+}
+/* line 268, ../sass/profile.scss */
+.green-icon-button .button-text {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "blogger_sansregular";
+  line-height: 18px;
+  color: #009688;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* MY ORDERS PAGE */
+/* line 282, ../sass/profile.scss */
+.my-orders .row {
+  margin: 0;
+}
+/* line 285, ../sass/profile.scss */
+.my-orders .row-type1 {
+  padding: 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+/* line 292, ../sass/profile.scss */
+.my-orders .right-section-title {
+  float: left;
+  width: auto;
+  font-family: "blogger_sansregular";
+  text-transform: capitalize;
+  color: #009688;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 304, ../sass/profile.scss */
+.my-orders .order-icon-div {
+  display: inline-block;
+  float: left;
+  width: 40px;
+  height: 40px;
+}
+/* line 310, ../sass/profile.scss */
+.my-orders .order-icon-div svg {
+  width: 100%;
+  height: 100%;
+}
+/* line 315, ../sass/profile.scss */
+.my-orders .order-details {
+  display: inline-block;
+  float: left;
+  padding-left: 25px;
+  font-family: "blogger_sansregular";
+}
+/* line 322, ../sass/profile.scss */
+.my-orders .order-details .order-id {
+  display: block;
+  color: #009688;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 329, ../sass/profile.scss */
+.my-orders .order-details .placed-on {
+  display: block;
+  margin-top: 8px;
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 338, ../sass/profile.scss */
+.my-orders .button-div {
+  float: right;
+}
+/* line 341, ../sass/profile.scss */
+.my-orders .order-brief-text {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-family: "blogger_sansregular";
+  color: #777;
+  font-size: 16px;
+  font-size: 1.6rem;
 }

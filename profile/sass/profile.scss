@@ -4,10 +4,17 @@
 .body-color {
     background: $body-bg-color;
 }
+.section-padding {
+    padding-top: 30px;
+}
+
+.mrtp20 {
+    margin-top: 20px !important;
+}
 
 .profile-img-div {
     padding-bottom: 30px;
-    margin-top: 30px;
+    // margin-top: 30px;
     overflow: hidden;
     clear: both;
 
@@ -44,31 +51,32 @@ a.account-links {
     text-transform: capitalize;
 
     color: $dark-gray;
+    border-color: transparent;
     border-left: 2px solid transparent;
     background: $white;
 
     @include rem(font-size, 18px);
 
     &:hover {
-        border-left: 2px solid $green;
+        border-color: $green;
     }
 }
 
 .account-active-link {
-    border-left: 2px solid $green;
+    border-color: $green !important;
 }
 
 .profile-tabs {
     display: block;
     width: 100%;
-    margin: 30px auto 0;
+    margin: 0 auto;
 
-    @include medmx(768px) {
-        margin: 0 auto 0;
-    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
+    }
+    @include medmx(768px) {
+        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -118,10 +126,10 @@ a.account-links {
 
                 color: $dark-gray;
 
+                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     display: none;
                 }
-                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -203,15 +211,16 @@ input {
     border: 1px solid #ccc;
     outline: none;
 
-    @include border-radius(4px);
     @include rem(font-size, 18px);
+    @include border-radius(4px);
 }
 
 a.submit-button {
     display: block;
-    float: right;
+    float: left;
     width: 120px;
     margin-bottom: 25px;
+    margin-left: 20px;
 
     font-family: "blogger_sansregular";
     line-height: 36px;
@@ -222,7 +231,7 @@ a.submit-button {
     color: $white;
     background-color: #ffc400;
 
-    @include rem(font-size, 16px);
+    @include border-radius(4px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -230,5 +239,114 @@ a.submit-button {
         margin-left: auto;
         clear: both;
     }
+    @include rem(font-size, 16px);
+    &:first-child {
+        margin-left: 0;
+    }
+}
+.green-icon-button {
+    display: block;
+    // width: auto;
+    padding: 10px 20px;
+
+    border: 1px solid $green;
+
     @include border-radius(4px);
+
+    .button-icon {
+        display: inline-block;
+        float: left;
+        width: 15px;
+        height: 15px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .button-text {
+        display: inline-block;
+        margin-left: 10px;
+
+        font-family: $blogger_R;
+        line-height: 18px;
+
+        color: $green;
+
+        @include rem(font-size, 16px);
+    }
+}
+/* MY ORDERS PAGE */
+.my-orders {
+    .row {
+        margin: 0;
+    }
+    .row-type1 {
+        padding: 20px;
+        overflow: hidden;
+
+        border-bottom: 1px solid #e5e5e5;
+        background: $white;
+    }
+    .right-section-title {
+        float: left;
+        width: auto;
+
+        font-family: $blogger_R;
+
+        text-transform: capitalize;
+
+        color: $green;
+
+        @include rem(font-size, 18px);
+    }
+    .order-icon-div {
+        display: inline-block;
+        float: left;
+        width: 40px;
+        height: 40px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .order-details {
+        display: inline-block;
+        float: left;
+        padding-left: 25px;
+
+        font-family: $blogger_R;
+
+        .order-id {
+            display: block;
+
+            color: $green;
+
+            @include rem(font-size, 18px);
+        }
+        .placed-on {
+            display: block;
+            margin-top: 8px;
+
+            color: $dark-gray;
+
+            @include rem(font-size, 16px);
+        }
+    }
+    .button-div {
+        float: right;
+    }
+    .order-brief-text {
+        display: block;
+        width: 100%;
+        margin-top: 20px;
+
+        font-family: $blogger_R;
+
+        color: $medium-gray;
+
+        @include rem(font-size, 16px);
+    }
 }
