@@ -1,0 +1,106 @@
+.responsive-tabs.responsive-tabs-initialized {
+    display: block;
+}.responsive-tabs > div.content {
+
+    clear: both;
+}.responsive-tabs.accordion {
+
+    border: 1px solid #e1e1e1;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+       -moz-box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+            box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+}.responsive-tabs.accordion > nav {
+
+    display: none;
+}.responsive-tabs.accordion h3.accordion-title {
+
+    margin: 0;
+}.responsive-tabs.accordion h3.accordion-title a {
+
+    display: block;
+    padding: 10px 15px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    text-decoration: none;
+
+    color: #333;
+    border-top: 1px solid #e1e1e1;
+    background: #fff;
+}.responsive-tabs.accordion h3.accordion-title.active a {
+
+    font-weight: 700;
+}.responsive-tabs.accordion h3.accordion-title:first-child a {
+
+    border-top: none;
+}.responsive-tabs.accordion > div.content > section {
+
+    display: block;
+    padding: 10px;
+    overflow: auto;
+
+    border-top: 1px solid #e1e1e1;
+    background: #fff;
+}.responsive-tabs.tabs {
+
+    border: none;
+}.responsive-tabs.tabs > nav {
+
+    display: block;
+}.responsive-tabs.tabs > nav ul {
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}.responsive-tabs.tabs > nav ul:after {
+
+    display: table;
+    clear: both;
+
+    content: "";
+}.responsive-tabs.tabs > nav ul li {
+
+    float: left;
+
+    font-size: 16px;
+
+    border-top: 1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
+}.responsive-tabs.tabs > nav ul li:last-child {
+
+    border-right: 1px solid #e1e1e1;
+}.responsive-tabs.tabs > nav ul li.active {
+
+    position: relative;
+    top: 2px;
+    z-index: 2;
+
+    margin-top: -2px;
+
+    border-bottom: 1px solid #fff;
+}.responsive-tabs.tabs > nav ul li a {
+
+    display: block;
+    padding: 10px 15px;
+
+    font-size: 16px;
+
+    text-decoration: none;
+
+    color: #333;
+    background: #fff;
+}.responsive-tabs.tabs h3.accordion-title {
+
+    display: none;
+}.responsive-tabs.tabs > div.content {
+
+    padding: 15px;
+
+    border: 1px solid #e1e1e1;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+       -moz-box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+            box-shadow: 0 1px 1px 0 rgba(50,50,50,.1);
+}

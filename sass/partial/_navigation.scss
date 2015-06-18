@@ -420,7 +420,9 @@
         background-color: transparent;
         .side-collapse {
             @include medmx(768px) {
-                position: static;
+                // position: relative;
+                top: 1px;
+                left: -20px;
 
                 background-color: $white;
             }
@@ -437,10 +439,10 @@
 
                         color: $white;
 
-                        @include rem(font-size, 16px);
                         @include medmx(768px) {
                             color: $medium-gray;
                         }
+                        @include rem(font-size, 16px);
                         .icon {
                             margin-right: 10px;
                         }
@@ -453,10 +455,10 @@
                             border: none;
                             background-color: transparent;
 
+                            @include rem(font-size, 16px);
                             @include medmx(768px) {
                                 color: $medium-gray;
                             }
-                            @include rem(font-size, 16px);
                             &:hover,
                             &:focus,
                             &:active {
