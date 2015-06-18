@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(font-size, 16px);
             @include rem(line-height, 24px);
+            @include rem(font-size, 16px);
         }
         ul {
             padding-left: 15px;
@@ -39,11 +39,11 @@
 
                 color: $dark-gray;
 
-                @include rem(line-height, 20px);
                 @include rem(font-size, 16px);
+                @include rem(line-height, 20px);
                 span {
                     position: absolute;
-                    top: 5px;
+                    top: 0;
                     left: 0;
 
                     margin-right: 10px;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include transition(.3s all);
                     @include rem(font-size, 20px);
+                    @include transition(.3s all);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include rem(font-size, 24px);
                 @include transform(translateY(-50%));
+                @include rem(font-size, 24px);
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,134 @@
 
             color: $dark-gray;
 
-            @include rem(font-size, 16px);
             @include rem(line-height, 24px);
+            @include rem(font-size, 16px);
+        }
+    }
+}
+
+// FAQ page style
+
+.responsive-tabs {
+    padding-top: 10px;
+
+    border: none !important;
+    box-shadow: none !important;
+    & > .content {
+        @include medmn(768px) {
+            clear: none !important;
+        }
+    }
+    &.tabs {
+        nav {
+            padding: 0;
+            ul {
+                li {
+                    border: none;
+
+                    @include medmn(768px) {
+                        float: none;
+                    }
+                    &:last-child {
+                        border-right: none;
+                    }
+                    &.active {
+                        border: none;
+                        background-color: $white;
+                        a {
+                            color: $green;
+                        }
+                    }
+                    a {
+                        padding: 15px;
+
+                        font-family: $blogger_R;
+
+                        color: $dark-gray;
+                        background-color: transparent;
+
+                        @include rem(font-size, 18px);
+                    }
+                }
+            }
+        }
+    }
+    .content {
+        border: none !important;
+
+        @include medmx(768px) {
+            padding: 0;
+        }
+        section {
+            @include medmx(768px) {
+                background: transparent !important;
+            }
+            .panel {
+                border: none;
+                border-bottom: 1px solid #ccc;
+                border-radius: 0;
+
+                @include medmx(768px) {
+                    background-color: transparent !important;
+                }
+                .panel-heading {
+                    background-color: #fff;
+
+                    @include medmx(768px) {
+                        background-color: transparent !important;
+                    }
+
+                    .panel-title {
+                        a {
+                            margin-bottom: 10px;
+
+                            font-family: $blogger_R;
+
+                            color: $green;
+
+                            @include rem(font-size, 18px);
+                            &.collapsed {
+                                color: $dark-gray;
+                            }
+                        }
+                    }
+                }
+                .panel-collapse {
+                    // @include medmx(768px) {
+                    //     background-color: transparent !important;
+                    // }
+                    .panel-body {
+                        font-family: $blogger_R;
+
+                        color: $dark-gray;
+                        border-top: none;
+
+                        @include rem(line-height, 28px);
+                        @include rem(font-size, 18px);
+                    }
+                }
+            }
+        }
+    }
+    &.accordion {
+        h3.accordion-title {
+            a {
+                padding: 15px;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+                // background-color: transparent;
+
+                @include rem(font-size, 18px);
+            }
+            &.active {
+                a {
+                    font-weight: normal;
+
+                    color: $green;
+                }
+            }
         }
     }
 }
