@@ -9,7 +9,10 @@
 	<path fill="#444444" d="M29.614 10.521l-8.132-8.133 1.248-1.262c1.11-1.11 2.921-1.102 4.043 0.022l4.068 4.066c1.122 1.124 1.132 2.934 0.022 4.044l-1.249 1.262z"></path>
 </symbol>
 
-
+<symbol id="icon-checkmark" viewBox="0 0 24 24">
+	<title>icon-pencil</title>
+	 <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 19.28125 5.28125 L 9 15.5625 L 4.71875 11.28125 L 3.28125 12.71875 L 8.28125 17.71875 L 9 18.40625 L 9.71875 17.71875 L 20.71875 6.71875 L 19.28125 5.28125 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"/>
+</symbol>
 
 </defs>
 </svg>

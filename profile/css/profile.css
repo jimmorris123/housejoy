@@ -1089,23 +1089,108 @@ a:hover, a:focus {
 }
 
 /* line 7, ../sass/profile.scss */
+.transition, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
+  transition: .5s ease all;
+}
+
+/* line 10, ../sass/profile.scss */
 .section-padding {
   padding-top: 30px;
 }
 
-/* line 11, ../sass/profile.scss */
+/* line 14, ../sass/profile.scss */
 .mrtp20 {
   margin-top: 20px !important;
 }
 
-/* line 15, ../sass/profile.scss */
+/* line 18, ../sass/profile.scss */
+.checkbox-div {
+  text-align: left;
+}
+/* line 20, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  clear: both;
+  text-align: left;
+}
+/* line 28, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div {
+  display: inline-block;
+  float: left;
+  width: 20px;
+}
+/* line 32, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox] {
+  display: none;
+}
+/* line 35, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style {
+  display: inline-block;
+  padding-top: 6px;
+  padding-left: 1px;
+  color: #757575;
+  border-color: #009587;
+  background-color: #009587;
+}
+/* line 46, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
+  position: absolute;
+  width: 2px;
+  content: "";
+  background-color: #fff;
+}
+/* line 59, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before {
+  height: 13px;
+  transform: translate(0px, -4px) rotate(45deg);
+}
+/* line 65, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
+  height: 7px;
+  transform: translate(-6px, 1px) rotate(-45deg);
+}
+/* line 72, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style {
+  float: left;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #757575;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 87, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-label-text {
+  display: inline-block;
+  float: left;
+  width: calc(100% - 20px);
+  height: auto;
+}
+/* line 92, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-label-text .same-address-label {
+  float: left;
+  padding-left: 5px;
+  font-family: "blogger_sansregular";
+  line-height: 20px;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
+/* line 108, ../sass/profile.scss */
 .profile-img-div {
   padding-bottom: 30px;
   overflow: hidden;
   clear: both;
   text-align: center;
 }
-/* line 22, ../sass/profile.scss */
+/* line 115, ../sass/profile.scss */
 .profile-img-div .profile-img {
   width: 120px;
   height: 120px;
@@ -1119,7 +1204,7 @@ a:hover, a:focus {
   -webkit-border-radius: 120px;
   border-radius: 120px;
 }
-/* line 32, ../sass/profile.scss */
+/* line 125, ../sass/profile.scss */
 .profile-img-div .profile-name {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -1128,7 +1213,7 @@ a:hover, a:focus {
   font-size: 2.2rem;
 }
 
-/* line 43, ../sass/profile.scss */
+/* line 136, ../sass/profile.scss */
 a.account-links {
   display: block;
   width: 100%;
@@ -1143,36 +1228,36 @@ a.account-links {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 60, ../sass/profile.scss */
+/* line 153, ../sass/profile.scss */
 a.account-links:hover {
   border-color: #009688;
 }
 
-/* line 65, ../sass/profile.scss */
+/* line 158, ../sass/profile.scss */
 .account-active-link {
   border-color: #009688 !important;
 }
 
-/* line 69, ../sass/profile.scss */
+/* line 162, ../sass/profile.scss */
 .profile-tabs {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
+@media all and (max-width: 768px) {
+  /* line 162, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
+  }
+}
 @media all and (max-width: 1024px) {
-  /* line 69, ../sass/profile.scss */
+  /* line 162, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
   }
 }
-@media all and (max-width: 768px) {
-  /* line 69, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
-  }
-}
-/* line 81, ../sass/profile.scss */
+/* line 174, ../sass/profile.scss */
 .profile-tabs ul {
   padding: 0;
   margin: 0;
@@ -1180,19 +1265,19 @@ a.account-links:hover {
   border-bottom: 1px solid #009688;
 }
 @media all and (max-width: 768px) {
-  /* line 81, ../sass/profile.scss */
+  /* line 174, ../sass/profile.scss */
   .profile-tabs ul {
     height: 100px;
     border-bottom: 1px solid #009688;
   }
 }
-/* line 95, ../sass/profile.scss */
+/* line 188, ../sass/profile.scss */
 .profile-tabs ul:after {
   display: table;
   clear: both;
   content: "";
 }
-/* line 102, ../sass/profile.scss */
+/* line 195, ../sass/profile.scss */
 .profile-tabs ul li {
   float: left;
   width: calc(100% / 3);
@@ -1200,16 +1285,16 @@ a.account-links:hover {
   border-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 102, ../sass/profile.scss */
+  /* line 195, ../sass/profile.scss */
   .profile-tabs ul li {
     border-right: none;
   }
 }
-/* line 114, ../sass/profile.scss */
+/* line 207, ../sass/profile.scss */
 .profile-tabs ul li:first-child {
   margin-left: 0;
 }
-/* line 118, ../sass/profile.scss */
+/* line 211, ../sass/profile.scss */
 .profile-tabs ul li a {
   display: block;
   padding: 20px;
@@ -1221,25 +1306,25 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 118, ../sass/profile.scss */
+  /* line 211, ../sass/profile.scss */
   .profile-tabs ul li a {
     display: none;
   }
 }
-/* line 135, ../sass/profile.scss */
+/* line 228, ../sass/profile.scss */
 .profile-tabs ul .active > a {
   color: #009688;
   border-right: none;
   border-bottom: 2px solid #009688;
 }
 
-/* line 143, ../sass/profile.scss */
+/* line 236, ../sass/profile.scss */
 .address-row {
   display: block;
   padding: 30px 0;
   margin: 0 25px;
 }
-/* line 147, ../sass/profile.scss */
+/* line 240, ../sass/profile.scss */
 .address-row .text-div {
   float: left;
   width: calc(100% - 72px);
@@ -1249,23 +1334,23 @@ a.account-links:hover {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 158, ../sass/profile.scss */
+/* line 251, ../sass/profile.scss */
 .address-row .icon-div {
   float: left;
   margin-left: 20px;
 }
-/* line 162, ../sass/profile.scss */
+/* line 255, ../sass/profile.scss */
 .address-row .icon-div svg {
   width: 16px;
   height: 16px;
 }
 
-/* line 168, ../sass/profile.scss */
+/* line 261, ../sass/profile.scss */
 .address-bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 172, ../sass/profile.scss */
+/* line 265, ../sass/profile.scss */
 .section-head {
   font-family: "blogger_sansregular";
   text-transform: capitalize;
@@ -1274,7 +1359,7 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 
-/* line 182, ../sass/profile.scss */
+/* line 275, ../sass/profile.scss */
 .row-head {
   display: block;
   margin: 0 25px;
@@ -1285,12 +1370,12 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 
-/* line 196, ../sass/profile.scss */
+/* line 289, ../sass/profile.scss */
 .address-input {
   margin: 10px 25px 20px;
 }
 
-/* line 200, ../sass/profile.scss */
+/* line 293, ../sass/profile.scss */
 input {
   width: 100%;
   padding-right: 20px;
@@ -1302,16 +1387,16 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
-  font-size: 18px;
-  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 
-/* line 218, ../sass/profile.scss */
+/* line 311, ../sass/profile.scss */
 a.submit-button {
   display: block;
   float: left;
@@ -1324,16 +1409,16 @@ a.submit-button {
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
+  font-size: 16px;
+  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 218, ../sass/profile.scss */
+  /* line 311, ../sass/profile.scss */
   a.submit-button {
     float: none;
     margin-top: 20px;
@@ -1342,12 +1427,12 @@ a.submit-button {
     clear: both;
   }
 }
-/* line 243, ../sass/profile.scss */
+/* line 336, ../sass/profile.scss */
 a.submit-button:first-child {
   margin-left: 0;
 }
 
-/* line 247, ../sass/profile.scss */
+/* line 340, ../sass/profile.scss */
 .green-icon-button {
   display: block;
   padding: 10px 20px;
@@ -1358,19 +1443,19 @@ a.submit-button:first-child {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 256, ../sass/profile.scss */
+/* line 349, ../sass/profile.scss */
 .green-icon-button .button-icon {
   display: inline-block;
   float: left;
   width: 15px;
   height: 15px;
 }
-/* line 262, ../sass/profile.scss */
+/* line 355, ../sass/profile.scss */
 .green-icon-button .button-icon svg {
   width: 100%;
   height: 100%;
 }
-/* line 268, ../sass/profile.scss */
+/* line 361, ../sass/profile.scss */
 .green-icon-button .button-text {
   display: inline-block;
   margin-left: 10px;
@@ -1382,54 +1467,56 @@ a.submit-button:first-child {
 }
 
 /* MY ORDERS PAGE */
-/* line 282, ../sass/profile.scss */
+/* line 375, ../sass/profile.scss */
 .my-orders .row {
   margin: 0;
 }
-/* line 285, ../sass/profile.scss */
+/* line 378, ../sass/profile.scss */
 .my-orders .row-type1 {
   padding: 20px;
   overflow: hidden;
   border-bottom: 1px solid #e5e5e5;
   background: #fff;
 }
-/* line 292, ../sass/profile.scss */
+/* line 385, ../sass/profile.scss */
 .my-orders .right-section-title {
   float: left;
   width: auto;
+  padding-left: 12px;
   font-family: "blogger_sansregular";
+  line-height: 60px;
   text-transform: capitalize;
   color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 304, ../sass/profile.scss */
+/* line 399, ../sass/profile.scss */
 .my-orders .order-icon-div {
   display: inline-block;
   float: left;
   width: 40px;
   height: 40px;
 }
-/* line 310, ../sass/profile.scss */
+/* line 405, ../sass/profile.scss */
 .my-orders .order-icon-div svg {
   width: 100%;
   height: 100%;
 }
-/* line 315, ../sass/profile.scss */
+/* line 410, ../sass/profile.scss */
 .my-orders .order-details {
   display: inline-block;
   float: left;
   padding-left: 25px;
   font-family: "blogger_sansregular";
 }
-/* line 322, ../sass/profile.scss */
+/* line 417, ../sass/profile.scss */
 .my-orders .order-details .order-id {
   display: block;
   color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 329, ../sass/profile.scss */
+/* line 424, ../sass/profile.scss */
 .my-orders .order-details .placed-on {
   display: block;
   margin-top: 8px;
@@ -1437,11 +1524,12 @@ a.submit-button:first-child {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 338, ../sass/profile.scss */
+/* line 433, ../sass/profile.scss */
 .my-orders .button-div {
   float: right;
+  margin-left: 20px;
 }
-/* line 341, ../sass/profile.scss */
+/* line 437, ../sass/profile.scss */
 .my-orders .order-brief-text {
   display: block;
   width: 100%;
@@ -1450,4 +1538,222 @@ a.submit-button:first-child {
   color: #777;
   font-size: 16px;
   font-size: 1.6rem;
+}
+/* line 449, ../sass/profile.scss */
+.my-orders .filterby-button-div {
+  float: right;
+  height: 60px;
+}
+/* line 452, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button {
+  padding: 10px 20px;
+}
+/* line 455, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-text {
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+  font-family: "blogger_sansregular";
+  line-height: 60px;
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 468, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding-top: 20px;
+}
+/* line 474, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-open {
+  position: relative;
+  top: 6px;
+  padding-right: 5px;
+  transform: translate(-6px, 0);
+}
+/* line 484, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  content: "";
+  background: #ccc;
+}
+/* line 498, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-open:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+/* line 502, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+/* line 507, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-close {
+  position: relative;
+  top: 6px;
+  padding-right: 5px;
+  transform: translate(-6px, 0);
+}
+/* line 517, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  content: "";
+  background: #ccc;
+}
+/* line 531, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-close:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+/* line 534, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+/* line 541, ../sass/profile.scss */
+.my-orders .filter-by-section {
+  position: absolute;
+  top: 88px;
+  display: none;
+  width: calc(100% - 30px);
+  height: 300px;
+  -webkit-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 553, ../sass/profile.scss */
+.my-orders .filter-by-section:after {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 117px;
+  height: 5px;
+  background: #fff;
+}
+/* line 566, ../sass/profile.scss */
+.my-orders .filter-by-section .work-status .col-xs-12 {
+  padding: 0;
+}
+/* line 572, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .col-xs-12 {
+  padding: 0;
+}
+/* line 576, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div {
+  overflow: hidden;
+  border-bottom: none;
+}
+/* line 582, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li {
+  display: block;
+  padding-bottom: 10px;
+  margin-top: auto;
+  overflow: hidden;
+  clear: both;
+  /* One radio button per line */
+}
+/* line 589, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+/* line 603, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label {
+  display: block;
+  font-family: "blogger_sansregular";
+  line-height: 1;
+  cursor: pointer;
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 614, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label:hover {
+  color: #333;
+}
+/* line 619, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div {
+  display: table;
+  float: left;
+  table-layout: fixed;
+  /* the basic, unchecked style */
+  /* the checked style using the :checked pseudo class */
+}
+/* line 624, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button {
+  display: none;
+}
+/* line 628, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button {
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 639, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button:before {
+  position: absolute;
+  display: inline-block;
+  display: none;
+  height: 16px;
+  margin-top: 2px;
+  margin-right: 20px;
+  margin-left: 1px;
+  content: "";
+  vertical-align: -.25em;
+}
+/* line 659, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:before {
+  display: inline-block;
+  width: 2px;
+  content: "";
+  -webkit-transform: translate(0px, -8px) rotate(45deg);
+  -moz-transform: translate(0px, -8px) rotate(45deg);
+  -ms-transform: translate(0px, -8px) rotate(45deg);
+  -o-transform: translate(0px, -8px) rotate(45deg);
+  transform: translate(0px, -8px) rotate(45deg);
+  background-color: #009688;
+}
+/* line 678, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:after {
+  position: absolute;
+  width: 2px;
+  height: 7px;
+  content: "";
+  -webkit-transform: translate(-6px, 0px) rotate(-45deg);
+  -moz-transform: translate(-6px, 0px) rotate(-45deg);
+  -ms-transform: translate(-6px, 0px) rotate(-45deg);
+  -o-transform: translate(-6px, 0px) rotate(-45deg);
+  transform: translate(-6px, 0px) rotate(-45deg);
+  background-color: #009688;
+}
+/* line 695, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .text-div {
+  display: inline-block;
+  float: left;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/* line 702, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox]:checked + .text-div {
+  margin-left: 10px;
+}
+
+/* line 770, ../sass/profile.scss */
+.filter-shadow {
+  -webkit-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0, 0.2);
 }
