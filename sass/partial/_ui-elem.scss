@@ -52,6 +52,70 @@
 }
 // end
 
+
+/* ***********************************************************************************/
+/* Custom checkbox buttons*/
+/* ***********************************************************************************/
+.checkbox-small {
+    position: relative;
+
+    margin-top: 0 !important;
+    label.sm-label {
+        position: relative;
+
+        font-family: $blogger_R;
+
+        border: 5px solid transparent;
+
+        @include rem(font-size, 16px);
+        .custom-checkbox {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+
+            cursor: pointer;
+            vertical-align: text-top;
+
+            opacity: .5;
+            color: $white;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 4px;
+               -moz-border-radius: 4px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: 3px 3px;
+
+                 -o-border-radius: 4px;
+            .highlight {
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+            i {
+                display: none;
+
+                vertical-align: initial;
+            }
+        }
+    }
+    input[type=checkbox].sm-input {
+        display: none;
+    }
+    input[type=checkbox].sm-input:checked + label {
+        .custom-checkbox {
+            text-align: center;
+
+            opacity: 1;
+            background-color: $green;
+            i {
+                display: inline-block;
+
+                @include rem(font-size, 12px);
+            }
+        }
+    }
+}
+
 // Dropdown select unit style
 .dropdown-select {
     button {
@@ -130,9 +194,9 @@
 
                 color: $dark-gray;
 
-                @include rem(line-height, 24px);
-                @include rem(font-size, 22px);
                 @include transition(all .2s ease-in-out);
+                @include rem(font-size, 22px);
+                @include rem(line-height, 24px);
             }
             &:hover a,
             &:focus a,

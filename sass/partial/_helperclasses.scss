@@ -8,30 +8,8 @@ a {
     }
 }
 
-// color classes to extend or common use
-// text color
-.f-cl-gray {
-    color: $medium-gray;
-}
-.f-cl-gray-sharp {
-    color: $gray-sharp;
-}
-// text-transform
-.text-uppercase {
-    text-transform: uppercase;
-}
-// background color
-.gray-bg {
-    background-color: $body-bg-color;
-}
 
-.white-bg-imp {
-    background-color: #fff !important;
-}
 
-.transparent-bg-imp {
-    background-color: transparent !important;
-}
 
 // padding
 .PD0 {
@@ -39,6 +17,9 @@ a {
 }
 .PD0-imp {
     padding: 0 !important;
+}
+.PR0 {
+    padding-right: 0;
 }
 .PLR15 {
     padding-right: 15px;
@@ -101,7 +82,51 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-            filter: blur(15px);
-            filter: blur(15px);
+}
+
+// color classes to extend or common use
+// text color
+.f-cl-gray {
+    color: $medium-gray;
+}
+.f-cl-gray-sharp {
+    color: $gray-sharp;
+}
+.f-cl-green {
+    color: $green;
+}
+// text-transform
+.text-uppercase {
+    text-transform: uppercase;
+}
+// font size
+.f-14 {
+    @include rem(font-size, 14px);
+}
+// background color
+.gray-bg {
+    background-color: $body-bg-color;
+}
+
+.white-bg-imp {
+    background-color: #fff !important;
+}
+
+.transparent-bg-imp {
+    background-color: transparent !important;
+}
+
+
+// margin
+.MB0 {
+    margin-bottom: 0;
+}
+.MB5 {
+    margin-bottom: 5px;
+}
+.MB10 {
+    margin-bottom: 10px;
 }
