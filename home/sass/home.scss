@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 16px);
                 @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include rem(font-size, 20px);
                     @include transition(.3s all);
+                    @include rem(font-size, 20px);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
     }
 }
@@ -252,8 +252,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(line-height, 28px);
                         @include rem(font-size, 18px);
+                        @include rem(line-height, 28px);
                     }
                 }
             }
