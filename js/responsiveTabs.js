@@ -28,7 +28,7 @@
     ResponsiveTabs.prototype._defaultOptions =
     {
         type        : 'responsive',
-        breakpoint  : 768,
+        breakpoint  : 750,
         speed       : 500,
         initial     : 0,
         collapsible : true,
