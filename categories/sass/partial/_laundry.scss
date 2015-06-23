@@ -12,7 +12,21 @@
         height: 60vh;
         padding-top: 60px;
 
-        background-image: url("../../images/laundry_images/laundry_banner.jpg");
+        background-image: url("../../images/laundry_images/laundry.jpg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: cover;
+
+        @include medmx(768px) {
+            height: auto;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            @include transform(translate(-50%, -50%));
+        }
         .gradient-white {
             position: absolute;
             top: 0;
@@ -20,25 +34,116 @@
             bottom: 0;
             left: 0;
         }
-        .title {
-            margin-bottom: 60px;
-        }
-        .facilities {
-            .f-block {
-                padding: 20px 15px;
+        .divider {
+            @include medmx(768px) {
+                margin-bottom: 20px;
 
                 text-align: center;
+            }
+            .tilted-bar {
+                display: inline-block;
+                width: 3px;
+                height: 120px;
+                margin: 0 30px;
 
-                border-right: 1px solid #ccc;
-                img {
-                    margin-bottom: 20px;
+                background-color: $white;
+
+                @include transform(rotate(30deg));
+                @include medmx(768px) {
+                    width: 20%;
+                    height: 2px;
+
+                    transform: rotate(0);
                 }
-                &:last-child {
-                    border-right: none;
+            }
+        }
+        .title {
+            // margin-bottom: 60px;
+            @include medmx(768px) {
+                margin-bottom: 20px;
+
+                text-align: center;
+            }
+            &.text-right {
+                @include medmx(768px) {
+                    text-align: center;
                 }
-                p {
-                    @extend .f-cl-gray-sharp;
+            }
+
+            h1 {
+                position: relative;
+
+                margin-bottom: 10px;
+
+                color: $white;
+
+                @include medmxn(768px, 992px) {
+                    @include rem(font-size, 50px);
                 }
+                @include rem(font-size, 70px);
+                &.l-title {
+                    font-family: $bebasneue_R;
+
+                    @include medmxn(768px, 992px) {
+                        @include rem(font-size, 40px);
+                    }
+                    @include rem(font-size, 60px);
+                }
+            }
+            .yellow-btn {
+                float: right;
+                height: 35px;
+                max-width: 100px;
+                min-width: 80px;
+
+                @include medmx(768px) {
+                    float: none;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+                @include rem(font-size, 16px);
+            }
+            p {
+                height: 30px;
+                clear: both;
+
+                color: $white;
+
+                @include rem(font-size, 14px);
+            }
+        }
+    }
+    .facilities {
+        position: relative;
+
+        background-image: url("../../images/laundry_images/laundry_blurred.jpg");
+        background-position: center center;
+        background-size: cover;
+        .f-block {
+            padding: 30px 15px;
+
+            text-align: center;
+
+            border-right: 1px solid #ccc;
+
+            @include medmx(768px) {
+                border: none;
+            }
+            a {
+                display: block;
+                svg {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 10px;
+
+                    color: $yellow;
+                }
+            }
+            &:last-child {
+                border-right: none;
+            }
+            p {
+                @extend .f-cl-white;
             }
         }
     }
@@ -79,8 +184,8 @@
 
                     color: $white;
 
-                    @include transform(translate-Y(-50%));
                     @include rem(font-size, 30px);
+                    @include transform(translate-Y(-50%));
                 }
             }
         }
@@ -140,8 +245,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(line-height, 22px);
                     @include rem(font-size, 16px);
+                    @include rem(line-height, 22px);
                 }
             }
         }
@@ -150,7 +255,7 @@
 
 .work-process {
     height: 350px;
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 40px;
 
     @extend .gray-bg;
@@ -167,12 +272,122 @@
     .W-block {
         padding-top: 20px;
         padding-bottom: 20px;
-        img {
+        svg {
+            width: 100px;
+            height: 100px;
             margin-bottom: 20px;
+
+            color: $yellow;
         }
     }
 }
 
+.service-section {
+    height: auto !important;
+    overflow: hidden;
+
+    text-align: center;
+
+    background-color: $white;
+    img {
+        margin-bottom: 15px;
+    }
+    h4 {
+        margin-bottom: 10px;
+
+        font-family: $blogger_L;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 20px);
+    }
+    p {
+        float: none;
+        margin: 0 auto;
+
+        font-family: $blogger_L;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 16px);
+    }
+    & > div {
+        margin-bottom: 20px;
+    }
+}
+
+.book-now-band {
+    padding: 15px 20px;
+
+    text-align: center;
+
+    background-color: #e7f1fa;
+    h2 {
+        margin-bottom: 10px;
+
+        font-family: $blogger_L;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 20px);
+    }
+    button {
+        max-width: 130px;
+        min-width: 130px;
+        margin: 0 auto;
+    }
+}
+
+// testimonials custom style
+.carousel-inner {
+    .block-text {
+        margin-bottom: 20px;
+
+        box-shadow: none;
+        p {
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            margin-bottom: 5px;
+
+            font-family: $blogger_M;
+
+            color: #444;
+
+            @include rem(font-size, 24px);
+        }
+        p.helper-text {
+            font-family: $blogger_L;
+
+            color: $green;
+
+            @include rem(font-size, 16px);
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: -15px;
+
+            border-top-color: $body-bg-color;
+        }
+    }
+    .person-text {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+        overflow: hidden;
+
+        @include border-radius(50%);
+    }
+}
+.carousel-control {
+    &.right {
+        right: 0;
+    }
+    &.left {
+        left: 0;
+    }
+}
 // **************************************************
 // End
 // **************************************************
