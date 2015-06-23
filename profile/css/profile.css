@@ -330,19 +330,20 @@ body {
 @media all and (max-width: 768px) {
   /* line 421, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .side-collapse {
-    position: static;
+    top: 1px;
+    left: -20px;
     background-color: #fff;
   }
 }
-/* line 428, ../../sass/partial/_navigation.scss */
+/* line 430, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse {
   border: none;
 }
-/* line 430, ../../sass/partial/_navigation.scss */
+/* line 432, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav {
   background-color: transparent;
 }
-/* line 433, ../../sass/partial/_navigation.scss */
+/* line 435, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a {
   padding: 20px 15px;
   font-family: "blogger_sansregular";
@@ -351,16 +352,16 @@ body {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 433, ../../sass/partial/_navigation.scss */
+  /* line 435, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li a {
     color: #777;
   }
 }
-/* line 444, ../../sass/partial/_navigation.scss */
+/* line 446, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a .icon {
   margin-right: 10px;
 }
-/* line 449, ../../sass/partial/_navigation.scss */
+/* line 451, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
   padding: 20px 15px;
   color: #fff;
@@ -370,12 +371,12 @@ body {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 449, ../../sass/partial/_navigation.scss */
+  /* line 451, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
     color: #777;
   }
 }
-/* line 460, ../../sass/partial/_navigation.scss */
+/* line 462, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
   color: #fff;
   border: none;
@@ -384,38 +385,38 @@ body {
   box-shadow: none;
 }
 @media all and (max-width: 768px) {
-  /* line 460, ../../sass/partial/_navigation.scss */
+  /* line 462, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
     color: #777;
   }
 }
-/* line 474, ../../sass/partial/_navigation.scss */
+/* line 476, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button .caret {
   margin-left: 10px;
 }
-/* line 478, ../../sass/partial/_navigation.scss */
+/* line 480, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu {
   top: 60px;
   padding: 0;
   margin: 0;
   border-radius: 0;
 }
-/* line 486, ../../sass/partial/_navigation.scss */
+/* line 488, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a {
   font-family: "blogger_sansregular";
   color: #777;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 492, ../../sass/partial/_navigation.scss */
+/* line 494, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:active {
   color: #fff;
 }
-/* line 499, ../../sass/partial/_navigation.scss */
+/* line 501, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li.active a {
   color: #fff;
 }
-/* line 510, ../../sass/partial/_navigation.scss */
+/* line 512, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-toggle:hover,
 .header .navbar-inverse .navbar-toggle:focus {
   background-color: transparent;
@@ -1085,7 +1086,7 @@ a:hover, a:focus {
 
 /* line 4, ../sass/profile.scss */
 .body-color {
-  background: #f1f5f9;
+  background: #f1f5f9 !important;
 }
 
 /* line 7, ../sass/profile.scss */
@@ -1471,14 +1472,37 @@ a.submit-button:first-child {
 .my-orders .row {
   margin: 0;
 }
-/* line 378, ../sass/profile.scss */
+/* line 379, ../sass/profile.scss */
 .my-orders .row-type1 {
   padding: 20px;
   overflow: hidden;
   border-bottom: 1px solid #e5e5e5;
   background: #fff;
 }
-/* line 385, ../sass/profile.scss */
+@media all and (max-width: 768px) {
+  /* line 379, ../sass/profile.scss */
+  .my-orders .row-type1 {
+    padding: 20px 10px;
+  }
+}
+/* line 390, ../sass/profile.scss */
+.my-orders .row-type2 {
+  padding: 20px 0 20px 20px;
+  overflow: hidden;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+@media all and (max-width: 768px) {
+  /* line 390, ../sass/profile.scss */
+  .my-orders .row-type2 {
+    padding: 20px 0 20px 10px;
+  }
+}
+/* line 401, ../sass/profile.scss */
+.my-orders .bottom-border {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 404, ../sass/profile.scss */
 .my-orders .right-section-title {
   float: left;
   width: auto;
@@ -1490,33 +1514,34 @@ a.submit-button:first-child {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 399, ../sass/profile.scss */
+/* line 418, ../sass/profile.scss */
 .my-orders .order-icon-div {
   display: inline-block;
   float: left;
+  width: 50px;
+  height: 50px;
+}
+/* line 424, ../sass/profile.scss */
+.my-orders .order-icon-div svg {
   width: 40px;
   height: 40px;
 }
-/* line 405, ../sass/profile.scss */
-.my-orders .order-icon-div svg {
-  width: 100%;
-  height: 100%;
-}
-/* line 410, ../sass/profile.scss */
+/* line 429, ../sass/profile.scss */
 .my-orders .order-details {
   display: inline-block;
   float: left;
   padding-left: 25px;
+  overflow: hidden;
   font-family: "blogger_sansregular";
 }
-/* line 417, ../sass/profile.scss */
+/* line 437, ../sass/profile.scss */
 .my-orders .order-details .order-id {
   display: block;
   color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 424, ../sass/profile.scss */
+/* line 444, ../sass/profile.scss */
 .my-orders .order-details .placed-on {
   display: block;
   margin-top: 8px;
@@ -1524,12 +1549,17 @@ a.submit-button:first-child {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 433, ../sass/profile.scss */
+/* line 453, ../sass/profile.scss */
 .my-orders .button-div {
   float: right;
   margin-left: 20px;
 }
-/* line 437, ../sass/profile.scss */
+/* line 457, ../sass/profile.scss */
+.my-orders .button-div-fn {
+  float: right;
+  margin-left: 20px;
+}
+/* line 461, ../sass/profile.scss */
 .my-orders .order-brief-text {
   display: block;
   width: 100%;
@@ -1539,16 +1569,16 @@ a.submit-button:first-child {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 449, ../sass/profile.scss */
+/* line 473, ../sass/profile.scss */
 .my-orders .filterby-button-div {
   float: right;
   height: 60px;
 }
-/* line 452, ../sass/profile.scss */
+/* line 476, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button {
   padding: 10px 20px;
 }
-/* line 455, ../sass/profile.scss */
+/* line 479, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-text {
   display: inline-block;
   float: left;
@@ -1559,21 +1589,21 @@ a.submit-button:first-child {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 468, ../sass/profile.scss */
+/* line 492, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
   padding-top: 20px;
 }
-/* line 474, ../sass/profile.scss */
+/* line 498, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open {
   position: relative;
   top: 6px;
   padding-right: 5px;
   transform: translate(-6px, 0);
 }
-/* line 484, ../sass/profile.scss */
+/* line 508, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
   position: absolute;
   width: 2px;
@@ -1581,22 +1611,22 @@ a.submit-button:first-child {
   content: "";
   background: #ccc;
 }
-/* line 498, ../sass/profile.scss */
+/* line 522, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-/* line 502, ../sass/profile.scss */
+/* line 526, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-/* line 507, ../sass/profile.scss */
+/* line 531, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close {
   position: relative;
   top: 6px;
   padding-right: 5px;
   transform: translate(-6px, 0);
 }
-/* line 517, ../sass/profile.scss */
+/* line 541, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
   position: absolute;
   width: 2px;
@@ -1604,15 +1634,15 @@ a.submit-button:first-child {
   content: "";
   background: #ccc;
 }
-/* line 531, ../sass/profile.scss */
+/* line 555, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-/* line 534, ../sass/profile.scss */
+/* line 558, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
-/* line 541, ../sass/profile.scss */
+/* line 565, ../sass/profile.scss */
 .my-orders .filter-by-section {
   position: absolute;
   top: 88px;
@@ -1623,7 +1653,7 @@ a.submit-button:first-child {
   -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 553, ../sass/profile.scss */
+/* line 577, ../sass/profile.scss */
 .my-orders .filter-by-section:after {
   position: absolute;
   top: -4px;
@@ -1632,20 +1662,20 @@ a.submit-button:first-child {
   height: 5px;
   background: #fff;
 }
-/* line 566, ../sass/profile.scss */
+/* line 590, ../sass/profile.scss */
 .my-orders .filter-by-section .work-status .col-xs-12 {
   padding: 0;
 }
-/* line 572, ../sass/profile.scss */
+/* line 596, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .col-xs-12 {
   padding: 0;
 }
-/* line 576, ../sass/profile.scss */
+/* line 600, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div {
   overflow: hidden;
   border-bottom: none;
 }
-/* line 582, ../sass/profile.scss */
+/* line 606, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li {
   display: block;
   padding-bottom: 10px;
@@ -1654,7 +1684,7 @@ a.submit-button:first-child {
   clear: both;
   /* One radio button per line */
 }
-/* line 589, ../sass/profile.scss */
+/* line 613, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox] {
   position: absolute;
   width: 1px;
@@ -1665,7 +1695,7 @@ a.submit-button:first-child {
   clip: rect(0 0 0 0);
   border: 0;
 }
-/* line 603, ../sass/profile.scss */
+/* line 627, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label {
   display: block;
   font-family: "blogger_sansregular";
@@ -1675,11 +1705,11 @@ a.submit-button:first-child {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 614, ../sass/profile.scss */
+/* line 638, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label:hover {
   color: #333;
 }
-/* line 619, ../sass/profile.scss */
+/* line 643, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div {
   display: table;
   float: left;
@@ -1687,11 +1717,11 @@ a.submit-button:first-child {
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 624, ../sass/profile.scss */
+/* line 648, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button {
   display: none;
 }
-/* line 628, ../sass/profile.scss */
+/* line 652, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button {
   display: table-cell;
   width: 20px;
@@ -1700,7 +1730,7 @@ a.submit-button:first-child {
   text-align: center;
   vertical-align: middle;
 }
-/* line 639, ../sass/profile.scss */
+/* line 663, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button:before {
   position: absolute;
   display: inline-block;
@@ -1712,7 +1742,7 @@ a.submit-button:first-child {
   content: "";
   vertical-align: -.25em;
 }
-/* line 659, ../sass/profile.scss */
+/* line 683, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:before {
   display: inline-block;
   width: 2px;
@@ -1724,7 +1754,7 @@ a.submit-button:first-child {
   transform: translate(0px, -8px) rotate(45deg);
   background-color: #009688;
 }
-/* line 678, ../sass/profile.scss */
+/* line 702, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:after {
   position: absolute;
   width: 2px;
@@ -1737,7 +1767,7 @@ a.submit-button:first-child {
   transform: translate(-6px, 0px) rotate(-45deg);
   background-color: #009688;
 }
-/* line 695, ../sass/profile.scss */
+/* line 719, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .text-div {
   display: inline-block;
   float: left;
@@ -1746,12 +1776,184 @@ a.submit-button:first-child {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 702, ../sass/profile.scss */
+/* line 726, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox]:checked + .text-div {
   margin-left: 10px;
 }
+/* line 733, ../sass/profile.scss */
+.my-orders .order-category {
+  font-family: "blogger_sansregular";
+  color: #555;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 740, ../sass/profile.scss */
+.my-orders .order-category-date {
+  font-family: "blogger_sansregular";
+  text-align: right;
+  color: #777;
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+@media all and (max-width: 768px) {
+  /* line 740, ../sass/profile.scss */
+  .my-orders .order-category-date {
+    text-align: left;
+  }
+}
+/* line 752, ../sass/profile.scss */
+.my-orders .order-details-right-div {
+  display: inline-block;
+  float: left;
+  width: calc(100% - 50px);
+  padding-left: 25px;
+  overflow: hidden;
+}
+@media all and (max-width: 768px) {
+  /* line 752, ../sass/profile.scss */
+  .my-orders .order-details-right-div {
+    display: block;
+    float: none;
+    width: calc(100% - 10px);
+    padding-left: 0;
+  }
+}
+/* line 766, ../sass/profile.scss */
+.my-orders .order-details-right-div .order-category,
+.my-orders .order-details-right-div .order-category-date {
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+@media all and (max-width: 768px) {
+  /* line 766, ../sass/profile.scss */
+  .my-orders .order-details-right-div .order-category,
+  .my-orders .order-details-right-div .order-category-date {
+    padding-bottom: 10px;
+  }
+}
+/* line 777, ../sass/profile.scss */
+.my-orders .order-details-right-div .order-list {
+  padding-top: 20px;
+  font-family: "blogger_sansregular";
+  line-height: normal;
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 787, ../sass/profile.scss */
+.my-orders .order-details-right-div .order-log-description {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  font-family: "blogger_sansregular";
+  line-height: 1.4;
+  color: #616161;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+@media all and (max-width: 768px) {
+  /* line 787, ../sass/profile.scss */
+  .my-orders .order-details-right-div .order-log-description {
+    padding-right: 0;
+  }
+}
+/* line 801, ../sass/profile.scss */
+.my-orders .order-details-right-div .order-log-actions {
+  padding-bottom: 20px;
+}
+/* line 810, ../sass/profile.scss */
+.my-orders .log-action-button {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #009688;
+}
+/* line 817, ../sass/profile.scss */
+.my-orders .log-action-button svg {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+/* line 824, ../sass/profile.scss */
+.my-orders .log-action-button span {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "blogger_sansregular";
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* line 834, ../sass/profile.scss */
+.my-orders .order-date-div {
+  display: inline-block;
+  float: left;
+  width: 50px;
+  height: 40px;
+  font-family: "blogger_sansregular";
+  line-height: 1.5;
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+@media all and (max-width: 768px) {
+  /* line 834, ../sass/profile.scss */
+  .my-orders .order-date-div {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+}
+/* line 856, ../sass/profile.scss */
+.my-orders .log-row {
+  padding-top: 20px;
+}
+/* line 859, ../sass/profile.scss */
+.my-orders .order-quote-div {
+  margin-right: 20px;
+  font-family: "blogger_sansregular";
+  line-height: 1.5;
+  color: #777;
+  background-color: #fbfbfb;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+@media all and (max-width: 768px) {
+  /* line 859, ../sass/profile.scss */
+  .my-orders .order-quote-div {
+    margin-right: auto;
+  }
+}
+/* line 876, ../sass/profile.scss */
+.my-orders .order-quote-div .row {
+  background-color: transparent;
+}
+/* line 879, ../sass/profile.scss */
+.my-orders .order-quote-div li {
+  padding-top: 10px;
+  list-style-type: none;
+}
+/* line 883, ../sass/profile.scss */
+.my-orders .order-quote-div li:first-child {
+  padding-top: 0;
+}
+/* line 886, ../sass/profile.scss */
+.my-orders .order-quote-div li .sub-item {
+  display: inline-block;
+  width: calc(50% - 5px);
+}
+/* line 890, ../sass/profile.scss */
+.my-orders .order-quote-div li .price {
+  display: inline-block;
+  width: calc(50% - 5px);
+  text-align: right;
+}
 
-/* line 770, ../sass/profile.scss */
+/* line 959, ../sass/profile.scss */
 .filter-shadow {
   -webkit-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
