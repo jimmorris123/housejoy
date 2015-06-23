@@ -281,3 +281,39 @@
         }
     }
 }
+
+// home page style
+.home-banner {
+    position: relative;
+
+    height: 100vh;
+    max-height: 500px;
+
+    background-image: url("../../images/home_images/h_banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    .title {
+        position: absolute;
+        top: 50%;
+
+        width: 100%;
+
+        text-align: center;
+
+        @include transform(translateY(-50%));
+        h2 {
+            font-family: $brandon_Ri;
+
+            color: $white;
+
+            @include rem(font-size, 48px);
+        }
+        p {
+            font-family: $blogger_R;
+
+            color: $white;
+
+            @include rem(font-size, 20px);
+        }
+    }
+}
