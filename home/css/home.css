@@ -1035,17 +1035,18 @@ a:hover, a:focus {
 }
 /* line 24, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-body {
+  padding: 20px 30px;
   padding-bottom: 0;
 }
-/* line 27, ../../sass/partial/_login.scss */
+/* line 28, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group {
   margin-bottom: 10px;
 }
-/* line 29, ../../sass/partial/_login.scss */
+/* line 30, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group:nth-last-of-type(2) {
   margin-bottom: 20px;
 }
-/* line 32, ../../sass/partial/_login.scss */
+/* line 33, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .control-label {
   margin-bottom: 5px;
   font-family: "blogger_sansregular";
@@ -1053,7 +1054,7 @@ a:hover, a:focus {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 42, ../../sass/partial/_login.scss */
+/* line 43, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input {
   height: 45px;
   font-family: "blogger_sansregular";
@@ -1077,31 +1078,31 @@ a:hover, a:focus {
 .login-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input:-ms-input-placeholder {
   color: #777;
 }
-/* line 58, ../../sass/partial/_login.scss */
+/* line 59, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer {
   padding: 0;
 }
-/* line 60, ../../sass/partial/_login.scss */
+/* line 61, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer .not-member {
   height: 70px;
-  padding: 20px;
+  padding: 20px 30px;
   cursor: pointer;
   background-color: #f1f5f9;
 }
-/* line 68, ../../sass/partial/_login.scss */
+/* line 69, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer .social-btns {
   display: table;
   width: 100%;
   height: 70px;
-  padding: 20px;
+  padding: 20px 30px;
   cursor: pointer;
   background-color: #3b5998;
 }
-/* line 77, ../../sass/partial/_login.scss */
+/* line 78, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer .social-btns:last-child {
   background-color: #d34836;
 }
-/* line 80, ../../sass/partial/_login.scss */
+/* line 81, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer .social-btns span {
   display: table-cell;
   font-family: "blogger_sansregular";
@@ -1110,7 +1111,7 @@ a:hover, a:focus {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 90, ../../sass/partial/_login.scss */
+/* line 91, ../../sass/partial/_login.scss */
 .login-modal .modal-dialog .modal-content .modal-footer .social-btns span i {
   vertical-align: middle;
 }
@@ -1301,10 +1302,10 @@ a:hover, a:focus {
   margin-bottom: 20px;
   font-family: "blogger_sansregular";
   color: #555;
-  font-size: 16px;
-  font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* line 29, ../sass/home.scss */
 .content-wrapper .about-us-content ul {
@@ -1318,10 +1319,10 @@ a:hover, a:focus {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
   color: #555;
-  line-height: 20px;
-  line-height: 2rem;
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
 }
 /* line 44, ../sass/home.scss */
 .content-wrapper .about-us-content ul li span {
@@ -1353,12 +1354,12 @@ a:hover, a:focus {
   color: #555;
   border: transparent;
   border-top: 3px solid transparent;
+  font-size: 20px;
+  font-size: 2rem;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-size: 20px;
-  font-size: 2rem;
 }
 /* line 85, ../sass/home.scss */
 .about-tabs .tabs-scroll .nav-tabs li:hover a, .about-tabs .tabs-scroll .nav-tabs li:focus a, .about-tabs .tabs-scroll .nav-tabs li:active a {
@@ -1402,13 +1403,13 @@ a:hover, a:focus {
   font-family: "blogger_sansregular";
   text-align: center;
   color: #fff;
-  font-size: 24px;
-  font-size: 2.4rem;
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 /* line 141, ../sass/home.scss */
 .about-tabs .tab-content .tab-banner .title img {
@@ -1419,10 +1420,10 @@ a:hover, a:focus {
   margin-bottom: 20px;
   font-family: "blogger_sansregular";
   color: #555;
-  font-size: 16px;
-  font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* line 161, ../sass/home.scss */
@@ -1528,10 +1529,10 @@ a:hover, a:focus {
   font-family: "blogger_sansregular";
   color: #555;
   border-top: none;
-  font-size: 18px;
-  font-size: 1.8rem;
   line-height: 28px;
   line-height: 2.8rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 /* line 264, ../sass/home.scss */
 .responsive-tabs.accordion h3.accordion-title a {

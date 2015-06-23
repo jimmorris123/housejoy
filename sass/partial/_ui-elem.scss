@@ -194,9 +194,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -213,6 +213,16 @@
     }
 }
 // end
+
+
+.arrow-down {
+    width: 0;
+    height: 0;
+
+    border-top: 20px solid #f00;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
 
 // button style
 .yellow-btn {
