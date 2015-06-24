@@ -1598,17 +1598,17 @@ a.account-links:hover {
   width: 100%;
   margin: 0 auto;
 }
+@media all and (max-width: 768px) {
+  /* line 240, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
+  }
+}
 @media all and (max-width: 1024px) {
   /* line 240, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
-  }
-}
-@media all and (max-width: 768px) {
-  /* line 240, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
   }
 }
 /* line 252, ../sass/profile.scss */
@@ -1621,58 +1621,61 @@ a.account-links:hover {
 @media all and (max-width: 768px) {
   /* line 252, ../sass/profile.scss */
   .profile-tabs ul {
-    height: 100px;
-    border-bottom: 1px solid #009688;
+    height: auto;
+    border-bottom: none;
   }
 }
-/* line 266, ../sass/profile.scss */
+/* line 267, ../sass/profile.scss */
 .profile-tabs ul:after {
   display: table;
   clear: both;
   content: "";
 }
-/* line 273, ../sass/profile.scss */
+/* line 274, ../sass/profile.scss */
 .profile-tabs ul li {
+  display: table;
   float: left;
   width: calc(100% / 3);
+  height: 60px;
   font-family: "blogger_sansregular";
+  table-layout: fixed;
   border-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 273, ../sass/profile.scss */
+  /* line 274, ../sass/profile.scss */
   .profile-tabs ul li {
+    float: none;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
     border-right: none;
+    border-bottom: 1px solid #009688;
   }
 }
-/* line 285, ../sass/profile.scss */
+/* line 296, ../sass/profile.scss */
 .profile-tabs ul li:first-child {
   margin-left: 0;
 }
-/* line 289, ../sass/profile.scss */
+/* line 300, ../sass/profile.scss */
 .profile-tabs ul li a {
-  display: block;
-  padding: 20px;
+  display: table-cell;
+  line-height: 1.4;
   text-align: center;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: capitalize;
   color: #555;
   font-size: 18px;
   font-size: 1.8rem;
 }
-@media all and (max-width: 768px) {
-  /* line 289, ../sass/profile.scss */
-  .profile-tabs ul li a {
-    display: none;
-  }
-}
-/* line 306, ../sass/profile.scss */
+/* line 323, ../sass/profile.scss */
 .profile-tabs ul .active > a {
   color: #009688;
   border-right: none;
   border-bottom: 2px solid #009688;
 }
 
-/* line 314, ../sass/profile.scss */
+/* line 331, ../sass/profile.scss */
 .address-row {
   position: relative;
   display: block;
@@ -1680,13 +1683,13 @@ a.account-links:hover {
   margin: 0 25px;
 }
 @media all and (max-width: 768px) {
-  /* line 314, ../sass/profile.scss */
+  /* line 331, ../sass/profile.scss */
   .address-row {
     padding: 20px 0;
     margin: 0 10px;
   }
 }
-/* line 325, ../sass/profile.scss */
+/* line 342, ../sass/profile.scss */
 .address-row .text-div {
   float: left;
   width: calc(100% - 72px);
@@ -1697,48 +1700,48 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 325, ../sass/profile.scss */
-  .address-row .text-div {
-    margin-bottom: 10px;
-  }
-}
-@media all and (max-width: 768px) {
-  /* line 325, ../sass/profile.scss */
+  /* line 342, ../sass/profile.scss */
   .address-row .text-div {
     display: block;
     float: none;
     width: 100%;
   }
 }
-/* line 344, ../sass/profile.scss */
+@media all and (max-width: 768px) {
+  /* line 342, ../sass/profile.scss */
+  .address-row .text-div {
+    margin-bottom: 10px;
+  }
+}
+/* line 361, ../sass/profile.scss */
 .address-row .icon-div {
   float: left;
   margin-left: 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 344, ../sass/profile.scss */
+  /* line 361, ../sass/profile.scss */
   .address-row .icon-div {
     margin-right: 10px;
     margin-left: auto;
   }
 }
-/* line 352, ../sass/profile.scss */
+/* line 369, ../sass/profile.scss */
 .address-row .icon-div:hover {
   color: #009688;
 }
-/* line 355, ../sass/profile.scss */
+/* line 372, ../sass/profile.scss */
 .address-row .icon-div svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
 
-/* line 363, ../sass/profile.scss */
+/* line 380, ../sass/profile.scss */
 .address-bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 367, ../sass/profile.scss */
+/* line 384, ../sass/profile.scss */
 .section-head {
   font-family: "blogger_sansregular";
   text-transform: capitalize;
@@ -1747,7 +1750,7 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 
-/* line 377, ../sass/profile.scss */
+/* line 394, ../sass/profile.scss */
 .row-head {
   display: block;
   margin: 0 25px;
@@ -1758,24 +1761,24 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 377, ../sass/profile.scss */
+  /* line 394, ../sass/profile.scss */
   .row-head {
     margin: 0 10px;
   }
 }
 
-/* line 394, ../sass/profile.scss */
+/* line 411, ../sass/profile.scss */
 .address-input {
   margin: 10px 25px 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 394, ../sass/profile.scss */
+  /* line 411, ../sass/profile.scss */
   .address-input {
     margin: 10px 10px 20px;
   }
 }
 
-/* line 402, ../sass/profile.scss */
+/* line 419, ../sass/profile.scss */
 input {
   width: 100%;
   height: 44px;
@@ -1788,20 +1791,20 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
-  font-size: 18px;
-  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
-/* line 419, ../sass/profile.scss */
+/* line 436, ../sass/profile.scss */
 input::-ms-clear {
   display: none;
 }
 
-/* line 424, ../sass/profile.scss */
+/* line 441, ../sass/profile.scss */
 a.submit-button {
   display: block;
   float: right;
@@ -1814,19 +1817,19 @@ a.submit-button {
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
+  font-size: 16px;
+  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 16px;
-  font-size: 1.6rem;
   /* &:first-child {
       margin-left: 0;
   } */
 }
 @media all and (max-width: 768px) {
-  /* line 424, ../sass/profile.scss */
+  /* line 441, ../sass/profile.scss */
   a.submit-button {
     float: none;
     margin-top: 20px;
@@ -1837,7 +1840,7 @@ a.submit-button {
 }
 
 /* MY ORDERS PAGE */
-/* line 456, ../sass/profile.scss */
+/* line 473, ../sass/profile.scss */
 .my-orders .row-type1 {
   position: relative;
   padding: 20px;
@@ -1846,35 +1849,35 @@ a.submit-button {
   background: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 456, ../sass/profile.scss */
+  /* line 473, ../sass/profile.scss */
   .my-orders .row-type1 {
     padding: 20px 10px;
   }
 }
-/* line 469, ../sass/profile.scss */
+/* line 486, ../sass/profile.scss */
 .my-orders .row-type2 {
   padding: 20px 0 20px 20px;
   overflow: hidden;
   background: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 469, ../sass/profile.scss */
+  /* line 486, ../sass/profile.scss */
   .my-orders .row-type2 {
     padding: 20px 10px 20px 10px;
   }
 }
-/* line 480, ../sass/profile.scss */
+/* line 497, ../sass/profile.scss */
 .my-orders .bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 484, ../sass/profile.scss */
+/* line 501, ../sass/profile.scss */
 .my-orders .right-section-back-button {
   float: left;
   margin-top: 22px;
   margin-left: 20px;
   color: #777;
 }
-/* line 490, ../sass/profile.scss */
+/* line 507, ../sass/profile.scss */
 .my-orders .right-section-back-button svg {
   display: inline-block;
   width: 15px;
@@ -1882,7 +1885,7 @@ a.submit-button {
   cursor: pointer;
   fill: currentColor;
 }
-/* line 500, ../sass/profile.scss */
+/* line 517, ../sass/profile.scss */
 .my-orders .right-section-title {
   float: left;
   width: auto;
@@ -1894,7 +1897,7 @@ a.submit-button {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 514, ../sass/profile.scss */
+/* line 531, ../sass/profile.scss */
 .my-orders .order-icon-div {
   display: inline-block;
   float: left;
@@ -1902,25 +1905,25 @@ a.submit-button {
   height: 50px;
 }
 @media all and (max-width: 768px) {
-  /* line 514, ../sass/profile.scss */
+  /* line 531, ../sass/profile.scss */
   .my-orders .order-icon-div {
     width: 30px;
     height: 30px;
   }
 }
-/* line 524, ../sass/profile.scss */
+/* line 541, ../sass/profile.scss */
 .my-orders .order-icon-div svg {
   width: 40px;
   height: 40px;
 }
 @media all and (max-width: 768px) {
-  /* line 524, ../sass/profile.scss */
+  /* line 541, ../sass/profile.scss */
   .my-orders .order-icon-div svg {
     width: 30px;
     height: 30px;
   }
 }
-/* line 534, ../sass/profile.scss */
+/* line 551, ../sass/profile.scss */
 .my-orders .order-details {
   display: inline-block;
   float: left;
@@ -1929,19 +1932,19 @@ a.submit-button {
   font-family: "blogger_sansregular";
 }
 @media all and (max-width: 768px) {
-  /* line 534, ../sass/profile.scss */
+  /* line 551, ../sass/profile.scss */
   .my-orders .order-details {
     padding-left: 10px;
   }
 }
-/* line 545, ../sass/profile.scss */
+/* line 562, ../sass/profile.scss */
 .my-orders .order-details .order-id {
   display: block;
   color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 552, ../sass/profile.scss */
+/* line 569, ../sass/profile.scss */
 .my-orders .order-details .placed-on {
   display: block;
   margin-top: 8px;
@@ -1949,17 +1952,17 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 561, ../sass/profile.scss */
+/* line 578, ../sass/profile.scss */
 .my-orders .button-div {
   float: right;
   margin-left: 20px;
 }
-/* line 565, ../sass/profile.scss */
+/* line 582, ../sass/profile.scss */
 .my-orders .button-div-fn {
   float: right;
   margin-left: 20px;
 }
-/* line 569, ../sass/profile.scss */
+/* line 586, ../sass/profile.scss */
 .my-orders .order-brief-text {
   display: block;
   width: 100%;
@@ -1973,18 +1976,18 @@ a.submit-button {
       margin-top: 15px;
   } */
 }
-/* line 585, ../sass/profile.scss */
+/* line 602, ../sass/profile.scss */
 .my-orders .filterby-button-div {
   float: right;
   height: 60px;
 }
-/* line 588, ../sass/profile.scss */
+/* line 605, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button {
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
 }
-/* line 593, ../sass/profile.scss */
+/* line 610, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-text {
   display: inline-block;
   float: left;
@@ -1994,21 +1997,21 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 606, ../sass/profile.scss */
+/* line 623, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
   padding-left: 10px;
 }
-/* line 613, ../sass/profile.scss */
+/* line 630, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open {
   position: relative;
   top: 6px;
   padding-right: 5px;
   transform: translate(-6px, 0);
 }
-/* line 623, ../sass/profile.scss */
+/* line 640, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
   position: absolute;
   width: 2px;
@@ -2016,22 +2019,22 @@ a.submit-button {
   content: "";
   background: #ccc;
 }
-/* line 637, ../sass/profile.scss */
+/* line 654, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-/* line 641, ../sass/profile.scss */
+/* line 658, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-/* line 646, ../sass/profile.scss */
+/* line 663, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close {
   position: relative;
   top: 6px;
   padding-right: 5px;
   transform: translate(-6px, 0);
 }
-/* line 656, ../sass/profile.scss */
+/* line 673, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
   position: absolute;
   width: 2px;
@@ -2039,15 +2042,15 @@ a.submit-button {
   content: "";
   background: #ccc;
 }
-/* line 670, ../sass/profile.scss */
+/* line 687, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-/* line 673, ../sass/profile.scss */
+/* line 690, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
-/* line 680, ../sass/profile.scss */
+/* line 697, ../sass/profile.scss */
 .my-orders .filter-by-section {
   position: absolute;
   top: 88px;
@@ -2059,7 +2062,7 @@ a.submit-button {
   -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 693, ../sass/profile.scss */
+/* line 710, ../sass/profile.scss */
 .my-orders .filter-by-section:after {
   position: absolute;
   top: -4px;
@@ -2069,35 +2072,35 @@ a.submit-button {
   background: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 693, ../sass/profile.scss */
+  /* line 710, ../sass/profile.scss */
   .my-orders .filter-by-section:after {
     width: 110px;
   }
 }
-/* line 710, ../sass/profile.scss */
+/* line 727, ../sass/profile.scss */
 .my-orders .filter-by-section .work-status .col-xs-12 {
   padding: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 714, ../sass/profile.scss */
+  /* line 731, ../sass/profile.scss */
   .my-orders .filter-by-section .work-status .checkbox-div {
     margin-bottom: 10px;
   }
-  /* line 718, ../sass/profile.scss */
+  /* line 735, ../sass/profile.scss */
   .my-orders .filter-by-section .work-status .checkbox-div:last-child {
     margin-bottom: 0;
   }
 }
-/* line 726, ../sass/profile.scss */
+/* line 743, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .col-xs-12 {
   padding: 0;
 }
-/* line 730, ../sass/profile.scss */
+/* line 747, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div {
   overflow: hidden;
   border-bottom: none;
 }
-/* line 736, ../sass/profile.scss */
+/* line 753, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li {
   display: block;
   padding-bottom: 10px;
@@ -2106,7 +2109,7 @@ a.submit-button {
   clear: both;
   /* One radio button per line */
 }
-/* line 743, ../sass/profile.scss */
+/* line 760, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox] {
   position: absolute;
   width: 1px;
@@ -2117,7 +2120,7 @@ a.submit-button {
   clip: rect(0 0 0 0);
   border: 0;
 }
-/* line 757, ../sass/profile.scss */
+/* line 774, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label {
   display: block;
   font-family: "blogger_sansregular";
@@ -2128,11 +2131,11 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 769, ../sass/profile.scss */
+/* line 786, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label:hover {
   color: #333;
 }
-/* line 774, ../sass/profile.scss */
+/* line 791, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div {
   display: table;
   float: left;
@@ -2140,11 +2143,11 @@ a.submit-button {
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 779, ../sass/profile.scss */
+/* line 796, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button {
   display: none;
 }
-/* line 783, ../sass/profile.scss */
+/* line 800, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button {
   display: table-cell;
   width: 20px;
@@ -2153,7 +2156,7 @@ a.submit-button {
   text-align: center;
   vertical-align: middle;
 }
-/* line 794, ../sass/profile.scss */
+/* line 811, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button:before {
   position: absolute;
   display: inline-block;
@@ -2165,7 +2168,7 @@ a.submit-button {
   content: "";
   vertical-align: -.25em;
 }
-/* line 814, ../sass/profile.scss */
+/* line 831, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:before {
   display: inline-block;
   width: 2px;
@@ -2177,7 +2180,7 @@ a.submit-button {
   transform: translate(0px, -10px) rotate(45deg);
   background-color: #009688;
 }
-/* line 833, ../sass/profile.scss */
+/* line 850, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:after {
   position: absolute;
   width: 2px;
@@ -2190,7 +2193,7 @@ a.submit-button {
   transform: translate(-6px, 0px) rotate(-45deg);
   background-color: #009688;
 }
-/* line 850, ../sass/profile.scss */
+/* line 867, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .text-div {
   display: inline-block;
   float: left;
@@ -2199,11 +2202,11 @@ a.submit-button {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 857, ../sass/profile.scss */
+/* line 874, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox]:checked + .text-div {
   margin-left: 10px;
 }
-/* line 864, ../sass/profile.scss */
+/* line 881, ../sass/profile.scss */
 .my-orders .order-category {
   font-family: "blogger_sansregular";
   color: #555;
@@ -2211,12 +2214,12 @@ a.submit-button {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 864, ../sass/profile.scss */
+  /* line 881, ../sass/profile.scss */
   .my-orders .order-category {
     padding-top: 10px;
   }
 }
-/* line 874, ../sass/profile.scss */
+/* line 891, ../sass/profile.scss */
 .my-orders .order-category-date {
   font-family: "blogger_sansregular";
   text-align: right;
@@ -2225,12 +2228,12 @@ a.submit-button {
   font-size: 1.4rem;
 }
 @media all and (max-width: 768px) {
-  /* line 874, ../sass/profile.scss */
+  /* line 891, ../sass/profile.scss */
   .my-orders .order-category-date {
     text-align: left;
   }
 }
-/* line 886, ../sass/profile.scss */
+/* line 903, ../sass/profile.scss */
 .my-orders .order-details-right-div {
   display: inline-block;
   float: right;
@@ -2239,7 +2242,7 @@ a.submit-button {
   overflow: hidden;
 }
 @media all and (max-width: 768px) {
-  /* line 886, ../sass/profile.scss */
+  /* line 903, ../sass/profile.scss */
   .my-orders .order-details-right-div {
     display: block;
     float: none;
@@ -2247,7 +2250,7 @@ a.submit-button {
     padding-left: 0;
   }
 }
-/* line 900, ../sass/profile.scss */
+/* line 917, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-category,
 .my-orders .order-details-right-div .order-category-date {
   padding-right: 0;
@@ -2255,13 +2258,13 @@ a.submit-button {
   padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 900, ../sass/profile.scss */
+  /* line 917, ../sass/profile.scss */
   .my-orders .order-details-right-div .order-category,
   .my-orders .order-details-right-div .order-category-date {
     padding-bottom: 10px;
   }
 }
-/* line 911, ../sass/profile.scss */
+/* line 928, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-list {
   padding-top: 20px;
   font-family: "blogger_sansregular";
@@ -2270,7 +2273,7 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 921, ../sass/profile.scss */
+/* line 938, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-log-description {
   padding-right: 20px;
   font-family: "blogger_sansregular";
@@ -2280,28 +2283,28 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 921, ../sass/profile.scss */
+  /* line 938, ../sass/profile.scss */
   .my-orders .order-details-right-div .order-log-description {
     padding-right: 0;
   }
 }
-/* line 937, ../sass/profile.scss */
+/* line 954, ../sass/profile.scss */
 .my-orders .order-log-actions, .my-orders .myorders-order-log-actions {
   margin-left: 75px;
 }
 @media all and (max-width: 768px) {
-  /* line 937, ../sass/profile.scss */
+  /* line 954, ../sass/profile.scss */
   .my-orders .order-log-actions, .my-orders .myorders-order-log-actions {
     padding-top: 10px;
     margin-left: auto;
     border: none;
   }
 }
-/* line 951, ../sass/profile.scss */
+/* line 968, ../sass/profile.scss */
 .my-orders .myorders-order-log-actions {
   margin-left: auto;
 }
-/* line 956, ../sass/profile.scss */
+/* line 973, ../sass/profile.scss */
 .my-orders .log-action-button {
   display: inline-block;
   margin-top: 10px;
@@ -2309,7 +2312,7 @@ a.submit-button {
   cursor: pointer;
   color: #009688;
 }
-/* line 964, ../sass/profile.scss */
+/* line 981, ../sass/profile.scss */
 .my-orders .log-action-button svg {
   display: inline-block;
   width: 13px;
@@ -2317,13 +2320,13 @@ a.submit-button {
   fill: currentColor;
 }
 @media all and (max-width: 768px) {
-  /* line 964, ../sass/profile.scss */
+  /* line 981, ../sass/profile.scss */
   .my-orders .log-action-button svg {
     width: 12px;
     height: 12px;
   }
 }
-/* line 975, ../sass/profile.scss */
+/* line 992, ../sass/profile.scss */
 .my-orders .log-action-button span {
   display: inline-block;
   margin-left: 5px;
@@ -2331,7 +2334,7 @@ a.submit-button {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 986, ../sass/profile.scss */
+/* line 1003, ../sass/profile.scss */
 .my-orders .order-date-div, .my-orders .appointments-date-div {
   display: inline-block;
   float: left;
@@ -2345,7 +2348,7 @@ a.submit-button {
   font-size: 1.2rem;
 }
 @media all and (max-width: 768px) {
-  /* line 986, ../sass/profile.scss */
+  /* line 1003, ../sass/profile.scss */
   .my-orders .order-date-div, .my-orders .appointments-date-div {
     display: block;
     float: none;
@@ -2355,7 +2358,7 @@ a.submit-button {
     text-align: left;
   }
 }
-/* line 1010, ../sass/profile.scss */
+/* line 1027, ../sass/profile.scss */
 .my-orders .order-date-div div, .my-orders .appointments-date-div div {
   display: block;
   width: 50px;
@@ -2363,30 +2366,30 @@ a.submit-button {
   padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 1010, ../sass/profile.scss */
+  /* line 1027, ../sass/profile.scss */
   .my-orders .order-date-div div, .my-orders .appointments-date-div div {
     display: inline-block;
     width: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 1020, ../sass/profile.scss */
+  /* line 1037, ../sass/profile.scss */
   .my-orders .order-date-div div:last-child, .my-orders .appointments-date-div div:last-child {
     padding-left: 5px;
   }
 }
-/* line 1027, ../sass/profile.scss */
+/* line 1044, ../sass/profile.scss */
 .my-orders .appointments-date-div {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 1031, ../sass/profile.scss */
+/* line 1048, ../sass/profile.scss */
 .my-orders .log-row {
   position: relative;
   padding-top: 20px;
   padding-bottom: 22px;
 }
-/* line 1036, ../sass/profile.scss */
+/* line 1053, ../sass/profile.scss */
 .my-orders .log-row:after {
   position: absolute;
   bottom: 0;
@@ -2396,17 +2399,17 @@ a.submit-button {
   border-bottom: 1px solid #e5e5e5;
 }
 @media all and (max-width: 768px) {
-  /* line 1036, ../sass/profile.scss */
+  /* line 1053, ../sass/profile.scss */
   .my-orders .log-row:after {
     left: 0;
     width: 100%;
   }
 }
-/* line 1056, ../sass/profile.scss */
+/* line 1073, ../sass/profile.scss */
 .my-orders .log-row:first-child {
   padding-top: 0;
 }
-/* line 1060, ../sass/profile.scss */
+/* line 1077, ../sass/profile.scss */
 .my-orders .order-quote-div {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -2421,37 +2424,37 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1060, ../sass/profile.scss */
+  /* line 1077, ../sass/profile.scss */
   .my-orders .order-quote-div {
     margin-right: auto;
   }
 }
-/* line 1078, ../sass/profile.scss */
+/* line 1095, ../sass/profile.scss */
 .my-orders .order-quote-div .row {
   background-color: transparent;
 }
-/* line 1081, ../sass/profile.scss */
+/* line 1098, ../sass/profile.scss */
 .my-orders .order-quote-div li {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 1085, ../sass/profile.scss */
+/* line 1102, ../sass/profile.scss */
 .my-orders .order-quote-div li:first-child {
   padding-top: 0;
 }
-/* line 1088, ../sass/profile.scss */
+/* line 1105, ../sass/profile.scss */
 .my-orders .order-quote-div li .sub-item {
   display: inline-block;
   width: calc(50% - 5px);
 }
-/* line 1092, ../sass/profile.scss */
+/* line 1109, ../sass/profile.scss */
 .my-orders .order-quote-div li .price {
   display: inline-block;
   width: calc(50% - 5px);
   text-align: right;
 }
 
-/* line 1161, ../sass/profile.scss */
+/* line 1178, ../sass/profile.scss */
 .filter-shadow {
   -webkit-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
@@ -2459,19 +2462,19 @@ a.submit-button {
 }
 
 /* Order/Payment Complete Pages */
-/* line 1170, ../sass/profile.scss */
+/* line 1187, ../sass/profile.scss */
 .head-row {
   margin-right: auto;
   margin-left: auto;
 }
 @media all and (max-width: 768px) {
-  /* line 1170, ../sass/profile.scss */
+  /* line 1187, ../sass/profile.scss */
   .head-row {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-/* line 1178, ../sass/profile.scss */
+/* line 1195, ../sass/profile.scss */
 .head-row .complete-circle {
   display: inline-block;
   width: 40px;
@@ -2485,7 +2488,7 @@ a.submit-button {
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 1190, ../sass/profile.scss */
+/* line 1207, ../sass/profile.scss */
 .head-row .complete-circle svg {
   width: 20px;
   height: 20px;
@@ -2493,7 +2496,7 @@ a.submit-button {
   color: #fff;
   fill: currentColor;
 }
-/* line 1200, ../sass/profile.scss */
+/* line 1217, ../sass/profile.scss */
 .head-row .complete-head {
   display: inline-block;
   margin-top: 50px;
@@ -2506,7 +2509,7 @@ a.submit-button {
   font-size: 3rem;
 }
 
-/* line 1215, ../sass/profile.scss */
+/* line 1232, ../sass/profile.scss */
 .complete-message {
   margin-top: 40px;
   margin-right: auto;
@@ -2518,14 +2521,14 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1215, ../sass/profile.scss */
+  /* line 1232, ../sass/profile.scss */
   .complete-message {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 
-/* line 1232, ../sass/profile.scss */
+/* line 1249, ../sass/profile.scss */
 .complete-summary {
   position: relative;
   padding: 20px;
@@ -2533,19 +2536,19 @@ a.submit-button {
   margin-bottom: 30px;
   background-color: #fff;
 }
-@media all and (min-width: 1025px) {
-  /* line 1232, ../sass/profile.scss */
-  .complete-summary {
-    width: 770px;
-  }
-}
 @media all and (max-width: 768px) {
-  /* line 1232, ../sass/profile.scss */
+  /* line 1249, ../sass/profile.scss */
   .complete-summary {
     width: 100%;
   }
 }
-/* line 1247, ../sass/profile.scss */
+@media all and (min-width: 1025px) {
+  /* line 1249, ../sass/profile.scss */
+  .complete-summary {
+    width: 770px;
+  }
+}
+/* line 1264, ../sass/profile.scss */
 .complete-summary:after {
   position: absolute;
   bottom: -20px;
@@ -2559,7 +2562,7 @@ a.submit-button {
   background-position: 0 0;
   background-size: 18px 18px;
 }
-/* line 1265, ../sass/profile.scss */
+/* line 1282, ../sass/profile.scss */
 .complete-summary .summary-head {
   font-family: "blogger_sanslight";
   font-style: italic;
@@ -2569,7 +2572,7 @@ a.submit-button {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 1276, ../sass/profile.scss */
+/* line 1293, ../sass/profile.scss */
 .complete-summary .summary-brief-text {
   margin-bottom: 20px;
   font-family: "blogger_sanslight";
@@ -2579,7 +2582,7 @@ a.submit-button {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 1288, ../sass/profile.scss */
+/* line 1305, ../sass/profile.scss */
 .complete-summary .item-row {
   padding: 20px;
   margin-right: auto;
@@ -2591,23 +2594,23 @@ a.submit-button {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1288, ../sass/profile.scss */
+  /* line 1305, ../sass/profile.scss */
   .complete-summary .item-row {
     padding: 20px 0;
   }
 }
-/* line 1302, ../sass/profile.scss */
+/* line 1319, ../sass/profile.scss */
 .complete-summary .item-row:last-child {
   border-bottom: 1px solid #ddd;
 }
-/* line 1305, ../sass/profile.scss */
+/* line 1322, ../sass/profile.scss */
 .complete-summary .item-row .item-quantity {
   float: left;
   width: 30px;
   text-align: left;
   color: #555;
 }
-/* line 1314, ../sass/profile.scss */
+/* line 1331, ../sass/profile.scss */
 .complete-summary .item-row .item-name {
   float: left;
   width: calc(100% - 80px);
@@ -2615,14 +2618,14 @@ a.submit-button {
   text-transform: capitalize;
   color: #555;
 }
-/* line 1324, ../sass/profile.scss */
+/* line 1341, ../sass/profile.scss */
 .complete-summary .item-row .item-price {
   float: left;
   width: 50px;
   text-align: right;
   color: #777;
 }
-/* line 1335, ../sass/profile.scss */
+/* line 1352, ../sass/profile.scss */
 .complete-summary .tax-div {
   float: right;
   width: 300px;
@@ -2636,31 +2639,31 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1335, ../sass/profile.scss */
+  /* line 1352, ../sass/profile.scss */
   .complete-summary .tax-div {
     width: 100%;
     padding: 20px 0;
   }
 }
-/* line 1353, ../sass/profile.scss */
+/* line 1370, ../sass/profile.scss */
 .complete-summary .tax-div .row {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 1357, ../sass/profile.scss */
+/* line 1374, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6 {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 1360, ../sass/profile.scss */
+/* line 1377, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6:first-child {
   text-align: left;
 }
-/* line 1363, ../sass/profile.scss */
+/* line 1380, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6:last-child {
   text-align: right;
 }
-/* line 1369, ../sass/profile.scss */
+/* line 1386, ../sass/profile.scss */
 .complete-summary .total-price-div, .complete-summary .estimated-proce-div {
   float: right;
   width: 300px;
@@ -2673,20 +2676,20 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1369, ../sass/profile.scss */
+  /* line 1386, ../sass/profile.scss */
   .complete-summary .total-price-div, .complete-summary .estimated-proce-div {
     width: 100%;
     padding: 20px 0;
   }
 }
-/* line 1386, ../sass/profile.scss */
+/* line 1403, ../sass/profile.scss */
 .complete-summary .total-price-div .price, .complete-summary .estimated-proce-div .price {
   margin-left: 10px;
   font-family: "blogger_sansmedium";
   font-size: 30px;
   font-size: 3rem;
 }
-/* line 1394, ../sass/profile.scss */
+/* line 1411, ../sass/profile.scss */
 .complete-summary .estimated-proce-div {
   width: 100%;
 }
