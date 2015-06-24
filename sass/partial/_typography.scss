@@ -33,7 +33,18 @@ body {
     src: url("../../fonts/PLAYFAIRDISPLAY-REGULAR.ttf");
 }
 
+@font-face {
+    font-family: "brandon_grotesqueRgIt";
+    font-style: normal;
+    font-weight: normal;
 
+    src: url("../../fonts/brandon_reg_it-webfont.eot");
+    src: url("../../fonts/brandon_reg_it-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/brandon_reg_it-webfont.woff2") format("woff2"),
+    url("../../fonts/brandon_reg_it-webfont.woff") format("woff"),
+    url("../../fonts/brandon_reg_it-webfont.ttf") format("truetype"),
+    url("../../fonts/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt") format("svg");
+}
 
 @font-face {
     font-family: "blogger_sansregular";
@@ -105,18 +116,7 @@ body {
 }
 
 
-@font-face {
-    font-family: "brandon_grotesqueRgIt";
-    font-style: normal;
-    font-weight: normal;
 
-    src: url("../../fonts/brandon_reg_it-webfont.eot");
-    src: url("../../fonts/brandon_reg_it-webfont.eot?#iefix") format("embedded-opentype"),
-    url("../../fonts/brandon_reg_it-webfont.woff2") format("woff2"),
-    url("../../fonts/brandon_reg_it-webfont.woff") format("woff"),
-    url("../../fonts/brandon_reg_it-webfont.ttf") format("truetype"),
-    url("../../fonts/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt") format("svg");
-}
 // varibles
 
 $blogger_R: "blogger_sansregular";

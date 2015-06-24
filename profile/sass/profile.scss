@@ -167,12 +167,12 @@ a.account-links {
     width: 100%;
     margin: 0 auto;
 
-    @include medmx(768px) {
-        margin: 0 auto 0;
-    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
+    }
+    @include medmx(768px) {
+        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -222,10 +222,10 @@ a.account-links {
 
                 color: $dark-gray;
 
+                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     display: none;
                 }
-                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -307,8 +307,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
 
-    @include border-radius(4px);
     @include rem(font-size, 18px);
+    @include border-radius(4px);
 }
 
 a.submit-button {
@@ -327,7 +327,7 @@ a.submit-button {
     color: $white;
     background-color: #ffc400;
 
-    @include rem(font-size, 16px);
+    @include border-radius(4px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -335,47 +335,17 @@ a.submit-button {
         margin-left: auto;
         clear: both;
     }
-    @include border-radius(4px);
+    @include rem(font-size, 16px);
     &:first-child {
         margin-left: 0;
     }
 }
-.green-icon-button {
-    display: block;
-    // width: auto;
-    padding: 10px 20px;
 
-    border: 1px solid $green;
-
-    @include border-radius(4px);
-
-    .button-icon {
-        display: inline-block;
-        float: left;
-        width: 15px;
-        height: 15px;
-
-        svg {
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    .button-text {
-        display: inline-block;
-        margin-left: 10px;
-
-        font-family: $blogger_R;
-        line-height: 18px;
-
-        color: $green;
-
-        @include rem(font-size, 16px);
-    }
-}
 /* MY ORDERS PAGE */
 .my-orders {
     .row-type1 {
+        position: relative;
+
         padding: 20px;
         overflow: hidden;
 
@@ -437,9 +407,18 @@ a.submit-button {
         width: 50px;
         height: 50px;
 
+        @include medmx(768px) {
+            width: 30px;
+            height: 30px;
+        }
         svg {
             width: 40px;
             height: 40px;
+
+            @include medmx(768px) {
+                width: 30px;
+                height: 30px;
+            }
         }
     }
     .order-details {
@@ -450,6 +429,9 @@ a.submit-button {
 
         font-family: $blogger_R;
 
+        @include medmx(768px) {
+            padding-left: 10px;
+        }
         .order-id {
             display: block;
 
@@ -477,13 +459,17 @@ a.submit-button {
     .order-brief-text {
         display: block;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 10px;
 
         font-family: $blogger_R;
+        line-height: 1.4;
 
         color: $medium-gray;
 
         @include rem(font-size, 16px);
+        /* @include medmx(768px) {
+            margin-top: 15px;
+        } */
     }
 
     .filterby-button-div {
@@ -751,6 +737,9 @@ a.submit-button {
 
         color: $dark-gray;
 
+        @include medmx(768px) {
+            padding-top: 10px;
+        }
         @include rem(font-size, 18px);
     }
     .order-category-date {
@@ -760,10 +749,10 @@ a.submit-button {
 
         color: $medium-gray;
 
+        @include rem(font-size, 14px);
         @include medmx(768px) {
             text-align: left;
         }
-        @include rem(font-size, 14px);
     }
     .order-details-right-div {
         display: inline-block;
@@ -809,15 +798,15 @@ a.submit-button {
 
             color: #616161;
 
-            @include rem(font-size, 16px);
             @include medmx(768px) {
                 padding-right: 0;
                 // padding-bottom: 10px;
             }
+            @include rem(font-size, 16px);
         }
     }
     .order-log-actions {
-        padding-top: 10px;
+        // padding-top: 10px;
         // padding-bottom: 20px;
         margin-left: 75px;
         // border-bottom: 1px solid #e5e5e5;
@@ -830,27 +819,102 @@ a.submit-button {
             border: none;
         }
     }
+    .myorders-order-log-actions {
+        margin-left: auto;
+
+        @extend .order-log-actions;
+    }
     .log-action-button {
         display: inline-block;
-        margin-right: 20px;
+        margin-top: 10px;
+        margin-right: 15px;
 
         cursor: pointer;
 
         color: $green;
         svg {
             display: inline-block;
-            width: 15px;
-            height: 15px;
+            width: 13px;
+            height: 13px;
 
             fill: currentColor;
+            @include medmx(768px) {
+                width: 12px;
+                height: 12px;
+            }
         }
         span {
             display: inline-block;
-            margin-left: 10px;
+            margin-left: 5px;
 
             font-family: $blogger_R;
 
             @include rem(font-size, 14px);
+        }
+    }
+
+    .green-icon-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+        display: block;
+        padding: 10px 20px;
+
+        color: $green;
+        border: 1px solid $green;
+
+        @include medmx(768px) {
+            position: relative;
+            top: auto;
+            right: auto;
+
+            display: inline-block;
+            padding: 0;
+            margin-right: 15px;
+
+            cursor: pointer;
+
+            border: none;
+        }
+        @include border-radius(4px);
+        .button-icon {
+            display: inline-block;
+            float: left;
+            width: 15px;
+            height: 15px;
+
+            @include medmx(768px) {
+                width: 12px;
+                height: 12px;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+                margin-top: 2px;
+
+                fill: currentColor;
+            }
+        }
+
+        .button-text {
+            display: inline-block;
+            margin-left: 10px;
+
+            font-family: $blogger_R;
+            line-height: 18px;
+
+            color: $green;
+
+            @include rem(font-size, 16px);
+            @include medmx(768px) {
+                display: inline-block;
+                margin-left: 5px;
+
+                font-family: $blogger_R;
+
+                @include rem(font-size, 14px);
+            }
         }
     }
 
@@ -867,7 +931,6 @@ a.submit-button {
 
         color: $medium-gray;
 
-        @include rem(font-size, 12px);
         @include medmx(768px) {
             display: block;
             float: none;
@@ -877,6 +940,7 @@ a.submit-button {
 
             text-align: left;
         }
+        @include rem(font-size, 12px);
 
         div {
             display: block;
@@ -937,11 +1001,11 @@ a.submit-button {
            -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
                 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             margin-right: auto;
             // line-height: 1.5;
         }
+        @include rem(font-size, 16px);
         .row {
             background-color: transparent;
         }
@@ -1089,11 +1153,11 @@ a.submit-button {
 
     color: $dark-gray;
 
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         padding-right: 20px;
         padding-left: 20px;
     }
-    @include rem(font-size, 16px);
 }
 
 .complete-summary {
@@ -1105,11 +1169,11 @@ a.submit-button {
 
     background-color: $white;
 
-    @include medmx(768px) {
-        width: 100%;
-    }
     @include medmn(1025px) {
         width: 770px;
+    }
+    @include medmx(768px) {
+        width: 100%;
     }
     &:after {
         position: absolute;
@@ -1162,10 +1226,10 @@ a.submit-button {
 
         border-top: 1px solid #ddd;
 
+        @include rem(font-size, 18px);
         @include medmx(768px) {
             padding: 20px 0;
         }
-        @include rem(font-size, 18px);
         &:last-child {
             border-bottom: 1px solid #ddd;
         }
@@ -1212,11 +1276,11 @@ a.submit-button {
         color: #818181;
         border-bottom: 2px solid #e5e5e5;
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
-        @include rem(font-size, 16px);
         .row {
             margin-right: auto;
             margin-left: auto;
@@ -1245,11 +1309,11 @@ a.submit-button {
 
         color: $dark-gray;
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
+        @include rem(font-size, 16px);
         .price {
             margin-left: 10px;
 
