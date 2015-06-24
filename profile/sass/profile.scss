@@ -108,6 +108,81 @@
     }
 }
 
+.green-icon-button {
+    display: inline-block;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    color: $green;
+    border: 1px solid $green;
+
+    @include medmx(768px) {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        display: inline-block;
+        padding: 0;
+        margin-right: 15px;
+
+        border: none;
+    }
+    @include border-radius(4px);
+    .button-icon {
+        display: inline-block;
+        float: left;
+        width: 15px;
+        height: 15px;
+
+        @include medmx(768px) {
+            width: 12px;
+            height: 12px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            margin-top: 2px;
+
+            fill: currentColor;
+        }
+    }
+
+    .button-text {
+        display: inline-block;
+        margin-left: 10px;
+
+        font-family: $blogger_R;
+        line-height: 18px;
+
+        color: $green;
+
+        @include rem(font-size, 16px);
+        @include medmx(768px) {
+            display: inline-block;
+            margin-left: 5px;
+
+            font-family: $blogger_R;
+
+            @include rem(font-size, 14px);
+        }
+    }
+}
+.myorders-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    @include medmx(768px) {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        display: inline-block;
+        margin-right: 15px;
+    }
+}
+
 .profile-img-div {
     padding-bottom: 30px;
     // margin-top: 30px;
@@ -237,9 +312,16 @@ a.account-links {
 }
 
 .address-row {
+    position: relative;
+
     display: block;
     padding: 30px 0;
     margin: 0 25px;
+
+    @include medmx(768px) {
+        padding: 20px 0;
+        margin: 0 10px;
+    }
     .text-div {
         float: left;
         width: calc(100% - 72px);
@@ -249,15 +331,32 @@ a.account-links {
 
         color: $dark-gray;
 
+        @include medmx(768px) {
+            margin-bottom: 10px;
+        }
         @include rem(font-size, 16px);
+        @include medmx(768px) {
+            display: block;
+            float: none;
+            width: 100%;
+        }
     }
     .icon-div {
         float: left;
         margin-left: 20px;
 
+        @include medmx(768px) {
+            margin-right: 10px;
+            margin-left: auto;
+        }
+        &:hover {
+            color: $green;
+        }
         svg {
             width: 16px;
             height: 16px;
+
+            fill: currentColor;
         }
     }
 }
@@ -284,22 +383,30 @@ a.account-links {
 
     text-transform: capitalize;
 
-    color: $dark-gray;
+    color: #818181;
 
     @include rem(font-size, 16px);
+    @include medmx(768px) {
+        margin: 0 10px;
+    }
 }
 
 .address-input {
     margin: 10px 25px 20px;
+
+    @include medmx(768px) {
+        margin: 10px 10px 20px;
+    }
 }
 
 input {
     width: 100%;
+    height: 44px;
     padding-right: 20px;
     padding-left: 20px;
 
     font-family: "blogger_sanslight";
-    line-height: 44px;
+    line-height: 1;
 
     color: #777;
     color: #555;
@@ -309,11 +416,14 @@ input {
 
     @include rem(font-size, 18px);
     @include border-radius(4px);
+    &::-ms-clear {
+        display: none;
+    }
 }
 
 a.submit-button {
     display: block;
-    float: left;
+    float: right;
     width: 120px;
     margin-bottom: 25px;
     margin-left: 20px;
@@ -336,9 +446,9 @@ a.submit-button {
         clear: both;
     }
     @include rem(font-size, 16px);
-    &:first-child {
+    /* &:first-child {
         margin-left: 0;
-    }
+    } */
 }
 
 /* MY ORDERS PAGE */
@@ -390,7 +500,7 @@ a.submit-button {
     .right-section-title {
         float: left;
         width: auto;
-        padding-left: 12px;
+        padding-left: 20px;
 
         font-family: $blogger_R;
         line-height: 60px;
@@ -872,80 +982,7 @@ a.submit-button {
         }
     }
 
-    .green-icon-button {
-        display: inline-block;
-        padding: 10px 20px;
 
-        cursor: pointer;
-
-        color: $green;
-        border: 1px solid $green;
-
-        @include medmx(768px) {
-            position: relative;
-            top: auto;
-            right: auto;
-
-            display: inline-block;
-            padding: 0;
-            margin-right: 15px;
-
-            border: none;
-        }
-        @include border-radius(4px);
-        .button-icon {
-            display: inline-block;
-            float: left;
-            width: 15px;
-            height: 15px;
-
-            @include medmx(768px) {
-                width: 12px;
-                height: 12px;
-            }
-            svg {
-                width: 100%;
-                height: 100%;
-                margin-top: 2px;
-
-                fill: currentColor;
-            }
-        }
-
-        .button-text {
-            display: inline-block;
-            margin-left: 10px;
-
-            font-family: $blogger_R;
-            line-height: 18px;
-
-            color: $green;
-
-            @include rem(font-size, 16px);
-            @include medmx(768px) {
-                display: inline-block;
-                margin-left: 5px;
-
-                font-family: $blogger_R;
-
-                @include rem(font-size, 14px);
-            }
-        }
-    }
-    .myorders-right-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-        @include medmx(768px) {
-            position: relative;
-            top: auto;
-            right: auto;
-
-            display: inline-block;
-            margin-right: 15px;
-        }
-    }
     .order-date-div {
         display: inline-block;
         float: left;
@@ -986,6 +1023,10 @@ a.submit-button {
                 }
             }
         }
+    }
+    .appointments-date-div {
+        @extend .order-date-div;
+        @include rem(font-size, 16px);
     }
     .log-row {
         position: relative;
