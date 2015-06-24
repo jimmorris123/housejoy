@@ -589,12 +589,26 @@ a.submit-button {
             height: 5px;
 
             background: $white;
+
+            @include medmx(768px) {
+                width: 110px;
+            }
         }
         .work-status {
             // border-bottom: 1px solid 
             // background-color: #ccc;
             .col-xs-12 {
                 padding: 0;
+            }
+
+            .checkbox-div {
+                @include medmx(768px) {
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
 
@@ -637,6 +651,7 @@ a.submit-button {
                         line-height: 1;
 
                         cursor: pointer;
+                        text-transform: capitalize;
 
                         color: $dark-gray;
 
@@ -694,11 +709,11 @@ a.submit-button {
                             // height: 13px;
 
                             content: "";
-                            -webkit-transform: translate(0px, -8px) rotate(45deg);
-                               -moz-transform: translate(0px, -8px) rotate(45deg);
-                                -ms-transform: translate(0px, -8px) rotate(45deg);
-                                 -o-transform: translate(0px, -8px) rotate(45deg);
-                                    transform: translate(0px, -8px) rotate(45deg);
+                            -webkit-transform: translate(0px, -10px) rotate(45deg);
+                               -moz-transform: translate(0px, -10px) rotate(45deg);
+                                -ms-transform: translate(0px, -10px) rotate(45deg);
+                                 -o-transform: translate(0px, -10px) rotate(45deg);
+                                    transform: translate(0px, -10px) rotate(45deg);
 
                             background-color: $green;
 
