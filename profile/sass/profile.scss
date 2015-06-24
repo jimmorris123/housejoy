@@ -477,14 +477,16 @@ a.submit-button {
         height: 60px;
         .filterby-button {
             padding: 10px 20px;
+            margin-top: 10px;
 
+            cursor: pointer;
             .button-text {
                 display: inline-block;
                 float: left;
                 margin-left: 10px;
 
                 font-family: $blogger_R;
-                line-height: 60px;
+                // line-height: 60px;
 
                 color: $dark-gray;
 
@@ -496,7 +498,8 @@ a.submit-button {
                 // float: left;
                 width: 15px;
                 height: 15px;
-                padding-top: 20px;
+                // padding-top: 20px;
+                padding-left: 10px;
                 .i-open {
                     position: relative;
                     // padding-left: 30px;
@@ -567,6 +570,7 @@ a.submit-button {
     .filter-by-section {
         position: absolute;
         top: 88px;
+        z-index: 1;
 
         display: none;
         width: calc(100% - 30px);
@@ -854,12 +858,10 @@ a.submit-button {
     }
 
     .green-icon-button {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-        display: block;
+        display: inline-block;
         padding: 10px 20px;
+
+        cursor: pointer;
 
         color: $green;
         border: 1px solid $green;
@@ -872,8 +874,6 @@ a.submit-button {
             display: inline-block;
             padding: 0;
             margin-right: 15px;
-
-            cursor: pointer;
 
             border: none;
         }
@@ -917,7 +917,20 @@ a.submit-button {
             }
         }
     }
+    .myorders-right-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
 
+        @include medmx(768px) {
+            position: relative;
+            top: auto;
+            right: auto;
+
+            display: inline-block;
+            margin-right: 15px;
+        }
+    }
     .order-date-div {
         display: inline-block;
         float: left;
