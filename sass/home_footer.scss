@@ -1,0 +1,113 @@
+.home-footer {
+    padding: 20px;
+
+    background-color: #222;
+    .foot-content {
+        .heading {
+            padding-top: 10px;
+
+            color: $white;
+            .border-top {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 20px;
+                height: 2px;
+
+                background-color: $yellow;
+            }
+        }
+        ul {
+            li {
+                float: left;
+                min-width: 50%;
+                margin-bottom: 10px;
+                a {
+                    font-family: $blogger_R;
+
+                    opacity: .7;
+                    color: $white;
+
+                    @include rem(font-size, 16px);
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .newsletter {
+            position: relative;
+            input[type="text"] {
+                font-family: $blogger_R;
+
+                color: $white;
+                border: none;
+                border-radius: 0;
+                background-color: #595959;
+
+                @include rem(font-size, 16px);
+            }
+            .arrow {
+                position: absolute;
+                top: 7px;
+                right: 10px;
+                i {
+                    color: $white;
+
+                    @include rem(font-size, 20px);
+                }
+            }
+        }
+        .socials {
+            display: table;
+
+            border-spacing: 12px;
+            border-collapse: separate;
+            & i {
+                position: relative;
+
+                display: table-cell;
+                width: 40px;
+                height: 40px;
+
+                cursor: pointer;
+                text-align: center;
+                vertical-align: middle;
+
+                color: $white;
+                background: transparent;
+
+                @include transition(all .15s ease);
+                @include rem(font-size, 16px);
+                &:hover {
+                    border-radius: 50%;
+                }
+            }
+            & i:nth-child(1) {
+                color: #3b5998;
+                border: 2px solid #3b5998;
+            }
+            & i:nth-child(1):hover {
+                color: white;
+                background: #3b5998;
+            }
+            & i:nth-child(2) {
+                color: #00a0d1;
+                border: 2px solid #00a0d1;
+            }
+            & i:nth-child(2):hover {
+                color: white;
+                background: #00a0d1;
+            }
+            & i:nth-child(3) {
+                color: #db4a39;
+                border: 2px solid #db4a39;
+            }
+            & i:nth-child(3):hover {
+                color: white;
+                background: #db4a39;
+            }
+        }
+    }
+}

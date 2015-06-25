@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 16px);
                 @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include rem(font-size, 20px);
                     @include transition(.3s all);
+                    @include rem(font-size, 20px);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
     }
 }
@@ -252,8 +252,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(line-height, 28px);
                         @include rem(font-size, 18px);
+                        @include rem(line-height, 28px);
                     }
                 }
             }
@@ -317,3 +317,264 @@
         }
     }
 }
+.content-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include medmn(768px) {
+        display: table;
+    }
+    .heading {
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+
+        font-family: $blogger_M;
+
+        @include rem(font-size, 20px);
+        .border-inner-bottom {
+            width: 80px;
+        }
+    }
+    .cat-wrap {
+        padding-top: 30px;
+        .categories-box {
+            display: inline-block;
+            float: left;
+            width: 20%;
+            margin-bottom: 40px;
+
+            @include transition(all .3s);
+            @include medmx(768px) {
+                width: 50%;
+            }
+            &:hover,
+            &:focus,
+            &:active {
+                svg,
+                h4 {
+                    color: $green;
+                }
+            }
+            svg {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 15px;
+
+                color: $dark-gray;
+            }
+            h4 {
+                font-family: $blogger_M;
+
+                text-transform: uppercase;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 16px);
+            }
+        }
+    }
+    .work-categories {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .box {
+            margin-bottom: 20px;
+            svg {
+                width: 80px;
+                height: 80px;
+                margin-bottom: 20px;
+            }
+            h4 {
+                margin-bottom: 20px;
+
+                font-family: $blogger_M;
+
+                text-transform: uppercase;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 20px);
+            }
+            p {
+                float: none;
+                margin: 0 auto;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 18px);
+            }
+        }
+    }
+    .left-content {
+        margin-bottom: 20px;
+
+        text-align: left;
+
+        @include medmn(768px) {
+            display: table-cell;
+            float: none;
+
+            vertical-align: middle;
+        }
+        h2 {
+            margin-bottom: 20px;
+
+            font-family: $blogger_B;
+
+            text-transform: uppercase;
+
+            color: #111;
+        }
+        p {
+            margin-bottom: 20px;
+
+            font-family: $blogger_R;
+
+            color: $dark-gray;
+
+            @include rem(font-size, 18px);
+        }
+        a {
+            padding-left: 0;
+
+            @include medmn(992px) {
+                width: auto;
+            }
+            @include medmxn(480px, 768px) {
+                width: auto;
+            }
+            @include medmn(768px) {
+                display: inline-block;
+                padding: 0;
+                padding-right: 15px;
+            }
+        }
+    }
+    .right-img-section {
+        @include medmn(768px) {
+            display: table-cell;
+            float: none;
+
+            vertical-align: middle;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+    .experts-section {
+        padding-top: 20px;
+
+        .expert-info {
+            display: table;
+            margin-bottom: 30px;
+            .image-icon {
+                display: table-cell;
+                float: none;
+
+                vertical-align: middle;
+                svg {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+            .content {
+                display: table-cell;
+                float: none;
+
+                text-align: left;
+                vertical-align: middle;
+                h4 {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 18px);
+                }
+                p {
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 14px);
+                }
+            }
+        }
+    }
+}
+
+.home-slider {
+    .owl-carousel {
+        .owl-item {
+            max-height: 550px;
+            .overlay {
+                background-color: rgba(0,0,0,.4);
+            }
+            blockquote {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                left: 0;
+                z-index: 1;
+
+                text-align: center;
+
+                color: $white;
+
+                @include rem(font-size, 30px);
+                @include transform(translateY(-50%));
+                p {
+                    width: 60%;
+                    margin: 0 auto;
+                    margin-bottom: 30px;
+
+                    font-family: $blogger_R;
+
+                    quotes: "\201C""\201D""\2018""\2019";
+
+                    color: $white;
+
+                    @include rem(font-size, 30px);
+                    &:before {
+                        content: open-quote;
+                    }
+                    &:after {
+                        content: close-quote;
+                    }
+                }
+                .author {
+                    font-family: $blogger_R;
+
+                    color: $white;
+
+                    @include rem(font-size, 18px);
+                }
+            }
+        }
+        .owl-controls {
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+            left: 0;
+
+            margin: 0;
+
+            text-align: center;
+            .owl-page {
+                &.active {
+                    span {
+                        background: $white;
+                    }
+                }
+                span {
+                    border: 2px solid $white;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+@import "../../sass/home_footer.scss";

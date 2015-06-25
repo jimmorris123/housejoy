@@ -96,9 +96,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
-            filter: blur(15px);
-            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+            filter: blur(15px);
+            filter: blur(15px);
 }
 
 svg {
@@ -160,4 +160,7 @@ svg {
 }
 .MB10 {
     margin-bottom: 10px;
+}
+.MB20 {
+    margin-bottom: 20px;
 }
