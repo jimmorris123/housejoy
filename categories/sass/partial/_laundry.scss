@@ -11,21 +11,33 @@
         width: 100%;
         height: 60vh;
         padding-top: 60px;
+        // background-image: url("../../images/laundry_images/laundry.jpg");
 
-        background-image: url("../../images/laundry_images/laundry.jpg");
         background-repeat: no-repeat;
         background-position-y: center;
         background-size: cover;
 
         @include medmx(768px) {
-            height: auto;
+            height: 30vh;
         }
         .container {
             position: absolute;
             top: 50%;
             left: 50%;
 
+            margin: 30px auto;
+
             @include transform(translate(-50%, -50%));
+            @include medmx(768px) {
+                width: 100%;
+            }
+        }
+        &.house-cleaning-bg {
+            .container {
+                top: 20%;
+
+                @include transform(translate(-50%, -20%));
+            }
         }
         .gradient-white {
             position: absolute;
@@ -48,13 +60,13 @@
 
                 background-color: $white;
 
+                @include transform(rotate(30deg));
                 @include medmx(768px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
-                @include transform(rotate(30deg));
             }
         }
         .title {
@@ -71,23 +83,33 @@
             }
 
             h1 {
-                position: relative;
+                &.l-right-title {
+                    position: relative;
 
-                margin-bottom: 10px;
+                    margin-bottom: 10px;
 
-                color: $white;
+                    color: $white;
 
-                @include rem(font-size, 70px);
-                @include medmxn(768px, 992px) {
-                    @include rem(font-size, 50px);
-                }
-                &.l-title {
-                    font-family: $bebasneue_R;
-
-                    @include rem(font-size, 60px);
-                    @include medmxn(768px, 992px) {
+                    @include medmx(768px) {
                         @include rem(font-size, 40px);
                     }
+                    @include medmxn(768px, 992px) {
+                        @include rem(font-size, 50px);
+                    }
+                    @include rem(font-size, 70px);
+                }
+                &.l-left-title {
+                    font-family: $bebasneue_R;
+
+                    color: $white;
+
+                    @include medmx(768px) {
+                        @include rem(font-size, 30px);
+                    }
+                    @include medmxn(768px, 992px) {
+                        @include rem(font-size, 48px);
+                    }
+                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -96,22 +118,33 @@
                 max-width: 100px;
                 min-width: 80px;
 
-                @include rem(font-size, 16px);
                 @include medmx(768px) {
                     float: none;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
+                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
                 clear: both;
-
-                color: $white;
+                // color: $white;
 
                 @include rem(font-size, 14px);
             }
         }
+    }
+    .laundry-bg {
+        background-image: url("../../images/laundry_images/laundry.jpg");
+    }
+    .house-cleaning-bg {
+        background-image: url("../../images/laundry_images/laundry_banner.jpg");
+    }
+    .beauty-bg {
+        background-image: url("../../images/beauty_images/Hair_Color.jpg");
+    }
+    .house-cleaning-bg {
+        background-image: url("../../images/housing_images/housing_bg.jpg");
     }
     .facilities {
         position: relative;
@@ -148,10 +181,10 @@
         }
     }
     .categories {
-        margin-top: -40px;
+        margin-top: -300px;
         margin-bottom: 40px;
         .cat-wrap {
-            padding: 10px;
+            padding: 0 0 10px 10px;
             .cat-block {
                 position: relative;
 
@@ -184,8 +217,8 @@
 
                     color: $white;
 
-                    @include transform(translate-Y(-50%));
                     @include rem(font-size, 30px);
+                    @include transform(translateY(-50%));
                 }
             }
         }
@@ -245,8 +278,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(line-height, 22px);
                     @include rem(font-size, 16px);
+                    @include rem(line-height, 22px);
                 }
             }
         }
@@ -260,14 +293,28 @@
 
     @extend .gray-bg;
     .heading-h2 {
-        width: 115px;
+        position: relative;
+
         padding-bottom: 10px;
         margin: 0 auto;
         margin-bottom: 40px;
 
-        border-bottom: 2px solid $green;
+        text-transform: uppercase;
+        // border-bottom: 2px solid $green;
 
         @extend .f-cl-gray;
+        .border-inner-bottom {
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            left: 0;
+
+            width: 80px;
+            height: 3px;
+            margin: 0 auto;
+
+            background-color: $green;
+        }
     }
     .W-block {
         padding-top: 20px;
@@ -326,6 +373,7 @@
         margin-bottom: 10px;
 
         font-family: $blogger_L;
+        line-height: 22px;
 
         color: $dark-gray;
 
