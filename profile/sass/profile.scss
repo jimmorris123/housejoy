@@ -179,6 +179,7 @@
         right: auto;
 
         display: inline-block;
+        margin-top: 10px;
         margin-right: 15px;
     }
 }
@@ -333,6 +334,7 @@ a.account-links {
 
     display: block;
     padding: 30px 0;
+    padding: 20px 0;
     margin: 0 25px;
 
     @include medmx(768px) {
@@ -532,7 +534,7 @@ a.submit-button {
         display: inline-block;
         float: left;
         width: 50px;
-        height: 50px;
+        // height: 50px;
 
         @include medmx(768px) {
             width: 30px;
@@ -958,7 +960,7 @@ a.submit-button {
         // border-bottom: 1px solid #e5e5e5;
 
         @include medmx(768px) {
-            padding-top: 10px;
+            // padding-top: 10px;
             // padding-bottom: 0;
             margin-left: auto;
 
@@ -966,9 +968,14 @@ a.submit-button {
         }
     }
     .myorders-order-log-actions {
+        // padding-top: 10px;
+        // padding-bottom: 20px;
         margin-left: auto;
+        // border-bottom: 1px solid #e5e5e5;
 
-        @extend .order-log-actions;
+        @include medmx(768px) {
+            border: none;
+        }
     }
     .log-action-button {
         display: inline-block;
@@ -1075,6 +1082,7 @@ a.submit-button {
         }
     }
     .order-quote-div {
+        margin-top: 10px;
         margin-right: 20px;
         margin-bottom: 20px;
 
@@ -1408,9 +1416,8 @@ a.submit-button {
             @include rem(font-size, 30px);
         }
     }
-    .estimated-proce-div {
-        width: 100%;
-
+    .estimated-price-div {
+        // width: 100%;
         @extend .total-price-div;
     }
 }
