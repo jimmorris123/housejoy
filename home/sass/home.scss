@@ -159,6 +159,9 @@
 // FAQ page style
 
 .responsive-tabs {
+    position: relative;
+    z-index: 0;
+
     padding-top: 10px;
 
     border: none !important;
@@ -336,6 +339,8 @@
         margin-bottom: 20px;
 
         font-family: $blogger_M;
+
+        text-transform: uppercase;
 
         @include rem(font-size, 20px);
         .border-inner-bottom {
