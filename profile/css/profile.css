@@ -1604,17 +1604,17 @@ a.account-links:hover {
   width: 100%;
   margin: 0 auto;
 }
+@media all and (max-width: 768px) {
+  /* line 241, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
+  }
+}
 @media all and (max-width: 1024px) {
   /* line 241, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
-  }
-}
-@media all and (max-width: 768px) {
-  /* line 241, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
   }
 }
 /* line 253, ../sass/profile.scss */
@@ -1709,15 +1709,15 @@ a.account-links:hover {
 @media all and (max-width: 768px) {
   /* line 346, ../sass/profile.scss */
   .address-row .text-div {
-    margin-bottom: 10px;
+    display: block;
+    float: none;
+    width: 100%;
   }
 }
 @media all and (max-width: 768px) {
   /* line 346, ../sass/profile.scss */
   .address-row .text-div {
-    display: block;
-    float: none;
-    width: 100%;
+    margin-bottom: 10px;
   }
 }
 /* line 365, ../sass/profile.scss */
@@ -1798,13 +1798,13 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
-  font-size: 18px;
-  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 /* line 440, ../sass/profile.scss */
 input::-ms-clear {
@@ -1824,13 +1824,13 @@ a.submit-button {
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
+  font-size: 16px;
+  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 16px;
-  font-size: 1.6rem;
   /* &:first-child {
       margin-left: 0;
   } */
@@ -2548,16 +2548,16 @@ a.submit-button {
   margin-bottom: 30px;
   background-color: #fff;
 }
-@media all and (min-width: 1025px) {
-  /* line 1259, ../sass/profile.scss */
-  .complete-summary {
-    width: 770px;
-  }
-}
 @media all and (max-width: 768px) {
   /* line 1259, ../sass/profile.scss */
   .complete-summary {
     width: 100%;
+  }
+}
+@media all and (min-width: 1025px) {
+  /* line 1259, ../sass/profile.scss */
+  .complete-summary {
+    width: 770px;
   }
 }
 /* line 1274, ../sass/profile.scss */
@@ -2727,4 +2727,46 @@ a.submit-button {
 /* line 1444, ../sass/profile.scss */
 .profile-tab-div {
   padding-top: 20px;
+}
+
+/* line 1448, ../sass/profile.scss */
+.post-login-home {
+  padding: 0 30px 40px 30px;
+  overflow: hidden;
+}
+/* line 1451, ../sass/profile.scss */
+.post-login-home .categories {
+  padding: 40px 3%;
+  text-align: center;
+  background: #fff;
+}
+/* line 1458, ../sass/profile.scss */
+.post-login-home .categories a {
+  width: auto;
+}
+/* line 1460, ../sass/profile.scss */
+.post-login-home .categories a:hover {
+  color: #555;
+}
+/* line 1464, ../sass/profile.scss */
+.post-login-home .categories .icon-div {
+  display: block;
+  width: auto;
+  text-align: center;
+}
+/* line 1469, ../sass/profile.scss */
+.post-login-home .categories .icon-div svg {
+  width: 40px;
+  height: 40px;
+}
+/* line 1474, ../sass/profile.scss */
+.post-login-home .categories .text-div {
+  display: block;
+  width: auto;
+  font-family: "blogger_sansregular";
+  text-align: center;
+  text-transform: capitalize;
+  color: #555;
+  font-size: 18px;
+  font-size: 1.8rem;
 }

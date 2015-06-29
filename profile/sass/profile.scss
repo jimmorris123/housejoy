@@ -117,6 +117,7 @@
     color: $green;
     border: 1px solid $green;
 
+    @include border-radius(4px);
     @include medmx(768px) {
         position: relative;
         top: auto;
@@ -128,7 +129,6 @@
 
         border: none;
     }
-    @include border-radius(4px);
     .button-icon {
         display: inline-block;
         float: left;
@@ -157,7 +157,6 @@
 
         color: $green;
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             display: inline-block;
             margin-left: 5px;
@@ -166,6 +165,7 @@
 
             @include rem(font-size, 14px);
         }
+        @include rem(font-size, 16px);
     }
 }
 .myorders-right-button {
@@ -243,12 +243,12 @@ a.account-links {
     width: 100%;
     margin: 0 auto;
 
+    @include medmx(768px) {
+        margin: 0 auto 0;
+    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
-    }
-    @include medmx(768px) {
-        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -315,12 +315,12 @@ a.account-links {
 
                 color: $dark-gray;
 
-                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     // display: none;
                     // display: block;
                     // height: 60px;
                 }
+                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -353,13 +353,13 @@ a.account-links {
         color: $dark-gray;
 
         @include medmx(768px) {
-            margin-bottom: 10px;
-        }
-        @include rem(font-size, 16px);
-        @include medmx(768px) {
             display: block;
             float: none;
             width: 100%;
+        }
+        @include rem(font-size, 16px);
+        @include medmx(768px) {
+            margin-bottom: 10px;
         }
     }
     .icon-div {
@@ -406,10 +406,10 @@ a.account-links {
 
     color: #818181;
 
-    @include rem(font-size, 16px);
     @include medmx(768px) {
         margin: 0 10px;
     }
+    @include rem(font-size, 16px);
 }
 
 .address-input {
@@ -435,8 +435,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
 
-    @include rem(font-size, 18px);
     @include border-radius(4px);
+    @include rem(font-size, 18px);
     &::-ms-clear {
         display: none;
     }
@@ -458,7 +458,7 @@ a.submit-button {
     color: $white;
     background-color: #ffc400;
 
-    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -466,7 +466,7 @@ a.submit-button {
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
+    @include border-radius(4px);
     /* &:first-child {
         margin-left: 0;
     } */
@@ -887,10 +887,10 @@ a.submit-button {
 
         color: $dark-gray;
 
+        @include rem(font-size, 18px);
         @include medmx(768px) {
             padding-top: 10px;
         }
-        @include rem(font-size, 18px);
     }
     .order-category-date {
         font-family: $blogger_R;
@@ -899,10 +899,10 @@ a.submit-button {
 
         color: $medium-gray;
 
-        @include rem(font-size, 14px);
         @include medmx(768px) {
             text-align: left;
         }
+        @include rem(font-size, 14px);
     }
     .order-details-right-div {
         display: inline-block;
@@ -948,11 +948,11 @@ a.submit-button {
 
             color: #616161;
 
+            @include rem(font-size, 16px);
             @include medmx(768px) {
                 padding-right: 0;
                 // padding-bottom: 10px;
             }
-            @include rem(font-size, 16px);
         }
     }
     .order-log-actions {
@@ -1022,6 +1022,7 @@ a.submit-button {
 
         color: $medium-gray;
 
+        @include rem(font-size, 12px);
         @include medmx(768px) {
             display: block;
             float: none;
@@ -1031,7 +1032,6 @@ a.submit-button {
 
             text-align: left;
         }
-        @include rem(font-size, 12px);
 
         div {
             display: block;
@@ -1097,11 +1097,11 @@ a.submit-button {
            -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
                 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             margin-right: auto;
             // line-height: 1.5;
         }
-        @include rem(font-size, 16px);
         .row {
             background-color: transparent;
         }
@@ -1249,11 +1249,11 @@ a.submit-button {
 
     color: $dark-gray;
 
-    @include rem(font-size, 16px);
     @include medmx(768px) {
         padding-right: 20px;
         padding-left: 20px;
     }
+    @include rem(font-size, 16px);
 }
 
 .complete-summary {
@@ -1265,11 +1265,11 @@ a.submit-button {
 
     background-color: $white;
 
-    @include medmn(1025px) {
-        width: 770px;
-    }
     @include medmx(768px) {
         width: 100%;
+    }
+    @include medmn(1025px) {
+        width: 770px;
     }
     &:after {
         position: absolute;
@@ -1322,10 +1322,10 @@ a.submit-button {
 
         border-top: 1px solid #ddd;
 
-        @include rem(font-size, 18px);
         @include medmx(768px) {
             padding: 20px 0;
         }
+        @include rem(font-size, 18px);
         &:last-child {
             border-bottom: 1px solid #ddd;
         }
@@ -1372,11 +1372,11 @@ a.submit-button {
         color: #818181;
         border-bottom: 2px solid #e5e5e5;
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
+        @include rem(font-size, 16px);
         .row {
             margin-right: auto;
             margin-left: auto;
@@ -1405,11 +1405,11 @@ a.submit-button {
 
         color: $dark-gray;
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
-        @include rem(font-size, 16px);
         .price {
             margin-left: 10px;
 
@@ -1443,4 +1443,47 @@ a.submit-button {
 
 .profile-tab-div {
     padding-top: 20px;
+}
+
+.post-login-home {
+    padding: 0 30px 40px 30px;
+    overflow: hidden;
+    .categories {
+        // width: auto;
+        padding: 40px 3%;
+
+        text-align: center;
+
+        background: $white;
+        a {
+            width: auto;
+            &:hover {
+                color: $dark-gray;
+            }
+        }
+        .icon-div {
+            display: block;
+            width: auto;
+
+            text-align: center;
+            svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .text-div {
+            display: block;
+            // margin-top: 10px !important;
+            width: auto;
+
+            font-family: $blogger_R;
+
+            text-align: center;
+            text-transform: capitalize;
+
+            color: $dark-gray;
+
+            @include rem(font-size, 18px);
+        }
+    }
 }
