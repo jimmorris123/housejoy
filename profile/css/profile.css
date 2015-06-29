@@ -1604,17 +1604,17 @@ a.account-links:hover {
   width: 100%;
   margin: 0 auto;
 }
-@media all and (max-width: 768px) {
-  /* line 241, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
-  }
-}
 @media all and (max-width: 1024px) {
   /* line 241, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 241, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
   }
 }
 /* line 253, ../sass/profile.scss */
@@ -1709,15 +1709,15 @@ a.account-links:hover {
 @media all and (max-width: 768px) {
   /* line 346, ../sass/profile.scss */
   .address-row .text-div {
-    display: block;
-    float: none;
-    width: 100%;
+    margin-bottom: 10px;
   }
 }
 @media all and (max-width: 768px) {
   /* line 346, ../sass/profile.scss */
   .address-row .text-div {
-    margin-bottom: 10px;
+    display: block;
+    float: none;
+    width: 100%;
   }
 }
 /* line 365, ../sass/profile.scss */
@@ -1798,13 +1798,13 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
+  font-size: 18px;
+  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 18px;
-  font-size: 1.8rem;
 }
 /* line 440, ../sass/profile.scss */
 input::-ms-clear {
@@ -1824,13 +1824,13 @@ a.submit-button {
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
-  font-size: 16px;
-  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
   /* &:first-child {
       margin-left: 0;
   } */
@@ -2548,16 +2548,16 @@ a.submit-button {
   margin-bottom: 30px;
   background-color: #fff;
 }
-@media all and (max-width: 768px) {
-  /* line 1259, ../sass/profile.scss */
-  .complete-summary {
-    width: 100%;
-  }
-}
 @media all and (min-width: 1025px) {
   /* line 1259, ../sass/profile.scss */
   .complete-summary {
     width: 770px;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 1259, ../sass/profile.scss */
+  .complete-summary {
+    width: 100%;
   }
 }
 /* line 1274, ../sass/profile.scss */
@@ -2722,4 +2722,9 @@ a.submit-button {
 /* line 1440, ../sass/profile.scss */
 .new-address-div {
   display: none;
+}
+
+/* line 1444, ../sass/profile.scss */
+.profile-tab-div {
+  padding-top: 20px;
 }
