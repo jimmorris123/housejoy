@@ -48,13 +48,13 @@
 
                 background-color: $white;
 
-                @include transform(rotate(30deg));
                 @include medmx(768px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
+                @include transform(rotate(30deg));
             }
         }
         .title {
@@ -77,17 +77,17 @@
 
                 color: $white;
 
+                @include rem(font-size, 70px);
                 @include medmxn(768px, 992px) {
                     @include rem(font-size, 50px);
                 }
-                @include rem(font-size, 70px);
                 &.l-title {
                     font-family: $bebasneue_R;
 
+                    @include rem(font-size, 60px);
                     @include medmxn(768px, 992px) {
                         @include rem(font-size, 40px);
                     }
-                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -96,12 +96,12 @@
                 max-width: 100px;
                 min-width: 80px;
 
+                @include rem(font-size, 16px);
                 @include medmx(768px) {
                     float: none;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
-                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
@@ -148,7 +148,7 @@
         }
     }
     .categories {
-        margin-top: -220px;
+        margin-top: -40px;
         margin-bottom: 40px;
         .cat-wrap {
             padding: 10px;
@@ -184,8 +184,8 @@
 
                     color: $white;
 
-                    @include rem(font-size, 30px);
                     @include transform(translate-Y(-50%));
+                    @include rem(font-size, 30px);
                 }
             }
         }
@@ -245,8 +245,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(font-size, 16px);
                     @include rem(line-height, 22px);
+                    @include rem(font-size, 16px);
                 }
             }
         }
@@ -254,7 +254,7 @@
 }
 
 .work-process {
-    height: 350px;
+    // height: 350px;
     // padding-top: 40px;
     padding-bottom: 40px;
 
