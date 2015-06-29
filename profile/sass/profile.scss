@@ -255,8 +255,9 @@ a.account-links {
         margin: 0;
 
         list-style: none;
+        // border-bottom: 1px solid $green;
 
-        border-bottom: 1px solid $green;
+        border-bottom: 1px solid #b2dfdb;
 
         @include medmx(768px) {
             height: auto;
@@ -292,7 +293,8 @@ a.account-links {
                 clear: both;
 
                 border-right: none;
-                border-bottom: 1px solid $green;
+                // border-bottom: 1px solid $green;
+                border-bottom: 1px solid #b2dfdb;
             }
             &:first-child {
                 margin-left: 0;
@@ -1420,4 +1422,21 @@ a.submit-button {
         // width: 100%;
         @extend .total-price-div;
     }
+}
+
+.add-new-address-button-row {
+    @include medmx(768px) {
+        text-align: center;
+    }
+    .add-new-address-button {
+        float: right;
+
+        @include medmx(768px) {
+            float: none;
+        }
+    }
+}
+
+.new-address-div {
+    display: none;
 }
