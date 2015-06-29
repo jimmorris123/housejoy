@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(font-size, 16px);
             @include rem(line-height, 24px);
+            @include rem(font-size, 16px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(line-height, 20px);
                 @include rem(font-size, 16px);
+                @include rem(line-height, 20px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include transition(.3s all);
                     @include rem(font-size, 20px);
+                    @include transition(.3s all);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include rem(font-size, 24px);
                 @include transform(translateY(-50%));
+                @include rem(font-size, 24px);
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,8 @@
 
             color: $dark-gray;
 
-            @include rem(font-size, 16px);
             @include rem(line-height, 24px);
+            @include rem(font-size, 16px);
         }
     }
 }
@@ -252,8 +252,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(font-size, 18px);
                         @include rem(line-height, 28px);
+                        @include rem(font-size, 18px);
                     }
                 }
             }
@@ -281,6 +281,7 @@
         }
     }
 }
+
 
 // home page style
 .home-banner {
@@ -317,6 +318,12 @@
         }
     }
 }
+
+.expert-row {
+    @include medmx(768px) {
+        background-color: $white;
+    }
+}
 .content-section {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -343,10 +350,13 @@
             width: 20%;
             margin-bottom: 40px;
 
-            @include transition(all .3s);
-            @include medmx(768px) {
+            @include medmx(479px) {
                 width: 50%;
             }
+            @include medmxn(480px, 768px) {
+                width: 32%;
+            }
+            @include transition(all .3s);
             &:hover,
             &:focus,
             &:active {
@@ -438,16 +448,16 @@
         a {
             padding-left: 0;
 
-            @include medmn(992px) {
-                width: auto;
-            }
-            @include medmxn(480px, 768px) {
-                width: auto;
-            }
             @include medmn(768px) {
                 display: inline-block;
                 padding: 0;
                 padding-right: 15px;
+            }
+            @include medmxn(480px, 767px) {
+                width: auto;
+            }
+            @include medmn(992px) {
+                width: auto;
             }
         }
     }
@@ -523,8 +533,8 @@
 
                 color: $white;
 
-                @include rem(font-size, 30px);
                 @include transform(translateY(-50%));
+                @include rem(font-size, 30px);
                 p {
                     width: 60%;
                     margin: 0 auto;

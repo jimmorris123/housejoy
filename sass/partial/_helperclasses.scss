@@ -8,7 +8,10 @@ a {
     }
 }
 
-
+// width
+.W100 {
+    width: 100%;
+}
 
 
 // padding
@@ -73,6 +76,24 @@ a {
 .gradient-white {
     background: linear-gradient(to top, white, rgba(255, 255, 251, 0));
 }
+.linearBg {
+    opacity: .3;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from($green), to($yellow));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, $yellow, $green);
+    /* Firefox 3.6+ */
+    background:    -moz-linear-gradient(left, $yellow, $green);
+    /* IE 10 */
+    background:     -ms-linear-gradient(left, $yellow, $green);
+    /* Opera 11.10+ */
+    background:      -o-linear-gradient(left, $yellow, $green);
+    /* fallback */
+    // background-color: #1a82f7;
+    // background-repeat: repeat-y;
+}
+
+
 
 //overlay
 .overlay {
@@ -96,9 +117,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-            filter: blur(15px);
-            filter: blur(15px);
 }
 
 svg {
@@ -155,6 +176,9 @@ svg {
 .MB0 {
     margin-bottom: 0;
 }
+.MB0-imp {
+    margin-bottom: 0 !important;
+}
 .MB5 {
     margin-bottom: 5px;
 }
@@ -163,4 +187,9 @@ svg {
 }
 .MB20 {
     margin-bottom: 20px;
+}
+@include medmx(768px) {
+    .MB-sm-0 {
+        margin-bottom: 0 !important;
+    }
 }

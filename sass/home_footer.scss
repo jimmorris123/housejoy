@@ -3,6 +3,7 @@
 
     background-color: #222;
     .foot-content {
+        margin-bottom: 20px;
         .heading {
             padding-top: 10px;
 
@@ -38,6 +39,8 @@
         }
         .newsletter {
             position: relative;
+
+            margin-bottom: 20px;
             input[type="text"] {
                 font-family: $blogger_R;
 
@@ -61,15 +64,16 @@
         }
         .socials {
             display: table;
+            margin-left: -12px;
 
             border-spacing: 12px;
             border-collapse: separate;
-            & i {
+            & a {
                 position: relative;
 
                 display: table-cell;
-                width: 40px;
-                height: 40px;
+                width: 30px;
+                height: 30px;
 
                 cursor: pointer;
                 text-align: center;
@@ -78,36 +82,69 @@
                 color: $white;
                 background: transparent;
 
-                @include transition(all .15s ease);
                 @include rem(font-size, 16px);
+                @include transition(all .15s ease);
                 &:hover {
                     border-radius: 50%;
                 }
             }
-            & i:nth-child(1) {
-                color: #3b5998;
-                border: 2px solid #3b5998;
-            }
-            & i:nth-child(1):hover {
-                color: white;
+            & a:nth-child(1) {
+                color: $white;
                 background: #3b5998;
             }
-            & i:nth-child(2) {
-                color: #00a0d1;
-                border: 2px solid #00a0d1;
+            & a:nth-child(1):hover {
+                color: #3b5998;
+                // border: 2px solid #3b5998;
+                background: $white;
             }
-            & i:nth-child(2):hover {
-                color: white;
+            & a:nth-child(2) {
+                color: $white;
                 background: #00a0d1;
             }
-            & i:nth-child(3) {
-                color: #db4a39;
-                border: 2px solid #db4a39;
+            & a:nth-child(2):hover {
+                color: #00a0d1;
+                // border: 2px solid #00a0d1;
+                background: $white;
             }
-            & i:nth-child(3):hover {
-                color: white;
+            & a:nth-child(3) {
+                color: $white;
                 background: #db4a39;
+            }
+            & a:nth-child(3):hover {
+                color: #db4a39;
+                // border: 2px solid #db4a39;
+                background: $white;
+            }
+        }
+        &.bottom {
+            ul {
+                padding: 20px 0 10px 0;
+
+                border-top: 1px solid #555;
+                li {
+                    display: inline-block;
+                    float: none;
+                    min-width: 0;
+                    margin-bottom: 0;
+
+                    @include medmx(768px) {
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        padding: 10px;
+                    }
+                }
             }
         }
     }
+}
+.copyrights {
+    padding: 20px 15px;
+
+    font-family: $blogger_R;
+
+    color: $white;
+    background-color: #000;
+
+    @include rem(font-size, 14px);
 }
