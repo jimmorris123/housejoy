@@ -9,6 +9,11 @@
 }
 .section-padding {
     padding-top: 30px;
+
+    @include medmx(768px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 
 .mrtp20 {
@@ -16,6 +21,31 @@
 }
 .row {
     margin: 0 auto;
+}
+
+.no-select {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+     -khtml-user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+}
+
+.rotate {
+    /* Safari */
+    -webkit-transform: rotate(180deg);
+    /* Firefox */
+       -moz-transform: rotate(180deg);
+    /* IE */
+        -ms-transform: rotate(180deg);
+    /* Opera */
+         -o-transform: rotate(180deg);
+    /* Internet Explorer */
+
+    filter: progid:dximagetransform.Microsoft.BasicImage(rotation=2);
 }
 
 .checkbox-div {
@@ -37,39 +67,22 @@
             }
             input[type=checkbox]:checked + .checkbox-style {
                 display: inline-block;
-                padding-top: 6px;
+                // padding-top: 6px;
                 // transform: translate(-6px, 0);
-                padding-left: 1px;
+                // padding-left: 1px;
 
                 color: #757575;
                 border-color: #009587;
                 // top: 23px;
                 background-color: #009587;
 
-                &:before,
-                &:after {
-                    position: absolute;
+                //color: $green;
+                svg {
+                    display: block;
+                    width: 16px;
+                    height: 16px;
 
-                    width: 2px;
-
-                    content: "";
-
-                    background-color: #fff;
-
-                    @extend .transition;
-                }
-
-                &:before {
-                    // width: 2px;
-                    height: 13px;
-
-                    transform: translate(0px, -4px) rotate(45deg);
-                }
-                &:after {
-                    // width: 2px;
-                    height: 7px;
-
-                    transform: translate(-6px, 1px) rotate(-45deg);
+                    fill: $white;
                 }
             }
             .checkbox-style {
@@ -85,6 +98,10 @@
 
                 @include border-radius(2px);
                 // margin-top: 5px;
+
+                svg {
+                    display: none;
+                }
             }
         }
         .checkbox-label-text {
@@ -117,7 +134,6 @@
     color: $green;
     border: 1px solid $green;
 
-    @include border-radius(4px);
     @include medmx(768px) {
         position: relative;
         top: auto;
@@ -129,6 +145,7 @@
 
         border: none;
     }
+    @include border-radius(4px);
     .button-icon {
         display: inline-block;
         float: left;
@@ -157,6 +174,7 @@
 
         color: $green;
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             display: inline-block;
             margin-left: 5px;
@@ -165,7 +183,6 @@
 
             @include rem(font-size, 14px);
         }
-        @include rem(font-size, 16px);
     }
 }
 .myorders-right-button {
@@ -243,12 +260,12 @@ a.account-links {
     width: 100%;
     margin: 0 auto;
 
-    @include medmx(768px) {
-        margin: 0 auto 0;
-    }
     @include medmx(1024px) {
         width: 100%;
         margin-left: auto;
+    }
+    @include medmx(768px) {
+        margin: 0 auto 0;
     }
     ul {
         padding: 0;
@@ -315,12 +332,12 @@ a.account-links {
 
                 color: $dark-gray;
 
+                @include rem(font-size, 18px);
                 @include medmx(768px) {
                     // display: none;
                     // display: block;
                     // height: 60px;
                 }
-                @include rem(font-size, 18px);
             }
         }
         .active > a {
@@ -353,13 +370,13 @@ a.account-links {
         color: $dark-gray;
 
         @include medmx(768px) {
-            display: block;
-            float: none;
-            width: 100%;
+            margin-bottom: 10px;
         }
         @include rem(font-size, 16px);
         @include medmx(768px) {
-            margin-bottom: 10px;
+            display: block;
+            float: none;
+            width: 100%;
         }
     }
     .icon-div {
@@ -406,10 +423,10 @@ a.account-links {
 
     color: #818181;
 
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         margin: 0 10px;
     }
-    @include rem(font-size, 16px);
 }
 
 .address-input {
@@ -435,8 +452,8 @@ input {
     border: 1px solid #ccc;
     outline: none;
 
-    @include border-radius(4px);
     @include rem(font-size, 18px);
+    @include border-radius(4px);
     &::-ms-clear {
         display: none;
     }
@@ -458,7 +475,7 @@ a.submit-button {
     color: $white;
     background-color: #ffc400;
 
-    @include rem(font-size, 16px);
+    @include border-radius(4px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -466,7 +483,7 @@ a.submit-button {
         margin-left: auto;
         clear: both;
     }
-    @include border-radius(4px);
+    @include rem(font-size, 16px);
     /* &:first-child {
         margin-left: 0;
     } */
@@ -484,7 +501,7 @@ a.submit-button {
         background: $white;
 
         @include medmx(768px) {
-            padding: 20px 10px;
+            padding: 20px;
         }
     }
     .row-type2 {
@@ -495,7 +512,7 @@ a.submit-button {
         background: $white;
 
         @include medmx(768px) {
-            padding: 20px 10px 20px 10px;
+            padding: 20px 20px 20px 20px;
         }
     }
     .bottom-border {
@@ -606,6 +623,8 @@ a.submit-button {
     .filterby-button-div {
         float: right;
         height: 60px;
+
+        @extend .no-select;
         .filterby-button {
             padding: 10px 20px;
             margin-top: 10px;
@@ -614,13 +633,14 @@ a.submit-button {
             .button-text {
                 display: inline-block;
                 float: left;
-                margin-left: 10px;
+                margin-right: 10px;
 
                 font-family: $blogger_R;
                 // line-height: 60px;
 
                 color: $dark-gray;
 
+                @extend .no-select;
                 @include rem(font-size, 16px);
             }
 
@@ -630,69 +650,81 @@ a.submit-button {
                 width: 15px;
                 height: 15px;
                 // padding-top: 20px;
-                padding-left: 10px;
-                .i-open {
-                    position: relative;
-                    // padding-left: 30px;
-                    // padding-top: 10px;
-                    top: 6px;
+                // padding-left: 10px;
 
-                    padding-right: 5px;
+                line-height: 24px;
+                // .i-open {
+                //     position: relative;
+                //     top: 6px;
 
-                    transform: translate(-6px, 0);
+                //     padding-right: 5px;
 
-                    &:before,
-                    &:after {
-                        position: absolute;
+                //     transform: translate(-6px, 0);
 
-                        width: 2px;
-                        height: 7px;
+                //     &:before,
+                //     &:after {
+                //         position: absolute;
 
-                        content: "";
+                //         width: 2px;
+                //         height: 7px;
 
-                        background: #ccc;
+                //         content: "";
 
-                        @extend .transition;
+                //         background: #ccc;
+
+                //         @extend .transition;
+                //     }
+
+                //     &:before {
+                //         transform: translate( -2px , 0 ) rotate( 45deg );
+                //     }
+
+                //     &:after {
+                //         transform: translate( 2px , 0 ) rotate( -45deg );
+                //     }
+                // }
+
+                // .i-close {
+                //     position: relative;
+
+                //     top: 6px;
+
+                //     padding-right: 5px;
+
+                //     transform: translate(-6px, 0);
+
+                //     &:before,
+                //     &:after {
+                //         position: absolute;
+
+                //         width: 2px;
+                //         height: 7px;
+
+                //         content: "";
+
+                //         background: #ccc;
+
+                //         @extend .transition;
+                //     }
+
+                //     &:before {
+                //         transform: translate( 2px , 0 ) rotate( 45deg );
+                //     }
+                //     &:after {
+                //         transform: translate( -2px , 0 ) rotate( -45deg );
+                //     }
+                // }
+
+                svg {
+                    width: 12px;
+                    height: 12px;
+
+                    fill: $medium-gray;
+                    .down-icon {
+                        display: none;
                     }
-
-                    &:before {
-                        transform: translate( -2px , 0 ) rotate( 45deg );
-                    }
-
-                    &:after {
-                        transform: translate( 2px , 0 ) rotate( -45deg );
-                    }
-                }
-
-                .i-close {
-                    position: relative;
-                    // padding-left: 30px;
-                    // padding-top: 10px;
-                    top: 6px;
-
-                    padding-right: 5px;
-
-                    transform: translate(-6px, 0);
-
-                    &:before,
-                    &:after {
-                        position: absolute;
-
-                        width: 2px;
-                        height: 7px;
-
-                        content: "";
-
-                        background: #ccc;
-
-                        @extend .transition;
-                    }
-
-                    &:before {
-                        transform: translate( 2px , 0 ) rotate( 45deg );
-                    }
-                    &:after {
-                        transform: translate( -2px , 0 ) rotate( -45deg );
+                    .up-icon {
+                        display: block;
                     }
                 }
             }
@@ -713,16 +745,16 @@ a.submit-button {
                 box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
         &:after {
             position: absolute;
-            top: -4px;
+            top: -6px;
             right: 0;
 
             width: 117px;
-            height: 5px;
+            height: 6px;
 
             background: $white;
 
-            @include medmx(768px) {
-                width: 110px;
+            @include medmx(767px) {
+                width: 107px;
             }
         }
         .work-status {
@@ -792,27 +824,17 @@ a.submit-button {
                         }
                     }
 
-                    .radio-button-div {
+                    .checkbox-span {
                         display: table;
                         float: left;
 
                         table-layout: fixed;
-                        input[type=checkbox] + .radio-button {
+                        input[type=checkbox] + .checkbox-icon {
                             display: none;
                         }
 
-                        input[type=checkbox]:checked + .radio-button {
-                            display: table-cell;
-                            width: 20px;
-                            height: 20px;
-
-                            cursor: pointer;
-                            // transition: .5s cubic-bezier(.25, .1, .36, .49) all;
-                            text-align: center;
-                            vertical-align: middle;
-                        }
                         /* the basic, unchecked style */
-                        input[type=checkbox] + .radio-button:before {
+                        input[type=checkbox] + .checkbox-icon:before {
                             position: absolute;
 
                             display: inline-block;
@@ -827,44 +849,31 @@ a.submit-button {
                             // transition: .5s ease all;
                             vertical-align: -.25em;
                         }
-                        input[type=checkbox] + .radio-button:before {
+                        input[type=checkbox] + .checkbox-icon:before {
                             // transition: .5s ease all;
                         }
 
-                        /* the checked style using the :checked pseudo class */
-                        input[type=checkbox]:checked + .radio-button:before {
-                            display: inline-block;
-                            // background: $green;
-                            // box-shadow: 0 0 0 2px $green;
-                            width: 2px;
-                            // height: 13px;
+                        input[type=checkbox]:checked + .checkbox-icon {
+                            display: table-cell;
+                            width: 20px;
+                            height: 20px;
 
-                            content: "";
-                            -webkit-transform: translate(0px, -10px) rotate(45deg);
-                               -moz-transform: translate(0px, -10px) rotate(45deg);
-                                -ms-transform: translate(0px, -10px) rotate(45deg);
-                                 -o-transform: translate(0px, -10px) rotate(45deg);
-                                    transform: translate(0px, -10px) rotate(45deg);
-
-                            background-color: $green;
-
-                            // @include transition(all .3s ease);
+                            cursor: pointer;
+                            // transition: .5s cubic-bezier(.25, .1, .36, .49) all;
+                            text-align: center;
+                            vertical-align: middle;
                         }
 
-                        input[type=checkbox]:checked + .radio-button:after {
-                            position: absolute;
 
-                            width: 2px;
-                            height: 7px;
+                        /* the checked style using the :checked pseudo class */
+                        input[type=checkbox]:checked + .checkbox-icon {
+                            color: $green;
+                            svg {
+                                width: 18px;
+                                height: 18px;
 
-                            content: "";
-                            -webkit-transform: translate(-6px, 0px) rotate(-45deg);
-                               -moz-transform: translate(-6px, 0px) rotate(-45deg);
-                                -ms-transform: translate(-6px, 0px) rotate(-45deg);
-                                 -o-transform: translate(-6px, 0px) rotate(-45deg);
-                                    transform: translate(-6px, 0px) rotate(-45deg);
-
-                            background-color: $green;
+                                fill: currentColor;
+                            }
                         }
                     }
 
@@ -872,6 +881,8 @@ a.submit-button {
                         display: inline-block;
                         float: left;
                         // width: 70%;
+
+                        line-height: 20px;
 
                         @include transition(all .3s ease);
                     }
@@ -887,10 +898,10 @@ a.submit-button {
 
         color: $dark-gray;
 
-        @include rem(font-size, 18px);
         @include medmx(768px) {
             padding-top: 10px;
         }
+        @include rem(font-size, 18px);
     }
     .order-category-date {
         font-family: $blogger_R;
@@ -899,10 +910,10 @@ a.submit-button {
 
         color: $medium-gray;
 
+        @include rem(font-size, 14px);
         @include medmx(768px) {
             text-align: left;
         }
-        @include rem(font-size, 14px);
     }
     .order-details-right-div {
         display: inline-block;
@@ -948,11 +959,11 @@ a.submit-button {
 
             color: #616161;
 
-            @include rem(font-size, 16px);
             @include medmx(768px) {
                 padding-right: 0;
                 // padding-bottom: 10px;
             }
+            @include rem(font-size, 16px);
         }
     }
     .order-log-actions {
@@ -1022,7 +1033,6 @@ a.submit-button {
 
         color: $medium-gray;
 
-        @include rem(font-size, 12px);
         @include medmx(768px) {
             display: block;
             float: none;
@@ -1032,6 +1042,7 @@ a.submit-button {
 
             text-align: left;
         }
+        @include rem(font-size, 12px);
 
         div {
             display: block;
@@ -1097,11 +1108,11 @@ a.submit-button {
            -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
                 box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .2);
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             margin-right: auto;
             // line-height: 1.5;
         }
+        @include rem(font-size, 16px);
         .row {
             background-color: transparent;
         }
@@ -1249,11 +1260,11 @@ a.submit-button {
 
     color: $dark-gray;
 
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         padding-right: 20px;
         padding-left: 20px;
     }
-    @include rem(font-size, 16px);
 }
 
 .complete-summary {
@@ -1265,11 +1276,11 @@ a.submit-button {
 
     background-color: $white;
 
-    @include medmx(768px) {
-        width: 100%;
-    }
     @include medmn(1025px) {
         width: 770px;
+    }
+    @include medmx(768px) {
+        width: 100%;
     }
     &:after {
         position: absolute;
@@ -1322,10 +1333,10 @@ a.submit-button {
 
         border-top: 1px solid #ddd;
 
+        @include rem(font-size, 18px);
         @include medmx(768px) {
             padding: 20px 0;
         }
-        @include rem(font-size, 18px);
         &:last-child {
             border-bottom: 1px solid #ddd;
         }
@@ -1372,11 +1383,11 @@ a.submit-button {
         color: #818181;
         border-bottom: 2px solid #e5e5e5;
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
-        @include rem(font-size, 16px);
         .row {
             margin-right: auto;
             margin-left: auto;
@@ -1405,11 +1416,11 @@ a.submit-button {
 
         color: $dark-gray;
 
-        @include rem(font-size, 16px);
         @include medmx(768px) {
             width: 100%;
             padding: 20px 0;
         }
+        @include rem(font-size, 16px);
         .price {
             margin-left: 10px;
 

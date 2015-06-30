@@ -146,24 +146,43 @@ body {
     width: 100%;
     transition: left .4s;
   }
-
-  /* line 13, ../../sass/partial/_navigation.scss */
-  .side-collapse-container.out {
-    left: 200px;
+  /* line 12, ../../sass/partial/_navigation.scss */
+  .side-collapse-container .hamburger {
+    display: none !important;
+  }
+  /* line 16, ../../sass/partial/_navigation.scss */
+  .side-collapse-container .overlay.after-slide {
+    display: none;
   }
 
-  /* line 16, ../../sass/partial/_navigation.scss */
+  /* line 21, ../../sass/partial/_navigation.scss */
+  .side-collapse-container.out {
+    left: 80%;
+  }
+  /* line 23, ../../sass/partial/_navigation.scss */
+  .side-collapse-container.out .hamburger {
+    top: -45px;
+    left: 15px;
+    display: block !important;
+  }
+  /* line 30, ../../sass/partial/_navigation.scss */
+  .side-collapse-container.out .overlay.after-slide {
+    z-index: 1;
+    display: block;
+  }
+
+  /* line 37, ../../sass/partial/_navigation.scss */
   .side-collapse {
     position: fixed;
     top: 50px;
     bottom: 0;
     left: 0;
-    width: 200px;
+    width: 80%;
     overflow: hidden;
     transition: width .4s;
   }
 
-  /* line 27, ../../sass/partial/_navigation.scss */
+  /* line 48, ../../sass/partial/_navigation.scss */
   .side-collapse.in {
     width: 0;
   }
@@ -171,7 +190,7 @@ body {
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
-/* line 36, ../../sass/partial/_navigation.scss */
+/* line 57, ../../sass/partial/_navigation.scss */
 .hamburger {
   top: -8px;
   z-index: 999;
@@ -183,14 +202,14 @@ body {
   background: transparent;
 }
 
-/* line 49, ../../sass/partial/_navigation.scss */
+/* line 70, ../../sass/partial/_navigation.scss */
 .hamburger:hover,
 .hamburger:focus,
 .hamburger:active {
   outline: none;
 }
 
-/* line 54, ../../sass/partial/_navigation.scss */
+/* line 75, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:before {
   display: block;
   width: 100px;
@@ -204,7 +223,7 @@ body {
   color: #fff;
 }
 
-/* line 69, ../../sass/partial/_navigation.scss */
+/* line 90, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover:before {
   display: block;
   -webkit-transition: all .35s ease-in-out;
@@ -212,7 +231,7 @@ body {
   opacity: 1;
 }
 
-/* line 78, ../../sass/partial/_navigation.scss */
+/* line 99, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom,
@@ -225,75 +244,75 @@ body {
   height: 4px;
 }
 
-/* line 90, ../../sass/partial/_navigation.scss */
+/* line 111, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
   background-color: #fff;
 }
 
-/* line 95, ../../sass/partial/_navigation.scss */
+/* line 116, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top {
   top: 5px;
   -webkit-transition: all .35s ease-in-out;
 }
 
-/* line 100, ../../sass/partial/_navigation.scss */
+/* line 121, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-middle {
   top: 50%;
   margin-top: -2px;
 }
 
-/* line 105, ../../sass/partial/_navigation.scss */
+/* line 126, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-bottom {
   bottom: 5px;
   -webkit-transition: all .35s ease-in-out;
 }
 
-/* line 111, ../../sass/partial/_navigation.scss */
+/* line 132, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover .hamb-top {
   top: 0;
   -webkit-transition: all .35s ease-in-out;
 }
 
-/* line 116, ../../sass/partial/_navigation.scss */
+/* line 137, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover .hamb-bottom {
   bottom: 0;
   -webkit-transition: all .35s ease-in-out;
 }
 
-/* line 121, ../../sass/partial/_navigation.scss */
+/* line 142, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
 .hamburger.is-open .hamb-bottom {
   background-color: #fff;
 }
 
-/* line 126, ../../sass/partial/_navigation.scss */
+/* line 147, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-bottom {
   top: 50%;
   margin-top: -2px;
 }
 
-/* line 132, ../../sass/partial/_navigation.scss */
+/* line 153, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
   -webkit-transform: rotate(45deg);
 }
 
-/* line 136, ../../sass/partial/_navigation.scss */
+/* line 157, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-middle {
   display: none;
 }
 
-/* line 139, ../../sass/partial/_navigation.scss */
+/* line 160, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-bottom {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
   -webkit-transform: rotate(-45deg);
 }
 
-/* line 143, ../../sass/partial/_navigation.scss */
+/* line 164, ../../sass/partial/_navigation.scss */
 .hamburger.is-open:before {
   display: block;
   width: 100px;
@@ -307,7 +326,7 @@ body {
   color: #fff;
 }
 
-/* line 158, ../../sass/partial/_navigation.scss */
+/* line 179, ../../sass/partial/_navigation.scss */
 .hamburger.is-open:hover:before {
   display: block;
   -webkit-transition: all .35s ease-in-out;
@@ -315,7 +334,7 @@ body {
   opacity: 1;
 }
 
-/* line 169, ../../sass/partial/_navigation.scss */
+/* line 190, ../../sass/partial/_navigation.scss */
 .header {
   position: relative;
   z-index: 1;
@@ -326,38 +345,42 @@ body {
   padding-left: 20px;
   background-color: #009688;
 }
-/* line 180, ../../sass/partial/_navigation.scss */
+/* line 201, ../../sass/partial/_navigation.scss */
 .header .logo-div {
   padding: 20px 15px;
 }
 @media all and (max-width: 768px) {
-  /* line 180, ../../sass/partial/_navigation.scss */
+  /* line 201, ../../sass/partial/_navigation.scss */
   .header .logo-div {
     padding: 20px 0;
   }
 }
-/* line 187, ../../sass/partial/_navigation.scss */
+/* line 207, ../../sass/partial/_navigation.scss */
+.header .logo-div .hamburger.is-open {
+  display: none;
+}
+/* line 211, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse {
   border: none;
   background-color: transparent;
 }
 @media all and (max-width: 768px) {
-  /* line 190, ../../sass/partial/_navigation.scss */
+  /* line 214, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .side-collapse {
-    top: 1px;
-    left: -20px;
+    top: 0;
+    left: 0;
     background-color: #fff;
   }
 }
-/* line 199, ../../sass/partial/_navigation.scss */
+/* line 223, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse {
   border: none;
 }
-/* line 201, ../../sass/partial/_navigation.scss */
+/* line 225, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav {
   background-color: transparent;
 }
-/* line 204, ../../sass/partial/_navigation.scss */
+/* line 228, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a {
   padding: 20px 15px;
   font-family: "blogger_sansregular";
@@ -366,16 +389,16 @@ body {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 204, ../../sass/partial/_navigation.scss */
+  /* line 228, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li a {
     color: #777;
   }
 }
-/* line 215, ../../sass/partial/_navigation.scss */
+/* line 239, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a .icon {
   margin-right: 10px;
 }
-/* line 220, ../../sass/partial/_navigation.scss */
+/* line 244, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
   padding: 20px 15px;
   color: #fff;
@@ -385,12 +408,12 @@ body {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 220, ../../sass/partial/_navigation.scss */
+  /* line 244, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
     color: #777;
   }
 }
-/* line 231, ../../sass/partial/_navigation.scss */
+/* line 255, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
   color: #fff;
   border: none;
@@ -399,38 +422,38 @@ body {
   box-shadow: none;
 }
 @media all and (max-width: 768px) {
-  /* line 231, ../../sass/partial/_navigation.scss */
+  /* line 255, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
     color: #777;
   }
 }
-/* line 245, ../../sass/partial/_navigation.scss */
+/* line 269, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button .caret {
   margin-left: 10px;
 }
-/* line 249, ../../sass/partial/_navigation.scss */
+/* line 273, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu {
   top: 60px;
   padding: 0;
   margin: 0;
   border-radius: 0;
 }
-/* line 257, ../../sass/partial/_navigation.scss */
+/* line 281, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a {
   font-family: "blogger_sansregular";
   color: #777;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 263, ../../sass/partial/_navigation.scss */
+/* line 287, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:active {
   color: #fff;
 }
-/* line 270, ../../sass/partial/_navigation.scss */
+/* line 294, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li.active a {
   color: #fff;
 }
-/* line 281, ../../sass/partial/_navigation.scss */
+/* line 305, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-toggle:hover,
 .header .navbar-inverse .navbar-toggle:focus {
   background-color: transparent;
@@ -1220,10 +1243,6 @@ svg {
 .work-process.testimonials {
   height: auto;
 }
-/* line 15, ../../sass/partial/_testimonials.scss */
-.work-process.testimonials .heading-h2 {
-  border-bottom: 2px solid #009688;
-}
 
 /* line 19, ../../sass/partial/_testimonials.scss */
 .carousel-reviews {
@@ -1359,7 +1378,7 @@ svg {
 }
 
 /* line 7, ../sass/profile.scss */
-.transition, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
+.transition {
   transition: .5s ease all;
 }
 
@@ -1367,22 +1386,54 @@ svg {
 .section-padding {
   padding-top: 30px;
 }
+@media all and (max-width: 768px) {
+  /* line 10, ../sass/profile.scss */
+  .section-padding {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
-/* line 14, ../sass/profile.scss */
+/* line 19, ../sass/profile.scss */
 .mrtp20 {
   margin-top: 20px !important;
 }
 
-/* line 17, ../sass/profile.scss */
+/* line 22, ../sass/profile.scss */
 .row {
   margin: 0 auto;
 }
 
-/* line 21, ../sass/profile.scss */
+/* line 26, ../sass/profile.scss */
+.no-select, .my-orders .filterby-button-div, .my-orders .filterby-button-div .filterby-button .button-text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+/* line 37, ../sass/profile.scss */
+.rotate {
+  /* Safari */
+  -webkit-transform: rotate(180deg);
+  /* Firefox */
+  -moz-transform: rotate(180deg);
+  /* IE */
+  -ms-transform: rotate(180deg);
+  /* Opera */
+  -o-transform: rotate(180deg);
+  /* Internet Explorer */
+  filter: progid:dximagetransform.Microsoft.BasicImage(rotation=2);
+}
+
+/* line 51, ../sass/profile.scss */
 .checkbox-div {
   text-align: left;
 }
-/* line 23, ../sass/profile.scss */
+/* line 53, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div {
   width: 100%;
   margin-right: auto;
@@ -1391,43 +1442,31 @@ svg {
   clear: both;
   text-align: left;
 }
-/* line 31, ../sass/profile.scss */
+/* line 61, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-icon-div {
   display: inline-block;
   float: left;
   width: 20px;
 }
-/* line 35, ../sass/profile.scss */
+/* line 65, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox] {
   display: none;
 }
-/* line 38, ../sass/profile.scss */
+/* line 68, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style {
   display: inline-block;
-  padding-top: 6px;
-  padding-left: 1px;
   color: #757575;
   border-color: #009587;
   background-color: #009587;
 }
-/* line 49, ../sass/profile.scss */
-.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before, .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
-  position: absolute;
-  width: 2px;
-  content: "";
-  background-color: #fff;
+/* line 80, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #fff;
 }
-/* line 62, ../sass/profile.scss */
-.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before {
-  height: 13px;
-  transform: translate(0px, -4px) rotate(45deg);
-}
-/* line 68, ../sass/profile.scss */
-.checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
-  height: 7px;
-  transform: translate(-6px, 1px) rotate(-45deg);
-}
-/* line 75, ../sass/profile.scss */
+/* line 88, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style {
   float: left;
   width: 20px;
@@ -1441,14 +1480,18 @@ svg {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-/* line 90, ../sass/profile.scss */
+/* line 102, ../sass/profile.scss */
+.checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style svg {
+  display: none;
+}
+/* line 107, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-label-text {
   display: inline-block;
   float: left;
   width: calc(100% - 20px);
   height: auto;
 }
-/* line 95, ../sass/profile.scss */
+/* line 112, ../sass/profile.scss */
 .checkbox-div .checkbox-icon-label-div .checkbox-label-text .same-address-label {
   float: left;
   padding-left: 5px;
@@ -1458,7 +1501,7 @@ svg {
   font-size: 1.6rem;
 }
 
-/* line 111, ../sass/profile.scss */
+/* line 128, ../sass/profile.scss */
 .green-icon-button {
   display: inline-block;
   padding: 10px 20px;
@@ -1472,7 +1515,7 @@ svg {
   border-radius: 4px;
 }
 @media all and (max-width: 768px) {
-  /* line 111, ../sass/profile.scss */
+  /* line 128, ../sass/profile.scss */
   .green-icon-button {
     position: relative;
     top: auto;
@@ -1483,7 +1526,7 @@ svg {
     border: none;
   }
 }
-/* line 132, ../sass/profile.scss */
+/* line 149, ../sass/profile.scss */
 .green-icon-button .button-icon {
   display: inline-block;
   float: left;
@@ -1491,20 +1534,20 @@ svg {
   height: 15px;
 }
 @media all and (max-width: 768px) {
-  /* line 132, ../sass/profile.scss */
+  /* line 149, ../sass/profile.scss */
   .green-icon-button .button-icon {
     width: 12px;
     height: 12px;
   }
 }
-/* line 142, ../sass/profile.scss */
+/* line 159, ../sass/profile.scss */
 .green-icon-button .button-icon svg {
   width: 100%;
   height: 100%;
   margin-top: 2px;
   fill: currentColor;
 }
-/* line 151, ../sass/profile.scss */
+/* line 168, ../sass/profile.scss */
 .green-icon-button .button-text {
   display: inline-block;
   margin-left: 10px;
@@ -1515,7 +1558,7 @@ svg {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 151, ../sass/profile.scss */
+  /* line 168, ../sass/profile.scss */
   .green-icon-button .button-text {
     display: inline-block;
     margin-left: 5px;
@@ -1525,14 +1568,14 @@ svg {
   }
 }
 
-/* line 171, ../sass/profile.scss */
+/* line 188, ../sass/profile.scss */
 .myorders-right-button {
   position: absolute;
   top: 20px;
   right: 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 171, ../sass/profile.scss */
+  /* line 188, ../sass/profile.scss */
   .myorders-right-button {
     position: relative;
     top: auto;
@@ -1543,14 +1586,14 @@ svg {
   }
 }
 
-/* line 187, ../sass/profile.scss */
+/* line 204, ../sass/profile.scss */
 .profile-img-div {
   padding-bottom: 30px;
   overflow: hidden;
   clear: both;
   text-align: center;
 }
-/* line 194, ../sass/profile.scss */
+/* line 211, ../sass/profile.scss */
 .profile-img-div .profile-img {
   width: 120px;
   height: 120px;
@@ -1564,7 +1607,7 @@ svg {
   -webkit-border-radius: 120px;
   border-radius: 120px;
 }
-/* line 204, ../sass/profile.scss */
+/* line 221, ../sass/profile.scss */
 .profile-img-div .profile-name {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -1573,7 +1616,7 @@ svg {
   font-size: 2.2rem;
 }
 
-/* line 215, ../sass/profile.scss */
+/* line 232, ../sass/profile.scss */
 a.account-links {
   display: block;
   width: 100%;
@@ -1588,36 +1631,36 @@ a.account-links {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 232, ../sass/profile.scss */
+/* line 249, ../sass/profile.scss */
 a.account-links:hover {
   border-color: #009688;
 }
 
-/* line 237, ../sass/profile.scss */
+/* line 254, ../sass/profile.scss */
 .account-active-link {
   border-color: #009688 !important;
 }
 
-/* line 241, ../sass/profile.scss */
+/* line 258, ../sass/profile.scss */
 .profile-tabs {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
-@media all and (max-width: 768px) {
-  /* line 241, ../sass/profile.scss */
-  .profile-tabs {
-    margin: 0 auto 0;
-  }
-}
 @media all and (max-width: 1024px) {
-  /* line 241, ../sass/profile.scss */
+  /* line 258, ../sass/profile.scss */
   .profile-tabs {
     width: 100%;
     margin-left: auto;
   }
 }
-/* line 253, ../sass/profile.scss */
+@media all and (max-width: 768px) {
+  /* line 258, ../sass/profile.scss */
+  .profile-tabs {
+    margin: 0 auto 0;
+  }
+}
+/* line 270, ../sass/profile.scss */
 .profile-tabs ul {
   padding: 0;
   margin: 0;
@@ -1625,19 +1668,19 @@ a.account-links:hover {
   border-bottom: 1px solid #b2dfdb;
 }
 @media all and (max-width: 768px) {
-  /* line 253, ../sass/profile.scss */
+  /* line 270, ../sass/profile.scss */
   .profile-tabs ul {
     height: auto;
     border-bottom: none;
   }
 }
-/* line 269, ../sass/profile.scss */
+/* line 286, ../sass/profile.scss */
 .profile-tabs ul:after {
   display: table;
   clear: both;
   content: "";
 }
-/* line 276, ../sass/profile.scss */
+/* line 293, ../sass/profile.scss */
 .profile-tabs ul li {
   display: table;
   float: left;
@@ -1648,7 +1691,7 @@ a.account-links:hover {
   border-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 276, ../sass/profile.scss */
+  /* line 293, ../sass/profile.scss */
   .profile-tabs ul li {
     float: none;
     width: 100%;
@@ -1658,11 +1701,11 @@ a.account-links:hover {
     border-bottom: 1px solid #b2dfdb;
   }
 }
-/* line 299, ../sass/profile.scss */
+/* line 316, ../sass/profile.scss */
 .profile-tabs ul li:first-child {
   margin-left: 0;
 }
-/* line 303, ../sass/profile.scss */
+/* line 320, ../sass/profile.scss */
 .profile-tabs ul li a {
   display: table-cell;
   line-height: 1.4;
@@ -1674,14 +1717,14 @@ a.account-links:hover {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 326, ../sass/profile.scss */
+/* line 343, ../sass/profile.scss */
 .profile-tabs ul .active > a {
   color: #009688;
   border-right: none;
   border-bottom: 2px solid #009688;
 }
 
-/* line 334, ../sass/profile.scss */
+/* line 351, ../sass/profile.scss */
 .address-row {
   position: relative;
   display: block;
@@ -1690,13 +1733,13 @@ a.account-links:hover {
   margin: 0 25px;
 }
 @media all and (max-width: 768px) {
-  /* line 334, ../sass/profile.scss */
+  /* line 351, ../sass/profile.scss */
   .address-row {
     padding: 20px 0;
     margin: 0 10px;
   }
 }
-/* line 346, ../sass/profile.scss */
+/* line 363, ../sass/profile.scss */
 .address-row .text-div {
   float: left;
   width: calc(100% - 72px);
@@ -1707,48 +1750,48 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 346, ../sass/profile.scss */
+  /* line 363, ../sass/profile.scss */
+  .address-row .text-div {
+    margin-bottom: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 363, ../sass/profile.scss */
   .address-row .text-div {
     display: block;
     float: none;
     width: 100%;
   }
 }
-@media all and (max-width: 768px) {
-  /* line 346, ../sass/profile.scss */
-  .address-row .text-div {
-    margin-bottom: 10px;
-  }
-}
-/* line 365, ../sass/profile.scss */
+/* line 382, ../sass/profile.scss */
 .address-row .icon-div {
   float: left;
   margin-left: 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 365, ../sass/profile.scss */
+  /* line 382, ../sass/profile.scss */
   .address-row .icon-div {
     margin-right: 10px;
     margin-left: auto;
   }
 }
-/* line 373, ../sass/profile.scss */
+/* line 390, ../sass/profile.scss */
 .address-row .icon-div:hover {
   color: #009688;
 }
-/* line 376, ../sass/profile.scss */
+/* line 393, ../sass/profile.scss */
 .address-row .icon-div svg {
   width: 16px;
   height: 16px;
   fill: currentColor;
 }
 
-/* line 384, ../sass/profile.scss */
+/* line 401, ../sass/profile.scss */
 .address-bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 388, ../sass/profile.scss */
+/* line 405, ../sass/profile.scss */
 .section-head {
   font-family: "blogger_sansregular";
   text-transform: capitalize;
@@ -1757,7 +1800,7 @@ a.account-links:hover {
   font-size: 1.8rem;
 }
 
-/* line 398, ../sass/profile.scss */
+/* line 415, ../sass/profile.scss */
 .row-head {
   display: block;
   margin: 0 25px;
@@ -1768,24 +1811,24 @@ a.account-links:hover {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 398, ../sass/profile.scss */
+  /* line 415, ../sass/profile.scss */
   .row-head {
     margin: 0 10px;
   }
 }
 
-/* line 415, ../sass/profile.scss */
+/* line 432, ../sass/profile.scss */
 .address-input {
   margin: 10px 25px 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 415, ../sass/profile.scss */
+  /* line 432, ../sass/profile.scss */
   .address-input {
     margin: 10px 10px 20px;
   }
 }
 
-/* line 423, ../sass/profile.scss */
+/* line 440, ../sass/profile.scss */
 input {
   width: 100%;
   height: 44px;
@@ -1798,20 +1841,20 @@ input {
   border: none;
   border: 1px solid #ccc;
   outline: none;
+  font-size: 18px;
+  font-size: 1.8rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  font-size: 18px;
-  font-size: 1.8rem;
 }
-/* line 440, ../sass/profile.scss */
+/* line 457, ../sass/profile.scss */
 input::-ms-clear {
   display: none;
 }
 
-/* line 445, ../sass/profile.scss */
+/* line 462, ../sass/profile.scss */
 a.submit-button {
   display: block;
   float: right;
@@ -1824,19 +1867,19 @@ a.submit-button {
   text-transform: capitalize;
   color: #fff;
   background-color: #ffc400;
-  font-size: 16px;
-  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
   /* &:first-child {
       margin-left: 0;
   } */
 }
 @media all and (max-width: 768px) {
-  /* line 445, ../sass/profile.scss */
+  /* line 462, ../sass/profile.scss */
   a.submit-button {
     float: none;
     margin-top: 20px;
@@ -1847,7 +1890,7 @@ a.submit-button {
 }
 
 /* MY ORDERS PAGE */
-/* line 477, ../sass/profile.scss */
+/* line 494, ../sass/profile.scss */
 .my-orders .row-type1 {
   position: relative;
   padding: 20px;
@@ -1856,35 +1899,35 @@ a.submit-button {
   background: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 477, ../sass/profile.scss */
+  /* line 494, ../sass/profile.scss */
   .my-orders .row-type1 {
-    padding: 20px 10px;
+    padding: 20px;
   }
 }
-/* line 490, ../sass/profile.scss */
+/* line 507, ../sass/profile.scss */
 .my-orders .row-type2 {
   padding: 20px 0 20px 20px;
   overflow: hidden;
   background: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 490, ../sass/profile.scss */
+  /* line 507, ../sass/profile.scss */
   .my-orders .row-type2 {
-    padding: 20px 10px 20px 10px;
+    padding: 20px 20px 20px 20px;
   }
 }
-/* line 501, ../sass/profile.scss */
+/* line 518, ../sass/profile.scss */
 .my-orders .bottom-border {
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 505, ../sass/profile.scss */
+/* line 522, ../sass/profile.scss */
 .my-orders .right-section-back-button {
   float: left;
   margin-top: 22px;
   margin-left: 20px;
   color: #777;
 }
-/* line 511, ../sass/profile.scss */
+/* line 528, ../sass/profile.scss */
 .my-orders .right-section-back-button svg {
   display: inline-block;
   width: 15px;
@@ -1892,7 +1935,7 @@ a.submit-button {
   cursor: pointer;
   fill: currentColor;
 }
-/* line 521, ../sass/profile.scss */
+/* line 538, ../sass/profile.scss */
 .my-orders .right-section-title {
   float: left;
   width: auto;
@@ -1904,32 +1947,32 @@ a.submit-button {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 535, ../sass/profile.scss */
+/* line 552, ../sass/profile.scss */
 .my-orders .order-icon-div {
   display: inline-block;
   float: left;
   width: 50px;
 }
 @media all and (max-width: 768px) {
-  /* line 535, ../sass/profile.scss */
+  /* line 552, ../sass/profile.scss */
   .my-orders .order-icon-div {
     width: 30px;
     height: 30px;
   }
 }
-/* line 545, ../sass/profile.scss */
+/* line 562, ../sass/profile.scss */
 .my-orders .order-icon-div svg {
   width: 40px;
   height: 40px;
 }
 @media all and (max-width: 768px) {
-  /* line 545, ../sass/profile.scss */
+  /* line 562, ../sass/profile.scss */
   .my-orders .order-icon-div svg {
     width: 30px;
     height: 30px;
   }
 }
-/* line 555, ../sass/profile.scss */
+/* line 572, ../sass/profile.scss */
 .my-orders .order-details {
   display: inline-block;
   float: left;
@@ -1938,19 +1981,19 @@ a.submit-button {
   font-family: "blogger_sansregular";
 }
 @media all and (max-width: 768px) {
-  /* line 555, ../sass/profile.scss */
+  /* line 572, ../sass/profile.scss */
   .my-orders .order-details {
     padding-left: 10px;
   }
 }
-/* line 566, ../sass/profile.scss */
+/* line 583, ../sass/profile.scss */
 .my-orders .order-details .order-id {
   display: block;
   color: #009688;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 573, ../sass/profile.scss */
+/* line 590, ../sass/profile.scss */
 .my-orders .order-details .placed-on {
   display: block;
   margin-top: 8px;
@@ -1958,17 +2001,17 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 582, ../sass/profile.scss */
+/* line 599, ../sass/profile.scss */
 .my-orders .button-div {
   float: right;
   margin-left: 20px;
 }
-/* line 586, ../sass/profile.scss */
+/* line 603, ../sass/profile.scss */
 .my-orders .button-div-fn {
   float: right;
   margin-left: 20px;
 }
-/* line 590, ../sass/profile.scss */
+/* line 607, ../sass/profile.scss */
 .my-orders .order-brief-text {
   display: block;
   width: 100%;
@@ -1982,81 +2025,49 @@ a.submit-button {
       margin-top: 15px;
   } */
 }
-/* line 606, ../sass/profile.scss */
+/* line 623, ../sass/profile.scss */
 .my-orders .filterby-button-div {
   float: right;
   height: 60px;
 }
-/* line 609, ../sass/profile.scss */
+/* line 628, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button {
   padding: 10px 20px;
   margin-top: 10px;
   cursor: pointer;
 }
-/* line 614, ../sass/profile.scss */
+/* line 633, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-text {
   display: inline-block;
   float: left;
-  margin-left: 10px;
+  margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 627, ../sass/profile.scss */
+/* line 647, ../sass/profile.scss */
 .my-orders .filterby-button-div .filterby-button .button-icon {
   display: inline-block;
   width: 15px;
   height: 15px;
-  padding-left: 10px;
+  line-height: 24px;
 }
-/* line 634, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-open {
-  position: relative;
-  top: 6px;
-  padding-right: 5px;
-  transform: translate(-6px, 0);
+/* line 718, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon svg {
+  width: 12px;
+  height: 12px;
+  fill: #777;
 }
-/* line 644, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-open:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
-  position: absolute;
-  width: 2px;
-  height: 7px;
-  content: "";
-  background: #ccc;
+/* line 723, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon svg .down-icon {
+  display: none;
 }
-/* line 658, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-open:before {
-  transform: translate(-2px, 0) rotate(45deg);
+/* line 726, ../sass/profile.scss */
+.my-orders .filterby-button-div .filterby-button .button-icon svg .up-icon {
+  display: block;
 }
-/* line 662, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-open:after {
-  transform: translate(2px, 0) rotate(-45deg);
-}
-/* line 667, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-close {
-  position: relative;
-  top: 6px;
-  padding-right: 5px;
-  transform: translate(-6px, 0);
-}
-/* line 677, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-close:before, .my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
-  position: absolute;
-  width: 2px;
-  height: 7px;
-  content: "";
-  background: #ccc;
-}
-/* line 691, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-close:before {
-  transform: translate(2px, 0) rotate(45deg);
-}
-/* line 694, ../sass/profile.scss */
-.my-orders .filterby-button-div .filterby-button .button-icon .i-close:after {
-  transform: translate(-2px, 0) rotate(-45deg);
-}
-/* line 701, ../sass/profile.scss */
+/* line 733, ../sass/profile.scss */
 .my-orders .filter-by-section {
   position: absolute;
   top: 88px;
@@ -2068,45 +2079,45 @@ a.submit-button {
   -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 714, ../sass/profile.scss */
+/* line 746, ../sass/profile.scss */
 .my-orders .filter-by-section:after {
   position: absolute;
-  top: -4px;
+  top: -6px;
   right: 0;
   width: 117px;
-  height: 5px;
+  height: 6px;
   background: #fff;
 }
-@media all and (max-width: 768px) {
-  /* line 714, ../sass/profile.scss */
+@media all and (max-width: 767px) {
+  /* line 746, ../sass/profile.scss */
   .my-orders .filter-by-section:after {
-    width: 110px;
+    width: 107px;
   }
 }
-/* line 731, ../sass/profile.scss */
+/* line 763, ../sass/profile.scss */
 .my-orders .filter-by-section .work-status .col-xs-12 {
   padding: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 735, ../sass/profile.scss */
+  /* line 767, ../sass/profile.scss */
   .my-orders .filter-by-section .work-status .checkbox-div {
     margin-bottom: 10px;
   }
-  /* line 739, ../sass/profile.scss */
+  /* line 771, ../sass/profile.scss */
   .my-orders .filter-by-section .work-status .checkbox-div:last-child {
     margin-bottom: 0;
   }
 }
-/* line 747, ../sass/profile.scss */
+/* line 779, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .col-xs-12 {
   padding: 0;
 }
-/* line 751, ../sass/profile.scss */
+/* line 783, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div {
   overflow: hidden;
   border-bottom: none;
 }
-/* line 757, ../sass/profile.scss */
+/* line 789, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li {
   display: block;
   padding-bottom: 10px;
@@ -2115,7 +2126,7 @@ a.submit-button {
   clear: both;
   /* One radio button per line */
 }
-/* line 764, ../sass/profile.scss */
+/* line 796, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox] {
   position: absolute;
   width: 1px;
@@ -2126,7 +2137,7 @@ a.submit-button {
   clip: rect(0 0 0 0);
   border: 0;
 }
-/* line 778, ../sass/profile.scss */
+/* line 810, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label {
   display: block;
   font-family: "blogger_sansregular";
@@ -2137,33 +2148,24 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 790, ../sass/profile.scss */
+/* line 822, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li label:hover {
   color: #333;
 }
-/* line 795, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div {
+/* line 827, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span {
   display: table;
   float: left;
   table-layout: fixed;
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 800, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button {
+/* line 832, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox] + .checkbox-icon {
   display: none;
 }
-/* line 804, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button {
-  display: table-cell;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-}
-/* line 815, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox] + .radio-button:before {
+/* line 837, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox] + .checkbox-icon:before {
   position: absolute;
   display: inline-block;
   display: none;
@@ -2174,45 +2176,40 @@ a.submit-button {
   content: "";
   vertical-align: -.25em;
 }
-/* line 835, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:before {
-  display: inline-block;
-  width: 2px;
-  content: "";
-  -webkit-transform: translate(0px, -10px) rotate(45deg);
-  -moz-transform: translate(0px, -10px) rotate(45deg);
-  -ms-transform: translate(0px, -10px) rotate(45deg);
-  -o-transform: translate(0px, -10px) rotate(45deg);
-  transform: translate(0px, -10px) rotate(45deg);
-  background-color: #009688;
+/* line 856, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox]:checked + .checkbox-icon {
+  display: table-cell;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
 }
-/* line 854, ../sass/profile.scss */
-.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .radio-button-div input[type=checkbox]:checked + .radio-button:after {
-  position: absolute;
-  width: 2px;
-  height: 7px;
-  content: "";
-  -webkit-transform: translate(-6px, 0px) rotate(-45deg);
-  -moz-transform: translate(-6px, 0px) rotate(-45deg);
-  -ms-transform: translate(-6px, 0px) rotate(-45deg);
-  -o-transform: translate(-6px, 0px) rotate(-45deg);
-  transform: translate(-6px, 0px) rotate(-45deg);
-  background-color: #009688;
+/* line 869, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox]:checked + .checkbox-icon {
+  color: #009688;
 }
 /* line 871, ../sass/profile.scss */
+.my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox]:checked + .checkbox-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+/* line 880, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .text-div {
   display: inline-block;
   float: left;
+  line-height: 20px;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 878, ../sass/profile.scss */
+/* line 889, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li input[type=checkbox]:checked + .text-div {
   margin-left: 10px;
 }
-/* line 885, ../sass/profile.scss */
+/* line 896, ../sass/profile.scss */
 .my-orders .order-category {
   font-family: "blogger_sansregular";
   color: #555;
@@ -2220,12 +2217,12 @@ a.submit-button {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 885, ../sass/profile.scss */
+  /* line 896, ../sass/profile.scss */
   .my-orders .order-category {
     padding-top: 10px;
   }
 }
-/* line 895, ../sass/profile.scss */
+/* line 906, ../sass/profile.scss */
 .my-orders .order-category-date {
   font-family: "blogger_sansregular";
   text-align: right;
@@ -2234,12 +2231,12 @@ a.submit-button {
   font-size: 1.4rem;
 }
 @media all and (max-width: 768px) {
-  /* line 895, ../sass/profile.scss */
+  /* line 906, ../sass/profile.scss */
   .my-orders .order-category-date {
     text-align: left;
   }
 }
-/* line 907, ../sass/profile.scss */
+/* line 918, ../sass/profile.scss */
 .my-orders .order-details-right-div {
   display: inline-block;
   float: right;
@@ -2248,7 +2245,7 @@ a.submit-button {
   overflow: hidden;
 }
 @media all and (max-width: 768px) {
-  /* line 907, ../sass/profile.scss */
+  /* line 918, ../sass/profile.scss */
   .my-orders .order-details-right-div {
     display: block;
     float: none;
@@ -2256,7 +2253,7 @@ a.submit-button {
     padding-left: 0;
   }
 }
-/* line 921, ../sass/profile.scss */
+/* line 932, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-category,
 .my-orders .order-details-right-div .order-category-date {
   padding-right: 0;
@@ -2264,13 +2261,13 @@ a.submit-button {
   padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 921, ../sass/profile.scss */
+  /* line 932, ../sass/profile.scss */
   .my-orders .order-details-right-div .order-category,
   .my-orders .order-details-right-div .order-category-date {
     padding-bottom: 10px;
   }
 }
-/* line 932, ../sass/profile.scss */
+/* line 943, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-list {
   padding-top: 20px;
   font-family: "blogger_sansregular";
@@ -2279,7 +2276,7 @@ a.submit-button {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 942, ../sass/profile.scss */
+/* line 953, ../sass/profile.scss */
 .my-orders .order-details-right-div .order-log-description {
   padding-right: 20px;
   font-family: "blogger_sansregular";
@@ -2289,33 +2286,33 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 942, ../sass/profile.scss */
+  /* line 953, ../sass/profile.scss */
   .my-orders .order-details-right-div .order-log-description {
     padding-right: 0;
   }
 }
-/* line 958, ../sass/profile.scss */
+/* line 969, ../sass/profile.scss */
 .my-orders .order-log-actions {
   margin-left: 75px;
 }
 @media all and (max-width: 768px) {
-  /* line 958, ../sass/profile.scss */
+  /* line 969, ../sass/profile.scss */
   .my-orders .order-log-actions {
     margin-left: auto;
     border: none;
   }
 }
-/* line 972, ../sass/profile.scss */
+/* line 983, ../sass/profile.scss */
 .my-orders .myorders-order-log-actions {
   margin-left: auto;
 }
 @media all and (max-width: 768px) {
-  /* line 972, ../sass/profile.scss */
+  /* line 983, ../sass/profile.scss */
   .my-orders .myorders-order-log-actions {
     border: none;
   }
 }
-/* line 982, ../sass/profile.scss */
+/* line 993, ../sass/profile.scss */
 .my-orders .log-action-button {
   display: inline-block;
   margin-top: 10px;
@@ -2323,7 +2320,7 @@ a.submit-button {
   cursor: pointer;
   color: #009688;
 }
-/* line 990, ../sass/profile.scss */
+/* line 1001, ../sass/profile.scss */
 .my-orders .log-action-button svg {
   display: inline-block;
   width: 13px;
@@ -2331,13 +2328,13 @@ a.submit-button {
   fill: currentColor;
 }
 @media all and (max-width: 768px) {
-  /* line 990, ../sass/profile.scss */
+  /* line 1001, ../sass/profile.scss */
   .my-orders .log-action-button svg {
     width: 12px;
     height: 12px;
   }
 }
-/* line 1001, ../sass/profile.scss */
+/* line 1012, ../sass/profile.scss */
 .my-orders .log-action-button span {
   display: inline-block;
   margin-left: 5px;
@@ -2345,7 +2342,7 @@ a.submit-button {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 1012, ../sass/profile.scss */
+/* line 1023, ../sass/profile.scss */
 .my-orders .order-date-div, .my-orders .appointments-date-div {
   display: inline-block;
   float: left;
@@ -2359,7 +2356,7 @@ a.submit-button {
   font-size: 1.2rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1012, ../sass/profile.scss */
+  /* line 1023, ../sass/profile.scss */
   .my-orders .order-date-div, .my-orders .appointments-date-div {
     display: block;
     float: none;
@@ -2369,7 +2366,7 @@ a.submit-button {
     text-align: left;
   }
 }
-/* line 1036, ../sass/profile.scss */
+/* line 1047, ../sass/profile.scss */
 .my-orders .order-date-div div, .my-orders .appointments-date-div div {
   display: block;
   width: 50px;
@@ -2377,30 +2374,30 @@ a.submit-button {
   padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 1036, ../sass/profile.scss */
+  /* line 1047, ../sass/profile.scss */
   .my-orders .order-date-div div, .my-orders .appointments-date-div div {
     display: inline-block;
     width: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 1046, ../sass/profile.scss */
+  /* line 1057, ../sass/profile.scss */
   .my-orders .order-date-div div:last-child, .my-orders .appointments-date-div div:last-child {
     padding-left: 5px;
   }
 }
-/* line 1053, ../sass/profile.scss */
+/* line 1064, ../sass/profile.scss */
 .my-orders .appointments-date-div {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 1057, ../sass/profile.scss */
+/* line 1068, ../sass/profile.scss */
 .my-orders .log-row {
   position: relative;
   padding-top: 20px;
   padding-bottom: 22px;
 }
-/* line 1062, ../sass/profile.scss */
+/* line 1073, ../sass/profile.scss */
 .my-orders .log-row:after {
   position: absolute;
   bottom: 0;
@@ -2410,17 +2407,17 @@ a.submit-button {
   border-bottom: 1px solid #e5e5e5;
 }
 @media all and (max-width: 768px) {
-  /* line 1062, ../sass/profile.scss */
+  /* line 1073, ../sass/profile.scss */
   .my-orders .log-row:after {
     left: 0;
     width: 100%;
   }
 }
-/* line 1082, ../sass/profile.scss */
+/* line 1093, ../sass/profile.scss */
 .my-orders .log-row:first-child {
   padding-top: 0;
 }
-/* line 1086, ../sass/profile.scss */
+/* line 1097, ../sass/profile.scss */
 .my-orders .order-quote-div {
   margin-top: 10px;
   margin-right: 20px;
@@ -2436,37 +2433,37 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1086, ../sass/profile.scss */
+  /* line 1097, ../sass/profile.scss */
   .my-orders .order-quote-div {
     margin-right: auto;
   }
 }
-/* line 1105, ../sass/profile.scss */
+/* line 1116, ../sass/profile.scss */
 .my-orders .order-quote-div .row {
   background-color: transparent;
 }
-/* line 1108, ../sass/profile.scss */
+/* line 1119, ../sass/profile.scss */
 .my-orders .order-quote-div li {
   padding-top: 10px;
   list-style-type: none;
 }
-/* line 1112, ../sass/profile.scss */
+/* line 1123, ../sass/profile.scss */
 .my-orders .order-quote-div li:first-child {
   padding-top: 0;
 }
-/* line 1115, ../sass/profile.scss */
+/* line 1126, ../sass/profile.scss */
 .my-orders .order-quote-div li .sub-item {
   display: inline-block;
   width: calc(50% - 5px);
 }
-/* line 1119, ../sass/profile.scss */
+/* line 1130, ../sass/profile.scss */
 .my-orders .order-quote-div li .price {
   display: inline-block;
   width: calc(50% - 5px);
   text-align: right;
 }
 
-/* line 1188, ../sass/profile.scss */
+/* line 1199, ../sass/profile.scss */
 .filter-shadow {
   -webkit-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.2);
@@ -2474,19 +2471,19 @@ a.submit-button {
 }
 
 /* Order/Payment Complete Pages */
-/* line 1197, ../sass/profile.scss */
+/* line 1208, ../sass/profile.scss */
 .head-row {
   margin-right: auto;
   margin-left: auto;
 }
 @media all and (max-width: 768px) {
-  /* line 1197, ../sass/profile.scss */
+  /* line 1208, ../sass/profile.scss */
   .head-row {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-/* line 1205, ../sass/profile.scss */
+/* line 1216, ../sass/profile.scss */
 .head-row .complete-circle {
   display: inline-block;
   width: 40px;
@@ -2500,7 +2497,7 @@ a.submit-button {
   -webkit-border-radius: 20px;
   border-radius: 20px;
 }
-/* line 1217, ../sass/profile.scss */
+/* line 1228, ../sass/profile.scss */
 .head-row .complete-circle svg {
   width: 20px;
   height: 20px;
@@ -2508,7 +2505,7 @@ a.submit-button {
   color: #fff;
   fill: currentColor;
 }
-/* line 1227, ../sass/profile.scss */
+/* line 1238, ../sass/profile.scss */
 .head-row .complete-head {
   display: inline-block;
   margin-top: 50px;
@@ -2521,7 +2518,7 @@ a.submit-button {
   font-size: 3rem;
 }
 
-/* line 1242, ../sass/profile.scss */
+/* line 1253, ../sass/profile.scss */
 .complete-message {
   margin-top: 40px;
   margin-right: auto;
@@ -2533,14 +2530,14 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1242, ../sass/profile.scss */
+  /* line 1253, ../sass/profile.scss */
   .complete-message {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 
-/* line 1259, ../sass/profile.scss */
+/* line 1270, ../sass/profile.scss */
 .complete-summary {
   position: relative;
   padding: 20px;
@@ -2548,19 +2545,19 @@ a.submit-button {
   margin-bottom: 30px;
   background-color: #fff;
 }
-@media all and (max-width: 768px) {
-  /* line 1259, ../sass/profile.scss */
-  .complete-summary {
-    width: 100%;
-  }
-}
 @media all and (min-width: 1025px) {
-  /* line 1259, ../sass/profile.scss */
+  /* line 1270, ../sass/profile.scss */
   .complete-summary {
     width: 770px;
   }
 }
-/* line 1274, ../sass/profile.scss */
+@media all and (max-width: 768px) {
+  /* line 1270, ../sass/profile.scss */
+  .complete-summary {
+    width: 100%;
+  }
+}
+/* line 1285, ../sass/profile.scss */
 .complete-summary:after {
   position: absolute;
   bottom: -20px;
@@ -2574,7 +2571,7 @@ a.submit-button {
   background-position: 0 0;
   background-size: 18px 18px;
 }
-/* line 1292, ../sass/profile.scss */
+/* line 1303, ../sass/profile.scss */
 .complete-summary .summary-head {
   font-family: "blogger_sanslight";
   font-style: italic;
@@ -2584,7 +2581,7 @@ a.submit-button {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 1303, ../sass/profile.scss */
+/* line 1314, ../sass/profile.scss */
 .complete-summary .summary-brief-text {
   margin-bottom: 20px;
   font-family: "blogger_sanslight";
@@ -2594,7 +2591,7 @@ a.submit-button {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 1315, ../sass/profile.scss */
+/* line 1326, ../sass/profile.scss */
 .complete-summary .item-row {
   padding: 20px;
   margin-right: auto;
@@ -2606,23 +2603,23 @@ a.submit-button {
   font-size: 1.8rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1315, ../sass/profile.scss */
+  /* line 1326, ../sass/profile.scss */
   .complete-summary .item-row {
     padding: 20px 0;
   }
 }
-/* line 1329, ../sass/profile.scss */
+/* line 1340, ../sass/profile.scss */
 .complete-summary .item-row:last-child {
   border-bottom: 1px solid #ddd;
 }
-/* line 1332, ../sass/profile.scss */
+/* line 1343, ../sass/profile.scss */
 .complete-summary .item-row .item-quantity {
   float: left;
   width: 30px;
   text-align: left;
   color: #555;
 }
-/* line 1341, ../sass/profile.scss */
+/* line 1352, ../sass/profile.scss */
 .complete-summary .item-row .item-name {
   float: left;
   width: calc(100% - 80px);
@@ -2630,14 +2627,14 @@ a.submit-button {
   text-transform: capitalize;
   color: #555;
 }
-/* line 1351, ../sass/profile.scss */
+/* line 1362, ../sass/profile.scss */
 .complete-summary .item-row .item-price {
   float: left;
   width: 50px;
   text-align: right;
   color: #777;
 }
-/* line 1362, ../sass/profile.scss */
+/* line 1373, ../sass/profile.scss */
 .complete-summary .tax-div {
   float: right;
   width: 300px;
@@ -2651,31 +2648,31 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1362, ../sass/profile.scss */
+  /* line 1373, ../sass/profile.scss */
   .complete-summary .tax-div {
     width: 100%;
     padding: 20px 0;
   }
 }
-/* line 1380, ../sass/profile.scss */
+/* line 1391, ../sass/profile.scss */
 .complete-summary .tax-div .row {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 1384, ../sass/profile.scss */
+/* line 1395, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6 {
   padding-right: 0;
   padding-left: 0;
 }
-/* line 1387, ../sass/profile.scss */
+/* line 1398, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6:first-child {
   text-align: left;
 }
-/* line 1390, ../sass/profile.scss */
+/* line 1401, ../sass/profile.scss */
 .complete-summary .tax-div .row .col-xs-6:last-child {
   text-align: right;
 }
-/* line 1396, ../sass/profile.scss */
+/* line 1407, ../sass/profile.scss */
 .complete-summary .total-price-div, .complete-summary .estimated-price-div {
   float: right;
   width: 300px;
@@ -2688,13 +2685,13 @@ a.submit-button {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 1396, ../sass/profile.scss */
+  /* line 1407, ../sass/profile.scss */
   .complete-summary .total-price-div, .complete-summary .estimated-price-div {
     width: 100%;
     padding: 20px 0;
   }
 }
-/* line 1413, ../sass/profile.scss */
+/* line 1424, ../sass/profile.scss */
 .complete-summary .total-price-div .price, .complete-summary .estimated-price-div .price {
   margin-left: 10px;
   font-family: "blogger_sansmedium";
@@ -2703,63 +2700,63 @@ a.submit-button {
 }
 
 @media all and (max-width: 768px) {
-  /* line 1427, ../sass/profile.scss */
+  /* line 1438, ../sass/profile.scss */
   .add-new-address-button-row {
     text-align: center;
   }
 }
-/* line 1431, ../sass/profile.scss */
+/* line 1442, ../sass/profile.scss */
 .add-new-address-button-row .add-new-address-button {
   float: right;
 }
 @media all and (max-width: 768px) {
-  /* line 1431, ../sass/profile.scss */
+  /* line 1442, ../sass/profile.scss */
   .add-new-address-button-row .add-new-address-button {
     float: none;
   }
 }
 
-/* line 1440, ../sass/profile.scss */
+/* line 1451, ../sass/profile.scss */
 .new-address-div {
   display: none;
 }
 
-/* line 1444, ../sass/profile.scss */
+/* line 1455, ../sass/profile.scss */
 .profile-tab-div {
   padding-top: 20px;
 }
 
-/* line 1448, ../sass/profile.scss */
+/* line 1459, ../sass/profile.scss */
 .post-login-home {
   padding: 0 30px 40px 30px;
   overflow: hidden;
 }
-/* line 1451, ../sass/profile.scss */
+/* line 1462, ../sass/profile.scss */
 .post-login-home .categories {
   padding: 40px 3%;
   text-align: center;
   background: #fff;
 }
-/* line 1458, ../sass/profile.scss */
+/* line 1469, ../sass/profile.scss */
 .post-login-home .categories a {
   width: auto;
 }
-/* line 1460, ../sass/profile.scss */
+/* line 1471, ../sass/profile.scss */
 .post-login-home .categories a:hover {
   color: #555;
 }
-/* line 1464, ../sass/profile.scss */
+/* line 1475, ../sass/profile.scss */
 .post-login-home .categories .icon-div {
   display: block;
   width: auto;
   text-align: center;
 }
-/* line 1469, ../sass/profile.scss */
+/* line 1480, ../sass/profile.scss */
 .post-login-home .categories .icon-div svg {
   width: 40px;
   height: 40px;
 }
-/* line 1474, ../sass/profile.scss */
+/* line 1485, ../sass/profile.scss */
 .post-login-home .categories .text-div {
   display: block;
   width: auto;

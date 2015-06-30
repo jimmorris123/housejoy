@@ -16,7 +16,17 @@
 
 <symbol id="icon-previous" viewBox="0 0 24 24">
 	<title>icon-previous</title>
-	 <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 14.78125 2.28125 L 5.78125 11.28125 L 5.09375 12 L 5.78125 12.71875 L 14.78125 21.71875 L 16.21875 20.28125 L 7.9375 12 L 16.21875 3.71875 L 14.78125 2.28125 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"/>
+	<path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 14.78125 2.28125 L 5.78125 11.28125 L 5.09375 12 L 5.78125 12.71875 L 14.78125 21.71875 L 16.21875 20.28125 L 7.9375 12 L 16.21875 3.71875 L 14.78125 2.28125 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"/>
+</symbol>
+
+<symbol id="icon-up" viewBox="0 0 50 50">
+	<title>icon-up</title>
+	<path d="M 25 12.75 L 2.75 35 L 4.84375 37.09375 L 25 16.9375 L 45.15625 37.09375 L 47.25 35 L 25 12.75 z"/>
+</symbol>
+
+<symbol id="icon-down" viewBox="0 0 50 50">
+	<title>icon-down</title>
+	<path d="M 4.84375 12.90625 L 2.75 15 L 25 37.25 L 47.25 15 L 45.15625 12.90625 L 25 33.0625 L 4.84375 12.90625 z"/>
 </symbol>
 
 </defs>
