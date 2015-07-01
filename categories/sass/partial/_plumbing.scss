@@ -71,6 +71,7 @@
 
                         color: $medium-gray;
 
+                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -78,7 +79,6 @@
 
                             @include rem(font-size, 18px);
                         }
-                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;
@@ -170,13 +170,23 @@
             padding: 15px;
 
             border-bottom: 1px solid #ccc;
+            &.input {
+                padding: 20px 0 15px 0;
+                padding-right: 0;
+                padding-left: 0;
+                margin-bottom: 40px;
+
+                border-bottom: none;
+            }
             span {
+                float: none;
+
                 font-family: $blogger_L;
 
                 color: $dark-gray;
 
                 @include rem(font-size, 18px);
-                &:last-child {
+                &.remove-box {
                     float: right;
 
                     cursor: pointer;
@@ -192,7 +202,7 @@
         }
         .bottom-action {
             .cart-amount {
-                padding: 10px 15px;
+                padding: 10px 0;
                 overflow: hidden;
                 span {
                     margin-top: 10px;
@@ -207,6 +217,36 @@
 
                         @include rem(font-size, 24px);
                     }
+                }
+            }
+            button {
+                height: 50px;
+            }
+        }
+    }
+}
+
+.summary-modal {
+    .modal-dialog {
+        margin: 0;
+        .modal-content {
+            height: 100vh;
+
+            border: none;
+            border-radius: 0;
+            background-clip: none;
+            box-shadow: none;
+        }
+        .modal-header {
+            border-bottom: none;
+        }
+    }
+    .M-summary-body {
+        padding-top: 0 !important;
+        .right-section {
+            .cart {
+                .heading {
+                    padding-top: 0;
                 }
             }
         }

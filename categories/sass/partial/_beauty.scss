@@ -1,4 +1,5 @@
 .left-section {
+    background-color: $white;
     .panel {
         overflow: visible;
         .panel-title {
@@ -48,4 +49,7 @@
             }
         }
     }
+}
+.right-section {
+    padding-left: 30px;
 }
