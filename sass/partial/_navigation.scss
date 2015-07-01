@@ -307,3 +307,115 @@
         background-color: transparent;
     }
 }
+
+/* Post Login Dropdown */
+.user-dropdown {
+    // @include medmx(768px) {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+
+    //     margin: 0;
+
+    //     background-color: #f1f5f9;
+    // }
+    .dropdown {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active,
+    .open .dropdown-toggle.btn-default,
+    .btn-default {
+        // padding: 15px 15px;
+        padding: 0;
+        margin-top: 15px;
+        margin-right: 15px;
+
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        // @include medmx(768px) {
+        //     position: fixed;
+        //     right: 0;
+        // }
+        .profile-image-div {
+            display: table;
+
+            table-layout: fixed;
+
+            .profile-image {
+                display: table-cell;
+                float: left;
+                width: 30px;
+                height: 30px;
+
+                vertical-align: middle;
+
+                border: 2px solid $white;
+
+                @include border-radius(30px);
+                img {
+                    @include border-radius(30px);
+                }
+            }
+        }
+        .profile-name {
+            float: left;
+            margin-left: 5px;
+
+            font-family: $blogger_R;
+            line-height: 30px;
+
+            color: $white;
+            // @include medmx(768px) {
+            //     display: none;
+            // }
+
+            @include rem(font-size, 16px);
+        }
+        .caret {
+            float: left;
+            margin-top: 12px;
+            margin-left: 5px;
+        }
+    }
+    .dropdown-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+
+        min-width: 200px !important;
+        padding: 6px 0;
+        margin: 0;
+
+        border: none;
+        background-color: #f1f5f9;
+        // @include medmx(768px) {
+        //     position: relative !important;
+        //     min-width: 100px !important;
+        //     padding: 0;
+        //     background-color: #f1f5f9 !important;
+        // }
+
+        @include border-radius(3px);
+        a {
+            padding: 5px 15px !important;
+
+            text-transform: capitalize;
+
+            color: $dark-gray !important;
+            &:hover {
+                color: $green !important;
+                background-color: transparent;
+            }
+        }
+        .active {
+            color: $green !important;
+        }
+    }
+}
