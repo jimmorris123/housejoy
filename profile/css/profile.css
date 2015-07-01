@@ -2969,3 +2969,107 @@ a.submit-button {
   font-size: 18px;
   font-size: 1.8rem;
 }
+
+/* Modals */
+/* line 1510, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content {
+  overflow: hidden;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+/* line 1516, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-header {
+  border-bottom: none;
+}
+/* line 1518, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-family: "blogger_sansregular";
+  color: #009688;
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 1527, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-body {
+  padding: 20px 30px;
+  padding-bottom: 0;
+}
+/* line 1531, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group {
+  margin-bottom: 10px;
+}
+/* line 1533, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group:nth-last-of-type(2) {
+  margin-bottom: 20px;
+}
+/* line 1536, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .control-label {
+  margin-bottom: 5px;
+  font-family: "blogger_sansregular";
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 1546, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input {
+  height: 45px;
+  font-family: "blogger_sansregular";
+  color: #555;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 60, ../../sass/partial/_mixins.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input::-webkit-input-placeholder {
+  color: #777;
+}
+/* line 60, ../../sass/partial/_mixins.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input:-moz-placeholder {
+  color: #777;
+}
+/* line 60, ../../sass/partial/_mixins.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input::-moz-placeholder {
+  color: #777;
+}
+/* line 60, ../../sass/partial/_mixins.scss */
+.profile-modal .modal-dialog .modal-content .modal-body .form-horizontal .control-group .controls input:-ms-input-placeholder {
+  color: #777;
+}
+/* line 1562, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer {
+  padding: 0;
+}
+/* line 1564, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer .not-member {
+  height: 70px;
+  padding: 20px 30px;
+  cursor: pointer;
+  background-color: #f1f5f9;
+}
+/* line 1572, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer .social-btns {
+  display: table;
+  width: 100%;
+  height: 70px;
+  padding: 20px 30px;
+  cursor: pointer;
+  background-color: #3b5998;
+}
+/* line 1581, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer .social-btns:last-child {
+  background-color: #d34836;
+}
+/* line 1584, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer .social-btns span {
+  display: table-cell;
+  font-family: "blogger_sansregular";
+  vertical-align: middle;
+  color: #fff;
+  font-size: 20px;
+  font-size: 2rem;
+}
+/* line 1594, ../sass/profile.scss */
+.profile-modal .modal-dialog .modal-content .modal-footer .social-btns span i {
+  vertical-align: middle;
+}

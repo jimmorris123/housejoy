@@ -1499,3 +1499,104 @@ a.submit-button {
         }
     }
 }
+
+
+/* Modals */
+.profile-modal {
+    .modal-dialog {
+        @include medmn(768px) {
+            // width: 460px;
+        }
+        .modal-content {
+            overflow: hidden;
+
+            @include border-radius(0);
+
+            // background-color: #fafafa;
+            .modal-header {
+                border-bottom: none;
+                .modal-title {
+                    font-family: $blogger_R;
+                    // text-align: center;
+
+                    color: $green;
+
+                    @include rem(font-size, 20px);
+                }
+            }
+            .modal-body {
+                padding: 20px 30px;
+                padding-bottom: 0;
+                .form-horizontal {
+                    .control-group {
+                        margin-bottom: 10px;
+                        &:nth-last-of-type(2) {
+                            margin-bottom: 20px;
+                        }
+                        .control-label {
+                            margin-bottom: 5px;
+
+                            font-family: $blogger_R;
+
+                            color: $dark-gray;
+
+                            @include rem(font-size, 16px);
+                        }
+                        .controls {
+                            input {
+                                height: 45px;
+
+                                font-family: $blogger_R;
+
+                                color: $dark-gray;
+
+                                @include placeholder {
+                                    color: $medium-gray;
+                                }
+                                @include rem(font-size, 16px);
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-footer {
+                padding: 0;
+                .not-member {
+                    height: 70px;
+                    padding: 20px 30px;
+
+                    cursor: pointer;
+
+                    background-color: #f1f5f9;
+                }
+                .social-btns {
+                    display: table;
+                    width: 100%;
+                    height: 70px;
+                    padding: 20px 30px;
+
+                    cursor: pointer;
+
+                    background-color: $fb-blue;
+                    &:last-child {
+                        background-color: $google-red;
+                    }
+                    span {
+                        display: table-cell;
+
+                        font-family: $blogger_R;
+
+                        vertical-align: middle;
+
+                        color: $white;
+
+                        @include rem(font-size, 20px);
+                        i {
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
