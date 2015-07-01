@@ -1,0 +1,8 @@
+{"pages": [
+     {"title": "Auto search", "thumb": "../images/home_images/h_banner.jpg", "text": "a site search engine jQuery plugin", "url": "faq.html"},
+     {"title": "Auto Drop", "thumb": "../images/home_images/h_banner.jpg", "text": "a search suggestion box jQuery plugin", "url": "about_us.html"},
+     {"title": "dom", "thumb": "../images/home_images/h_banner.jpg", "text": "a small and simple tooltip jQuery plugin", "url": "home.html"},
+      {"title": "search", "thumb": "../images/home_images/h_banner.jpg", "text": " jQuery plugin", "url": ""},
+     {"title": " Drop", "thumb": "../images/home_images/h_banner.jpg", "text": "suggestion box jQuery plugin", "url": ""},
+     {"title": "Eom", "thumb": "../images/home_images/h_banner.jpg", "text": "small and simple", "url": ""}
+]}
