@@ -460,13 +460,13 @@ body {
 }
 
 /* Post Login Dropdown */
-/* line 322, ../../sass/partial/_navigation.scss */
+/* line 323, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown {
   border: none;
   outline: none;
   background-color: transparent;
 }
-/* line 327, ../../sass/partial/_navigation.scss */
+/* line 328, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover,
 .user-dropdown .btn-default:focus,
 .user-dropdown .btn-default:active,
@@ -479,8 +479,10 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
-/* line 346, ../../sass/partial/_navigation.scss */
+/* line 348, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div,
 .user-dropdown .btn-default:focus .profile-image-div,
 .user-dropdown .btn-default:active .profile-image-div,
@@ -490,7 +492,7 @@ body {
   display: table;
   table-layout: fixed;
 }
-/* line 351, ../../sass/partial/_navigation.scss */
+/* line 353, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div .profile-image,
 .user-dropdown .btn-default:focus .profile-image-div .profile-image,
 .user-dropdown .btn-default:active .profile-image-div .profile-image,
@@ -509,7 +511,7 @@ body {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 362, ../../sass/partial/_navigation.scss */
+/* line 364, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div .profile-image img,
 .user-dropdown .btn-default:focus .profile-image-div .profile-image img,
 .user-dropdown .btn-default:active .profile-image-div .profile-image img,
@@ -522,7 +524,7 @@ body {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 367, ../../sass/partial/_navigation.scss */
+/* line 369, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-name,
 .user-dropdown .btn-default:focus .profile-name,
 .user-dropdown .btn-default:active .profile-name,
@@ -537,7 +539,7 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 381, ../../sass/partial/_navigation.scss */
+/* line 383, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .caret,
 .user-dropdown .btn-default:focus .caret,
 .user-dropdown .btn-default:active .caret,
@@ -548,7 +550,7 @@ body {
   margin-top: 12px;
   margin-left: 5px;
 }
-/* line 387, ../../sass/partial/_navigation.scss */
+/* line 389, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu {
   position: fixed;
   top: 60px;
@@ -564,20 +566,99 @@ body {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 406, ../../sass/partial/_navigation.scss */
+/* line 408, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu a {
   padding: 5px 15px !important;
   text-transform: capitalize;
   color: #555 !important;
 }
-/* line 412, ../../sass/partial/_navigation.scss */
+/* line 414, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu a:hover {
   color: #009688 !important;
   background-color: transparent;
 }
-/* line 417, ../../sass/partial/_navigation.scss */
+/* line 419, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu .active {
   color: #009688 !important;
+}
+
+/* line 425, ../../sass/partial/_navigation.scss */
+.notification {
+  padding: 0 !important;
+}
+/* line 427, ../../sass/partial/_navigation.scss */
+.notification svg {
+  width: 30px;
+  height: 30px;
+}
+/* line 431, ../../sass/partial/_navigation.scss */
+.notification svg:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-color: #009688;
+  box-shadow: 0 0 0 2px #ffc400;
+}
+
+/* line 459, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class {
+  position: absolute !important;
+  top: 70px !important;
+  right: -100px !important;
+  width: 300px !important;
+  padding: 0 !important;
+  border: 1px solid #7e8287 !important;
+}
+/* line 469, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class li {
+  padding: 10px;
+  font-family: "blogger_sansregular";
+  line-height: 1.4;
+  color: #555;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fafafa;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 480, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class li:last-child {
+  border: none;
+}
+/* line 484, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class li.read {
+  background-color: #fff;
+}
+
+/* line 488, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class:after,
+.notification-dropdown-class:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: " ";
+  pointer-events: none;
+  border: solid transparent;
+}
+
+/* line 503, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class:after {
+  margin-left: -10px;
+  border-width: 10px;
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fff;
+}
+
+/* line 510, ../../sass/partial/_navigation.scss */
+.notification-dropdown-class:before {
+  margin-left: -11px;
+  border-width: 11px;
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #555;
 }
 
 /* line 1, ../../sass/partial/_helperclasses.scss */
