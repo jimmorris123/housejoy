@@ -1,16 +1,25 @@
 .left-section {
+    background-color: $white;
     .panel {
         overflow: visible;
-        .panel-title {
-            a {
-                .price {
-                    font-family: $blogger_R;
+        .panel-heading {
+            background-color: $white;
+            .panel-title {
+                a {
+                    .price {
+                        font-family: $blogger_R;
 
-                    color: $medium-gray;
+                        color: $medium-gray;
 
-                    @include rem(font-size, 18px);
+                        @include rem(font-size, 18px);
+                    }
                 }
             }
+        }
+        .panel-collapse {
+            padding: 0 15px;
+
+            background-color: #fafafa;
         }
         .panel-body {
             .dropdown-group {
@@ -48,4 +57,7 @@
             }
         }
     }
+}
+.right-section {
+    padding-left: 30px;
 }

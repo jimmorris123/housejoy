@@ -101,11 +101,12 @@
     input[type=checkbox].sm-input {
         display: none;
     }
-    input[type=checkbox].sm-input:checked + label {
+    input[type=checkbox].sm-input:checked + label.sm-label {
         .custom-checkbox {
             text-align: center;
 
             opacity: 1;
+            border: none !important;
             background-color: $green;
             i {
                 display: inline-block;

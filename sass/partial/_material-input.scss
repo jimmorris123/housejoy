@@ -16,14 +16,14 @@
         display: block;
         width: 100%;
         min-width: 226px;
-        padding: 10px 10px 10px 5px;
+        padding: 10px 10px 10px 0;
         // margin-left: 15px;
 
         font-family: $blogger_R;
 
         color: #555;
         border: none;
-        border-bottom: 1px solid #757575;
+        border-bottom: 1px solid #ccc;
         background-color: transparent;
 
         @include rem(font-size, 16px);
@@ -36,6 +36,7 @@
     label {
         position: absolute;
         top: 10px;
+        // padding-left: 15px;
         // left: 15px;
 
         font-family: $blogger_R;
@@ -47,7 +48,6 @@
         pointer-events: none;
 
         color: #555;
-        color: #999;
 
         @include rem(font-size, 16px);
     }

@@ -96,6 +96,23 @@ a {
     // background-repeat: repeat-y;
 }
 
+.inside-linearBg {
+    opacity: .8;
+    /* Safari 4-5, Chrome 1-9 */
+    background: -webkit-gradient(linear, left top, right top, from($yellow), to($green));
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(left, $green, $yellow);
+    /* Firefox 3.6+ */
+    background:    -moz-linear-gradient(left, $green, $yellow);
+    /* IE 10 */
+    background:     -ms-linear-gradient(left, $green, $yellow);
+    /* Opera 11.10+ */
+    background:      -o-linear-gradient(left, $green, $yellow);
+    /* fallback */
+    // background-color: #1a82f7;
+    // background-repeat: repeat-y;
+}
+
 
 
 //overlay
@@ -196,6 +213,21 @@ svg {
         margin-bottom: 0 !important;
     }
 }
+
 .ln-h1 {
     line-height: 1;
+
+
+
+.laundry-bg {
+    background-image: url("../../images/laundry_images/laundry.jpg");
+}
+.house-cleaning-bg {
+    background-image: url("../../images/laundry_images/laundry_banner.jpg");
+}
+.beauty-bg {
+    background-image: url("../../images/beauty_images/Hair_Color.jpg");
+}
+.house-cleaning-bg {
+    background-image: url("../../images/housing_images/housing_bg.jpg");
 }
