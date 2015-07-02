@@ -995,19 +995,20 @@ svg {
   display: none;
 }
 /* line 105, ../../sass/partial/_ui-elem.scss */
-.checkbox-small input[type=checkbox].sm-input:checked + label .custom-checkbox {
+.checkbox-small input[type=checkbox].sm-input:checked + label.sm-label .custom-checkbox {
   text-align: center;
   opacity: 1;
+  border: none !important;
   background-color: #009688;
 }
-/* line 110, ../../sass/partial/_ui-elem.scss */
-.checkbox-small input[type=checkbox].sm-input:checked + label .custom-checkbox i {
+/* line 111, ../../sass/partial/_ui-elem.scss */
+.checkbox-small input[type=checkbox].sm-input:checked + label.sm-label .custom-checkbox i {
   display: inline-block;
   font-size: 12px;
   font-size: 1.2rem;
 }
 
-/* line 121, ../../sass/partial/_ui-elem.scss */
+/* line 122, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button {
   width: 100%;
   font-family: "blogger_sanslight";
@@ -1016,62 +1017,62 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 131, ../../sass/partial/_ui-elem.scss */
+/* line 132, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button:hover, .dropdown-select button:focus {
   background-color: #fff;
 }
-/* line 135, ../../sass/partial/_ui-elem.scss */
+/* line 136, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button .caret {
   width: 14px;
   height: 14px;
   border: none;
 }
-/* line 140, ../../sass/partial/_ui-elem.scss */
+/* line 141, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button .caret i {
   font-size: 12px;
   font-size: 1.2rem;
 }
-/* line 145, ../../sass/partial/_ui-elem.scss */
+/* line 146, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu {
   width: 100%;
 }
-/* line 148, ../../sass/partial/_ui-elem.scss */
+/* line 149, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li a {
   font-family: "blogger_sanslight";
   color: #777;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 154, ../../sass/partial/_ui-elem.scss */
+/* line 155, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li a:hover {
   color: #fff;
   background-color: #009688;
 }
-/* line 160, ../../sass/partial/_ui-elem.scss */
+/* line 161, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li.active a {
   color: #fff;
   background-color: #009688;
 }
 
-/* line 172, ../../sass/partial/_ui-elem.scss */
+/* line 173, ../../sass/partial/_ui-elem.scss */
 .tabs-row {
   padding: 15px 20px;
   overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
-/* line 179, ../../sass/partial/_ui-elem.scss */
+/* line 180, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs {
   width: 1500px;
 }
-/* line 181, ../../sass/partial/_ui-elem.scss */
+/* line 182, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li {
   display: inline-block;
   float: left;
   margin-right: 10px;
   box-sizing: border-box;
 }
-/* line 187, ../../sass/partial/_ui-elem.scss */
+/* line 188, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li a {
   height: 40px;
   padding: 10px 0;
@@ -1079,22 +1080,22 @@ svg {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
 }
-/* line 201, ../../sass/partial/_ui-elem.scss */
+/* line 202, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
   color: #009688;
   border-bottom: 2px solid #009688;
 }
 
-/* line 218, ../../sass/partial/_ui-elem.scss */
+/* line 219, ../../sass/partial/_ui-elem.scss */
 .arrow-down {
   width: 0;
   height: 0;
@@ -1103,7 +1104,7 @@ svg {
   border-left: 20px solid transparent;
 }
 
-/* line 228, ../../sass/partial/_ui-elem.scss */
+/* line 229, ../../sass/partial/_ui-elem.scss */
 .yellow-btn {
   height: 40px;
   min-width: 170px;
@@ -1121,7 +1122,7 @@ svg {
   font-size: 1.8rem;
 }
 
-/* line 247, ../../sass/partial/_ui-elem.scss */
+/* line 248, ../../sass/partial/_ui-elem.scss */
 .green-btn {
   width: 100%;
   height: 40px;
@@ -1139,7 +1140,7 @@ svg {
   font-size: 1.8rem;
 }
 
-/* line 267, ../../sass/partial/_ui-elem.scss */
+/* line 268, ../../sass/partial/_ui-elem.scss */
 .heading {
   position: relative;
   display: inline-block;
@@ -1149,7 +1150,7 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 278, ../../sass/partial/_ui-elem.scss */
+/* line 279, ../../sass/partial/_ui-elem.scss */
 .heading .border-inner-bottom {
   position: absolute;
   bottom: -10px;
@@ -2037,15 +2038,24 @@ svg {
 }
 
 /* line 6, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .dropdown-select {
+  margin-bottom: 20px;
+}
+/* line 8, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .dropdown-select:first-child {
+  margin-top: 20px;
+}
+/* line 12, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel {
   border: none;
 }
-/* line 8, ../sass/partial/_plumbing.scss */
+/* line 14, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-heading {
   padding: 20px 15px;
 }
-/* line 12, ../sass/partial/_plumbing.scss */
-.left-section .plumbing-content .panel .panel-heading .panel-title a .title {
+/* line 19, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .panel .panel-heading .panel-title a .title,
+.left-section .plumbing-content .panel .panel-heading .panel-title .sm-label .title {
   display: inline-block;
   font-family: "blogger_sansregular";
   vertical-align: middle;
@@ -2053,44 +2063,39 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 23, ../sass/partial/_plumbing.scss */
-.left-section .plumbing-content .panel .panel-heading .panel-title a .illusion-checkbox {
+/* line 30, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .panel .panel-heading .panel-title a .custom-checkbox,
+.left-section .plumbing-content .panel .panel-heading .panel-title .sm-label .custom-checkbox {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  padding: 2px;
+  width: 18px;
+  height: 18px;
   margin-right: 10px;
   vertical-align: middle;
-  border: none;
+  border: 2px solid #777;
   border-radius: 2px;
-  background-color: #009688;
 }
-/* line 35, ../sass/partial/_plumbing.scss */
-.left-section .plumbing-content .panel .panel-heading .panel-title a .illusion-checkbox i {
-  display: block;
-  font-size: 12px;
-  color: #fff;
-}
-/* line 44, ../sass/partial/_plumbing.scss */
-.left-section .plumbing-content .panel .panel-heading .panel-title a.collapsed .illusion-checkbox {
+/* line 42, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .panel .panel-heading .panel-title a.collapsed .illusion-checkbox,
+.left-section .plumbing-content .panel .panel-heading .panel-title .sm-label.collapsed .illusion-checkbox {
   width: 15px;
   height: 15px;
   border: 1px solid #ccc;
   background-color: #f6f6f6;
 }
-/* line 50, ../sass/partial/_plumbing.scss */
-.left-section .plumbing-content .panel .panel-heading .panel-title a.collapsed .illusion-checkbox i {
+/* line 48, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .panel .panel-heading .panel-title a.collapsed .illusion-checkbox i,
+.left-section .plumbing-content .panel .panel-heading .panel-title .sm-label.collapsed .illusion-checkbox i {
   display: none;
 }
-/* line 58, ../sass/partial/_plumbing.scss */
+/* line 56, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: transparent;
 }
-/* line 62, ../sass/partial/_plumbing.scss */
+/* line 60, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body {
   border-top: none;
 }
-/* line 64, ../sass/partial/_plumbing.scss */
+/* line 62, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body textarea {
   width: 100%;
   min-height: 120px;
@@ -2129,16 +2134,16 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 83, ../sass/partial/_plumbing.scss */
+/* line 81, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload {
   display: inline-block;
   clear: both;
 }
-/* line 86, ../sass/partial/_plumbing.scss */
+/* line 84, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload input[type="file"] {
   display: none;
 }
-/* line 89, ../sass/partial/_plumbing.scss */
+/* line 87, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload label {
   display: block;
   height: 40px;
@@ -2155,21 +2160,21 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 109, ../sass/partial/_plumbing.scss */
+/* line 107, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result {
   position: relative;
   display: inline-block;
 }
-/* line 113, ../sass/partial/_plumbing.scss */
+/* line 111, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .img-wrap {
   width: 200px;
 }
-/* line 116, ../sass/partial/_plumbing.scss */
+/* line 114, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .thumbnail {
   padding: 0;
   border: 2px solid #ffc400;
 }
-/* line 123, ../sass/partial/_plumbing.scss */
+/* line 121, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .remove_pict {
   position: absolute;
   top: 10px;
@@ -2184,12 +2189,16 @@ svg {
   font-size: 1.2rem;
 }
 
-/* line 147, ../sass/partial/_plumbing.scss */
+/* line 143, ../sass/partial/_plumbing.scss */
+.right-section {
+  margin-bottom: 60px;
+}
+/* line 146, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading {
   padding: 20px 15px;
   border-bottom: 1px solid #ccc;
 }
-/* line 151, ../sass/partial/_plumbing.scss */
+/* line 150, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading h4 {
   margin-bottom: 5px;
   font-family: "blogger_sanslight";
@@ -2198,19 +2207,19 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 161, ../sass/partial/_plumbing.scss */
+/* line 160, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading p {
   font-family: "blogger_sansregular";
   color: #999;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 169, ../sass/partial/_plumbing.scss */
+/* line 168, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues {
   padding: 15px;
   border-bottom: 1px solid #ccc;
 }
-/* line 173, ../sass/partial/_plumbing.scss */
+/* line 172, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues.input {
   padding: 20px 0 15px 0;
   padding-right: 0;
@@ -2218,33 +2227,39 @@ svg {
   margin-bottom: 40px;
   border-bottom: none;
 }
-/* line 181, ../sass/partial/_plumbing.scss */
-.right-section .cart .plumbing-issues span {
+/* line 180, ../sass/partial/_plumbing.scss */
+.right-section .cart .plumbing-issues > span {
+  display: inline-block;
   float: none;
+  width: 75%;
   font-family: "blogger_sanslight";
+  vertical-align: middle;
   color: #555;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 189, ../sass/partial/_plumbing.scss */
-.right-section .cart .plumbing-issues span.remove-box {
-  float: right;
-  cursor: pointer;
+/* line 192, ../sass/partial/_plumbing.scss */
+.right-section .cart .plumbing-issues > span.remove-box {
+  display: inline-block;
+  width: 20%;
+  text-align: right;
+  vertical-align: top;
 }
-/* line 193, ../sass/partial/_plumbing.scss */
-.right-section .cart .plumbing-issues span.remove-box .multiple-items {
+/* line 198, ../sass/partial/_plumbing.scss */
+.right-section .cart .plumbing-issues > span.remove-box .multiple-items {
   margin-right: 10px;
 }
-/* line 197, ../sass/partial/_plumbing.scss */
-.right-section .cart .plumbing-issues span.remove-box i {
+/* line 201, ../sass/partial/_plumbing.scss */
+.right-section .cart .plumbing-issues > span.remove-box i {
+  cursor: pointer;
   color: #999;
 }
-/* line 204, ../sass/partial/_plumbing.scss */
+/* line 210, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount {
   padding: 10px 0;
   overflow: hidden;
 }
-/* line 207, ../sass/partial/_plumbing.scss */
+/* line 213, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span {
   margin-top: 10px;
   font-family: "blogger_sansregular";
@@ -2252,22 +2267,22 @@ svg {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 215, ../sass/partial/_plumbing.scss */
+/* line 221, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span:last-child {
   margin-top: 0;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 222, ../sass/partial/_plumbing.scss */
+/* line 228, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action button {
   height: 50px;
 }
 
-/* line 230, ../sass/partial/_plumbing.scss */
+/* line 236, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog {
   margin: 0;
 }
-/* line 232, ../sass/partial/_plumbing.scss */
+/* line 238, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-content {
   height: 100vh;
   border: none;
@@ -2275,15 +2290,15 @@ svg {
   background-clip: none;
   box-shadow: none;
 }
-/* line 240, ../sass/partial/_plumbing.scss */
+/* line 246, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-header {
   border-bottom: none;
 }
-/* line 244, ../sass/partial/_plumbing.scss */
+/* line 250, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body {
   padding-top: 0 !important;
 }
-/* line 248, ../sass/partial/_plumbing.scss */
+/* line 254, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body .right-section .cart .heading {
   padding-top: 0;
 }
@@ -2296,18 +2311,27 @@ svg {
 .left-section .panel {
   overflow: visible;
 }
-/* line 7, ../sass/partial/_beauty.scss */
-.left-section .panel .panel-title a .price {
+/* line 5, ../sass/partial/_beauty.scss */
+.left-section .panel .panel-heading {
+  background-color: #fff;
+}
+/* line 9, ../sass/partial/_beauty.scss */
+.left-section .panel .panel-heading .panel-title a .price {
   font-family: "blogger_sansregular";
   color: #777;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 17, ../sass/partial/_beauty.scss */
+/* line 19, ../sass/partial/_beauty.scss */
+.left-section .panel .panel-collapse {
+  padding: 0 15px;
+  background-color: #fafafa;
+}
+/* line 25, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .dropdown-group {
   margin-bottom: 10px;
 }
-/* line 19, ../sass/partial/_beauty.scss */
+/* line 27, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .dropdown-group h4 {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -2315,17 +2339,17 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 29, ../sass/partial/_beauty.scss */
+/* line 37, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .info {
   margin-bottom: 10px;
 }
 @media all and (max-width: 768px) {
-  /* line 29, ../sass/partial/_beauty.scss */
+  /* line 37, ../sass/partial/_beauty.scss */
   .left-section .panel .panel-body .info {
     padding: 0;
   }
 }
-/* line 35, ../sass/partial/_beauty.scss */
+/* line 43, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .info p {
   font-family: "blogger_sansregular";
   color: #777;
@@ -2334,16 +2358,16 @@ svg {
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 44, ../sass/partial/_beauty.scss */
+/* line 52, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .action {
   margin-bottom: 10px;
 }
-/* line 46, ../sass/partial/_beauty.scss */
+/* line 54, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .action button {
   text-transform: uppercase;
 }
 
-/* line 53, ../sass/partial/_beauty.scss */
+/* line 61, ../sass/partial/_beauty.scss */
 .right-section {
   padding-left: 30px;
 }
