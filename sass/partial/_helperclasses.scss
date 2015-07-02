@@ -31,6 +31,9 @@ a {
     padding-right: 15px;
     padding-left: 15px;
 }
+.PA12 {
+    padding: 12px;
+}
 // common headings (Default style)
 .heading-h1 {
     margin-bottom: 15px;
@@ -117,9 +120,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
-            filter: blur(15px);
-            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+            filter: blur(15px);
+            filter: blur(15px);
 }
 
 svg {
@@ -192,4 +195,7 @@ svg {
     .MB-sm-0 {
         margin-bottom: 0 !important;
     }
+}
+.ln-h1 {
+    line-height: 1;
 }

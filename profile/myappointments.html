@@ -9,6 +9,7 @@
 	<!-- Bootstrap CSS -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="css/profile.css">
 	
 </head>
@@ -76,7 +77,7 @@
 									
 								</div>								
 								<div class="row order-log-actions">
-									<li class="log-action-button">
+									<li class="log-action-button" data-toggle="modal" data-target="#RescheduleModal">
 										<svg class="icon ">
 											<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
 										</svg>
@@ -136,110 +137,76 @@
 		        <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
 		      </div>
 		      <div class="modal-body">
-		      	<form class="form-horizontal" action="">
-			        <!-- Sign In Form -->
-		            <!-- Text input-->
-		            <div class="control-group">
-		              <label class="control-label" for="userid">Email Address</label>
-		              <div class="controls">
-		                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
-		              </div>
-		            </div>
-
-		            <!-- Password input-->
-		            <div class="control-group">
-		              <label class="control-label" for="passwordinput">Password</label>
-		              <div class="controls">
-		                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-		              </div>
-		            </div>
-
-		            <div class="control-group clearfix">
-		            	<div class="checkbox-small col-xs-12 col-sm-6 PD0">
-                            <input class="sm-input" id="ck1" type="checkbox" value="">
-                            <label class="sm-label" for="ck1">
-                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>Remember Me
-                            </label>
-                        </div>
-                        <div class="action col-xs-12 col-sm-6 text-center">
-		        			<button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>	
-		        			<a href="#" class="helper-text f-14">Forgot password?</a>
-		        		</div>
-		            </div>
-	            </form>
+	      		<div class="confirm-text">Are you sure canceling this order?</div>
+	            <div class="control-group clearfix">
+                    <div class="action col-xs-12 text-center PD0">
+	        			<a href="" class="submit-button">yes</a>
+						<a href="" class="submit-button">no</a>				
+	        		</div>
+	            </div>
 		      </div>
-		      <!-- <div class="modal-footer">
-		        <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
-		        	<p class="helper-text f-14 MB5">Not a member yet?</p>
-		        	<p class="helper-text MB5">Register Now!</p>
-		        </div>
-		        <a class="social-btns text-left">
-		        	<span>Continue with Facebook</span>
-		        	<span class="pull-right"><i class="fa fa-facebook"></i></span>
-		        </a>
-		        <a class="social-btns text-left">
-		        	<span class="helper-text f-14 MB5">Continue with Google</span>
-		        	<span class="pull-right"><i class="fa fa-google"></i></span>
-		        </a>
-		      </div> -->
 		    </div>
 		  </div>
 		</div>
 
-	<!--Login Modal -->
-	<div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!--Reschedule Modal -->
+	<div class="modal fade profile-modal" id="RescheduleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
+	        <h4 class="modal-title" id="myModalLabel">Reschedule</h4>
 	      </div>
 	      <div class="modal-body">
 	      	<form class="form-horizontal" action="">
 		        <!-- Sign In Form -->
 	            <!-- Text input-->
-	            <div class="control-group">
-	              <label class="control-label" for="userid">Email Address</label>
-	              <div class="controls">
-	                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
-	              </div>
-	            </div>
+	            <div class="col-xs-12 control-group">
+	            	<!-- <div class="control-group">
+		              <label class="control-label" for="userid">Email Address</label>
+		              <div class="controls">
+		                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+		              </div>
+		            </div> -->
+	            	<div class="col-xs-12 col-sm-6">
+	            		<label class="control-label" for="userid">Date</label>
+						<div class="dropdown location-dropdown mobi-dropdown">  
+		                    <p><input type="text" id="datepicker"></p>  
+		                </div>
+		            </div>
 
-	            <!-- Password input-->
-	            <div class="control-group">
-	              <label class="control-label" for="passwordinput">Password</label>
-	              <div class="controls">
-	                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-	              </div>
+		            <!-- Password input-->
+		            <div class="col-xs-12 col-sm-6">
+						<!-- dropdown for location -->
+						<label class="control-label" for="userid">Time Slot</label>
+                        <div class="dropdown location-dropdown dropdown-select mobi-dropdown">
+                            <button class="btn btn-default dropdown-toggle PA12 ln-h1" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                <span class="pull-left">10am to 11am</span>
+                                <span class="dropdown-icon pull-right"><i class="caret"></i></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11am to 12pm</a></li>
+                                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">12pm to 1pm</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4pm to 5pm</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">5pm to 6pm</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">6pm to 7pm</a></li>
+                            </ul>
+                        </div>
+                        <!-- dropdown ends -->
+		            </div>
 	            </div>
-
-	            <div class="control-group clearfix">
-	            	<div class="checkbox-small col-xs-12 col-sm-6 PD0">
-                        <input class="sm-input" id="ck1" type="checkbox" value="">
-                        <label class="sm-label" for="ck1">
-                            <div class="custom-checkbox"><i class="fa fa-check"></i></div>Remember Me
-                        </label>
-                    </div>
-                    <div class="action col-xs-12 col-sm-6 text-center">
-	        			<button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>	
-	        			<a href="#" class="helper-text f-14">Forgot password?</a>
+	            <div class="control-group">
+					<label class="control-label" for="userid">Special Instructions</label>
+					<div class="controls">
+						<input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Eg: bware of dogs" class="input-medium" required="">
+					</div>
+	            </div>
+	            <div class="control-group clearfix">	            	
+                    <div class="action col-xs-12 PD0">
+	        			<a href="" class="submit-button">reschedule</a>
 	        		</div>
 	            </div>
             </form>
-	      </div>
-	      <div class="modal-footer">
-	        <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
-	        	<p class="helper-text f-14 MB5">Not a member yet?</p>
-	        	<p class="helper-text MB5">Register Now!</p>
-	        </div>
-	        <a class="social-btns text-left">
-	        	<span>Continue with Facebook</span>
-	        	<span class="pull-right"><i class="fa fa-facebook"></i></span>
-	        </a>
-	        <a class="social-btns text-left">
-	        	<span class="helper-text f-14 MB5">Continue with Google</span>
-	        	<span class="pull-right"><i class="fa fa-google"></i></span>
-	        </a>
 	      </div>
 	    </div>
 	  </div>
@@ -260,6 +227,11 @@
 	    // $(document).click(function() {
 	    // 	$(".filter-by-section").hide();
 	    // });
+	</script>
+	<script>
+	  $(function() {
+	    $( "#datepicker" ).datepicker();
+	  });
 	</script>
 </body>
 </html>
