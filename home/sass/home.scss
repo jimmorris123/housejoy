@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 16px);
                 @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include rem(font-size, 20px);
                     @include transition(.3s all);
+                    @include rem(font-size, 20px);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
     }
 }
@@ -255,8 +255,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(line-height, 28px);
                         @include rem(font-size, 18px);
+                        @include rem(line-height, 28px);
                     }
                 }
             }
@@ -358,19 +358,19 @@
             margin-right: 10px;
             margin-bottom: 40px;
 
-            @include medmx(479px) {
-                width: 48%;
-            }
-            @include medmxn(768px, 991px) {
-                width: 28%;
+            @include transition(all .3s);
+            @include medmxn(480px, 768px) {
+                width: 30%;
             }
             @include medmxn(992px, 1199px) {
                 width: 22%;
             }
-            @include medmxn(480px, 768px) {
-                width: 30%;
+            @include medmxn(768px, 991px) {
+                width: 28%;
             }
-            @include transition(all .3s);
+            @include medmx(479px) {
+                width: 48%;
+            }
             &:hover,
             &:focus,
             &:active {
@@ -481,16 +481,16 @@
         a {
             padding-left: 0;
 
-            @include medmn(768px) {
-                display: inline-block;
-                padding: 0;
-                padding-right: 15px;
+            @include medmn(992px) {
+                width: auto;
             }
             @include medmxn(480px, 767px) {
                 width: auto;
             }
-            @include medmn(992px) {
-                width: auto;
+            @include medmn(768px) {
+                display: inline-block;
+                padding: 0;
+                padding-right: 15px;
             }
         }
     }
@@ -566,8 +566,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 30px);
+                @include transform(translateY(-50%));
                 p {
                     width: 60%;
                     margin: 0 auto;
@@ -635,8 +635,8 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 18px);
         @include border-radius(5px);
+        @include rem(font-size, 18px);
     }
     #tipue_drop_content {
         width: 100%;
@@ -674,3 +674,167 @@
 }
 
 @import "../../sass/home_footer.scss";
+
+
+/* Contact Page */
+
+.map-div {
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        background-color: rgba(0,0,0,.2);
+    }
+    .map-info-window {
+        position: absolute;
+        top: 56px;
+        right: 70px;
+
+        width: 400px;
+        // padding: 15px;
+
+        font-family: $blogger_R;
+
+        -webkit-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
+           -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
+                box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
+
+        // @include border-radius(3px);
+        .col-xs-12 {
+            padding: 0;
+        }
+
+        .left-div {
+            padding: 15px;
+
+            -webkit-border-top-left-radius: 4px;
+                    border-top-left-radius: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+            background-color: #fafafa;
+
+               -moz-border-bottom-left-radius: 4px;
+                 -o-border-bottom-left-radius: 4px;
+               -moz-border-top-left-radius: 4px;
+                 -o-border-top-left-radius: 4px;
+            .info-title {
+                line-height: 1;
+
+                color: #1e1e1e;
+
+                @include rem(font-size, 18px);
+            }
+            .address {
+                margin-top: 10px;
+
+                line-height: 1.3;
+
+                color: #1c1c1c;
+
+                @include rem(font-size, 16px);
+            }
+            .open {
+                margin-top: 10px;
+
+                @include rem(font-size, 14px);
+                .time {
+                    color: #2477e0;
+                }
+            }
+        }
+        .right-div {
+            padding: 15px;
+
+            -webkit-border-top-right-radius: 4px;
+                    border-top-right-radius: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+            background-color: $white;
+
+               -moz-border-bottom-right-radius: 4px;
+                 -o-border-bottom-right-radius: 4px;
+               -moz-border-top-right-radius: 4px;
+                 -o-border-top-right-radius: 4px;
+            .col-xs-12 {
+                padding-bottom: 15px;
+
+                line-height: 1.6;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 14px);
+                &:last-child {
+                    padding-top: 10px;
+
+                    border-top: 1px solid #ccc;
+                }
+                a {
+                    display: block;
+
+                    color: #2477e0;
+                }
+                .tel-no {
+                    padding-bottom: 3px;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 14px);
+                }
+            }
+        }
+    }
+}
+
+.contact-container {
+    padding-top: 40px;
+
+    font-family: $blogger_L;
+    line-height: 1.4;
+
+    color: $medium-gray;
+
+    @include rem(font-size, 16px);
+    a {
+        color: #2477e0;
+    }
+    .section-head {
+        margin-bottom: 20px;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 24px);
+    }
+    .sub-head {
+        padding-top: 30px;
+        margin-bottom: 10px;
+
+        color: $dark-gray;
+
+        @include rem(font-size, 20px);
+    }
+
+    .contact-form {
+        .form-control {
+            height: 44px;
+
+            line-height: 1;
+
+            @include rem(font-size, 18px);
+        }
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            margin-bottom: 20px;
+
+            border-color: #ccc;
+
+            @include border-radius(5px);
+            @include rem(font-size, 18px);
+        }
+    }
+}

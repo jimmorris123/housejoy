@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Housejoy | Contact Us</title>
+		<!-- Bootstrap CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/home.css">
+		
+		<!-- Map Style and JS -->
+		<style>
+      #map-canvas {
+        width: 100%;
+        height: 260px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	</head>
+	<body class="gray-bg">
+		<div class="page-wrapper gray-bg">
+			<div class="header">
+				<header role="banner" class="navbar navbar-default navbar-inverse">
+					<div class="navbar-header">
+						<div class="logo-div text-center">
+							<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
+							<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs" data-toggle="offcanvas">
+				                <span class="hamb-top"></span>
+				    			<span class="hamb-middle"></span>
+								<span class="hamb-bottom"></span>
+				            </button>
+						</div>
+					</div>
+					<div class="navbar-inverse side-collapse in">
+						<nav role="navigation" class="navbar-collapse">
+							<ul class="nav navbar-nav">
+								<li>
+									<div class="dropdown dropdown-select">
+										<button class="btn btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-expanded="true">
+											House Cleaning
+											<span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">500 - 1000 Sq. ft</a>
+											</li>
+											<li role="presentation" class="active">
+												<a role="menuitem" tabindex="-1" href="#">1000 - 1500 Sq. ft</a>
+											</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">1500 - 2000 Sq. ft</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown dropdown-select">
+										<button class="btn btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-expanded="true">
+											Bangalore
+											<span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+										</button>
+										<ul class="dropdown-menu" role="menu">
+											<li role="presentation" class="active">
+												<a role="menuitem" tabindex="-1" href="#">Bangalore</a>
+											</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">Chennai</a>
+											</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">Mumbai</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a class="text-uppercase" href="#">Help?</a></li>
+								<li><a class="text-uppercase" data-toggle="modal" data-target="#loginModal" href="#">Login</a></li>
+								<li><a href="#"><span class="icon"><i class="fa fa-phone"></i></span>080 33 51 2156</a></li>
+							</ul>
+						</nav>
+					</div>
+				</header>
+			</div>
+			<div class="map-div">
+				<div id="map-canvas"></div>
+				<div class="overlay"></div>
+				<div class="map-info-window">
+					<div class="col-xs-12 col-sm-7 left-div">
+						<div class="info-title">Housejoy</div>
+						<div class="address">
+							Bengaluru, Karnataka 560071
+							261, 3rd Cross Rd Domlur II Stage, Domlur Layout Bengaluru, Karnataka 560071
+						</div>
+						<div class="open">
+							Open today <span class="time">9:00 am - 8:00 pm</span>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 right-div">
+						<div class="col-xs-12">
+							Write to us
+							<a href="mailto:cs@housejoy.in">cs@housejoy.in</a>
+						</div>
+						<div class="col-xs-12">
+							<a href="http://housejoy.in">housejoy.in</a>
+							<a href="tel:08033512156" class="tel-no">080 3351 2156</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container content-wrapper contact-container">
+				<div class="col-xs-12 col-sm-6">
+					<div class="section-head text-center">Contact Us</div>
+					<div class="col-xs-12 text-center MB20">
+						Have a question? Need Some Help? Or Just want to say hello? We would like to hear from you
+					</div>
+					<div class="col-xs-12">
+						<form class="contact-form" action="">
+							<div class="row MB20">
+								<div class="col-xs-12 col-sm-6">
+									<div class="control-group">
+										<!-- <label class="control-label" for="userid">Email Address</label> -->
+										<div class="controls">
+											<input required="" id="username" name="username" type="email" class="form-control" placeholder="Name" class="input-medium" required="">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="control-group">
+										<!-- <label class="control-label" for="userid">Email Address</label> -->
+										<div class="controls">
+											<input required="" id="useremail" name="useremail" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row MB20">
+								<div class="col-xs-12 col-sm-6">
+									<div class="control-group">
+										<!-- <label class="control-label" for="userid">Email Address</label> -->
+										<div class="controls">
+											<input required="" id="userphone" name="userphone" type="email" class="form-control" placeholder="Phone Number" class="input-medium" required="">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="control-group">
+										<!-- <label class="control-label" for="userid">Email Address</label> -->
+										<div class="controls">
+											<input required="" id="subject" name="subject" type="email" class="form-control" placeholder="Subject" class="input-medium" required="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<textarea name="" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="action col-xs-12 text-center">
+				        			<button type="button" class="btn btn-default yellow-btn text-uppercase">Submit</button>
+				        		</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-xs-12">
+
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="col-xs-12 section-head">Partner with Us</div>
+					<div class="col-xs-12 sub-head">Join Us</div>
+					<div class="col-xs-12 PR0">If you are a business or pro interested in joining our network, <a href="#">click here</a>.</div>
+					<div class="col-xs-12 sub-head">Support</div>
+					<div class="col-xs-12 PR0">if you are a professional or a service provider and would like to join our network, write to us at <a href="mailto:services@housejoy.in">services@housejoy.in</a>.</div>
+				</div>
+
+			</div>
+			
+		</div>
+		
+		<!--Login Modal -->
+		<div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<form class="form-horizontal" action="">
+			        <!-- Sign In Form -->
+		            <!-- Text input-->
+		            <div class="control-group">
+		              <label class="control-label" for="userid">Email Address</label>
+		              <div class="controls">
+		                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+		              </div>
+		            </div>
+
+		            <!-- Password input-->
+		            <div class="control-group">
+		              <label class="control-label" for="passwordinput">Password</label>
+		              <div class="controls">
+		                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+		              </div>
+		            </div>
+
+		            <div class="control-group clearfix">
+		            	<div class="checkbox-small col-xs-12 col-sm-6 PD0">
+                            <input class="sm-input" id="ck1" type="checkbox" value="">
+                            <label class="sm-label" for="ck1">
+                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>Remember Me
+                            </label>
+                        </div>
+                        <div class="action col-xs-12 col-sm-6 text-center">
+		        			<button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>	
+		        			<a href="#" class="helper-text f-14">Forgot password?</a>
+		        		</div>
+		            </div>
+	            </form>
+		      </div>
+		      <div class="modal-footer">
+		        <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
+		        	<p class="helper-text f-14 MB5">Not a member yet?</p>
+		        	<p class="helper-text MB5">Register Now!</p>
+		        </div>
+		        <a class="social-btns text-left">
+		        	<span>Continue with Facebook</span>
+		        	<span class="pull-right"><i class="fa fa-facebook"></i></span>
+		        </a>
+		        <a class="social-btns text-left">
+		        	<span class="helper-text f-14 MB5">Continue with Google</span>
+		        	<span class="pull-right"><i class="fa fa-google"></i></span>
+		        </a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!--Register Modal -->
+		<div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Sign up to your Account</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<form class="form-horizontal" action="">
+			        <!-- Sign In Form -->
+		            <!-- Text input-->
+		            <div class="control-group">
+		              <label class="control-label" for="userid">Username</label>
+		              <div class="controls">
+		                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="John Doe" class="input-medium" required="">
+		              </div>
+		            </div>
+		            <div class="control-group">
+		              <label class="control-label" for="emailid">Email Address</label>
+		              <div class="controls">
+		                <input required="" id="userid" name="emailid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+		              </div>
+		            </div>
+
+		            <!-- Password input-->
+		            <div class="control-group">
+		              <label class="control-label" for="passwordinput">Password</label>
+		              <div class="controls">
+		                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+		              </div>
+		            </div>
+					
+					<!-- Mobile input-->
+		            <div class="control-group">
+		              <label class="control-label" for="mobile">Password</label>
+		              <div class="controls">
+		                <input required="" id="mobile" name="mobilenumber" class="form-control" type="tel" placeholder="9848022338" class="input-medium">
+		              </div>
+		            </div>
+
+		            <div class="control-group clearfix">
+		            	<div class="checkbox-small col-xs-12 PD0 MB10">
+                            <input class="sm-input" id="ck2" type="checkbox" value="">
+                            <label class="sm-label" for="ck2">
+                            	<div class="custom-checkbox"><i class="fa fa-check"></i></div>I Agree to Housejoy 
+                            	<a href="#" class="f-cl-green highlight">Terms of Service</a>
+                            </label>
+                        </div>
+                        <div class="action col-xs-12 text-right PR0">
+		        			<button type="button" class="btn btn-default yellow-btn text-uppercase">Signup</button>	
+		        		</div>
+		            </div>
+	            </form>
+		      </div>
+		      <div class="modal-footer">
+		        <div class="not-member text-left" id="already-member">
+		        	<p class="helper-text f-14 MB5">Already a member?</p>
+		        	<p class="helper-text MB5">Login Now!</p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Jquery	 -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="../js/svg4everybody.ie8.min.js"></script>
+		<script src="../js/common.js"></script>
+	</body>
+</html>
