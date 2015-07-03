@@ -691,7 +691,7 @@
     }
     .map-info-window {
         position: absolute;
-        top: 56px;
+        top: 48px;
         right: 70px;
 
         width: 400px;
@@ -798,6 +798,10 @@
     color: $medium-gray;
 
     @include rem(font-size, 16px);
+    .row {
+        margin-right: auto;
+        margin-left: auto;
+    }
     a {
         color: #2477e0;
     }
@@ -820,9 +824,20 @@
     .contact-form {
         .form-control {
             height: 44px;
+            margin-bottom: 20px;
 
             line-height: 1;
 
+            -webkit-transition: none;
+               -moz-transition: none;
+                 -o-transition: none;
+                    transition: none;
+
+            -webkit-box-shadow: none;
+               -moz-box-shadow: none;
+                    box-shadow: none;
+
+                 -o-box-shadow: none;
             @include rem(font-size, 18px);
         }
         textarea {

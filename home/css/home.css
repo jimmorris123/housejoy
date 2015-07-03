@@ -2481,7 +2481,7 @@ svg {
 /* line 692, ../sass/home.scss */
 .map-div .map-info-window {
   position: absolute;
-  top: 56px;
+  top: 48px;
   right: 70px;
   width: 400px;
   font-family: "blogger_sansregular";
@@ -2580,17 +2580,22 @@ svg {
   font-size: 1.6rem;
 }
 /* line 801, ../sass/home.scss */
+.contact-container .row {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* line 805, ../sass/home.scss */
 .contact-container a {
   color: #2477e0;
 }
-/* line 804, ../sass/home.scss */
+/* line 808, ../sass/home.scss */
 .contact-container .section-head {
   margin-bottom: 20px;
   color: #555;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 811, ../sass/home.scss */
+/* line 815, ../sass/home.scss */
 .contact-container .sub-head {
   padding-top: 30px;
   margin-bottom: 10px;
@@ -2598,14 +2603,23 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 821, ../sass/home.scss */
+/* line 825, ../sass/home.scss */
 .contact-container .contact-form .form-control {
   height: 44px;
+  margin-bottom: 20px;
   line-height: 1;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -o-box-shadow: none;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 828, ../sass/home.scss */
+/* line 843, ../sass/home.scss */
 .contact-container .contact-form textarea {
   width: 100%;
   min-height: 120px;
