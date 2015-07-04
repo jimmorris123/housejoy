@@ -1639,10 +1639,10 @@ svg {
   margin-bottom: 20px;
   font-family: "blogger_sansregular";
   color: #555;
-  font-size: 16px;
-  font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 /* line 29, ../sass/home.scss */
 .content-wrapper .about-us-content ul {
@@ -1656,10 +1656,10 @@ svg {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
   color: #555;
-  line-height: 20px;
-  line-height: 2rem;
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
 }
 /* line 44, ../sass/home.scss */
 .content-wrapper .about-us-content ul li span {
@@ -1691,12 +1691,12 @@ svg {
   color: #555;
   border: transparent;
   border-top: 3px solid transparent;
+  font-size: 20px;
+  font-size: 2rem;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  font-size: 20px;
-  font-size: 2rem;
 }
 /* line 85, ../sass/home.scss */
 .about-tabs .tabs-scroll .nav-tabs li:hover a, .about-tabs .tabs-scroll .nav-tabs li:focus a, .about-tabs .tabs-scroll .nav-tabs li:active a {
@@ -1740,13 +1740,13 @@ svg {
   font-family: "blogger_sansregular";
   text-align: center;
   color: #fff;
-  font-size: 24px;
-  font-size: 2.4rem;
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-size: 24px;
+  font-size: 2.4rem;
 }
 /* line 141, ../sass/home.scss */
 .about-tabs .tab-content .tab-banner .title img {
@@ -1757,10 +1757,10 @@ svg {
   margin-bottom: 20px;
   font-family: "blogger_sansregular";
   color: #555;
-  font-size: 16px;
-  font-size: 1.6rem;
   line-height: 24px;
   line-height: 2.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 /* line 161, ../sass/home.scss */
@@ -1868,10 +1868,10 @@ svg {
   font-family: "blogger_sansregular";
   color: #555;
   border-top: none;
-  font-size: 18px;
-  font-size: 1.8rem;
   line-height: 28px;
   line-height: 2.8rem;
+  font-size: 18px;
+  font-size: 1.8rem;
 }
 /* line 267, ../sass/home.scss */
 .responsive-tabs.accordion h3.accordion-title a {
@@ -1970,16 +1970,10 @@ svg {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-@media all and (min-width: 480px) and (max-width: 768px) {
+@media all and (max-width: 479px) {
   /* line 354, ../sass/home.scss */
   .content-section .cat-wrap .categories-box {
-    width: 30%;
-  }
-}
-@media all and (min-width: 992px) and (max-width: 1199px) {
-  /* line 354, ../sass/home.scss */
-  .content-section .cat-wrap .categories-box {
-    width: 22%;
+    width: 48%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -1988,10 +1982,16 @@ svg {
     width: 28%;
   }
 }
-@media all and (max-width: 479px) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
   /* line 354, ../sass/home.scss */
   .content-section .cat-wrap .categories-box {
-    width: 48%;
+    width: 22%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 768px) {
+  /* line 354, ../sass/home.scss */
+  .content-section .cat-wrap .categories-box {
+    width: 30%;
   }
 }
 /* line 377, ../sass/home.scss */
@@ -2104,10 +2104,12 @@ svg {
 .content-section .left-content a {
   padding-left: 0;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 768px) {
   /* line 481, ../sass/home.scss */
   .content-section .left-content a {
-    width: auto;
+    display: inline-block;
+    padding: 0;
+    padding-right: 15px;
   }
 }
 @media all and (min-width: 480px) and (max-width: 767px) {
@@ -2116,12 +2118,10 @@ svg {
     width: auto;
   }
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
   /* line 481, ../sass/home.scss */
   .content-section .left-content a {
-    display: inline-block;
-    padding: 0;
-    padding-right: 15px;
+    width: auto;
   }
 }
 @media all and (min-width: 768px) {
@@ -2196,13 +2196,13 @@ svg {
   z-index: 1;
   text-align: center;
   color: #fff;
-  font-size: 30px;
-  font-size: 3rem;
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-size: 30px;
+  font-size: 3rem;
 }
 /* line 571, ../sass/home.scss */
 .home-slider .owl-carousel .owl-item blockquote p {
@@ -2262,13 +2262,13 @@ svg {
   padding-left: 20px;
   font-family: "blogger_sansregular";
   color: #555;
+  font-size: 18px;
+  font-size: 1.8rem;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-size: 18px;
-  font-size: 1.8rem;
 }
 /* line 641, ../sass/home.scss */
 .search-box #tipue_drop_content {
@@ -2489,11 +2489,17 @@ svg {
   -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 707, ../sass/home.scss */
+@media all and (max-width: 768px) {
+  /* line 692, ../sass/home.scss */
+  .map-div .map-info-window {
+    display: none;
+  }
+}
+/* line 711, ../sass/home.scss */
 .map-div .map-info-window .col-xs-12 {
   padding: 0;
 }
-/* line 711, ../sass/home.scss */
+/* line 715, ../sass/home.scss */
 .map-div .map-info-window .left-div {
   padding: 15px;
   -webkit-border-top-left-radius: 4px;
@@ -2506,14 +2512,14 @@ svg {
   -moz-border-top-left-radius: 4px;
   -o-border-top-left-radius: 4px;
 }
-/* line 724, ../sass/home.scss */
+/* line 728, ../sass/home.scss */
 .map-div .map-info-window .left-div .info-title {
   line-height: 1;
   color: #1e1e1e;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 731, ../sass/home.scss */
+/* line 735, ../sass/home.scss */
 .map-div .map-info-window .left-div .address {
   margin-top: 10px;
   line-height: 1.3;
@@ -2521,17 +2527,17 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 740, ../sass/home.scss */
+/* line 744, ../sass/home.scss */
 .map-div .map-info-window .left-div .open {
   margin-top: 10px;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 744, ../sass/home.scss */
+/* line 748, ../sass/home.scss */
 .map-div .map-info-window .left-div .open .time {
   color: #2477e0;
 }
-/* line 749, ../sass/home.scss */
+/* line 753, ../sass/home.scss */
 .map-div .map-info-window .right-div {
   padding: 15px;
   -webkit-border-top-right-radius: 4px;
@@ -2544,7 +2550,7 @@ svg {
   -moz-border-top-right-radius: 4px;
   -o-border-top-right-radius: 4px;
 }
-/* line 762, ../sass/home.scss */
+/* line 766, ../sass/home.scss */
 .map-div .map-info-window .right-div .col-xs-12 {
   padding-bottom: 15px;
   line-height: 1.6;
@@ -2552,17 +2558,17 @@ svg {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 770, ../sass/home.scss */
+/* line 774, ../sass/home.scss */
 .map-div .map-info-window .right-div .col-xs-12:last-child {
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
-/* line 775, ../sass/home.scss */
+/* line 779, ../sass/home.scss */
 .map-div .map-info-window .right-div .col-xs-12 a {
   display: block;
   color: #2477e0;
 }
-/* line 780, ../sass/home.scss */
+/* line 784, ../sass/home.scss */
 .map-div .map-info-window .right-div .col-xs-12 .tel-no {
   padding-bottom: 3px;
   color: #555;
@@ -2570,7 +2576,7 @@ svg {
   font-size: 1.4rem;
 }
 
-/* line 792, ../sass/home.scss */
+/* line 796, ../sass/home.scss */
 .contact-container {
   padding-top: 40px;
   font-family: "blogger_sanslight";
@@ -2579,23 +2585,23 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 801, ../sass/home.scss */
+/* line 805, ../sass/home.scss */
 .contact-container .row {
   margin-right: auto;
   margin-left: auto;
 }
-/* line 805, ../sass/home.scss */
+/* line 809, ../sass/home.scss */
 .contact-container a {
   color: #2477e0;
 }
-/* line 808, ../sass/home.scss */
+/* line 812, ../sass/home.scss */
 .contact-container .section-head {
   margin-bottom: 20px;
   color: #555;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 815, ../sass/home.scss */
+/* line 819, ../sass/home.scss */
 .contact-container .sub-head {
   padding-top: 30px;
   margin-bottom: 10px;
@@ -2603,7 +2609,7 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 825, ../sass/home.scss */
+/* line 829, ../sass/home.scss */
 .contact-container .contact-form .form-control {
   height: 44px;
   margin-bottom: 20px;
@@ -2619,18 +2625,18 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 843, ../sass/home.scss */
+/* line 847, ../sass/home.scss */
 .contact-container .contact-form textarea {
   width: 100%;
   min-height: 120px;
   padding: 15px;
   margin-bottom: 20px;
   border-color: #ccc;
+  font-size: 18px;
+  font-size: 1.8rem;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-size: 18px;
-  font-size: 1.8rem;
 }
