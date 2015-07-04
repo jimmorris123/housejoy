@@ -1,6 +1,6 @@
 // Basic style structure 
-@import "../../sass/style";
-
+// @import "../../sass/style";
+@import "../../sass/_default";
 
 
 
@@ -442,7 +442,7 @@
 
 								&:before , &:after {
 									content: "";
-									@extend .transition;
+									// @extend .transition;
 									position: absolute;
 									background-color: #555;
 									width: 2px;
@@ -464,7 +464,7 @@
 
 								&:before , &:after {
 									content: "";
-									@extend .transition;
+									// @extend .transition;
 									position: absolute;
 									background-color: #555;
 									width: 2px;
@@ -630,7 +630,7 @@
 
 								&:before , &:after {
 									content: "";
-									@extend .transition;
+									// @extend .transition;
 									position: absolute;
 									background-color: #fff;
 									width: 2px
