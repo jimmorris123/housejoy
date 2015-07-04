@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 16px);
                 @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include rem(font-size, 20px);
                     @include transition(.3s all);
+                    @include rem(font-size, 20px);
                 }
                 &:hover,
                 &:focus,
@@ -136,8 +136,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
                 img {
                     margin-bottom: 10px;
                 }
@@ -150,8 +150,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
     }
 }
@@ -255,8 +255,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(line-height, 28px);
                         @include rem(font-size, 18px);
+                        @include rem(line-height, 28px);
                     }
                 }
             }
@@ -358,19 +358,19 @@
             margin-right: 10px;
             margin-bottom: 40px;
 
-            @include medmx(479px) {
-                width: 48%;
-            }
-            @include medmxn(768px, 991px) {
-                width: 28%;
+            @include transition(all .3s);
+            @include medmxn(480px, 768px) {
+                width: 30%;
             }
             @include medmxn(992px, 1199px) {
                 width: 22%;
             }
-            @include medmxn(480px, 768px) {
-                width: 30%;
+            @include medmxn(768px, 991px) {
+                width: 28%;
             }
-            @include transition(all .3s);
+            @include medmx(479px) {
+                width: 48%;
+            }
             &:hover,
             &:focus,
             &:active {
@@ -481,16 +481,16 @@
         a {
             padding-left: 0;
 
-            @include medmn(768px) {
-                display: inline-block;
-                padding: 0;
-                padding-right: 15px;
+            @include medmn(992px) {
+                width: auto;
             }
             @include medmxn(480px, 767px) {
                 width: auto;
             }
-            @include medmn(992px) {
-                width: auto;
+            @include medmn(768px) {
+                display: inline-block;
+                padding: 0;
+                padding-right: 15px;
             }
         }
     }
@@ -566,8 +566,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 30px);
+                @include transform(translateY(-50%));
                 p {
                     width: 60%;
                     margin: 0 auto;
@@ -635,8 +635,8 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 18px);
         @include border-radius(5px);
+        @include rem(font-size, 18px);
     }
     #tipue_drop_content {
         width: 100%;
@@ -693,6 +693,7 @@
         position: absolute;
         top: 48px;
         right: 70px;
+        // display: none;
 
         width: 400px;
         // padding: 15px;
@@ -801,7 +802,18 @@
 
     color: $medium-gray;
 
+    @include medmx(767px) {
+        padding-top: 0;
+    }
     @include rem(font-size, 16px);
+    .col-xs-12 {
+        @include medmx(767px) {
+            padding-right: 0;
+            padding-left: 0;
+
+            text-align: center;
+        }
+    }
     .row {
         margin-right: auto;
         margin-left: auto;
@@ -815,6 +827,11 @@
         color: $dark-gray;
 
         @include rem(font-size, 24px);
+        @include medmx(767px) {
+            padding-top: 40px;
+
+            text-align: center;
+        }
     }
     .sub-head {
         padding-top: 30px;
@@ -822,6 +839,9 @@
 
         color: $dark-gray;
 
+        @include medmx(767px) {
+            text-align: center;
+        }
         @include rem(font-size, 20px);
     }
 
@@ -841,6 +861,7 @@
                -moz-box-shadow: none;
                     box-shadow: none;
 
+            -webkit-appearance: none;
                  -o-box-shadow: none;
             @include rem(font-size, 18px);
         }
@@ -850,10 +871,16 @@
             padding: 15px;
             margin-bottom: 20px;
 
-            border-color: #ccc;
+            resize: vertical;
 
-            @include rem(font-size, 18px);
+            border: 1px solid #ccc;
+            -webkit-box-shadow: none !important;
+               -moz-box-shadow: none !important;
+                    box-shadow: none !important;
+
+            -webkit-appearance: none;
             @include border-radius(5px);
+            @include rem(font-size, 18px);
         }
     }
 }

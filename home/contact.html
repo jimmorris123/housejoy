@@ -15,6 +15,8 @@
       #map-canvas {
         width: 100%;
         height: 260px;
+        /*position: static !important;*/
+        overflow: visible !important;
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -33,14 +35,19 @@
 			var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
 			var mapOptions = {
 			zoom: 4,
-			center: myLatlng
+			center: myLatlng,
+			scrollwheel: false,
+			navigationControl: false,
+		    mapTypeControl: false,
+		    scaleControl: false,
+		    draggable: false,
 			}
 			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 			var marker = new google.maps.Marker({
 			  position: myLatlng,
 			  map: map,
-			  title: 'Hello World!'
+			  title: 'Housejoy Google Map'
 			});
 		}
 
@@ -114,7 +121,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			</div>
 			<div class="map-div">
 				<div id="map-canvas"></div>
-				<div class="overlay"></div>
+				<!-- <div class="overlay"></div> -->
 				<div class="map-info-window">
 					<div class="col-xs-12 col-sm-7 left-div">
 						<div class="info-title">Housejoy</div>
@@ -147,14 +154,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<div class="col-xs-12">
 						<form class="contact-form" action="">
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="col-xs-12 col-md-12 col-lg-6">
 									<div class="control-group">
 										<div class="controls">
 											<input required="" id="username" name="username" type="email" class="form-control" placeholder="Name" class="input-medium" required="">
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="col-xs-12 col-md-12 col-lg-6">
 									<div class="control-group">
 										<div class="controls">
 											<input required="" id="useremail" name="useremail" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
@@ -163,14 +170,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="col-xs-12 col-md-12 col-lg-6">
 									<div class="control-group">
 										<div class="controls">
 											<input required="" id="userphone" name="userphone" type="email" class="form-control" placeholder="Phone Number" class="input-medium" required="">
 										</div>
 									</div>
 								</div>
-								<div class="col-xs-12 col-sm-12 col-md-6">
+								<div class="col-xs-12 col-md-12 col-lg-6">
 									<div class="control-group">
 										<div class="controls">
 											<input required="" id="subject" name="subject" type="email" class="form-control" placeholder="Subject" class="input-medium" required="">
@@ -196,7 +203,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				</div>
 				<div class="col-xs-12 col-sm-6">
 					<div class="col-xs-12 section-head">Partner with Us</div>
-					<div class="col-xs-12 sub-head">Join Us</div>
+					<div class="col-xs-12 sub-head PT0-imp">Join Us</div>
 					<div class="col-xs-12 PR0">If you are a business or pro interested in joining our network, <a href="#">click here</a>.</div>
 					<div class="col-xs-12 sub-head">Support</div>
 					<div class="col-xs-12 PR0">if you are a professional or a service provider and would like to join our network, write to us at <a href="mailto:services@housejoy.in">services@housejoy.in</a>.</div>

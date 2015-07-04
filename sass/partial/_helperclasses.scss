@@ -24,6 +24,9 @@ a {
 .PR0 {
     padding-right: 0;
 }
+.PT0-imp {
+    padding-top: 0 !important;
+}
 .PT40 {
     padding-top: 40px;
 }
@@ -137,9 +140,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
-            filter: blur(15px);
-            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+            filter: blur(15px);
+            filter: blur(15px);
 }
 
 svg {
