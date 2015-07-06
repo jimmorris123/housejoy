@@ -16,7 +16,22 @@
 
 <symbol id="icon-previous" viewBox="0 0 24 24">
 	<title>icon-previous</title>
-	 <path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 14.78125 2.28125 L 5.78125 11.28125 L 5.09375 12 L 5.78125 12.71875 L 14.78125 21.71875 L 16.21875 20.28125 L 7.9375 12 L 16.21875 3.71875 L 14.78125 2.28125 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"/>
+	<path style="text-indent:0;text-align:start;line-height:normal;text-transform:none;block-progression:tb;-inkscape-font-specification:Bitstream Vera Sans" d="M 14.78125 2.28125 L 5.78125 11.28125 L 5.09375 12 L 5.78125 12.71875 L 14.78125 21.71875 L 16.21875 20.28125 L 7.9375 12 L 16.21875 3.71875 L 14.78125 2.28125 z" color="#000" overflow="visible" enable-background="accumulate" font-family="Bitstream Vera Sans"/>
+</symbol>
+
+<symbol id="icon-up" viewBox="0 0 50 50">
+	<title>icon-up</title>
+	<path d="M 25 12.75 L 2.75 35 L 4.84375 37.09375 L 25 16.9375 L 45.15625 37.09375 L 47.25 35 L 25 12.75 z"/>
+</symbol>
+
+<symbol id="icon-down" viewBox="0 0 50 50">
+	<title>icon-down</title>
+	<path d="M 4.84375 12.90625 L 2.75 15 L 25 37.25 L 47.25 15 L 45.15625 12.90625 L 25 33.0625 L 4.84375 12.90625 z"/>
+</symbol>
+
+<symbol id="icon-appointment" viewBox="0 0 24 24">
+	<title>icon-appointment</title>
+	<path d="M 12 2 C 11.2 2 10.5 2.7 10.5 3.5 L 10.5 4.1875 C 7.3424666 4.8700668 5 7.6215005 5 11 L 5 15.5 L 3 17.8125 L 3 19 L 21 19 L 21 17.8125 L 19 15.5 L 19 11 C 19 7.6215005 16.657533 4.8700668 13.5 4.1875 L 13.5 3.5 C 13.5 2.7 12.8 2 12 2 z M 10 20 C 10 21.1 10.9 22 12 22 C 13.1 22 14 21.1 14 20 L 10 20 z"/>
 </symbol>
 
 </defs>

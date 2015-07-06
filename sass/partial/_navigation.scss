@@ -307,3 +307,210 @@
         background-color: transparent;
     }
 }
+
+/* Post Login Dropdown */
+
+.user-dropdown {
+    // @include medmx(768px) {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+
+    //     margin: 0;
+
+    //     background-color: #f1f5f9;
+    // }
+    .dropdown {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active,
+    .open .dropdown-toggle.btn-default,
+    .btn-default {
+        // padding: 15px 15px;
+        padding: 0;
+        margin-top: 15px;
+        margin-right: 15px;
+
+        border: none;
+        outline: none;
+        background-color: transparent;
+        // @include medmx(768px) {
+        //     position: fixed;
+        //     right: 0;
+        // }
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        .profile-image-div {
+            display: table;
+
+            table-layout: fixed;
+
+            .profile-image {
+                display: table-cell;
+                float: left;
+                width: 30px;
+                height: 30px;
+
+                vertical-align: middle;
+
+                border: 2px solid $white;
+
+                @include border-radius(30px);
+                img {
+                    @include border-radius(30px);
+                }
+            }
+        }
+        .profile-name {
+            float: left;
+            margin-left: 5px;
+
+            font-family: $blogger_R;
+            line-height: 30px;
+
+            color: $white;
+            // @include medmx(768px) {
+            //     display: none;
+            // }
+
+            @include rem(font-size, 16px);
+        }
+        .caret {
+            float: left;
+            margin-top: 12px;
+            margin-left: 5px;
+        }
+    }
+    .dropdown-menu {
+        position: fixed;
+        top: 60px;
+        right: 0;
+
+        min-width: 200px !important;
+        padding: 6px 0;
+        margin: 0;
+
+        border: none;
+        background-color: #f1f5f9;
+        // @include medmx(768px) {
+        //     position: relative !important;
+        //     min-width: 100px !important;
+        //     padding: 0;
+        //     background-color: #f1f5f9 !important;
+        // }
+
+        @include border-radius(3px);
+        a {
+            padding: 5px 15px !important;
+
+            text-transform: capitalize;
+
+            color: $dark-gray !important;
+            &:hover {
+                color: $green !important;
+                background-color: transparent;
+            }
+        }
+        .active {
+            color: $green !important;
+        }
+    }
+}
+
+.notification {
+    padding: 0 !important;
+    svg {
+        width: 30px;
+        height: 30px;
+    }
+    svg:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        width: 10px;
+        height: 10px;
+
+        content: "";
+
+        background-color: $green;
+        box-shadow: 0 0 0 2px $yellow;
+    }
+    // .new-notification {
+    //     &:after {
+    //         position: absolute;
+    //         top: 0;
+    //         right: 0;
+
+    //         width: 10px;
+    //         height: 10px;
+
+    //         background-color: $green;
+    //         box-shadow: 0 0 0 2px $yellow;
+    //     }
+    // }
+}
+
+.notification-dropdown-class {
+    position: absolute !important;
+    top: 70px !important;
+    right: -110px !important;
+
+    width: 300px !important;
+    padding: 0 !important;
+
+    border: 1px solid $gray-sharp !important;
+    // border-top: 0;
+    li {
+        padding: 10px;
+
+        font-family: $blogger_R;
+        line-height: 1.4;
+
+        color: $dark-gray;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #fafafa;
+
+        @include rem(font-size, 16px);
+        &:last-child {
+            border: none;
+        }
+    }
+    li.read {
+        background-color: $white;
+    }
+}
+.notification-dropdown-class:after,
+.notification-dropdown-class:before {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+
+    width: 0;
+    height: 0;
+
+    content: " ";
+    pointer-events: none;
+
+    border: solid transparent;
+}
+
+.notification-dropdown-class:after {
+    margin-left: -10px;
+
+    border-width: 10px;
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: $white;
+}
+.notification-dropdown-class:before {
+    margin-left: -11px;
+
+    border-width: 11px;
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: $dark-gray;
+}

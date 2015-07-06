@@ -24,12 +24,18 @@ a {
 .PR0 {
     padding-right: 0;
 }
+.PT0-imp {
+    padding-top: 0 !important;
+}
 .PT40 {
     padding-top: 40px;
 }
 .PLR15 {
     padding-right: 15px;
     padding-left: 15px;
+}
+.PA12 {
+    padding: 12px;
 }
 // common headings (Default style)
 .heading-h1 {
@@ -211,6 +217,10 @@ svg {
     }
 }
 
+.ln-h1 {
+    line-height: 1;
+}
+
 
 .laundry-bg {
     background-image: url("../../images/laundry_images/laundry.jpg");
@@ -223,4 +233,15 @@ svg {
 }
 .house-cleaning-bg {
     background-image: url("../../images/housing_images/housing_bg.jpg");
+}
+
+
+/*Class to align text right in dexktop and center in mobile */
+
+.text-r-c {
+    text-align: right;
+
+    @include medmx(768px) {
+        text-align: center;
+    }
 }

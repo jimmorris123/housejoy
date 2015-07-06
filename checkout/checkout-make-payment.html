@@ -13,11 +13,11 @@
 	
 	</head>
 	<body>
-		<div class="page-wrapper">
+		<div class="page-wrapper gray-bg">
 			<div class="header">
 				<div class="left-header">
 					<div class="logo-div">
-						<img src="../images/housejoy-logo.png" alt="">
+						<img src="../images/housejoy-logo.png" alt="Housejoy logo">
 					</div>
 					
 				</div>
@@ -32,17 +32,17 @@
 				<!-- <div data-responsive-tabs> -->
 					<nav class="page-nav">
 						<ul>
-							<li>
+							<li class="col-xs-4 ">
 								<a href="checkout-schedule-appointment.html">
 									<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
 								</a>
 							</li>
-							<li>
+							<li class="col-xs-4 ">
 								<a href="checkout-personal-details.html">
 									<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
 								</a>
 							</li>
-							<li class="active">
+							<li class="col-xs-4 active">
 								<a href="checkout-make-payment.html">
 									<span class="tab-icon no-border-right">
 									<img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
@@ -117,16 +117,16 @@
 											</nav>
 											<div class="content">
 												<section id="credidt-debit-card-tab">
-													<div class="sections">
+													<div class="row sections">
 														<div class="section-head">Card Number</div>
 														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
 													</div>
-													<div class="sections">
+													<div class="row sections">
 														<div class="section-head">Name on the Card</div>
 														<input placeholder="Mr. / Mrs. / Miss" name="name-on-card">
 													</div>	
 																							
-													<div class="sections card-expiry-section">
+													<div class="row sections card-expiry-section">
 														<div class="col-xs-4">
 															<div class="section-head">Month</div>
 															<input name="card-expiry-month">
@@ -140,22 +140,36 @@
 															<input name="card-cvv">
 														</div>
 													</div>
-													<div class="sections">
-														<div class="checkbox-div">
+													<div class="row sections">
+														<!-- <div class="checkbox-div">
 															<div class="checkbox-icon-label-div">
 																<div class="checkbox-icon-div">
 																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
-																	<label class="checkbox-style" for="save-card-for-future">
-											                            <!-- <div class=""></div> -->
+																	<label class="checkbox-style" for="save-card-for-future"> 
 											                        </label>
 										                        </div>
 										                        <div class="checkbox-label-text">
 										                        	<span class="same-address-label">Save this card for Future Checkout</span>
 										                        </div>
 									                        </div>
-														</div>
+														</div> -->
+														<div class="checkbox-div">
+															<div class="checkbox-icon-label-div">
+																<div class="checkbox-icon-div">
+																	<input type="checkbox" name="save-card" id="save-card" value="same-address" />
+																	<label class="checkbox-style" for="save-card">
+											                            <svg class="icon ">
+																			<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+																		</svg>
+											                        </label>
+										                        </div>
+										                        <div class="checkbox-label-text">
+										                        	<span class="same-address-label">Save this card for Future Checkout 1st</span>
+										                        </div>
+									                        </div>
+								                        </div>
 													</div>
-													<div class="sections">
+													<div class="row sections">
 														<a href="#" class="submit-button">Continue</a>
 													</div>
 												</section>
@@ -167,16 +181,16 @@
 												</section>
 												<section id="housejoy-wallet-tab">
 
-												<div class="sections">
+												<div class="row sections">
 														<div class="section-head">Card Number</div>
 														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
 													</div>
-													<div class="sections">
+													<div class="row sections">
 														<div class="section-head">Name on the Card</div>
 														<input placeholder="Mr. / Mrs. / Miss" name="name-on-card">
 													</div>	
 																							
-													<div class="sections card-expiry-section">
+													<div class="row sections card-expiry-section">
 														<div class="col-xs-4">
 															<div class="section-head">Month</div>
 															<input name="card-expiry-month">
@@ -190,22 +204,36 @@
 															<input name="card-cvv">
 														</div>
 													</div>
-													<div class="sections">
-														<div class="checkbox-div">
+													<div class="row sections">
+														<!-- <div class="checkbox-div">
 															<div class="checkbox-icon-label-div">
 																<div class="checkbox-icon-div">
 																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
 																	<label class="checkbox-style" for="save-card-for-future">
-											                            <!-- <div class=""></div> -->
 											                        </label>
 										                        </div>
 										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout</span>
+										                        	<span class="same-address-label">Save this card for Future Checkout 2nd</span>
 										                        </div>
 									                        </div>
-														</div>
+														</div> -->
+														<div class="checkbox-div">
+															<div class="checkbox-icon-label-div">
+																<div class="checkbox-icon-div">
+																	<input type="checkbox" name="save-card" id="save-card" value="same-address" />
+																	<label class="checkbox-style" for="save-card">
+											                            <svg class="icon ">
+																			<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+																		</svg>
+											                        </label>
+										                        </div>
+										                        <div class="checkbox-label-text">
+										                        	<span class="same-address-label">Save this card for Future Checkout 2nd</span>
+										                        </div>
+									                        </div>
+								                        </div>
 													</div>
-													<div class="sections">
+													<div class="row sections">
 														<a href="#" class="submit-button">Continue</a>
 													</div>
 
@@ -257,15 +285,42 @@
 		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<<<<<<< HEAD
 		<script src="../js/checkout-tabs.js"></script>
 		<script src="../js/svg4everybody.ie8.min.js"></script>
-=======
 		<script src="../js/responsiveTabs.js"></script>
+		<script src="../js/svg4everybody.min.js"></script>
 		<script src="../js/svg4everybody.ie8.min.js"></script>
 		<script src="../js/common.js"></script>
->>>>>>> 06cf05e0dbcd2d63431255b6e513e0aab3f9d430
 		<script src="js/checkout.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready( function() {
+				
+				$('[data-responsive-tabs]').responsivetabs(
+				{
+					initialised : function ()
+					{
+						//console.log(this);
+					},
+
+					// change : function (newPanel)
+					// {
+					// 	console.log(newPanel);
+					// }
+				});
+
+				// $('[payment-methos-tabs]').responsivetabs(
+				// {
+				// 	initialised : function ()
+				// 	{
+						
+				// 	},
+					
+				// });
+
+				
+			});
+		</script>
 		
 	</body>
 </html>
