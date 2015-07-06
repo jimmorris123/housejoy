@@ -14,6 +14,9 @@
             .panel-heading {
                 padding: 20px 15px;
                 .panel-title {
+                    .checkbox-small {
+                        display: inline-block;
+                    }
                     .custom-checkbox {
                         display: inline-block;
                         width: 18px;
@@ -69,6 +72,7 @@
 
                         color: $medium-gray;
 
+                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -76,7 +80,6 @@
 
                             @include rem(font-size, 18px);
                         }
-                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;

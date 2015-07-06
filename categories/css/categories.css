@@ -1508,6 +1508,20 @@ svg {
   font-size: 70px;
   font-size: 7rem;
 }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  /* line 86, ../sass/partial/_laundry.scss */
+  .laundry-wrapper .top-banner .title h1.l-right-title {
+    font-size: 56px;
+    font-size: 5.6rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  /* line 86, ../sass/partial/_laundry.scss */
+  .laundry-wrapper .top-banner .title h1.l-right-title {
+    font-size: 50px;
+    font-size: 5rem;
+  }
+}
 @media all and (max-width: 768px) {
   /* line 86, ../sass/partial/_laundry.scss */
   .laundry-wrapper .top-banner .title h1.l-right-title {
@@ -1515,35 +1529,35 @@ svg {
     font-size: 4rem;
   }
 }
-@media all and (min-width: 768px) and (max-width: 992px) {
-  /* line 86, ../sass/partial/_laundry.scss */
-  .laundry-wrapper .top-banner .title h1.l-right-title {
-    font-size: 50px;
-    font-size: 5rem;
-  }
-}
-/* line 101, ../sass/partial/_laundry.scss */
+/* line 104, ../sass/partial/_laundry.scss */
 .laundry-wrapper .top-banner .title h1.l-left-title {
   font-family: "bebas_neueregular";
   color: #fff;
   font-size: 60px;
   font-size: 6rem;
 }
-@media all and (max-width: 768px) {
-  /* line 101, ../sass/partial/_laundry.scss */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  /* line 104, ../sass/partial/_laundry.scss */
   .laundry-wrapper .top-banner .title h1.l-left-title {
-    font-size: 30px;
-    font-size: 3rem;
+    font-size: 46px;
+    font-size: 4.6rem;
   }
 }
-@media all and (min-width: 768px) and (max-width: 992px) {
-  /* line 101, ../sass/partial/_laundry.scss */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  /* line 104, ../sass/partial/_laundry.scss */
   .laundry-wrapper .top-banner .title h1.l-left-title {
     font-size: 48px;
     font-size: 4.8rem;
   }
 }
-/* line 115, ../sass/partial/_laundry.scss */
+@media all and (max-width: 768px) {
+  /* line 104, ../sass/partial/_laundry.scss */
+  .laundry-wrapper .top-banner .title h1.l-left-title {
+    font-size: 30px;
+    font-size: 3rem;
+  }
+}
+/* line 121, ../sass/partial/_laundry.scss */
 .laundry-wrapper .top-banner .title .yellow-btn {
   float: right;
   height: 35px;
@@ -1553,64 +1567,64 @@ svg {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 115, ../sass/partial/_laundry.scss */
+  /* line 121, ../sass/partial/_laundry.scss */
   .laundry-wrapper .top-banner .title .yellow-btn {
     float: none;
     margin: 0 auto;
     margin-bottom: 10px;
   }
 }
-/* line 128, ../sass/partial/_laundry.scss */
+/* line 134, ../sass/partial/_laundry.scss */
 .laundry-wrapper .top-banner .title p {
   height: 30px;
   clear: both;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 137, ../sass/partial/_laundry.scss */
+/* line 143, ../sass/partial/_laundry.scss */
 .laundry-wrapper .facilities {
   position: relative;
   background-image: url("../../images/laundry_images/laundry_blurred.jpg");
   background-position: center center;
   background-size: cover;
 }
-/* line 143, ../sass/partial/_laundry.scss */
+/* line 149, ../sass/partial/_laundry.scss */
 .laundry-wrapper .facilities .f-block {
   padding: 30px 15px;
   text-align: center;
   border-right: 1px solid #ccc;
 }
 @media all and (max-width: 768px) {
-  /* line 143, ../sass/partial/_laundry.scss */
+  /* line 149, ../sass/partial/_laundry.scss */
   .laundry-wrapper .facilities .f-block {
     border: none;
   }
 }
-/* line 153, ../sass/partial/_laundry.scss */
+/* line 159, ../sass/partial/_laundry.scss */
 .laundry-wrapper .facilities .f-block a {
   display: block;
 }
-/* line 155, ../sass/partial/_laundry.scss */
+/* line 161, ../sass/partial/_laundry.scss */
 .laundry-wrapper .facilities .f-block a svg {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
   color: #ffc400;
 }
-/* line 163, ../sass/partial/_laundry.scss */
+/* line 169, ../sass/partial/_laundry.scss */
 .laundry-wrapper .facilities .f-block:last-child {
   border-right: none;
 }
-/* line 171, ../sass/partial/_laundry.scss */
+/* line 177, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories {
   margin-top: -300px;
   margin-bottom: 40px;
 }
-/* line 174, ../sass/partial/_laundry.scss */
+/* line 180, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap {
   padding: 0 0 10px 10px;
 }
-/* line 176, ../sass/partial/_laundry.scss */
+/* line 182, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block {
   position: relative;
   height: auto;
@@ -1618,12 +1632,12 @@ svg {
   overflow: hidden;
 }
 @media all and (max-width: 768px) {
-  /* line 176, ../sass/partial/_laundry.scss */
+  /* line 182, ../sass/partial/_laundry.scss */
   .laundry-wrapper .categories .cat-wrap .cat-block {
     max-height: 115px;
   }
 }
-/* line 186, ../sass/partial/_laundry.scss */
+/* line 192, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block .overlay {
   position: absolute;
   top: 0;
@@ -1632,7 +1646,7 @@ svg {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* line 195, ../sass/partial/_laundry.scss */
+/* line 201, ../sass/partial/_laundry.scss */
 .laundry-wrapper .categories .cat-wrap .cat-block .title {
   position: absolute;
   top: 50%;
@@ -1641,20 +1655,20 @@ svg {
   font-style: italic;
   text-align: center;
   color: #fff;
-  font-size: 30px;
-  font-size: 3rem;
   -moz-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-size: 30px;
+  font-size: 3rem;
 }
-/* line 214, ../sass/partial/_laundry.scss */
+/* line 220, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps {
   padding: 30px 15px;
   margin-bottom: 40px;
 }
-/* line 217, ../sass/partial/_laundry.scss */
+/* line 223, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps {
   position: relative;
   width: 70%;
@@ -1663,7 +1677,7 @@ svg {
   text-align: center;
   background-color: #333;
 }
-/* line 227, ../sass/partial/_laundry.scss */
+/* line 233, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span {
   position: absolute;
   top: -18px;
@@ -1678,15 +1692,15 @@ svg {
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 243, ../sass/partial/_laundry.scss */
+/* line 249, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span:first-child {
   left: -5px;
 }
-/* line 246, ../sass/partial/_laundry.scss */
+/* line 252, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .steps span:last-child {
   right: -5px;
 }
-/* line 253, ../sass/partial/_laundry.scss */
+/* line 259, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .step-contents .step h4 {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -1695,21 +1709,21 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 264, ../sass/partial/_laundry.scss */
+/* line 270, ../sass/partial/_laundry.scss */
 .laundry-wrapper .process-steps .step-contents .step p {
   font-family: "blogger_sanslight";
   color: #555;
-  font-size: 16px;
-  font-size: 1.6rem;
   line-height: 22px;
   line-height: 2.2rem;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 
-/* line 277, ../sass/partial/_laundry.scss */
+/* line 283, ../sass/partial/_laundry.scss */
 .work-process {
   padding-bottom: 40px;
 }
-/* line 283, ../sass/partial/_laundry.scss */
+/* line 289, ../sass/partial/_laundry.scss */
 .work-process .heading-h2 {
   position: relative;
   padding-bottom: 10px;
@@ -1717,7 +1731,7 @@ svg {
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-/* line 294, ../sass/partial/_laundry.scss */
+/* line 300, ../sass/partial/_laundry.scss */
 .work-process .heading-h2 .border-inner-bottom {
   position: absolute;
   right: 0;
@@ -1728,12 +1742,12 @@ svg {
   margin: 0 auto;
   background-color: #009688;
 }
-/* line 307, ../sass/partial/_laundry.scss */
+/* line 313, ../sass/partial/_laundry.scss */
 .work-process .W-block {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 310, ../sass/partial/_laundry.scss */
+/* line 316, ../sass/partial/_laundry.scss */
 .work-process .W-block svg {
   width: 100px;
   height: 100px;
@@ -1741,18 +1755,18 @@ svg {
   color: #ffc400;
 }
 
-/* line 320, ../sass/partial/_laundry.scss */
+/* line 326, ../sass/partial/_laundry.scss */
 .service-section {
   height: auto !important;
   overflow: hidden;
   text-align: center;
   background-color: #fff;
 }
-/* line 327, ../sass/partial/_laundry.scss */
+/* line 333, ../sass/partial/_laundry.scss */
 .service-section img {
   margin-bottom: 15px;
 }
-/* line 330, ../sass/partial/_laundry.scss */
+/* line 336, ../sass/partial/_laundry.scss */
 .service-section h4 {
   margin-bottom: 10px;
   font-family: "blogger_sanslight";
@@ -1760,7 +1774,7 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 339, ../sass/partial/_laundry.scss */
+/* line 345, ../sass/partial/_laundry.scss */
 .service-section p {
   float: none;
   margin: 0 auto;
@@ -1769,18 +1783,18 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 349, ../sass/partial/_laundry.scss */
+/* line 355, ../sass/partial/_laundry.scss */
 .service-section > div {
   margin-bottom: 20px;
 }
 
-/* line 354, ../sass/partial/_laundry.scss */
+/* line 360, ../sass/partial/_laundry.scss */
 .book-now-band {
   padding: 15px 20px;
   text-align: center;
   background-color: #e7f1fa;
 }
-/* line 360, ../sass/partial/_laundry.scss */
+/* line 366, ../sass/partial/_laundry.scss */
 .book-now-band h2 {
   margin-bottom: 10px;
   font-family: "blogger_sanslight";
@@ -1789,23 +1803,23 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 370, ../sass/partial/_laundry.scss */
+/* line 376, ../sass/partial/_laundry.scss */
 .book-now-band button {
   max-width: 130px;
   min-width: 130px;
   margin: 0 auto;
 }
 
-/* line 379, ../sass/partial/_laundry.scss */
+/* line 385, ../sass/partial/_laundry.scss */
 .carousel-inner .block-text {
   margin-bottom: 20px;
   box-shadow: none;
 }
-/* line 383, ../sass/partial/_laundry.scss */
+/* line 389, ../sass/partial/_laundry.scss */
 .carousel-inner .block-text p {
   margin-bottom: 10px;
 }
-/* line 386, ../sass/partial/_laundry.scss */
+/* line 392, ../sass/partial/_laundry.scss */
 .carousel-inner .block-text a {
   display: block;
   margin-bottom: 5px;
@@ -1814,20 +1828,20 @@ svg {
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 396, ../sass/partial/_laundry.scss */
+/* line 402, ../sass/partial/_laundry.scss */
 .carousel-inner .block-text p.helper-text {
   font-family: "blogger_sanslight";
   color: #009688;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 403, ../sass/partial/_laundry.scss */
+/* line 409, ../sass/partial/_laundry.scss */
 .carousel-inner .block-text .arrow-down {
   position: absolute;
   bottom: -15px;
   border-top-color: #f1f5f9;
 }
-/* line 410, ../sass/partial/_laundry.scss */
+/* line 416, ../sass/partial/_laundry.scss */
 .carousel-inner .person-text {
   width: 80px;
   height: 80px;
@@ -1840,11 +1854,11 @@ svg {
   border-radius: 50%;
 }
 
-/* line 420, ../sass/partial/_laundry.scss */
+/* line 426, ../sass/partial/_laundry.scss */
 .carousel-control.right {
   right: 0;
 }
-/* line 423, ../sass/partial/_laundry.scss */
+/* line 429, ../sass/partial/_laundry.scss */
 .carousel-control.left {
   left: 0;
 }
@@ -2054,6 +2068,10 @@ svg {
   padding: 20px 15px;
 }
 /* line 17, ../sass/partial/_plumbing.scss */
+.left-section .plumbing-content .panel .panel-heading .panel-title .checkbox-small {
+  display: inline-block;
+}
+/* line 20, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-heading .panel-title .custom-checkbox {
   display: inline-block;
   width: 18px;
@@ -2063,18 +2081,18 @@ svg {
   border: 2px solid #777;
   border-radius: 2px;
 }
-/* line 29, ../sass/partial/_plumbing.scss */
+/* line 32, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-heading .panel-title.collapsed .illusion-checkbox {
   width: 15px;
   height: 15px;
   border: 1px solid #ccc;
   background-color: #f6f6f6;
 }
-/* line 35, ../sass/partial/_plumbing.scss */
+/* line 38, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-heading .panel-title.collapsed .illusion-checkbox i {
   display: none;
 }
-/* line 42, ../sass/partial/_plumbing.scss */
+/* line 45, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-heading .panel-title a .title,
 .left-section .plumbing-content .panel .panel-heading .panel-title .sm-label .title {
   display: inline-block;
@@ -2084,15 +2102,15 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 56, ../sass/partial/_plumbing.scss */
+/* line 59, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel > .panel-heading + .panel-collapse .panel-body {
   border-top-color: transparent;
 }
-/* line 60, ../sass/partial/_plumbing.scss */
+/* line 63, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body {
   border-top: none;
 }
-/* line 62, ../sass/partial/_plumbing.scss */
+/* line 65, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body textarea {
   width: 100%;
   min-height: 120px;
@@ -2131,16 +2149,16 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 81, ../sass/partial/_plumbing.scss */
+/* line 84, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload {
   display: inline-block;
   clear: both;
 }
-/* line 84, ../sass/partial/_plumbing.scss */
+/* line 87, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload input[type="file"] {
   display: none;
 }
-/* line 87, ../sass/partial/_plumbing.scss */
+/* line 90, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .image-upload label {
   display: block;
   height: 40px;
@@ -2157,21 +2175,21 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 107, ../sass/partial/_plumbing.scss */
+/* line 110, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result {
   position: relative;
   display: inline-block;
 }
-/* line 111, ../sass/partial/_plumbing.scss */
+/* line 114, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .img-wrap {
   width: 200px;
 }
-/* line 114, ../sass/partial/_plumbing.scss */
+/* line 117, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .thumbnail {
   padding: 0;
   border: 2px solid #ffc400;
 }
-/* line 121, ../sass/partial/_plumbing.scss */
+/* line 124, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .remove_pict {
   position: absolute;
   top: 10px;
@@ -2186,16 +2204,16 @@ svg {
   font-size: 1.2rem;
 }
 
-/* line 143, ../sass/partial/_plumbing.scss */
+/* line 146, ../sass/partial/_plumbing.scss */
 .right-section {
   margin-bottom: 60px;
 }
-/* line 146, ../sass/partial/_plumbing.scss */
+/* line 149, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading {
   padding: 20px 15px;
   border-bottom: 1px solid #ccc;
 }
-/* line 150, ../sass/partial/_plumbing.scss */
+/* line 153, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading h4 {
   margin-bottom: 5px;
   font-family: "blogger_sanslight";
@@ -2204,19 +2222,19 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 160, ../sass/partial/_plumbing.scss */
+/* line 163, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading p {
   font-family: "blogger_sansregular";
   color: #999;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 168, ../sass/partial/_plumbing.scss */
+/* line 171, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues {
   padding: 15px;
   border-bottom: 1px solid #ccc;
 }
-/* line 172, ../sass/partial/_plumbing.scss */
+/* line 175, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues.input {
   padding: 20px 0 15px 0;
   padding-right: 0;
@@ -2224,7 +2242,7 @@ svg {
   margin-bottom: 40px;
   border-bottom: none;
 }
-/* line 180, ../sass/partial/_plumbing.scss */
+/* line 183, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span {
   display: inline-block;
   float: none;
@@ -2235,28 +2253,28 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 192, ../sass/partial/_plumbing.scss */
+/* line 195, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box {
   display: inline-block;
   width: 20%;
   text-align: right;
   vertical-align: top;
 }
-/* line 198, ../sass/partial/_plumbing.scss */
+/* line 201, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box .multiple-items {
   margin-right: 10px;
 }
-/* line 201, ../sass/partial/_plumbing.scss */
+/* line 204, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box i {
   cursor: pointer;
   color: #999;
 }
-/* line 210, ../sass/partial/_plumbing.scss */
+/* line 213, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount {
   padding: 10px 0;
   overflow: hidden;
 }
-/* line 213, ../sass/partial/_plumbing.scss */
+/* line 216, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span {
   margin-top: 10px;
   font-family: "blogger_sansregular";
@@ -2264,22 +2282,22 @@ svg {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 221, ../sass/partial/_plumbing.scss */
+/* line 224, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span:last-child {
   margin-top: 0;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 228, ../sass/partial/_plumbing.scss */
+/* line 231, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action button {
   height: 50px;
 }
 
-/* line 236, ../sass/partial/_plumbing.scss */
+/* line 239, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog {
   margin: 0;
 }
-/* line 238, ../sass/partial/_plumbing.scss */
+/* line 241, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-content {
   height: 100vh;
   border: none;
@@ -2287,15 +2305,15 @@ svg {
   background-clip: none;
   box-shadow: none;
 }
-/* line 246, ../sass/partial/_plumbing.scss */
+/* line 249, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-header {
   border-bottom: none;
 }
-/* line 250, ../sass/partial/_plumbing.scss */
+/* line 253, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body {
   padding-top: 0 !important;
 }
-/* line 254, ../sass/partial/_plumbing.scss */
+/* line 257, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body .right-section .cart .heading {
   padding-top: 0;
 }
