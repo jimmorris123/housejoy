@@ -231,7 +231,11 @@
 	</script>
 	<script>
 	  $(function() {
-	    $( "#datepicker" ).datepicker();
+	    $( "#datepicker" ).datepicker({
+	    	minDate: 0,
+	    	maxDate: "+1m",
+	    	dateFormat: "dd M, yy"
+	    });
 	  });
 	</script>
 </body>
