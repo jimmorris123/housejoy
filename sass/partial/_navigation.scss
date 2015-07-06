@@ -232,10 +232,10 @@
 
                         color: $white;
 
-                        @include rem(font-size, 16px);
                         @include medmx(768px) {
                             color: $medium-gray;
                         }
+                        @include rem(font-size, 16px);
                         .icon {
                             margin-right: 10px;
                         }
@@ -248,10 +248,10 @@
                             border: none;
                             background-color: transparent;
 
+                            @include rem(font-size, 16px);
                             @include medmx(768px) {
                                 color: $medium-gray;
                             }
-                            @include rem(font-size, 16px);
                             &:hover,
                             &:focus,
                             &:active {
@@ -459,7 +459,7 @@
 .notification-dropdown-class {
     position: absolute !important;
     top: 70px !important;
-    right: -100px !important;
+    right: -110px !important;
 
     width: 300px !important;
     padding: 0 !important;

@@ -607,7 +607,7 @@ body {
 .notification-dropdown-class {
   position: absolute !important;
   top: 70px !important;
-  right: -100px !important;
+  right: -110px !important;
   width: 300px !important;
   padding: 0 !important;
   border: 1px solid #7e8287 !important;
@@ -692,22 +692,27 @@ a:hover, a:focus {
 }
 
 /* line 27, ../../sass/partial/_helperclasses.scss */
+.PT0-imp {
+  padding-top: 0 !important;
+}
+
+/* line 30, ../../sass/partial/_helperclasses.scss */
 .PT40 {
   padding-top: 40px;
 }
 
-/* line 30, ../../sass/partial/_helperclasses.scss */
+/* line 33, ../../sass/partial/_helperclasses.scss */
 .PLR15 {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 34, ../../sass/partial/_helperclasses.scss */
+/* line 37, ../../sass/partial/_helperclasses.scss */
 .PA12 {
   padding: 12px;
 }
 
-/* line 38, ../../sass/partial/_helperclasses.scss */
+/* line 41, ../../sass/partial/_helperclasses.scss */
 .heading-h1 {
   margin-bottom: 15px;
   font-family: "blogger_sansmedium";
@@ -716,7 +721,7 @@ a:hover, a:focus {
   font-size: 3.6rem;
 }
 
-/* line 47, ../../sass/partial/_helperclasses.scss */
+/* line 50, ../../sass/partial/_helperclasses.scss */
 .heading-h2 {
   margin-bottom: 15px;
   font-family: "blogger_sanslight";
@@ -725,7 +730,7 @@ a:hover, a:focus {
   font-size: 2rem;
 }
 
-/* line 56, ../../sass/partial/_helperclasses.scss */
+/* line 59, ../../sass/partial/_helperclasses.scss */
 .helper-text {
   position: relative;
   margin-bottom: 15px;
@@ -734,7 +739,7 @@ a:hover, a:focus {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 66, ../../sass/partial/_helperclasses.scss */
+/* line 69, ../../sass/partial/_helperclasses.scss */
 .helper-text .border-bottom {
   position: absolute;
   bottom: -8px;
@@ -744,12 +749,12 @@ a:hover, a:focus {
   background-color: #ffc400;
 }
 
-/* line 79, ../../sass/partial/_helperclasses.scss */
+/* line 82, ../../sass/partial/_helperclasses.scss */
 .gradient-white {
   background: linear-gradient(to top, #ffffff, rgba(255, 255, 251, 0));
 }
 
-/* line 82, ../../sass/partial/_helperclasses.scss */
+/* line 85, ../../sass/partial/_helperclasses.scss */
 .linearBg {
   opacity: .3;
   /* Safari 4-5, Chrome 1-9 */
@@ -765,7 +770,7 @@ a:hover, a:focus {
   /* fallback */
 }
 
-/* line 99, ../../sass/partial/_helperclasses.scss */
+/* line 102, ../../sass/partial/_helperclasses.scss */
 .inside-linearBg {
   opacity: .8;
   /* Safari 4-5, Chrome 1-9 */
@@ -781,7 +786,7 @@ a:hover, a:focus {
   /* fallback */
 }
 
-/* line 119, ../../sass/partial/_helperclasses.scss */
+/* line 122, ../../sass/partial/_helperclasses.scss */
 .overlay {
   position: absolute;
   top: 0;
@@ -791,7 +796,7 @@ a:hover, a:focus {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 130, ../../sass/partial/_helperclasses.scss */
+/* line 133, ../../sass/partial/_helperclasses.scss */
 .blur {
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -801,130 +806,130 @@ a:hover, a:focus {
   -moz-filter: blur(15px);
   -ms-filter: blur(15px);
   -o-filter: blur(15px);
-  filter: blur(15px);
-  filter: blur(15px);
   filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
+  filter: blur(15px);
+  filter: blur(15px);
 }
 
-/* line 145, ../../sass/partial/_helperclasses.scss */
+/* line 148, ../../sass/partial/_helperclasses.scss */
 svg {
   fill: currentColor;
 }
 
-/* line 151, ../../sass/partial/_helperclasses.scss */
+/* line 154, ../../sass/partial/_helperclasses.scss */
 .f-cl-gray {
   color: #777;
 }
 
-/* line 154, ../../sass/partial/_helperclasses.scss */
+/* line 157, ../../sass/partial/_helperclasses.scss */
 .f-cl-gray-sharp {
   color: #7e8287;
 }
 
-/* line 157, ../../sass/partial/_helperclasses.scss */
+/* line 160, ../../sass/partial/_helperclasses.scss */
 .f-cl-green {
   color: #009688;
 }
 
-/* line 160, ../../sass/partial/_helperclasses.scss */
+/* line 163, ../../sass/partial/_helperclasses.scss */
 .f-cl-white {
   color: #fff;
 }
 
-/* line 164, ../../sass/partial/_helperclasses.scss */
+/* line 167, ../../sass/partial/_helperclasses.scss */
 .text-uppercase {
   text-transform: uppercase;
 }
 
-/* line 168, ../../sass/partial/_helperclasses.scss */
+/* line 171, ../../sass/partial/_helperclasses.scss */
 .f-14 {
   font-size: 14px;
   font-size: 1.4rem;
 }
 
-/* line 171, ../../sass/partial/_helperclasses.scss */
+/* line 174, ../../sass/partial/_helperclasses.scss */
 .f-16 {
   font-size: 16px;
   font-size: 1.6rem;
 }
 
-/* line 175, ../../sass/partial/_helperclasses.scss */
+/* line 178, ../../sass/partial/_helperclasses.scss */
 .gray-bg {
   background-color: #f1f5f9;
 }
 
-/* line 179, ../../sass/partial/_helperclasses.scss */
+/* line 182, ../../sass/partial/_helperclasses.scss */
 .white-bg-imp {
   background-color: #fff !important;
 }
 
-/* line 183, ../../sass/partial/_helperclasses.scss */
+/* line 186, ../../sass/partial/_helperclasses.scss */
 .transparent-bg-imp {
   background-color: transparent !important;
 }
 
-/* line 188, ../../sass/partial/_helperclasses.scss */
+/* line 191, ../../sass/partial/_helperclasses.scss */
 .H-auto {
   height: auto !important;
 }
 
-/* line 192, ../../sass/partial/_helperclasses.scss */
+/* line 195, ../../sass/partial/_helperclasses.scss */
 .o-flow-H {
   overflow: hidden;
 }
 
-/* line 196, ../../sass/partial/_helperclasses.scss */
+/* line 199, ../../sass/partial/_helperclasses.scss */
 .MB0 {
   margin-bottom: 0;
 }
 
-/* line 199, ../../sass/partial/_helperclasses.scss */
+/* line 202, ../../sass/partial/_helperclasses.scss */
 .MB0-imp {
   margin-bottom: 0 !important;
 }
 
-/* line 202, ../../sass/partial/_helperclasses.scss */
+/* line 205, ../../sass/partial/_helperclasses.scss */
 .MB5 {
   margin-bottom: 5px;
 }
 
-/* line 205, ../../sass/partial/_helperclasses.scss */
+/* line 208, ../../sass/partial/_helperclasses.scss */
 .MB10 {
   margin-bottom: 10px;
 }
 
-/* line 208, ../../sass/partial/_helperclasses.scss */
+/* line 211, ../../sass/partial/_helperclasses.scss */
 .MB20 {
   margin-bottom: 20px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 212, ../../sass/partial/_helperclasses.scss */
+  /* line 215, ../../sass/partial/_helperclasses.scss */
   .MB-sm-0 {
     margin-bottom: 0 !important;
   }
 }
-/* line 217, ../../sass/partial/_helperclasses.scss */
+/* line 220, ../../sass/partial/_helperclasses.scss */
 .ln-h1 {
   line-height: 1;
 }
 
-/* line 222, ../../sass/partial/_helperclasses.scss */
+/* line 225, ../../sass/partial/_helperclasses.scss */
 .laundry-bg {
   background-image: url("../../images/laundry_images/laundry.jpg");
 }
 
-/* line 225, ../../sass/partial/_helperclasses.scss */
+/* line 228, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
   background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
 
-/* line 228, ../../sass/partial/_helperclasses.scss */
+/* line 231, ../../sass/partial/_helperclasses.scss */
 .beauty-bg {
   background-image: url("../../images/beauty_images/Hair_Color.jpg");
 }
 
-/* line 231, ../../sass/partial/_helperclasses.scss */
+/* line 234, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
   background-image: url("../../images/housing_images/housing_bg.jpg");
 }
@@ -2440,7 +2445,7 @@ a.submit-button {
 /* line 872, ../sass/profile.scss */
 .my-orders .filter-by-section .category-filter .category-filter-checkbox-div li .checkbox-span input[type=checkbox]:checked + .checkbox-icon svg {
   width: 18px;
-  height: 18px;
+  height: 17px;
   fill: currentColor;
 }
 /* line 881, ../sass/profile.scss */
