@@ -312,7 +312,7 @@
 
             @include rem(font-size, 48px);
             &.city-title {
-                @include rem(font-size, 56px);
+                @include rem(font-size, 70px);
             }
         }
         p {
@@ -380,6 +380,11 @@
                 svg,
                 h4 {
                     color: $green;
+                }
+            }
+            &.with-icon {
+                @include medmn(480px) {
+                    float: left;
                 }
             }
             svg {
