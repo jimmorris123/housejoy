@@ -14,6 +14,29 @@
             .panel-heading {
                 padding: 20px 15px;
                 .panel-title {
+                    .custom-checkbox {
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 10px;
+
+                        vertical-align: middle;
+
+                        border: 2px solid #777;
+                        border-radius: 2px;
+                    }
+                    &.collapsed {
+                        .illusion-checkbox {
+                            width: 15px;
+                            height: 15px;
+
+                            border: 1px solid #ccc;
+                            background-color: #f6f6f6;
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
                     a,
                     .sm-label {
                         .title {
@@ -26,29 +49,6 @@
                             color: $medium-gray;
 
                             @include rem(font-size, 18px);
-                        }
-                        .custom-checkbox {
-                            display: inline-block;
-                            width: 18px;
-                            height: 18px;
-                            margin-right: 10px;
-
-                            vertical-align: middle;
-
-                            border: 2px solid #777;
-                            border-radius: 2px;
-                        }
-                        &.collapsed {
-                            .illusion-checkbox {
-                                width: 15px;
-                                height: 15px;
-
-                                border: 1px solid #ccc;
-                                background-color: #f6f6f6;
-                                i {
-                                    display: none;
-                                }
-                            }
                         }
                     }
                 }
@@ -69,7 +69,6 @@
 
                         color: $medium-gray;
 
-                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -77,6 +76,7 @@
 
                             @include rem(font-size, 18px);
                         }
+                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;
