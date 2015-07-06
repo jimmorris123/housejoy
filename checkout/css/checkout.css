@@ -607,7 +607,7 @@ body {
 .notification-dropdown-class {
   position: absolute !important;
   top: 70px !important;
-  right: -100px !important;
+  right: -110px !important;
   width: 300px !important;
   padding: 0 !important;
   border: 1px solid #7e8287 !important;
@@ -806,9 +806,9 @@ a:hover, a:focus {
   -moz-filter: blur(15px);
   -ms-filter: blur(15px);
   -o-filter: blur(15px);
+  filter: blur(15px);
+  filter: blur(15px);
   filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-  filter: blur(15px);
-  filter: blur(15px);
 }
 
 /* line 148, ../../sass/partial/_helperclasses.scss */
@@ -932,6 +932,18 @@ svg {
 /* line 234, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
   background-image: url("../../images/housing_images/housing_bg.jpg");
+}
+
+/*Class to align text right in dexktop and center in mobile */
+/* line 241, ../../sass/partial/_helperclasses.scss */
+.text-r-c {
+  text-align: right;
+}
+@media all and (max-width: 768px) {
+  /* line 241, ../../sass/partial/_helperclasses.scss */
+  .text-r-c {
+    text-align: center;
+  }
 }
 
 /* line 1, ../../sass/partial/_material-input.scss */
@@ -1297,14 +1309,14 @@ svg {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
-  line-height: 24px;
-  line-height: 2.4rem;
-  font-size: 22px;
-  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 24px;
+  line-height: 2.4rem;
 }
 /* line 202, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
@@ -1384,6 +1396,34 @@ svg {
 }
 
 /* start of modification for 5 columns */
+/*Checkout Button */
+/* line 323, ../../sass/partial/_ui-elem.scss */
+.checkout-yellow-button {
+  min-width: 120px;
+  font-family: "blogger_sansregular";
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #ffc400;
+  font-size: 16px;
+  font-size: 1.6rem;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+@media all and (max-width: 768px) {
+  /* line 323, ../../sass/partial/_ui-elem.scss */
+  .checkout-yellow-button {
+    float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+  }
+}
+
 @media all and (min-width: 768px) {
   /* line 2, ../../sass/partial/_login.scss */
   .login-modal .modal-dialog {
@@ -1721,36 +1761,34 @@ svg {
   display: table;
   clear: both;
 }
-/* line 132, ../sass/checkout.scss */
+/* line 136, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li {
-  margin-top: auto;
-  margin-bottom: 0 !important;
-  width: calc((100% - 2px) / 3);
+  width: calc( ( 100% - 2px ) / 3);
   font-family: "blogger_sansregular";
   float: left;
   border-right: 1px solid #ccc;
   border-bottom: 0;
 }
-/* line 143, ../sass/checkout.scss */
+/* line 146, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li:first-child {
   margin-left: 0;
 }
-/* line 144, ../sass/checkout.scss */
+/* line 147, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li:last-child {
   border-right: none;
 }
-/* line 146, ../sass/checkout.scss */
+/* line 149, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a {
   text-decoration: none;
   color: #aeb0b3;
 }
-/* line 149, ../sass/checkout.scss */
+/* line 152, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a .tab-icon {
   display: block;
   text-align: center;
   padding-top: 20px;
 }
-/* line 154, ../sass/checkout.scss */
+/* line 157, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a .tab-text {
   padding: 10px 10px 20px;
   font-size: 20px;
@@ -1758,15 +1796,15 @@ svg {
   display: block;
   text-align: center;
 }
-/* line 163, ../sass/checkout.scss */
+/* line 166, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul .active > a {
   color: #009688;
 }
-/* line 167, ../sass/checkout.scss */
+/* line 170, ../sass/checkout.scss */
 .payment-method-tabs .tabs .accordion-title {
   display: none;
 }
-/* line 168, ../sass/checkout.scss */
+/* line 171, ../sass/checkout.scss */
 .payment-method-tabs .tabs .content {
   clear: both;
   overflow: hidden;
@@ -1778,98 +1816,106 @@ svg {
   font-size: 14px;
 }
 @media all and (max-width: 1024px) {
-  /* line 168, ../sass/checkout.scss */
+  /* line 171, ../sass/checkout.scss */
   .payment-method-tabs .tabs .content {
     width: 100%;
     margin-left: auto;
   }
 }
-/* line 182, ../sass/checkout.scss */
+/* line 185, ../sass/checkout.scss */
 .payment-method-tabs .tabs .content section li {
   margin-top: 5px;
 }
 
-/* line 192, ../sass/checkout.scss */
+/* line 195, ../sass/checkout.scss */
 .responsive-tabs-initialized {
   display: block;
 }
 
 /*Payment method tabs closed */
-/* line 197, ../sass/checkout.scss */
+/* line 200, ../sass/checkout.scss */
 .page-nav {
   display: block;
   width: 970px;
   margin: 20px auto 0;
 }
 @media all and (max-width: 1024px) {
-  /* line 197, ../sass/checkout.scss */
+  /* line 200, ../sass/checkout.scss */
   .page-nav {
     width: 100%;
     margin-left: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 197, ../sass/checkout.scss */
+  /* line 200, ../sass/checkout.scss */
   .page-nav {
     margin: 0 auto 0;
   }
 }
-/* line 208, ../sass/checkout.scss */
+/* line 211, ../sass/checkout.scss */
 .page-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #a8abae;
 }
-/* line 213, ../sass/checkout.scss */
+/* line 216, ../sass/checkout.scss */
 .page-nav ul:after {
   content: '';
   display: table;
   clear: both;
 }
 @media all and (max-width: 768px) {
-  /* line 208, ../sass/checkout.scss */
+  /* line 211, ../sass/checkout.scss */
   .page-nav ul {
     height: 100px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
   }
 }
-/* line 221, ../sass/checkout.scss */
+/* line 224, ../sass/checkout.scss */
 .page-nav ul li {
+  padding-left: 0;
+  padding-right: 0;
   margin-bottom: 20px;
-  width: calc((100% - 2px) / 3);
   font-family: "blogger_sansregular";
   float: left;
   border-right: 1px solid #d8dce0;
   border-bottom: 0;
 }
-/* line 231, ../sass/checkout.scss */
+/* line 240, ../sass/checkout.scss */
 .page-nav ul li:first-child {
   margin-left: 0;
 }
-/* line 232, ../sass/checkout.scss */
+/* line 241, ../sass/checkout.scss */
 .page-nav ul li:last-child {
   border-right: none;
 }
 @media all and (max-width: 768px) {
-  /* line 221, ../sass/checkout.scss */
+  /* line 224, ../sass/checkout.scss */
   .page-nav ul li {
     border-right: none;
+    margin-bottom: 0;
   }
 }
-/* line 238, ../sass/checkout.scss */
+@media all and (max-width: 480px) {
+  /* line 224, ../sass/checkout.scss */
+  .page-nav ul li {
+    position: static;
+  }
+}
+/* line 252, ../sass/checkout.scss */
 .page-nav ul li a {
   text-decoration: none;
   color: #aeb0b3;
 }
-/* line 241, ../sass/checkout.scss */
+/* line 255, ../sass/checkout.scss */
 .page-nav ul li a .tab-icon {
   display: block;
   text-align: center;
 }
 @media all and (max-width: 768px) {
-  /* line 241, ../sass/checkout.scss */
+  /* line 255, ../sass/checkout.scss */
   .page-nav ul li a .tab-icon {
     height: 50px;
     padding-top: 10px;
@@ -1877,11 +1923,11 @@ svg {
     border-bottom: 1px solid #d8dce0;
   }
 }
-/* line 252, ../sass/checkout.scss */
+/* line 266, ../sass/checkout.scss */
 .page-nav ul li a .no-border-right {
   border-right: none !important;
 }
-/* line 253, ../sass/checkout.scss */
+/* line 267, ../sass/checkout.scss */
 .page-nav ul li a .tab-text {
   padding: 30px 10px 10px;
   font-size: 24px;
@@ -1890,22 +1936,22 @@ svg {
   text-align: center;
 }
 @media all and (max-width: 768px) {
-  /* line 253, ../sass/checkout.scss */
+  /* line 267, ../sass/checkout.scss */
   .page-nav ul li a .tab-text {
     display: none;
   }
 }
-/* line 266, ../sass/checkout.scss */
+/* line 280, ../sass/checkout.scss */
 .page-nav ul .active > a {
   border-right: none;
   color: #009688;
 }
-/* line 270, ../sass/checkout.scss */
+/* line 284, ../sass/checkout.scss */
 .page-nav ul .active > a .tab-icon {
   border-bottom: none;
 }
 @media all and (max-width: 768px) {
-  /* line 274, ../sass/checkout.scss */
+  /* line 288, ../sass/checkout.scss */
   .page-nav ul .active > a .tab-text {
     padding: 10px 20px 10px;
     font-size: 20px;
@@ -1918,27 +1964,33 @@ svg {
     height: 50px;
   }
 }
-/* line 289, ../sass/checkout.scss */
-.page-nav ul .active > a .tab-text-left-text {
-  text-align: left;
+@media all and (max-width: 768px) {
+  /* line 303, ../sass/checkout.scss */
+  .page-nav ul .active > a .tab-text-left-text {
+    text-align: left;
+  }
 }
-/* line 290, ../sass/checkout.scss */
-.page-nav ul .active > a .tab-text-center-text {
-  text-align: center;
+@media all and (max-width: 768px) {
+  /* line 308, ../sass/checkout.scss */
+  .page-nav ul .active > a .tab-text-center-text {
+    text-align: center;
+  }
 }
-/* line 291, ../sass/checkout.scss */
-.page-nav ul .active > a .tab-text-right-text {
-  text-align: right;
+@media all and (max-width: 480px) {
+  /* line 313, ../sass/checkout.scss */
+  .page-nav ul .active > a .tab-text-right-text {
+    text-align: right;
+  }
 }
 
-/* line 296, ../sass/checkout.scss */
+/* line 325, ../sass/checkout.scss */
 .page-content-wrapper {
   width: 100%;
   clear: both;
   overflow: hidden;
 }
 
-/* line 301, ../sass/checkout.scss */
+/* line 330, ../sass/checkout.scss */
 .page-content {
   clear: both;
   overflow: hidden;
@@ -1949,24 +2001,24 @@ svg {
   font-size: 14px;
 }
 @media all and (max-width: 1024px) {
-  /* line 301, ../sass/checkout.scss */
+  /* line 330, ../sass/checkout.scss */
   .page-content {
     width: 100%;
     margin-left: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 301, ../sass/checkout.scss */
+  /* line 330, ../sass/checkout.scss */
   .page-content {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 320, ../sass/checkout.scss */
+/* line 349, ../sass/checkout.scss */
 .page-content section li {
   margin-top: 5px;
 }
-/* line 323, ../sass/checkout.scss */
+/* line 352, ../sass/checkout.scss */
 .page-content section .left-user-div {
   clear: both;
   float: left;
@@ -1981,20 +2033,20 @@ svg {
   padding: 30px;
 }
 @media all and (max-width: 1024px) {
-  /* line 323, ../sass/checkout.scss */
+  /* line 352, ../sass/checkout.scss */
   .page-content section .left-user-div {
     width: calc(100% - 330px);
     padding: 20px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 323, ../sass/checkout.scss */
+  /* line 352, ../sass/checkout.scss */
   .page-content section .left-user-div {
     width: 100%;
     background-color: transparent;
   }
 }
-/* line 342, ../sass/checkout.scss */
+/* line 371, ../sass/checkout.scss */
 .page-content section .left-user-div .left-section-head {
   width: 100%;
   display: block;
@@ -2005,40 +2057,44 @@ svg {
   color: #009688;
   text-transform: capitalize;
 }
-/* line 352, ../sass/checkout.scss */
+/* line 381, ../sass/checkout.scss */
 .page-content section .left-user-div .left-section-head-top-margin {
   margin-top: 20px;
 }
-/* line 353, ../sass/checkout.scss */
+/* line 382, ../sass/checkout.scss */
 .page-content section .left-user-div .schedule-dropdowns {
   height: 50px;
 }
-/* line 357, ../sass/checkout.scss */
+/* line 386, ../sass/checkout.scss */
 .page-content section .left-user-div .card-expiry-section .col-xs-4 {
-  margin-left: 20px;
-  width: calc( (100% - 40px) / 3);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* line 392, ../sass/checkout.scss */
+.page-content section .left-user-div .card-expiry-section .col-xs-4:first-child {
   padding-left: 0;
+  padding-right: 20px;
+}
+/* line 396, ../sass/checkout.scss */
+.page-content section .left-user-div .card-expiry-section .col-xs-4:last-child {
+  padding-left: 20px;
   padding-right: 0;
 }
-/* line 362, ../sass/checkout.scss */
-.page-content section .left-user-div .card-expiry-section .col-xs-4:first-child {
-  margin-left: 0;
-}
-/* line 365, ../sass/checkout.scss */
+/* line 402, ../sass/checkout.scss */
 .page-content section .left-user-div .overflow-auto {
   overflow: auto;
 }
-/* line 366, ../sass/checkout.scss */
+/* line 403, ../sass/checkout.scss */
 .page-content section .left-user-div .sections {
-  clear: both;
-  overflow: visible;
   width: 100%;
   margin-top: 20px;
   z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 373, ../sass/checkout.scss */
+/* line 412, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .section-head {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 100%;
   display: block;
   margin-bottom: 8px;
@@ -2047,8 +2103,9 @@ svg {
   font-size: 1.6rem;
   line-height: 1;
   color: #818181;
+  text-transform: capitalize;
 }
-/* line 384, ../sass/checkout.scss */
+/* line 424, ../sass/checkout.scss */
 .page-content section .left-user-div .sections input {
   outline: none;
   border: none;
@@ -2063,12 +2120,13 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
   color: #777;
-  line-height: 44px;
+  height: 44px;
+  line-height: 1;
   color: #555;
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 398, ../sass/checkout.scss */
+/* line 439, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown {
   width: 240px;
   -moz-transition: all 0.3s;
@@ -2076,7 +2134,7 @@ svg {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 402, ../sass/checkout.scss */
+/* line 443, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle {
   width: 100%;
   height: 44px;
@@ -2092,32 +2150,32 @@ svg {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 417, ../sass/checkout.scss */
+/* line 458, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:focus, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:active {
   outline: none;
   background-color: #fff;
   box-shadow: none;
 }
-/* line 424, ../sass/checkout.scss */
+/* line 465, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .caret {
   width: auto;
   height: auto;
   border: none;
 }
-/* line 429, ../sass/checkout.scss */
+/* line 470, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .caret i {
   color: #009688;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 435, ../sass/checkout.scss */
+/* line 476, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open {
   position: relative;
   transform: translate(-6px, 0);
   top: 6px;
   padding-right: 5px;
 }
-/* line 443, ../sass/checkout.scss */
+/* line 484, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:before, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:after {
   content: "";
   position: absolute;
@@ -2125,22 +2183,22 @@ svg {
   width: 2px;
   height: 7px;
 }
-/* line 452, ../sass/checkout.scss */
+/* line 493, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-/* line 454, ../sass/checkout.scss */
+/* line 495, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-/* line 457, ../sass/checkout.scss */
+/* line 498, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close {
   position: relative;
   transform: translate(-6px, 0);
   top: 6px;
   padding-right: 5px;
 }
-/* line 465, ../sass/checkout.scss */
+/* line 506, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:before, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:after {
   content: "";
   position: absolute;
@@ -2148,29 +2206,29 @@ svg {
   width: 2px;
   height: 7px;
 }
-/* line 474, ../sass/checkout.scss */
+/* line 515, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-/* line 475, ../sass/checkout.scss */
+/* line 516, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
-/* line 478, ../sass/checkout.scss */
+/* line 519, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu {
   width: 100%;
 }
-/* line 483, ../sass/checkout.scss */
+/* line 524, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:focus, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:active {
   color: #fff;
   background-color: #009688;
 }
-/* line 492, ../sass/checkout.scss */
+/* line 533, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a:focus {
   color: #fff;
   background-color: #009688;
 }
-/* line 502, ../sass/checkout.scss */
+/* line 543, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown.open .caret i {
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -2178,7 +2236,7 @@ svg {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 507, ../sass/checkout.scss */
+/* line 548, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown select.select-box {
   width: 100%;
   height: 45px;
@@ -2191,7 +2249,7 @@ svg {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 528, ../sass/checkout.scss */
+/* line 569, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .left-date {
   clear: both;
   float: left;
@@ -2199,7 +2257,7 @@ svg {
   width: 240px;
   display: inline;
 }
-/* line 535, ../sass/checkout.scss */
+/* line 576, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .right-time-slot {
   float: left;
   margin-left: 20px;
@@ -2207,30 +2265,43 @@ svg {
   display: inline;
   z-index: 500;
 }
-/* line 544, ../sass/checkout.scss */
+/* line 585, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login {
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media all and (max-width: 1024px) {
-  /* line 544, ../sass/checkout.scss */
+  /* line 585, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login {
     text-align: center;
     overflow: hidden;
   }
 }
-/* line 553, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .social-login li {
-  display: inline-block;
-  margin-left: 25px;
-}
-/* line 556, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .social-login li:first-child {
-  margin-left: 0;
+/* line 599, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .social-login .col-sm-6:first-child {
+  padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 553, ../sass/checkout.scss */
-  .page-content section .left-user-div .sections .social-login li {
+  /* line 599, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .social-login .col-sm-6:first-child {
+    padding-right: 0;
+  }
+}
+/* line 607, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .social-login .col-sm-6:last-child {
+  padding-right: 0;
+}
+@media all and (max-width: 768px) {
+  /* line 607, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .social-login .col-sm-6:last-child {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  /* line 595, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .social-login .col-sm-6 {
     float: none;
     clear: both;
     margin-left: auto;
@@ -2239,10 +2310,9 @@ svg {
     width: 100%;
   }
 }
-/* line 567, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .social-login li a.social-login-button {
+/* line 624, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .social-login .col-sm-6 a.social-login-button {
   display: block;
-  width: 240px;
   text-align: center;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
@@ -2256,23 +2326,24 @@ svg {
   color: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 567, ../sass/checkout.scss */
-  .page-content section .left-user-div .sections .social-login li a.social-login-button {
+  /* line 624, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .social-login .col-sm-6 a.social-login-button {
+    width: 240px;
     float: none;
     clear: both;
     margin-left: auto;
     margin-right: auto;
   }
 }
-/* line 585, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .social-login li .fb-button {
+/* line 643, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .social-login .col-sm-6 .fb-button {
   background-color: #3b5998;
 }
-/* line 586, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .social-login li .gmail-button {
+/* line 644, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .social-login .col-sm-6 .gmail-button {
   background-color: #d34836;
 }
-/* line 591, ../sass/checkout.scss */
+/* line 649, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .text-box-div input {
   outline: none;
   border: none;
@@ -2292,85 +2363,79 @@ svg {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 606, ../sass/checkout.scss */
+/* line 729, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div {
   text-align: left;
 }
-/* line 608, ../sass/checkout.scss */
+/* line 731, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div {
-  text-align: left;
   width: 100%;
-  margin-left: auto;
   margin-right: auto;
-  clear: both;
+  margin-left: auto;
   overflow: hidden;
+  clear: both;
+  text-align: left;
 }
-/* line 615, ../sass/checkout.scss */
+/* line 739, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div {
-  width: 20px;
   display: inline-block;
   float: left;
+  width: 20px;
 }
-/* line 619, ../sass/checkout.scss */
+/* line 743, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox] {
   display: none;
 }
-/* line 622, ../sass/checkout.scss */
+/* line 746, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style {
-  border-color: #009587;
+  display: inline-block;
   color: #757575;
-  padding-left: 1px;
-  padding-top: 6px;
+  border-color: #009587;
   background-color: #009587;
 }
-/* line 631, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before, .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  width: 2px;
+/* line 758, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #fff;
 }
-/* line 639, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:before {
-  transform: translate(0px, -4px) rotate(45deg);
-  height: 13px;
-}
-/* line 644, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style:after {
-  transform: translate(-6px, 1px) rotate(-45deg);
-  height: 7px;
-}
-/* line 650, ../sass/checkout.scss */
+/* line 766, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style {
-  height: 20px;
+  float: left;
   width: 20px;
-  border: 1px solid #757575;
+  height: 20px;
+  cursor: pointer;
   text-align: center;
+  border: 2px solid #757575;
   -moz-border-radius: 2px;
   -o-border-radius: 2px;
   -ms-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  cursor: pointer;
-  float: left;
 }
-/* line 662, ../sass/checkout.scss */
+/* line 781, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style svg {
+  display: none;
+}
+/* line 786, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-label-text {
   display: inline-block;
   float: left;
   width: calc(100% - 20px);
   height: auto;
 }
-/* line 667, ../sass/checkout.scss */
+/* line 791, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-label-text .same-address-label {
+  float: left;
+  padding-left: 5px;
   font-family: "blogger_sansregular";
+  line-height: 20px;
+  color: #777;
   font-size: 14px;
   font-size: 1.4rem;
-  float: left;
-  line-height: 20px;
-  padding-left: 5px;
 }
-/* line 680, ../sass/checkout.scss */
+/* line 807, ../sass/checkout.scss */
 .page-content section .left-user-div .sections a.submit-button {
   float: right;
   display: block;
@@ -2389,7 +2454,7 @@ svg {
   background-color: #ffc400;
 }
 @media all and (max-width: 768px) {
-  /* line 680, ../sass/checkout.scss */
+  /* line 807, ../sass/checkout.scss */
   .page-content section .left-user-div .sections a.submit-button {
     float: none;
     clear: both;
@@ -2398,7 +2463,7 @@ svg {
     margin-top: 20px;
   }
 }
-/* line 699, ../sass/checkout.scss */
+/* line 826, ../sass/checkout.scss */
 .page-content section .left-user-div .sections a.add-new-address-button {
   float: left;
   display: block;
@@ -2418,7 +2483,7 @@ svg {
   background-color: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 699, ../sass/checkout.scss */
+  /* line 826, ../sass/checkout.scss */
   .page-content section .left-user-div .sections a.add-new-address-button {
     float: none;
     clear: both;
@@ -2427,13 +2492,13 @@ svg {
     margin-top: 20px;
   }
 }
-/* line 719, ../sass/checkout.scss */
+/* line 846, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list {
   clear: both;
   overflow: hidden;
   border-bottom: none;
 }
-/* line 724, ../sass/checkout.scss */
+/* line 851, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li {
   clear: both;
   overflow: hidden;
@@ -2444,11 +2509,11 @@ svg {
   margin-top: auto;
   /* One radio button per line */
 }
-/* line 732, ../sass/checkout.scss */
+/* line 859, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li:last-child {
   border-bottom: 1px solid #ccc;
 }
-/* line 734, ../sass/checkout.scss */
+/* line 861, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li [type="radio"] {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2459,12 +2524,12 @@ svg {
   position: absolute;
   width: 1px;
 }
-/* line 745, ../sass/checkout.scss */
+/* line 872, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li label {
   display: block;
   cursor: pointer;
 }
-/* line 750, ../sass/checkout.scss */
+/* line 877, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .radio-button-div {
   display: table;
   table-layout: fixed;
@@ -2472,12 +2537,12 @@ svg {
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 754, ../sass/checkout.scss */
+/* line 881, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .radio-button-div [type="radio"] + .radio-button {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 760, ../sass/checkout.scss */
+/* line 887, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .radio-button-div [type="radio"] + .radio-button:before {
   content: '';
   display: inline-block;
@@ -2495,12 +2560,12 @@ svg {
   margin-right: 20px;
   transition: 0.5s ease all;
 }
-/* line 775, ../sass/checkout.scss */
+/* line 902, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .radio-button-div [type="radio"]:checked + .radio-button:before {
   background: #009688;
   box-shadow: 0 0 0 2px #009688;
 }
-/* line 781, ../sass/checkout.scss */
+/* line 908, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .address-div {
   float: left;
   display: inline-block;
@@ -2511,7 +2576,7 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 790, ../sass/checkout.scss */
+/* line 917, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.correction-icon {
   width: 10px;
   text-align: center;
@@ -2521,7 +2586,7 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 801, ../sass/checkout.scss */
+/* line 928, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.delete-icon {
   width: 10px;
   text-align: center;
@@ -2531,13 +2596,13 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 815, ../sass/checkout.scss */
+/* line 942, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment {
   clear: both;
   overflow: hidden;
   border-bottom: none;
 }
-/* line 820, ../sass/checkout.scss */
+/* line 947, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li {
   clear: both;
   overflow: hidden;
@@ -2546,11 +2611,11 @@ svg {
   margin-top: auto;
   /* One radio button per line */
 }
-/* line 828, ../sass/checkout.scss */
+/* line 955, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li:last-child {
   border-bottom: 1px solid #ccc;
 }
-/* line 830, ../sass/checkout.scss */
+/* line 957, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li [type="radio"] {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2561,25 +2626,27 @@ svg {
   position: absolute;
   width: 1px;
 }
-/* line 841, ../sass/checkout.scss */
+/* line 968, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li label {
   display: block;
   cursor: pointer;
 }
-/* line 846, ../sass/checkout.scss */
+/* line 973, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li .radio-button-div {
   display: table;
   table-layout: fixed;
   float: left;
+  padding-top: 2px;
+  padding-left: 2px;
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 850, ../sass/checkout.scss */
+/* line 979, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li .radio-button-div [type="radio"] + .radio-button {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 856, ../sass/checkout.scss */
+/* line 985, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li .radio-button-div [type="radio"] + .radio-button:before {
   content: '';
   display: inline-block;
@@ -2598,12 +2665,12 @@ svg {
   margin-right: 20px;
   transition: 0.5s ease all;
 }
-/* line 872, ../sass/checkout.scss */
+/* line 1001, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li .radio-button-div [type="radio"]:checked + .radio-button:before {
   background: #009688;
   box-shadow: 0 0 0 2px #009688;
 }
-/* line 878, ../sass/checkout.scss */
+/* line 1007, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment li .text-div {
   float: left;
   display: inline-block;
@@ -2613,7 +2680,7 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 894, ../sass/checkout.scss */
+/* line 1023, ../sass/checkout.scss */
 .page-content section .right-summary-div {
   float: left;
   margin-left: 30px;
@@ -2628,19 +2695,19 @@ svg {
   padding: 20px 30px 30px;
 }
 @media all and (max-width: 1024px) {
-  /* line 894, ../sass/checkout.scss */
+  /* line 1023, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     width: 300px;
     padding: 20px 20px 30px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 894, ../sass/checkout.scss */
+  /* line 1023, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     display: none;
   }
 }
-/* line 911, ../sass/checkout.scss */
+/* line 1040, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-head {
   font-family: "blogger_sansregular";
   font-size: 20px;
@@ -2652,7 +2719,7 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 921, ../sass/checkout.scss */
+/* line 1050, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-sub-text {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -2666,11 +2733,11 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 933, ../sass/checkout.scss */
+/* line 1062, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list {
   width: 100%;
 }
-/* line 935, ../sass/checkout.scss */
+/* line 1064, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li {
   border-top: 1px solid #ddd;
   padding: 20px;
@@ -2680,11 +2747,11 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 942, ../sass/checkout.scss */
+/* line 1071, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li:last-child {
   border-bottom: 1px solid #ddd;
 }
-/* line 945, ../sass/checkout.scss */
+/* line 1074, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-text {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -2697,13 +2764,13 @@ svg {
   display: block;
   text-transform: capitalize;
 }
-/* line 956, ../sass/checkout.scss */
+/* line 1085, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
 }
-/* line 960, ../sass/checkout.scss */
+/* line 1089, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div .comments-input {
   outline: none;
   border: none;
@@ -2715,14 +2782,14 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 971, ../sass/checkout.scss */
+/* line 1100, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
   background-color: #fff;
 }
-/* line 977, ../sass/checkout.scss */
+/* line 1106, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .time-div {
   clear: both;
   float: left;
@@ -2737,7 +2804,7 @@ svg {
   padding-top: 8px;
   color: #555;
 }
-/* line 990, ../sass/checkout.scss */
+/* line 1119, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .price-div {
   float: left;
   width: 50%;

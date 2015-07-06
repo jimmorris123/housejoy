@@ -140,9 +140,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-            filter: blur(15px);
-            filter: blur(15px);
 }
 
 svg {
@@ -233,4 +233,15 @@ svg {
 }
 .house-cleaning-bg {
     background-image: url("../../images/housing_images/housing_bg.jpg");
+}
+
+
+/*Class to align text right in dexktop and center in mobile */
+
+.text-r-c {
+    text-align: right;
+
+    @include medmx(768px) {
+        text-align: center;
+    }
 }
