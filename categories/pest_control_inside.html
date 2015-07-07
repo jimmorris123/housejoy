@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Housejoy | Checkout-make Payment</title>
+    <title>Housejoy | Pest Control</title>
     <!-- Bootstrap CSS -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -102,17 +102,17 @@
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
-						                            <input class="sm-input" id="ck1" type="checkbox" value="" >
+						                            <input class="sm-input" id="ck1" type="checkbox" value=""  data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 													<label for="ck1" class="sm-label">
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
 													</label>
                                                 </div>
-                                                <a  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <a href="#">
                                                     <span class="title">Cockroach Control</span>
                                                 </a>
 											</h4>
                                         </div>
-                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <form action="">
                                                     <div class="col-xs-12 PD0">
@@ -131,17 +131,17 @@
                                         <div class="panel-heading" role="tab" id="headingTwo">
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
-						                            <input class="sm-input" id="ck2" type="checkbox" value="" >
+						                            <input class="sm-input" id="ck2" type="checkbox" value=""  data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
 													<label for="ck2" class="sm-label">
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
 													</label>
                                                 </div>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                <a href="#">
                                                     <span class="title">Termite Control</span>
                                                 </a>
 											</h4>
                                         </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                                             <div class="panel-body clearfix">
                                                 <form action="">
                                                     <div class="col-xs-12 PD0">
@@ -160,17 +160,17 @@
                                         <div class="panel-heading" role="tab" id="headingThree">
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
-						                            <input class="sm-input" id="ck3" type="checkbox" value="" >
+						                            <input class="sm-input" id="ck3" type="checkbox" value=""  data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
 													<label for="ck3" class="sm-label" >
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
 													</label>
                                                 </div>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                                <a href="#">
                                                     <span class="title">Rat Control</span>
                                                 </a>
 											</h4>
                                         </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
                                             <div class="panel-body">
                                                 <form action="">
                                                     <div class="col-xs-12 PD0">
@@ -189,17 +189,17 @@
                                         <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
                                                 <div class="checkbox-small">
-                                                    <input class="sm-input" id="ck4" type="checkbox" value="">
+                                                    <input class="sm-input" id="ck4" type="checkbox" value="" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
                                                     <label class="sm-label" for="ck4">
                                                         <div class="custom-checkbox"><i class="fa fa-check"></i></div>
                                                     </label>
                                                 </div>
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                                <a href="#">
                                                     <span class="title">Honey Bee Control</span>
                                                 </a>
                                             </h4>
                                         </div>
-                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                        <div id="collapseFour" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
                                             <div class="panel-body">
                                                 <form action="">
                                                     <div class="col-xs-12 PD0">
@@ -496,77 +496,26 @@
     <!-- Bootstrap JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="../js/svg4everybody.ie8.min.js"></script>
+    <script src="js/categories.js"></script>
     <script src="../js/common.js"></script>
     <script>
-    window.onload = function() {
+       // $(document).ready(function(){
+            // accordian input checkbox script
+            // $('.panel-default .panel-heading .panel-title ').on('click', 'a', function(){
+            //     var inputCheck = $(this).siblings('.checkbox-small').find('input[type="checkbox"]');
+            //     var itemThis = $(this);
 
-        //Check File API support
-        if (window.File && window.FileList && window.FileReader) {
-            // var filesInputs = [document.getElementById("files_1"), document.getElementById("files_2"), document.getElementById("files_3")] ;
-            var filesInputs = Array.prototype.slice.call(document.querySelectorAll('.files'), 0);
-            console.log(filesInputs);
-            filesInputs.forEach(function(filesInput, index, filesInputs) {
-
-                filesInput.addEventListener("change", function(event) {
-
-                    var files = event.target.files; //FileList object
-                    var output = document.getElementById("result_" + (index + 1));
-
-                    for (var i = 0; i < files.length; i++) {
-                        var file = files[i];
-
-                        //Only pics
-                        if (!file.type.match('image'))
-                            continue;
-
-                        var picReader = new FileReader();
-
-                        picReader.addEventListener("load", function(event) {
-
-                            var picFile = event.target;
-
-                            var div = document.createElement("div");
-
-                            div.classList.add("img-wrap");
-
-                            div.innerHTML = "<img class='img-responsive thumbnail' src='" + picFile.result + "'" +
-                                "title='" + picFile.name + "'/> <a href='#' class='remove_pict'>X</a>";
-
-                            output.insertBefore(div, null);
-                            div.children[1].addEventListener("click", function(event) {
-                                div.parentNode.removeChild(div);
-                            });
-
-                        });
-
-                        //Read the image
-                        picReader.readAsDataURL(file);
-                    }
-
-                });
-            });
-        } else {
-            console.log("Your browser does not support File API");
-        }
-    }
-    $(document).ready(function(){
-        // accordian input checkbox script
-        $('.panel-default .panel-heading .panel-title ').on('click', 'a', function(){
-            var inputCheck = $(this).siblings('.checkbox-small').find('input[type="checkbox"]');
-            var itemThis = $(this);
-
-            if(inputCheck.attr('checked')){ // or condition removed || itemThis.attr('data-toggle')
-                inputCheck.removeAttr('checked');
-                itemThis.removeAttr('data-toggle');
-                console.log("removed attr");
-            } else{
-                inputCheck.attr('checked', 'checked');
-                console.log("added attr");
-                itemThis.attr("data-toggle", "collapse");
-            }
-
-        });
-    }); //end ready()
+            //     if(inputCheck.attr('checked')){ // or condition removed || itemThis.attr('data-toggle')
+            //         inputCheck.removeAttr('checked');
+            //         itemThis.removeAttr('data-toggle');
+            //         console.log("removed attr");
+            //     } else{
+            //         inputCheck.attr('checked', 'checked');
+            //         console.log("added attr");
+            //         itemThis.attr("data-toggle", "collapse");
+            //     }
+           //  });
+       // }); //end ready()
     </script>
 </body>
 

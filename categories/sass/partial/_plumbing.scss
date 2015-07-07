@@ -40,6 +40,9 @@
                             }
                         }
                     }
+                    a {
+                        cursor: default;
+                    }
                     a,
                     .sm-label {
                         .title {
@@ -191,6 +194,7 @@
 
                 color: $dark-gray;
 
+                @include rem(line-height, 22px);
                 @include rem(font-size, 18px);
                 &.remove-box {
                     display: inline-block;
@@ -257,6 +261,24 @@
                 .heading {
                     padding-top: 0;
                 }
+            }
+        }
+    }
+}
+
+// beauty accordian
+.beauty-accordian {
+    .panel-title {
+        a {
+            .title {
+                width: 68%;
+
+                @include rem(line-height, 2.2rem);
+            }
+            .price {
+                width: 30%;
+
+                text-align: right;
             }
         }
     }
