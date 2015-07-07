@@ -2816,3 +2816,9 @@ svg {
   line-height: 1;
   color: #555;
 }
+
+/* line 1136, ../sass/checkout.scss */
+.ui-datepicker {
+  font-size: 12px;
+  font-size: 1.2rem;
+}

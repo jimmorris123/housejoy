@@ -73,17 +73,17 @@
 			</div>
 			<nav class="page-nav">
 				<ul>
-					<li class="active">
+					<li class="col-xs-4 active">
 						<a href="checkout-schedule-appointment.html">
 							<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
 						</a>
 					</li>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-personal-details.html">
 							<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
 						</a>
 					</li>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-make-payment.html">
 							<span class="tab-icon no-border-right"><img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
 						</a>
@@ -175,7 +175,15 @@
 		<script src="../js/svg4everybody.ie8.min.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="js/checkout.js"></script>
-		
+		<script>
+			$(function() {
+				$( "#datepicker" ).datepicker({
+					minDate: 0,
+					maxDate: "+1m",
+					dateFormat: "dd M, yy"
+				});
+			});
+		</script>
 		
 	</body>
 </html>

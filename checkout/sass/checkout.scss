@@ -1133,7 +1133,6 @@
 
 
 
-		    // .ui-datepicker-next {
-		    // 	color: red;
-		    // 	font-size: 16px;
-		    // }
+.ui-datepicker {
+    @include rem(font-size, 12px);
+}
