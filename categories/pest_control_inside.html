@@ -103,11 +103,13 @@
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
 						                            <input class="sm-input" id="ck1" type="checkbox" value="" >
-													<label for="ck1" class="sm-label" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													<label for="ck1" class="sm-label">
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
-														<span class="title">Cockroach Control</span>
 													</label>
-						                        </div>
+                                                </div>
+                                                <a  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="title">Cockroach Control</span>
+                                                </a>
 											</h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
@@ -130,11 +132,13 @@
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
 						                            <input class="sm-input" id="ck2" type="checkbox" value="" >
-													<label for="ck2" class="sm-label" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+													<label for="ck2" class="sm-label">
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
-														<span class="title">Termite Control</span>
 													</label>
-						                        </div>
+                                                </div>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="title">Termite Control</span>
+                                                </a>
 											</h4>
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -157,11 +161,13 @@
                                             <h4 class="panel-title">
                                             	<div class="checkbox-small">
 						                            <input class="sm-input" id="ck3" type="checkbox" value="" >
-													<label for="ck3" class="sm-label" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+													<label for="ck3" class="sm-label" >
 						                                <div class="custom-checkbox"><i class="fa fa-check"></i></div>
-														<span class="title">Rat Control</span>
 													</label>
-						                        </div>
+                                                </div>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="title">Rat Control</span>
+                                                </a>
 											</h4>
                                         </div>
                                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
@@ -183,12 +189,14 @@
                                         <div class="panel-heading" role="tab" id="headingFour">
                                             <h4 class="panel-title">
                                                 <div class="checkbox-small">
-                                                    <input class="sm-input" id="ck4" type="checkbox" value="" >
-                                                    <label for="ck4" class="sm-label" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                                    <input class="sm-input" id="ck4" type="checkbox" value="">
+                                                    <label class="sm-label" for="ck4">
                                                         <div class="custom-checkbox"><i class="fa fa-check"></i></div>
-                                                        <span class="title">Honey Bee Control</span>
                                                     </label>
                                                 </div>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                                                    <span class="title">Honey Bee Control</span>
+                                                </a>
                                             </h4>
                                         </div>
                                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
@@ -541,6 +549,24 @@
             console.log("Your browser does not support File API");
         }
     }
+    $(document).ready(function(){
+        // accordian input checkbox script
+        $('.panel-default .panel-heading .panel-title ').on('click', 'a', function(){
+            var inputCheck = $(this).siblings('.checkbox-small').find('input[type="checkbox"]');
+            var itemThis = $(this);
+
+            if(inputCheck.attr('checked')){ // or condition removed || itemThis.attr('data-toggle')
+                inputCheck.removeAttr('checked');
+                itemThis.removeAttr('data-toggle');
+                console.log("removed attr");
+            } else{
+                inputCheck.attr('checked', 'checked');
+                console.log("added attr");
+                itemThis.attr("data-toggle", "collapse");
+            }
+
+        });
+    }); //end ready()
     </script>
 </body>
 

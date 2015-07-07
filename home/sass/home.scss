@@ -289,6 +289,7 @@
 // home page style
 .home-banner {
     position: relative;
+    z-index: 1;
 
     height: 100vh;
     max-height: 500px;
@@ -311,6 +312,9 @@
             color: $white;
 
             @include rem(font-size, 48px);
+            &.city-title {
+                @include rem(font-size, 70px);
+            }
         }
         p {
             margin-bottom: 20px;
@@ -377,6 +381,11 @@
                 svg,
                 h4 {
                     color: $green;
+                }
+            }
+            &.with-icon {
+                @include medmn(480px) {
+                    float: left;
                 }
             }
             svg {

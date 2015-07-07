@@ -9,7 +9,7 @@
         position: relative;
 
         width: 100%;
-        height: 60vh;
+        height: 80vh;
         padding-top: 60px;
         // background-image: url("../../images/laundry_images/laundry.jpg");
 
@@ -91,7 +91,10 @@
                     color: $white;
 
                     @include rem(font-size, 70px);
-                    @include medmxn(768px, 992px) {
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 56px);
+                    }
+                    @include medmxn(768px, 991px) {
                         @include rem(font-size, 50px);
                     }
                     @include medmx(768px) {
@@ -104,7 +107,10 @@
                     color: $white;
 
                     @include rem(font-size, 60px);
-                    @include medmxn(768px, 992px) {
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 46px);
+                    }
+                    @include medmxn(768px, 991px) {
                         @include rem(font-size, 48px);
                     }
                     @include medmx(768px) {
