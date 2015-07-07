@@ -108,9 +108,9 @@
                 border: 2px solid #555;
                 background-color: $yellow;
 
-                @include rem(line-height, 27px);
-                @include border-radius(100%);
                 @include rem(font-size, 20px);
+                @include border-radius(100%);
+                @include rem(line-height, 27px);
             }
         }
         .house-type {
@@ -120,6 +120,10 @@
             }
             .dropdown-group {
                 padding-left: 0;
+
+                @include medmx(768px) {
+                    margin-bottom: 20px;
+                }
                 .dropdown {
                     .caret {
                         position: absolute;

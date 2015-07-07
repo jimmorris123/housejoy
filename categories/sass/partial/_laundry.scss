@@ -14,11 +14,11 @@
         // background-image: url("../../images/laundry_images/laundry.jpg");
 
         background-repeat: no-repeat;
-        background-position-y: center;
+        background-position: center center;
         background-size: cover;
 
         @include medmx(768px) {
-            height: 30vh;
+            height: 60vh;
         }
         .container {
             position: absolute;
@@ -145,7 +145,7 @@
 
         background-image: url("../../images/laundry_images/laundry_blurred.jpg");
         background-position: center center;
-        background-size: cover;
+        // background-size: cover;
         .f-block {
             padding: 30px 15px;
 

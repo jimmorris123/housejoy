@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Housejoy | Checkout-make Payment</title>
+	<title>Housejoy | House Cleaning</title>
 
 	<!-- Bootstrap CSS -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +86,9 @@
 								<img src="../images/housing_images/broom.png" alt="">
 							</div>
 							<div class="top-title">
-								<h2>Complete Clean</h2>
+								<h2>Complete Clean 
+									<button type="button" class="btn btn-link btn-default  collapsed" data-toggle="modal" data-target="#menuModal"> button  </button>
+								</h2>
 								<div class="amount">Rs. 499 onwards</div>
 								<p>Professional house cleaning services for those pressed for time</p>
 							</div>
@@ -127,7 +129,7 @@
 								<h2 class="helper-text">Tell us about your House 
 									<span class="border-bottom"></span>
 								</h2>
-								<div class="dropdown-group col-xs-5">
+								<div class="dropdown-group col-xs-12 col-sm-5">
 									<h4>Space Type</h4>
 									<div class="dropdown dropdown-select">
 										<button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -153,7 +155,7 @@
 										</ul>
 									</div>
 								</div>
-								<div class="dropdown-group col-xs-5">
+								<div class="dropdown-group col-xs-12 col-sm-5">
 									<h4>Space Size</h4>
 									<div class="dropdown dropdown-select">
 										<button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -493,6 +495,34 @@
 		    </div>
 		  </div>
 		</div>
+
+		<!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+	    <div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content" style="color:#fff;">
+	                <div class="modal-header" style="border:0;">
+	                        <button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-lg" style="color:#999;"></i></button> 
+	                        <h4 class="modal-title text-center"><span class="sr-only">main navigation</span></h4>
+	                </div>
+	                <div class="modal-body text-center">
+	                    <ul style="list-style-type:none;">
+	                        <li>
+	                        	<a href="#" class="big">Hello</a>
+								<ul>
+									<li><a href="#">sub menu</a></li>
+									<li><a href="#">sub menu</a></li>
+									<li><a href="#">sub menu</a></li>
+								</ul>
+	                        </li>
+	                        <li><a href="#" class="big">A Menu Item</a></li>
+	                        <li><a href="#" class="big">Another Item</a></li>
+	                        <li><a href="#" class="big">This One Too!!</a></li>
+	                        <li><a href="http://meagency.com" class="big">me.agency</a></li>
+	                    </ul>
+	                </div>
+	            </div><!-- /.modal-content -->
+	        </div><!-- /.modal-dialog -->
+	    </div><!-- /.fullscreen -->
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
