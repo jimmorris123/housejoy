@@ -13,13 +13,12 @@
 	
 	</head>
 	<body>
-		<div class="page-wrapper">
+		<div class="page-wrapper gray-bg">
 			<div class="header">
 				<div class="left-header">
 					<div class="logo-div">
-						<img src="../common_images/housejoy-logo.png" alt="">
-					</div>
-					
+						<img src="../images/housejoy-logo.png" alt="Housejoy logo">
+					</div>					
 				</div>
 				<div class="right-header">
 					<li><a href="#">help</a></li>
@@ -29,17 +28,17 @@
 			</div>
 			<nav class="page-nav">
 				<ul>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-schedule-appointment.html">
 							<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
 						</a>
 					</li>
-					<li class="active">
+					<li class="col-xs-4 active">
 						<a href="checkout-personal-details.html">
 							<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
 						</a>
 					</li>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-make-payment.html">
 							<span class="tab-icon no-border-right"><img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
 						</a>
@@ -50,38 +49,69 @@
 				<div class="page-content">
 					<section id="one">
 						<div class="left-user-div">
-							<div class="sections">
-								<ul class="social-login">
-									<li><a href="#" class="social-login-button fb-button">Continue with Facebook</a></li>
-									<li><a href="#" class="social-login-button gmail-button">Continue with Goolge</a></li>
-								</ul>
+							<div class="row sections">
+								<div class="row social-login">
+									<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button fb-button">Continue with Facebook</a></div>
+									<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button gmail-button">Continue with Goolge</a></div>
+								</div>
 							</div>
 							<div class="left-section-head left-section-head-top-margin">Enter your Details</div>
-							<div class="sections">
+							<div class="row sections">
 								<div class="section-head">Email Address</div>
 								<input placeholder="">
 							</div>
-							<div class="sections">
+							<div class="row sections">
 								<div class="checkbox-div">
-									<div class="checkbox-icon-label-div">
+									<!-- <div class="checkbox-icon-label-div">
 										<div class="checkbox-icon-div">
 											<input type="checkbox" name="same_address" id="same_address" value="same-address" checked="checked" />
 											<label class="checkbox-style" for="same_address">
-					                            <!-- <div class=""></div> -->
 					                        </label>
 				                        </div>
 				                        <div class="checkbox-label-text">
 				                        	<span class="same-address-label">I have a password</span>
 				                        </div>
-			                        </div>
+			                        </div> -->
+			                        <div class="check-div">
+										<label for="have-password">
+											<span class="check-button-div">
+												<input type="checkbox" value="preferred-payment2" name="have-password" id="have-password" checked="checked">
+												<span class="check-button">
+													<svg class="icon ">
+														<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+													</svg>
+												</span>
+											</span>
+											<span class="text-div">
+											I have a password
+											</span>
+										</label>
+				                    </div>
 								</div>
 							</div>
-							<div class="sections">
+							<div class="row sections enter-password-section initial-hide">
 								<div class="section-head">Password</div>
-								<input placeholder="">
+								<input required="" id="userpassword" name="userpassword" type="password" class="form-control" placeholder="Johndoe@email.co" required="" checked="checked">
 							</div>
-							<div class="sections">
-								<a href="#" class="submit-button">Continue</a>
+							<div class="row sections text-r-c display-personal-details-form-row">
+								<button type="button" id="display-personal-details-form" class="btn btn-default checkout-yellow-button">Continue</button>
+							</div>
+							<div class="personal-details-div initial-hide">
+								<div class="row sections">
+									<div class="section-head">Username</div>
+									<input required="" id="username" name="username" type="email" class="form-control" placeholder="Johndoe@email.co" required="">
+								</div>
+								<div class="row sections">
+									<div class="section-head">Password</div>
+									<input required="" id="userpassword" name="userpassword" type="password" class="form-control" placeholder="" required="">
+								</div>
+								<div class="row sections">
+									<div class="section-head">Mobile Number</div>
+									<input required="" id="usernumber" name="usernumber" type="text" class="form-control" placeholder="9999999999" required="">
+								</div>
+								<div class="row sections text-r-c">
+									<button type="button" id="submit-form" class="btn btn-default checkout-yellow-button">Continue</button>
+								</div>
 							</div>
 						</div>
 						<div class="right-summary-div">
@@ -120,10 +150,35 @@
 		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<script src="../common_jscheckout-tabs.js"></script>
-		<script src="../common_js/svg4everybody.ie8.min.js"></script>
-		<script src="js/checkout.js"></script>
+		<script src="../js/svg4everybody.min.js"></script>
+		<script src="../js/svg4everybody.ie8.min.js"></script>
 		
+		<script>			
+			//Show Password input field if user has password
+			$( "#have-password" ).change(function() {
+			if ( ($( "#have-password" ).checked ) || ($( $( "#have-password" ) ).prop( "checked" )) || ($( $( "#have-password" ) ).is( ":checked" ))) {
+				$( ".enter-password-section" ).show();
+				$( ".personal-details-div" ).hide();
+				$( ".display-personal-details-form-row" ).show();
+
+			} else {
+				$( ".enter-password-section" ).hide();
+				$( ".personal-details-div" ).show();
+				$( ".display-personal-details-form-row" ).hide();
+			}
+			}).change();
+
+
+			//Show form to enter user's details if he doesn't have password
+			$("#display-personal-details-form").click(function() {
+				$( ".personal-details-div" ).toggle();
+				$( ".display-personal-details-form-row" ).toggle();
+			});
+
+			// $( "p" ).bind( "mouseenter mouseleave", function( event ) {
+			// 	$( this ).toggleClass( "over" );
+			// });
+		</script>
 		
 	</body>
 </html>

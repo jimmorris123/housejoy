@@ -140,9 +140,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-            filter: blur(15px);
-            filter: blur(15px);
 }
 
 svg {
@@ -256,4 +256,8 @@ svg {
     @include medmx(768px) {
         text-align: center;
     }
+}
+
+.initial-hide {
+    display: none;
 }
