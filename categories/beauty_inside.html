@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/categories.css">
 </head>
 
-<body>
+<body class="o-flow-x-sc">
     <div class="page-wrapper">
         <div class="header">
             <header role="banner" class="navbar navbar-default navbar-inverse">
@@ -31,30 +31,15 @@
                         <ul class="nav navbar-nav">
                             <li>
                                 <div class="dropdown dropdown-select">
-                                    <button class="btn btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-expanded="true">
-                                        House Cleaning
-                                        <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
-                                    </button>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="#">500 - 1000 Sq. ft</a>
-                                        </li>
-                                        <li role="presentation" class="active">
-                                            <a role="menuitem" tabindex="-1" href="#">1000 - 1500 Sq. ft</a>
-                                        </li>
-                                        <li role="presentation">
-                                            <a role="menuitem" tabindex="-1" href="#">1500 - 2000 Sq. ft</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="dropdown dropdown-select">
-                                    <button class="btn btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-expanded="true">
+                                    <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                         Bangalore
-                                        <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                        <span class="caret pull-right">
+                                            <svg class="f-cl-white-imp">
+                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                            </svg>
+                                        </span>
                                     </button>
-                                    <ul class="dropdown-menu" role="menu">
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                         <li role="presentation" class="active">
                                             <a role="menuitem" tabindex="-1" href="#">Bangalore</a>
                                         </li>
@@ -71,7 +56,11 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="text-uppercase" href="#">Help?</a></li>
                             <li><a class="text-uppercase" data-toggle="modal" data-target="#loginModal" href="#">Login</a></li>
-                            <li><a href="#"><span class="icon"><i class="fa fa-phone"></i></span>080 33 51 2156</a></li>
+                            <li>
+                                <a href="#">
+                                    <img src="../images/svg/call.svg" alt="">080 33 51 2156
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -83,10 +72,14 @@
                     <div class="overlay inside-linearBg"></div>
                     <div class="container">
                         <div class="broom">
-                            <img src="../images/beauty_images/hair_drayer.png" alt="">
+                            <img src="../images/svg/beauty.svg" alt="">
                         </div>
                         <div class="top-title">
-                            <h2>Beauty</h2>
+                            <h2 class="nav-modal-btn collapsed" data-toggle="modal" data-target="#menuModal">Beauty 
+                                <svg>
+                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                </svg>
+                            </h2>
                             <div class="amount">Rs. 299 onwards</div>
                             <p>Professional beauty services for those pressed for time</p>
                         </div>
@@ -97,34 +90,6 @@
                     <div class="mid-content left-section col-xs-12 col-sm-8">
                         <div class="white-bg-imp">
                             <div class="plumbing-content">
-                                <div class="tabs-row">
-                                    <ul class="tabs">
-                                        <li>
-                                            <a href="#">Facials</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Hair Trimming</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Threading</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blow Dryer</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Manicure / Pedicure</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Hair Color</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Hair Ironing</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Head Massage</a>
-                                        </li>
-                                    </ul>
-                                </div>
                                 <div class="panel-group beauty-accordian" id="accordion" role="tablist" aria-multiselectable="true">
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
@@ -142,7 +107,11 @@
                                                     <div class="dropdown dropdown-select">
                                                         <button class="btn btn-default dropdown-toggle text-left" type="button" data-toggle="dropdown" aria-expanded="true">
                                                             2 Persons
-                                                            <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="caret pull-right">
+                                                                <svg>
+                                                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                                                </svg>
+                                                            </span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu">
                                                             <li role="presentation" class="active">
@@ -185,7 +154,11 @@
                                                     <div class="dropdown dropdown-select">
                                                         <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                                             2 Persons
-                                                            <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="caret pull-right">
+                                                                <svg>
+                                                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                                                </svg>
+                                                            </span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                                             <li role="presentation" class="active">
@@ -228,7 +201,11 @@
                                                     <div class="dropdown dropdown-select">
                                                         <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                                             2 Persons
-                                                            <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="caret pull-right">
+                                                                <svg>
+                                                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                                                </svg>
+                                                            </span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                                             <li role="presentation" class="active">
@@ -271,7 +248,11 @@
                                                     <div class="dropdown dropdown-select">
                                                         <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                                             2 Persons
-                                                            <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="caret pull-right">
+                                                                <svg>
+                                                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                                                </svg>
+                                                            </span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                                             <li role="presentation" class="active">
@@ -314,7 +295,11 @@
                                                     <div class="dropdown dropdown-select">
                                                         <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                                             2 Persons
-                                                            <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>
+                                                            <span class="caret pull-right">
+                                                                <svg>
+                                                                    <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                                                </svg>
+                                                            </span>
                                                         </button>
                                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                                             <li role="presentation" class="active">
@@ -355,21 +340,21 @@
                                 <span>Radiance (Lotus Natural Treatment)</span>
                                 <span class="remove-box">
 			      					<span class="multiple-items">x2</span>
-                                <i class="fa fa-trash-o"></i>
+                                    <img src="../images/svg/trash.svg" alt="">
                                 </span>
                             </div>
                             <div class="plumbing-issues">
                                 <span>Bleaching</span>
                                 <span class="remove-box">
 			      					<span class="multiple-items">x2</span>
-                                <i class="fa fa-trash-o"></i>
+                                    <img src="../images/svg/trash.svg" alt="">
                                 </span>
                             </div>
                             <div class="plumbing-issues">
                                 <span>Hair Ironing</span>
                                 <span class="remove-box">
 			      					<span class="multiple-items">x2</span>
-                                <i class="fa fa-trash-o"></i>
+                                    <img src="../images/svg/trash.svg" alt="">
                                 </span>
                             </div>
                             <div class="plumbing-issues input">
@@ -620,6 +605,58 @@
             </div>
         </div>
     </div>
+    <!-- FULLSCREEN MODAL CODE (.fullscreen) -->
+    <div class="modal fade fullscreen" id="menuModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close btn btn-link" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close fa-lg"></i></button> --> 
+                    <h4 class="modal-title text-center">
+                        <span class="sr-only">main navigation</span>
+                    </h4>
+                </div>
+                <div class="modal-body text-center">
+                    <ul>
+                        <li>
+                            <a href="#" class="big">House Cleaning</a>
+                            <ul>
+                                <li><a href="#">Complete Clean</a></li>
+                                <li><a href="#">Basic Clean</a></li>
+                                <li><a href="#">After Party Clean</a></li>
+                                <li><a href="#">Furniture Clean</a></li>
+                                <li><a href="#">Carpet Clean</a></li>
+                                <li><a href="#">Bathroom Clean</a></li>
+                                <li><a href="#">Floor Clean</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="big">Plumbing</a></li>
+                        <li class="active">
+                            <a href="#" class="big">Beauty</a>
+                            <ul>
+                                <li><a href="#">Facials</a></li>
+                                <li><a href="#">Hair Trimming</a></li>
+                                <li><a href="#">Threading</a></li>
+                                <li><a href="#">Blow Dryer</a></li>
+                                <li><a href="#">Manicure / Pedicure</a></li>
+                                <li><a href="#">Hair Color</a></li>
+                                <li><a href="#">Hair Ironing</a></li>
+                                <li><a href="#">Head Massage</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="big">Electrical</a></li>
+                        <li><a href="#" class="big">Laptop Repairs</a></li>
+                        <li><a href="#" class="big">Appliances Repairs</a></li>
+                        <li><a href="#" class="big">Laundry</a></li>
+                        <li><a href="#" class="big">Mobile Repairs</a></li>
+                        <li><a href="#" class="big">Fitness</a></li>
+                        <li><a href="#" class="big">Pest Control</a></li>
+                        <li><a href="#" class="big">Painting</a></li>
+                        <li><a href="#" class="big">Carpentry</a></li>
+                    </ul>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.fullscreen -->
     <!-- jQuery -->
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
