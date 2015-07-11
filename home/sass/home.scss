@@ -297,6 +297,13 @@
     background-image: url("../../images/home_images/h_banner.jpg");
     background-position: center center;
     background-size: cover;
+    .vid-wrap {
+        height: 60vh;
+        max-height: 500px;
+        min-height: 400px;
+        padding: 0;
+        overflow: hidden;
+    }
     .title {
         position: absolute;
         top: 50%;
@@ -537,8 +544,7 @@
                 text-align: left;
                 vertical-align: middle;
                 h4 {
-                    margin-bottom: 10px;
-
+                    // margin-bottom: 10px;
                     font-family: $blogger_R;
 
                     color: $dark-gray;

@@ -138,12 +138,16 @@
             background-color: #fff;
         }
         .caret {
-            width: 14px;
-            height: 14px;
+            width: 16px;
+            height: 16px;
+            margin-top: 3px;
 
             border: none;
-            i {
-                @include rem(font-size, 12px);
+            svg {
+                width: 14px;
+                height: 14px;
+
+                color: #333;
             }
         }
     }

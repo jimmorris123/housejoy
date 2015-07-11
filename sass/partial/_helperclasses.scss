@@ -163,6 +163,9 @@ svg {
 .f-cl-white {
     color: $white;
 }
+.f-cl-white-imp {
+    color: $white !important;
+}
 // text-transform
 .text-uppercase {
     text-transform: uppercase;
@@ -191,7 +194,9 @@ svg {
 .H-auto {
     height: auto !important;
 }
-
+.o-flow-x-sc {
+    overflow: scroll;
+}
 .o-flow-H {
     overflow: hidden;
 }
@@ -222,6 +227,10 @@ svg {
 }
 .MB20 {
     margin-bottom: 20px;
+}
+.MLR15 {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 @include medmx(768px) {
     .MB-sm-0 {

@@ -45,7 +45,7 @@ $(document).ready(function() {
      $(this).parents('.dropdown-menu').find('li').removeClass('active');
      $(this).parent('li').addClass('active');
      //Displays selected text on dropdown-toggle button
-     $(this).parents('.dropdown-select').find('.dropdown-toggle').html(target + ' <span class="caret pull-right"><i class="fa fa-chevron-down"></i></span>');
+     $(this).parents('.dropdown-select').find('.dropdown-toggle').html(target + '<span class="caret pull-right"><svg><use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use></svg></span>');
   });//end
 
   // login and register modal script
@@ -70,4 +70,14 @@ $(document).ready(function() {
       // $(this).parents('body').removeClass('modal-open');
     }
 
+
+    //fullscreen modal body scroll enabled
+    // $("#menuModal").on("show", function () {
+    //   $("body").removeClass("modal-open");
+    // });
+  $('#menuModal').modal('hide').parents('body').removeClass('modal-open');
 });
+
+
+
+    
