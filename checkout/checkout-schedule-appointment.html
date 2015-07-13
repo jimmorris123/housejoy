@@ -14,7 +14,7 @@
 	
 	</head>
 	<body>
-		<div class="page-wrapper">
+		<div class="page-wrapper gray-bg">
 			<div class="header">
 				<div class="left-header">
 					<div class="logo-div">
@@ -73,17 +73,17 @@
 			</div>
 			<nav class="page-nav">
 				<ul>
-					<li class="active">
+					<li class="col-xs-4 active">
 						<a href="checkout-schedule-appointment.html">
 							<span class="tab-icon"><img src="images/timer.png" alt=""></span><span class="tab-text tab-text-left-text">Schedule an Appointment</span>
 						</a>
 					</li>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-personal-details.html">
 							<span class="tab-icon"><img src="images/user-male.png" alt=""></span><span class="tab-text tab-text-center-text">Your Details</span>
 						</a>
 					</li>
-					<li>
+					<li class="col-xs-4">
 						<a href="checkout-make-payment.html">
 							<span class="tab-icon no-border-right"><img src="images/wallet.png" alt=""></span><span class="tab-text tab-text-right-text">Make Payment</span>
 						</a>
@@ -95,20 +95,22 @@
 					<section id="one">
 						<div class="left-user-div">
 							<div class="left-section-head">Select Date &amp; Time</div>
-							<div class="sections schedule-dropdowns">
-								<div class="left-date">
+							<div class="row sections schedule-dropdowns">
+								<div class="col-xs-12 col-sm-6 left-date">
 									<!-- dropdown for Date -->
 	                                <div class="dropdown location-dropdown mobi-dropdown">
 	                                    <!-- <button class="btn btn-default dropdown-toggle" type="button" id="datepicker">
 	                                        <span class="pull-left">10am to 11am</span>
 	                                        <span class="dropdown-icon pull-right"><i class="i-open"></i></span>
 	                                    </button> -->
-	                                    <p>Date: <input type="text" id="datepicker"></p>
+	                                    <div class="section-head">Date:</div>
+	                                    <p><input type="text" id="datepicker" readonly="readonly"></p>
 	                                    
 	                                </div>
 	                                <!-- dropdown ends -->
 								</div>
-								<div class="right-time-slot">
+								<div class="col-xs-12 col-sm-6 right-time-slot">
+									<div class="section-head">Time</div>
 									<!-- dropdown for location -->
 	                                <div class="dropdown location-dropdown dropdown-select mobi-dropdown">
 	                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
@@ -126,12 +128,12 @@
 	                                <!-- dropdown ends -->
 								</div>
 							</div>
-							<div class="sections">
+							<div class="row sections">
 								<div class="section-head">Special Instructions</div>
 								<input type="text" placeholder="Eg: Beware of Dogs">
 							</div>
-							<div class="sections">
-								<a href="#" class="submit-button">Continue</a>
+							<div class="row sections text-r-c">
+								<button type="button" class="btn btn-default checkout-yellow-button">Continue</button>
 							</div>
 							
 						</div>
@@ -175,7 +177,15 @@
 		<script src="../js/svg4everybody.ie8.min.js"></script>
 		<script src="../js/common.js"></script>
 		<script src="js/checkout.js"></script>
-		
+		<script>
+			$(function() {
+				$( "#datepicker" ).datepicker({
+					minDate: 0,
+					maxDate: "+1m",
+					dateFormat: "dd M, yy"
+				});
+			});
+		</script>
 		
 	</body>
 </html>

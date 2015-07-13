@@ -57,7 +57,7 @@
 									<div class="left-section-head">Select your Preffered Payment</div>
 									<div class="sections">
 										<ul class="preferred-payment">										
-											<li>
+											<div class="row">
 												<div class="radio-div">
 													<label for="preferred-payment1">
 														<span class="radio-button-div">
@@ -68,12 +68,10 @@
 														Pay full amount after Task
 														</span>
 													</label>
-							                    </div>					                        
-												<a class="correction-icon"></a>
-												<a class="delete-icon"></a>
-											</li>
+							                    </div>
+											</div>
 
-											<li>
+											<div class="row">
 												<div class="radio-div">
 													<label for="preferred-payment2">
 														<span class="radio-button-div">
@@ -84,10 +82,8 @@
 														Pay $500 advance and get 20% off
 														</span>
 													</label>
-							                    </div>					                        
-												<a class="correction-icon"></a>
-												<a class="delete-icon"></a>
-											</li>
+							                    </div>
+											</div>
 										</ul>
 									</div>
 									<div class="left-section-head left-section-head-top-margin">Select your Payment method</div>
@@ -119,7 +115,10 @@
 												<section id="credidt-debit-card-tab">
 													<div class="row sections">
 														<div class="section-head">Card Number</div>
-														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
+														<!-- <input placeholder="XXXX XXXX XXXX XXXX" name="card-number"> -->
+														<div class="controls">
+															<input required="" id="card-number" name="card-number" type="text" class="form-control" placeholder="XXX55X XXXX XXXX XXXX" class="input-medium" required="">
+														</div>
 													</div>
 													<div class="row sections">
 														<div class="section-head">Name on the Card</div>
@@ -154,23 +153,40 @@
 									                        </div>
 														</div> -->
 														<div class="checkbox-div">
-															<div class="checkbox-icon-label-div">
-																<div class="checkbox-icon-div">
-																	<input type="checkbox" name="save-card" id="save-card" value="same-address" />
-																	<label class="checkbox-style" for="save-card">
-											                            <svg class="icon ">
-																			<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
-																		</svg>
+															<!-- <div class="checkbox-icon-label-div">
+																<div class="checkbox-icon-div">				
+																	<label for="save-card">
+																		<span class="checkbox-style">
+																			<input type="checkbox" name="save-card" id="save-card" value="same-address" />
+												                            <svg class="icon ">
+																				<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+																			</svg>
+																		</span>
+																		<span class="checkbox-label-text">
+												                        	<span class="same-address-label">Save this card for Future Checkout</span>
+												                        </span>
 											                        </label>
-										                        </div>
-										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout 1st</span>
-										                        </div>
-									                        </div>
+										                        </div>                        
+									                        </div> -->
+									                        <div class="check-div">
+																<label for="ly1">
+																	<span class="check-button-div">
+																		<input type="checkbox" value="preferred-payment2" name="ly1" id="ly1">
+																		<span class="check-button">
+																			<svg class="icon ">
+																				<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+																			</svg>
+																		</span>
+																	</span>
+																	<span class="text-div">
+																	Pay $500 advance and get 20% ggdfrgoff
+																	</span>
+																</label>
+										                    </div>
 								                        </div>
 													</div>
-													<div class="row sections">
-														<a href="#" class="submit-button">Continue</a>
+													<div class="row sections text-r-c">
+														<button type="button" class="btn btn-default checkout-yellow-button">Continue</button>
 													</div>
 												</section>
 
@@ -220,15 +236,15 @@
 														<div class="checkbox-div">
 															<div class="checkbox-icon-label-div">
 																<div class="checkbox-icon-div">
-																	<input type="checkbox" name="save-card" id="save-card" value="same-address" />
-																	<label class="checkbox-style" for="save-card">
+																	<input type="checkbox" name="save-card-wallet" id="save-card-wallet" value="same-address" />
+																	<label class="checkbox-style" for="save-card-wallet">
 											                            <svg class="icon ">
 																			<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
 																		</svg>
 											                        </label>
 										                        </div>
 										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout 2nd</span>
+										                        	<span class="same-address-label">Save this card for Future Checkout</span>
 										                        </div>
 									                        </div>
 								                        </div>

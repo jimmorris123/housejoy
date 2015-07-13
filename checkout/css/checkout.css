@@ -138,40 +138,52 @@ body {
   src: url("../../fonts/bebasneue-webfont.eot");
   src: url("../../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/bebasneue-webfont.woff2") format("woff2"), url("../../fonts/bebasneue-webfont.woff") format("woff"), url("../../fonts/bebasneue-webfont.ttf") format("truetype"), url("../../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
 }
-@media screen and (max-width: 768px) {
-  /* line 5, ../../sass/partial/_navigation.scss */
+/* line 5, ../../sass/partial/_navigation.scss */
+.side-collapse-container .overlay.after-slide {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 11, ../../sass/partial/_navigation.scss */
   .side-collapse-container {
     position: relative;
     left: 0;
     width: 100%;
-    transition: left .4s;
+    -moz-transition: left 0.4s;
+    -o-transition: left 0.4s;
+    -webkit-transition: left 0.4s;
+    transition: left 0.4s;
   }
-  /* line 12, ../../sass/partial/_navigation.scss */
+  /* line 18, ../../sass/partial/_navigation.scss */
   .side-collapse-container .hamburger {
     display: none !important;
   }
-  /* line 16, ../../sass/partial/_navigation.scss */
+  /* line 21, ../../sass/partial/_navigation.scss */
+  .side-collapse-container .overlay {
+    display: none;
+  }
+  /* line 23, ../../sass/partial/_navigation.scss */
   .side-collapse-container .overlay.after-slide {
     display: none;
   }
 
-  /* line 21, ../../sass/partial/_navigation.scss */
+  /* line 28, ../../sass/partial/_navigation.scss */
   .side-collapse-container.out {
     left: 80%;
   }
-  /* line 23, ../../sass/partial/_navigation.scss */
+  /* line 30, ../../sass/partial/_navigation.scss */
   .side-collapse-container.out .hamburger {
     top: -45px;
     left: 15px;
     display: block !important;
   }
-  /* line 30, ../../sass/partial/_navigation.scss */
+  /* line 37, ../../sass/partial/_navigation.scss */
   .side-collapse-container.out .overlay.after-slide {
     z-index: 1;
     display: block;
   }
 
-  /* line 37, ../../sass/partial/_navigation.scss */
+  /* line 44, ../../sass/partial/_navigation.scss */
   .side-collapse {
     position: fixed;
     top: 50px;
@@ -179,10 +191,24 @@ body {
     left: 0;
     width: 80%;
     overflow: hidden;
-    transition: width .4s;
+    -moz-transition: width 0.4s;
+    -o-transition: width 0.4s;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+  }
+  /* line 54, ../../sass/partial/_navigation.scss */
+  .side-collapse .logo-box {
+    height: 60px;
+    padding: 20px 20px;
+  }
+  /* line 57, ../../sass/partial/_navigation.scss */
+  .side-collapse .logo-box a {
+    display: block;
+    max-width: 175px;
+    margin: 0 auto;
   }
 
-  /* line 48, ../../sass/partial/_navigation.scss */
+  /* line 64, ../../sass/partial/_navigation.scss */
   .side-collapse.in {
     width: 0;
   }
@@ -190,7 +216,7 @@ body {
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
-/* line 57, ../../sass/partial/_navigation.scss */
+/* line 73, ../../sass/partial/_navigation.scss */
 .hamburger {
   top: -8px;
   z-index: 999;
@@ -202,36 +228,46 @@ body {
   background: transparent;
 }
 
-/* line 70, ../../sass/partial/_navigation.scss */
+/* line 86, ../../sass/partial/_navigation.scss */
 .hamburger:hover,
 .hamburger:focus,
 .hamburger:active {
   outline: none;
 }
 
-/* line 75, ../../sass/partial/_navigation.scss */
+/* line 91, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:before {
   display: block;
   width: 100px;
   font-size: 14px;
   line-height: 32px;
   content: "";
-  -webkit-transition: all .35s ease-in-out;
   -webkit-transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 0;
   color: #fff;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 90, ../../sass/partial/_navigation.scss */
+/* line 107, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover:before {
   display: block;
-  -webkit-transition: all .35s ease-in-out;
-  -webkit-transform: translate3d(-100px, 0, 0);
   opacity: 1;
+  -moz-transform: translate3d(-100px, 0, 0);
+  -o-transform: translate3d(-100px, 0, 0);
+  -ms-transform: translate3d(-100px, 0, 0);
+  -webkit-transform: translate3d(-100px, 0, 0);
+  transform: translate3d(-100px, 0, 0);
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 99, ../../sass/partial/_navigation.scss */
+/* line 116, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom,
@@ -244,97 +280,139 @@ body {
   height: 4px;
 }
 
-/* line 111, ../../sass/partial/_navigation.scss */
+/* line 128, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top,
 .hamburger.is-closed .hamb-middle,
 .hamburger.is-closed .hamb-bottom {
   background-color: #fff;
 }
 
-/* line 116, ../../sass/partial/_navigation.scss */
+/* line 133, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-top {
   top: 5px;
-  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 121, ../../sass/partial/_navigation.scss */
+/* line 138, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-middle {
   top: 50%;
   margin-top: -2px;
 }
 
-/* line 126, ../../sass/partial/_navigation.scss */
+/* line 143, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed .hamb-bottom {
   bottom: 5px;
-  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 132, ../../sass/partial/_navigation.scss */
+/* line 149, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover .hamb-top {
   top: 0;
-  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 137, ../../sass/partial/_navigation.scss */
+/* line 154, ../../sass/partial/_navigation.scss */
 .hamburger.is-closed:hover .hamb-bottom {
   bottom: 0;
-  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 142, ../../sass/partial/_navigation.scss */
+/* line 159, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
 .hamburger.is-open .hamb-bottom {
   background-color: #fff;
 }
 
-/* line 147, ../../sass/partial/_navigation.scss */
+/* line 164, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-bottom {
   top: 50%;
   margin-top: -2px;
 }
 
-/* line 153, ../../sass/partial/_navigation.scss */
+/* line 170, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-top {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -moz-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -ms-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -o-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-/* line 157, ../../sass/partial/_navigation.scss */
+/* line 179, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-middle {
   display: none;
 }
 
-/* line 160, ../../sass/partial/_navigation.scss */
+/* line 182, ../../sass/partial/_navigation.scss */
 .hamburger.is-open .hamb-bottom {
   -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -moz-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -ms-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -o-transition: -webkit-transform 0.2s cubic-bezier(0.73, 1, 0.28, 0.08);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-/* line 164, ../../sass/partial/_navigation.scss */
+/* line 191, ../../sass/partial/_navigation.scss */
 .hamburger.is-open:before {
   display: block;
   width: 100px;
   font-size: 14px;
   line-height: 32px;
   content: "";
-  -webkit-transition: all .35s ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
   text-align: center;
   opacity: 0;
   color: #fff;
+  -moz-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
-/* line 179, ../../sass/partial/_navigation.scss */
+/* line 207, ../../sass/partial/_navigation.scss */
 .hamburger.is-open:hover:before {
   display: block;
-  -webkit-transition: all .35s ease-in-out;
-  -webkit-transform: translate3d(-100px, 0, 0);
   opacity: 1;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  -moz-transform: translate3d(-100px, 0, 0);
+  -o-transform: translate3d(-100px, 0, 0);
+  -ms-transform: translate3d(-100px, 0, 0);
+  -webkit-transform: translate3d(-100px, 0, 0);
+  transform: translate3d(-100px, 0, 0);
 }
 
-/* line 190, ../../sass/partial/_navigation.scss */
+/* line 218, ../../sass/partial/_navigation.scss */
 .header {
   position: relative;
   z-index: 2;
@@ -345,42 +423,42 @@ body {
   padding-left: 20px;
   background-color: #009688;
 }
-/* line 201, ../../sass/partial/_navigation.scss */
+/* line 229, ../../sass/partial/_navigation.scss */
 .header .logo-div {
   padding: 20px 15px;
 }
-@media all and (max-width: 768px) {
-  /* line 201, ../../sass/partial/_navigation.scss */
+@media all and (max-width: 767px) {
+  /* line 229, ../../sass/partial/_navigation.scss */
   .header .logo-div {
     padding: 20px 0;
   }
 }
-/* line 207, ../../sass/partial/_navigation.scss */
+/* line 235, ../../sass/partial/_navigation.scss */
 .header .logo-div .hamburger.is-open {
-  display: none;
+  display: none !important;
 }
-/* line 211, ../../sass/partial/_navigation.scss */
+/* line 239, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse {
   border: none;
   background-color: transparent;
 }
-@media all and (max-width: 768px) {
-  /* line 214, ../../sass/partial/_navigation.scss */
+@media all and (max-width: 767px) {
+  /* line 242, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .side-collapse {
     top: 0;
     left: 0;
     background-color: #fff;
   }
 }
-/* line 223, ../../sass/partial/_navigation.scss */
+/* line 251, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse {
   border: none;
 }
-/* line 225, ../../sass/partial/_navigation.scss */
+/* line 254, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav {
   background-color: transparent;
 }
-/* line 228, ../../sass/partial/_navigation.scss */
+/* line 257, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a {
   padding: 20px 15px;
   font-family: "blogger_sansregular";
@@ -388,17 +466,17 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
 }
-@media all and (max-width: 768px) {
-  /* line 228, ../../sass/partial/_navigation.scss */
+@media all and (max-width: 767px) {
+  /* line 257, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li a {
     color: #777;
   }
 }
-/* line 239, ../../sass/partial/_navigation.scss */
+/* line 268, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li a .icon {
   margin-right: 10px;
 }
-/* line 244, ../../sass/partial/_navigation.scss */
+/* line 273, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
   max-height: 60px;
   padding: 20px 15px;
@@ -408,13 +486,13 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
 }
-@media all and (max-width: 768px) {
-  /* line 244, ../../sass/partial/_navigation.scss */
+@media all and (max-width: 767px) {
+  /* line 273, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button {
     color: #777;
   }
 }
-/* line 256, ../../sass/partial/_navigation.scss */
+/* line 285, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
   color: #fff;
   border: none;
@@ -422,51 +500,51 @@ body {
   background-color: transparent;
   box-shadow: none;
 }
-@media all and (max-width: 768px) {
-  /* line 256, ../../sass/partial/_navigation.scss */
+@media all and (max-width: 767px) {
+  /* line 285, ../../sass/partial/_navigation.scss */
   .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button:active {
     color: #777;
   }
 }
-/* line 270, ../../sass/partial/_navigation.scss */
+/* line 299, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button .caret {
   display: inline;
   float: none !important;
   margin-left: 10px;
 }
-/* line 274, ../../sass/partial/_navigation.scss */
+/* line 303, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select button .caret svg {
   color: #fff;
 }
-/* line 279, ../../sass/partial/_navigation.scss */
+/* line 308, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu {
   top: 60px;
   padding: 0;
   margin: 0;
   border-radius: 0;
 }
-/* line 287, ../../sass/partial/_navigation.scss */
+/* line 316, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a {
   font-family: "blogger_sansregular";
   color: #777;
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 293, ../../sass/partial/_navigation.scss */
+/* line 322, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:hover, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:focus, .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li a:active {
   color: #fff;
 }
-/* line 300, ../../sass/partial/_navigation.scss */
+/* line 329, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-collapse .navbar-nav li .dropdown-select .dropdown-menu li.active a {
   color: #fff;
 }
-/* line 311, ../../sass/partial/_navigation.scss */
+/* line 340, ../../sass/partial/_navigation.scss */
 .header .navbar-inverse .navbar-toggle:hover,
 .header .navbar-inverse .navbar-toggle:focus {
   background-color: transparent;
 }
 
-/* line 320, ../../sass/partial/_navigation.scss */
+/* line 349, ../../sass/partial/_navigation.scss */
 .navbar-right li a img {
   width: 18px;
   height: 18px;
@@ -475,13 +553,13 @@ body {
 }
 
 /* Post Login Dropdown */
-/* line 342, ../../sass/partial/_navigation.scss */
+/* line 371, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown {
   border: none;
   outline: none;
   background-color: transparent;
 }
-/* line 347, ../../sass/partial/_navigation.scss */
+/* line 376, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover,
 .user-dropdown .btn-default:focus,
 .user-dropdown .btn-default:active,
@@ -497,7 +575,7 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 367, ../../sass/partial/_navigation.scss */
+/* line 396, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div,
 .user-dropdown .btn-default:focus .profile-image-div,
 .user-dropdown .btn-default:active .profile-image-div,
@@ -507,7 +585,7 @@ body {
   display: table;
   table-layout: fixed;
 }
-/* line 372, ../../sass/partial/_navigation.scss */
+/* line 401, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div .profile-image,
 .user-dropdown .btn-default:focus .profile-image-div .profile-image,
 .user-dropdown .btn-default:active .profile-image-div .profile-image,
@@ -526,7 +604,7 @@ body {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 383, ../../sass/partial/_navigation.scss */
+/* line 412, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-image-div .profile-image img,
 .user-dropdown .btn-default:focus .profile-image-div .profile-image img,
 .user-dropdown .btn-default:active .profile-image-div .profile-image img,
@@ -539,7 +617,7 @@ body {
   -webkit-border-radius: 30px;
   border-radius: 30px;
 }
-/* line 388, ../../sass/partial/_navigation.scss */
+/* line 417, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .profile-name,
 .user-dropdown .btn-default:focus .profile-name,
 .user-dropdown .btn-default:active .profile-name,
@@ -554,7 +632,7 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 402, ../../sass/partial/_navigation.scss */
+/* line 431, ../../sass/partial/_navigation.scss */
 .user-dropdown .btn-default:hover .caret,
 .user-dropdown .btn-default:focus .caret,
 .user-dropdown .btn-default:active .caret,
@@ -565,7 +643,7 @@ body {
   margin-top: 12px;
   margin-left: 5px;
 }
-/* line 408, ../../sass/partial/_navigation.scss */
+/* line 437, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu {
   position: fixed;
   top: 60px;
@@ -581,32 +659,32 @@ body {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 427, ../../sass/partial/_navigation.scss */
+/* line 456, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu a {
   padding: 5px 15px !important;
   text-transform: capitalize;
   color: #555 !important;
 }
-/* line 433, ../../sass/partial/_navigation.scss */
+/* line 462, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu a:hover {
   color: #009688 !important;
   background-color: transparent;
 }
-/* line 438, ../../sass/partial/_navigation.scss */
+/* line 467, ../../sass/partial/_navigation.scss */
 .user-dropdown .dropdown-menu .active {
   color: #009688 !important;
 }
 
-/* line 444, ../../sass/partial/_navigation.scss */
+/* line 473, ../../sass/partial/_navigation.scss */
 .notification {
   padding: 0 !important;
 }
-/* line 446, ../../sass/partial/_navigation.scss */
+/* line 475, ../../sass/partial/_navigation.scss */
 .notification svg {
   width: 30px;
   height: 30px;
 }
-/* line 450, ../../sass/partial/_navigation.scss */
+/* line 479, ../../sass/partial/_navigation.scss */
 .notification svg:after {
   position: absolute;
   top: 0;
@@ -618,7 +696,7 @@ body {
   box-shadow: 0 0 0 2px #ffc400;
 }
 
-/* line 478, ../../sass/partial/_navigation.scss */
+/* line 507, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class {
   position: absolute !important;
   top: 70px !important;
@@ -627,7 +705,7 @@ body {
   padding: 0 !important;
   border: 1px solid #7e8287 !important;
 }
-/* line 488, ../../sass/partial/_navigation.scss */
+/* line 517, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class li {
   padding: 10px;
   font-family: "blogger_sansregular";
@@ -638,16 +716,16 @@ body {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 499, ../../sass/partial/_navigation.scss */
+/* line 528, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class li:last-child {
   border: none;
 }
-/* line 503, ../../sass/partial/_navigation.scss */
+/* line 532, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class li.read {
   background-color: #fff;
 }
 
-/* line 507, ../../sass/partial/_navigation.scss */
+/* line 536, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class:after,
 .notification-dropdown-class:before {
   position: absolute;
@@ -660,7 +738,7 @@ body {
   border: solid transparent;
 }
 
-/* line 522, ../../sass/partial/_navigation.scss */
+/* line 551, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class:after {
   margin-left: -10px;
   border-width: 10px;
@@ -668,7 +746,7 @@ body {
   border-bottom-color: #fff;
 }
 
-/* line 529, ../../sass/partial/_navigation.scss */
+/* line 558, ../../sass/partial/_navigation.scss */
 .notification-dropdown-class:before {
   margin-left: -11px;
   border-width: 11px;
@@ -899,8 +977,8 @@ svg {
 }
 
 /* line 200, ../../sass/partial/_helperclasses.scss */
-.o-flow-x-sc {
-  overflow: scroll;
+.o-flow-y-sc {
+  overflow-y: scroll;
 }
 
 /* line 203, ../../sass/partial/_helperclasses.scss */
@@ -945,54 +1023,114 @@ svg {
 }
 
 /* line 231, ../../sass/partial/_helperclasses.scss */
+.MB10-imp {
+  margin-bottom: 10px !important;
+}
+
+/* line 234, ../../sass/partial/_helperclasses.scss */
 .MB20 {
   margin-bottom: 20px;
 }
 
-/* line 234, ../../sass/partial/_helperclasses.scss */
+/* line 237, ../../sass/partial/_helperclasses.scss */
+.MB40 {
+  margin-bottom: 40px;
+}
+
+/* line 240, ../../sass/partial/_helperclasses.scss */
+.MB40-imp {
+  margin-bottom: 40px !important;
+}
+
+/* line 243, ../../sass/partial/_helperclasses.scss */
 .MLR15 {
   margin-right: 15px;
   margin-left: 15px;
 }
 
 @media all and (max-width: 768px) {
-  /* line 239, ../../sass/partial/_helperclasses.scss */
+  /* line 248, ../../sass/partial/_helperclasses.scss */
   .MB-sm-0 {
     margin-bottom: 0 !important;
   }
 }
-/* line 244, ../../sass/partial/_helperclasses.scss */
+/* line 253, ../../sass/partial/_helperclasses.scss */
 .ln-h1 {
   line-height: 1;
 }
 
-/* line 249, ../../sass/partial/_helperclasses.scss */
-.laundry-bg {
-  background-image: url("../../images/laundry_images/laundry.jpg");
-}
-
-/* line 252, ../../sass/partial/_helperclasses.scss */
+/* line 258, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
   background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
 
-/* line 255, ../../sass/partial/_helperclasses.scss */
-.beauty-bg {
-  background-image: url("../../images/beauty_images/Hair_Color.jpg");
+/* line 267, ../../sass/partial/_helperclasses.scss */
+.appliance-bg {
+  background-image: url("../../images/categories/Appliances_result.jpg");
 }
 
-/* line 258, ../../sass/partial/_helperclasses.scss */
+/* line 270, ../../sass/partial/_helperclasses.scss */
+.beauty-bg {
+  background-image: url("../../images/categories/Beauty_result.jpg");
+}
+
+/* line 273, ../../sass/partial/_helperclasses.scss */
+.carpentry-bg {
+  background-image: url("../../images/categories/Carpentry_result.jpg");
+}
+
+/* line 276, ../../sass/partial/_helperclasses.scss */
+.electrician-bg {
+  background-image: url("../../images/categories/Electrician_result.jpg");
+}
+
+/* line 279, ../../sass/partial/_helperclasses.scss */
+.fitness-bg {
+  background-image: url("../../images/categories/Fitness_result.jpg");
+}
+
+/* line 282, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
-  background-image: url("../../images/housing_images/housing_bg.jpg");
+  background-image: url("../../images/categories/HouseCleaning_result.jpg");
+}
+
+/* line 285, ../../sass/partial/_helperclasses.scss */
+.laptop-bg {
+  background-image: url("../../images/categories/LaptopRepair_result.jpg");
+}
+
+/* line 288, ../../sass/partial/_helperclasses.scss */
+.laundry-bg {
+  background-image: url("../../images/categories/Laundry_result.jpg");
+}
+
+/* line 291, ../../sass/partial/_helperclasses.scss */
+.mobile-bg {
+  background-image: url("../../images/categories/MobileRepair_result.jpg");
+}
+
+/* line 294, ../../sass/partial/_helperclasses.scss */
+.painting-bg {
+  background-image: url("../../images/categories/Painting_result.jpg");
+}
+
+/* line 297, ../../sass/partial/_helperclasses.scss */
+.pest-control-bg {
+  background-image: url("../../images/categories/PestControl_result.jpg");
+}
+
+/* line 300, ../../sass/partial/_helperclasses.scss */
+.plumbing-bg {
+  background-image: url("../../images/categories/Plumbing_result.jpg");
 }
 
 /*Class to align text right in dexktop and center in mobile */
-/* line 265, ../../sass/partial/_helperclasses.scss */
+/* line 305, ../../sass/partial/_helperclasses.scss */
 .text-r-c {
   text-align: right;
 }
 @media all and (max-width: 768px) {
-  /* line 265, ../../sass/partial/_helperclasses.scss */
+  /* line 305, ../../sass/partial/_helperclasses.scss */
   .text-r-c {
     text-align: center;
   }
@@ -1934,8 +2072,61 @@ svg {
   font-size: 1.4rem;
 }
 
-/* Payment method tabs open */
 /* line 66, ../sass/checkout.scss */
+.checkbox-div {
+  text-align: left;
+}
+/* line 69, ../sass/checkout.scss */
+.checkbox-div .check-button-div {
+  display: table-cell;
+  vertical-align: top;
+  width: 24px;
+}
+/* line 73, ../sass/checkout.scss */
+.checkbox-div .check-button-div [type="checkbox"] + .check-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #777;
+  float: left;
+  position: relative;
+}
+/* line 80, ../sass/checkout.scss */
+.checkbox-div .check-button-div [type="checkbox"] + .check-button svg {
+  display: none;
+}
+/* line 85, ../sass/checkout.scss */
+.checkbox-div .check-button-div input {
+  display: none;
+  visibility: hidden;
+}
+/* line 87, ../sass/checkout.scss */
+.checkbox-div .check-button-div [type="checkbox"]:checked + .check-button {
+  position: relative;
+  border: 2px solid #009688;
+  color: #757575;
+  border-color: #009587;
+  background-color: #009587;
+}
+/* line 93, ../sass/checkout.scss */
+.checkbox-div .check-button-div [type="checkbox"]:checked + .check-button svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+/* line 104, ../sass/checkout.scss */
+.checkbox-div .text-div {
+  font-family: "blogger_sansregular";
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 20px;
+  color: #555;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Payment method tabs open */
+/* line 117, ../sass/checkout.scss */
 .payment-method-tabs {
   clear: both;
   overflow: hidden;
@@ -1943,26 +2134,26 @@ svg {
   margin: 20px auto 0;
   padding: 0;
 }
-/* line 73, ../sass/checkout.scss */
+/* line 124, ../sass/checkout.scss */
 .payment-method-tabs .content {
   clear: both;
 }
-/* line 76, ../sass/checkout.scss */
+/* line 127, ../sass/checkout.scss */
 .payment-method-tabs .accordion {
   border: 1px solid #e1e1e1;
   -webkit-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.1);
   -moz-box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.1);
   box-shadow: 0 1px 1px 0 rgba(50, 50, 50, 0.1);
 }
-/* line 82, ../sass/checkout.scss */
+/* line 133, ../sass/checkout.scss */
 .payment-method-tabs .accordion nav {
   display: none;
 }
-/* line 83, ../sass/checkout.scss */
+/* line 134, ../sass/checkout.scss */
 .payment-method-tabs .accordion .accordion-title {
   margin: 0;
 }
-/* line 84, ../sass/checkout.scss */
+/* line 135, ../sass/checkout.scss */
 .payment-method-tabs .accordion .accordion-title a {
   background: #fff;
   font-weight: 400;
@@ -1974,15 +2165,15 @@ svg {
   color: #333;
   text-decoration: none;
 }
-/* line 91, ../sass/checkout.scss */
+/* line 142, ../sass/checkout.scss */
 .payment-method-tabs .accordion .accordion-title.active a {
   font-weight: 700;
 }
-/* line 92, ../sass/checkout.scss */
+/* line 143, ../sass/checkout.scss */
 .payment-method-tabs .accordion .accordion-title:first-child a {
   border-top: none;
 }
-/* line 94, ../sass/checkout.scss */
+/* line 145, ../sass/checkout.scss */
 .payment-method-tabs .accordion .content section {
   padding: 10px;
   display: block;
@@ -1990,12 +2181,12 @@ svg {
   overflow: auto;
 }
 @media all and (max-width: 768px) {
-  /* line 94, ../sass/checkout.scss */
+  /* line 145, ../sass/checkout.scss */
   .payment-method-tabs .accordion .content section {
     background-color: #fff;
   }
 }
-/* line 109, ../sass/checkout.scss */
+/* line 160, ../sass/checkout.scss */
 .payment-method-tabs .tabs {
   clear: both;
   overflow: hidden;
@@ -2003,20 +2194,20 @@ svg {
   border: none;
   padding: 0;
 }
-/* line 116, ../sass/checkout.scss */
+/* line 167, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav {
   display: block;
   width: 100%;
   margin: 0 auto;
 }
 @media all and (max-width: 1024px) {
-  /* line 116, ../sass/checkout.scss */
+  /* line 167, ../sass/checkout.scss */
   .payment-method-tabs .tabs nav {
     width: 100%;
     margin-left: auto;
   }
 }
-/* line 124, ../sass/checkout.scss */
+/* line 175, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul {
   list-style: none;
   padding: 0;
@@ -2024,13 +2215,13 @@ svg {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-/* line 130, ../sass/checkout.scss */
+/* line 181, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 136, ../sass/checkout.scss */
+/* line 187, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li {
   width: calc( ( 100% - 2px ) / 3);
   font-family: "blogger_sansregular";
@@ -2038,26 +2229,26 @@ svg {
   border-right: 1px solid #ccc;
   border-bottom: 0;
 }
-/* line 146, ../sass/checkout.scss */
+/* line 197, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li:first-child {
   margin-left: 0;
 }
-/* line 147, ../sass/checkout.scss */
+/* line 198, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li:last-child {
   border-right: none;
 }
-/* line 149, ../sass/checkout.scss */
+/* line 200, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a {
   text-decoration: none;
   color: #aeb0b3;
 }
-/* line 152, ../sass/checkout.scss */
+/* line 203, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a .tab-icon {
   display: block;
   text-align: center;
   padding-top: 20px;
 }
-/* line 157, ../sass/checkout.scss */
+/* line 208, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul li a .tab-text {
   padding: 10px 10px 20px;
   font-size: 20px;
@@ -2065,15 +2256,15 @@ svg {
   display: block;
   text-align: center;
 }
-/* line 166, ../sass/checkout.scss */
+/* line 217, ../sass/checkout.scss */
 .payment-method-tabs .tabs nav ul .active > a {
   color: #009688;
 }
-/* line 170, ../sass/checkout.scss */
+/* line 221, ../sass/checkout.scss */
 .payment-method-tabs .tabs .accordion-title {
   display: none;
 }
-/* line 171, ../sass/checkout.scss */
+/* line 222, ../sass/checkout.scss */
 .payment-method-tabs .tabs .content {
   clear: both;
   overflow: hidden;
@@ -2085,64 +2276,64 @@ svg {
   font-size: 14px;
 }
 @media all and (max-width: 1024px) {
-  /* line 171, ../sass/checkout.scss */
+  /* line 222, ../sass/checkout.scss */
   .payment-method-tabs .tabs .content {
     width: 100%;
     margin-left: auto;
   }
 }
-/* line 185, ../sass/checkout.scss */
+/* line 236, ../sass/checkout.scss */
 .payment-method-tabs .tabs .content section li {
   margin-top: 5px;
 }
 
-/* line 195, ../sass/checkout.scss */
+/* line 246, ../sass/checkout.scss */
 .responsive-tabs-initialized {
   display: block;
 }
 
 /*Payment method tabs closed */
-/* line 200, ../sass/checkout.scss */
+/* line 251, ../sass/checkout.scss */
 .page-nav {
   display: block;
   width: 970px;
   margin: 20px auto 0;
 }
 @media all and (max-width: 1024px) {
-  /* line 200, ../sass/checkout.scss */
+  /* line 251, ../sass/checkout.scss */
   .page-nav {
     width: 100%;
     margin-left: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 200, ../sass/checkout.scss */
+  /* line 251, ../sass/checkout.scss */
   .page-nav {
     margin: 0 auto 0;
   }
 }
-/* line 211, ../sass/checkout.scss */
+/* line 262, ../sass/checkout.scss */
 .page-nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #a8abae;
 }
-/* line 216, ../sass/checkout.scss */
+/* line 267, ../sass/checkout.scss */
 .page-nav ul:after {
   content: '';
   display: table;
   clear: both;
 }
 @media all and (max-width: 768px) {
-  /* line 211, ../sass/checkout.scss */
+  /* line 262, ../sass/checkout.scss */
   .page-nav ul {
     height: 100px;
     border-bottom: 1px solid #ccc;
     background-color: #fff;
   }
 }
-/* line 224, ../sass/checkout.scss */
+/* line 275, ../sass/checkout.scss */
 .page-nav ul li {
   padding-left: 0;
   padding-right: 0;
@@ -2152,39 +2343,39 @@ svg {
   border-right: 1px solid #d8dce0;
   border-bottom: 0;
 }
-/* line 240, ../sass/checkout.scss */
+/* line 291, ../sass/checkout.scss */
 .page-nav ul li:first-child {
   margin-left: 0;
 }
-/* line 241, ../sass/checkout.scss */
+/* line 292, ../sass/checkout.scss */
 .page-nav ul li:last-child {
   border-right: none;
 }
 @media all and (max-width: 768px) {
-  /* line 224, ../sass/checkout.scss */
+  /* line 275, ../sass/checkout.scss */
   .page-nav ul li {
     border-right: none;
     margin-bottom: 0;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 224, ../sass/checkout.scss */
+  /* line 275, ../sass/checkout.scss */
   .page-nav ul li {
     position: static;
   }
 }
-/* line 252, ../sass/checkout.scss */
+/* line 303, ../sass/checkout.scss */
 .page-nav ul li a {
   text-decoration: none;
   color: #aeb0b3;
 }
-/* line 255, ../sass/checkout.scss */
+/* line 306, ../sass/checkout.scss */
 .page-nav ul li a .tab-icon {
   display: block;
   text-align: center;
 }
 @media all and (max-width: 768px) {
-  /* line 255, ../sass/checkout.scss */
+  /* line 306, ../sass/checkout.scss */
   .page-nav ul li a .tab-icon {
     height: 50px;
     padding-top: 10px;
@@ -2192,11 +2383,11 @@ svg {
     border-bottom: 1px solid #d8dce0;
   }
 }
-/* line 266, ../sass/checkout.scss */
+/* line 317, ../sass/checkout.scss */
 .page-nav ul li a .no-border-right {
   border-right: none !important;
 }
-/* line 267, ../sass/checkout.scss */
+/* line 318, ../sass/checkout.scss */
 .page-nav ul li a .tab-text {
   padding: 30px 10px 10px;
   font-size: 24px;
@@ -2205,22 +2396,22 @@ svg {
   text-align: center;
 }
 @media all and (max-width: 768px) {
-  /* line 267, ../sass/checkout.scss */
+  /* line 318, ../sass/checkout.scss */
   .page-nav ul li a .tab-text {
     display: none;
   }
 }
-/* line 280, ../sass/checkout.scss */
+/* line 331, ../sass/checkout.scss */
 .page-nav ul .active > a {
   border-right: none;
   color: #009688;
 }
-/* line 284, ../sass/checkout.scss */
+/* line 335, ../sass/checkout.scss */
 .page-nav ul .active > a .tab-icon {
   border-bottom: none;
 }
 @media all and (max-width: 768px) {
-  /* line 288, ../sass/checkout.scss */
+  /* line 339, ../sass/checkout.scss */
   .page-nav ul .active > a .tab-text {
     padding: 10px 20px 10px;
     font-size: 20px;
@@ -2234,32 +2425,32 @@ svg {
   }
 }
 @media all and (max-width: 768px) {
-  /* line 303, ../sass/checkout.scss */
+  /* line 354, ../sass/checkout.scss */
   .page-nav ul .active > a .tab-text-left-text {
     text-align: left;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 308, ../sass/checkout.scss */
+  /* line 359, ../sass/checkout.scss */
   .page-nav ul .active > a .tab-text-center-text {
     text-align: center;
   }
 }
 @media all and (max-width: 480px) {
-  /* line 313, ../sass/checkout.scss */
+  /* line 364, ../sass/checkout.scss */
   .page-nav ul .active > a .tab-text-right-text {
     text-align: right;
   }
 }
 
-/* line 325, ../sass/checkout.scss */
+/* line 376, ../sass/checkout.scss */
 .page-content-wrapper {
   width: 100%;
   clear: both;
   overflow: hidden;
 }
 
-/* line 330, ../sass/checkout.scss */
+/* line 381, ../sass/checkout.scss */
 .page-content {
   clear: both;
   overflow: hidden;
@@ -2270,24 +2461,20 @@ svg {
   font-size: 14px;
 }
 @media all and (max-width: 1024px) {
-  /* line 330, ../sass/checkout.scss */
+  /* line 381, ../sass/checkout.scss */
   .page-content {
     width: 100%;
     margin-left: auto;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 330, ../sass/checkout.scss */
+  /* line 381, ../sass/checkout.scss */
   .page-content {
     width: 100%;
     margin: 0 auto;
   }
 }
-/* line 349, ../sass/checkout.scss */
-.page-content section li {
-  margin-top: 5px;
-}
-/* line 352, ../sass/checkout.scss */
+/* line 403, ../sass/checkout.scss */
 .page-content section .left-user-div {
   clear: both;
   float: left;
@@ -2302,20 +2489,20 @@ svg {
   padding: 30px;
 }
 @media all and (max-width: 1024px) {
-  /* line 352, ../sass/checkout.scss */
+  /* line 403, ../sass/checkout.scss */
   .page-content section .left-user-div {
     width: calc(100% - 330px);
     padding: 20px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 352, ../sass/checkout.scss */
+  /* line 403, ../sass/checkout.scss */
   .page-content section .left-user-div {
     width: 100%;
     background-color: transparent;
   }
 }
-/* line 371, ../sass/checkout.scss */
+/* line 422, ../sass/checkout.scss */
 .page-content section .left-user-div .left-section-head {
   width: 100%;
   display: block;
@@ -2326,34 +2513,30 @@ svg {
   color: #009688;
   text-transform: capitalize;
 }
-/* line 381, ../sass/checkout.scss */
+/* line 432, ../sass/checkout.scss */
 .page-content section .left-user-div .left-section-head-top-margin {
   margin-top: 20px;
 }
-/* line 382, ../sass/checkout.scss */
-.page-content section .left-user-div .schedule-dropdowns {
-  height: 50px;
-}
-/* line 386, ../sass/checkout.scss */
+/* line 437, ../sass/checkout.scss */
 .page-content section .left-user-div .card-expiry-section .col-xs-4 {
   padding-left: 10px;
   padding-right: 10px;
 }
-/* line 392, ../sass/checkout.scss */
+/* line 443, ../sass/checkout.scss */
 .page-content section .left-user-div .card-expiry-section .col-xs-4:first-child {
   padding-left: 0;
   padding-right: 20px;
 }
-/* line 396, ../sass/checkout.scss */
+/* line 447, ../sass/checkout.scss */
 .page-content section .left-user-div .card-expiry-section .col-xs-4:last-child {
   padding-left: 20px;
   padding-right: 0;
 }
-/* line 402, ../sass/checkout.scss */
+/* line 453, ../sass/checkout.scss */
 .page-content section .left-user-div .overflow-auto {
   overflow: auto;
 }
-/* line 403, ../sass/checkout.scss */
+/* line 454, ../sass/checkout.scss */
 .page-content section .left-user-div .sections {
   width: 100%;
   margin-top: 20px;
@@ -2361,7 +2544,7 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 412, ../sass/checkout.scss */
+/* line 463, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .section-head {
   margin-top: 10px;
   width: 100%;
@@ -2374,7 +2557,7 @@ svg {
   color: #818181;
   text-transform: capitalize;
 }
-/* line 424, ../sass/checkout.scss */
+/* line 475, ../sass/checkout.scss */
 .page-content section .left-user-div .sections input {
   outline: none;
   border: none;
@@ -2395,15 +2578,14 @@ svg {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 439, ../sass/checkout.scss */
+/* line 490, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown {
-  width: 240px;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 443, ../sass/checkout.scss */
+/* line 494, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle {
   width: 100%;
   height: 44px;
@@ -2419,32 +2601,32 @@ svg {
   -webkit-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 458, ../sass/checkout.scss */
+/* line 509, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:focus, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle:active {
   outline: none;
   background-color: #fff;
   box-shadow: none;
 }
-/* line 465, ../sass/checkout.scss */
+/* line 516, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .caret {
   width: auto;
   height: auto;
   border: none;
 }
-/* line 470, ../sass/checkout.scss */
+/* line 521, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .caret i {
   color: #009688;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 476, ../sass/checkout.scss */
+/* line 527, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open {
   position: relative;
   transform: translate(-6px, 0);
   top: 6px;
   padding-right: 5px;
 }
-/* line 484, ../sass/checkout.scss */
+/* line 535, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:before, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:after {
   content: "";
   position: absolute;
@@ -2452,22 +2634,22 @@ svg {
   width: 2px;
   height: 7px;
 }
-/* line 493, ../sass/checkout.scss */
+/* line 544, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-/* line 495, ../sass/checkout.scss */
+/* line 546, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-open:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-/* line 498, ../sass/checkout.scss */
+/* line 549, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close {
   position: relative;
   transform: translate(-6px, 0);
   top: 6px;
   padding-right: 5px;
 }
-/* line 506, ../sass/checkout.scss */
+/* line 557, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:before, .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:after {
   content: "";
   position: absolute;
@@ -2475,29 +2657,29 @@ svg {
   width: 2px;
   height: 7px;
 }
-/* line 515, ../sass/checkout.scss */
+/* line 566, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-/* line 516, ../sass/checkout.scss */
+/* line 567, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-toggle .i-close:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
-/* line 519, ../sass/checkout.scss */
+/* line 570, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu {
   width: 100%;
 }
-/* line 524, ../sass/checkout.scss */
+/* line 575, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:focus, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu li a:active {
   color: #fff;
   background-color: #009688;
 }
-/* line 533, ../sass/checkout.scss */
+/* line 584, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a:hover, .page-content section .left-user-div .sections .location-dropdown .dropdown-menu > .active > a:focus {
   color: #fff;
   background-color: #009688;
 }
-/* line 543, ../sass/checkout.scss */
+/* line 594, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown.open .caret i {
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -2505,7 +2687,7 @@ svg {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-/* line 548, ../sass/checkout.scss */
+/* line 599, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .location-dropdown select.select-box {
   width: 100%;
   height: 45px;
@@ -2518,23 +2700,28 @@ svg {
   -moz-appearance: none;
   appearance: none;
 }
-/* line 569, ../sass/checkout.scss */
+/* line 620, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .left-date {
-  clear: both;
-  float: left;
-  overflow: hidden;
-  width: 240px;
-  display: inline;
+  padding-left: 0;
 }
-/* line 576, ../sass/checkout.scss */
+@media all and (max-width: 767px) {
+  /* line 620, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .left-date {
+    padding-right: 0;
+  }
+}
+/* line 632, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .right-time-slot {
-  float: left;
-  margin-left: 20px;
-  width: 240px;
+  padding-right: 0;
   display: inline;
-  z-index: 500;
 }
-/* line 585, ../sass/checkout.scss */
+@media all and (max-width: 767px) {
+  /* line 632, ../sass/checkout.scss */
+  .page-content section .left-user-div .sections .right-time-slot {
+    padding-left: 0;
+  }
+}
+/* line 646, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login {
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
@@ -2542,34 +2729,34 @@ svg {
   margin-right: auto;
 }
 @media all and (max-width: 1024px) {
-  /* line 585, ../sass/checkout.scss */
+  /* line 646, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login {
     text-align: center;
     overflow: hidden;
   }
 }
-/* line 599, ../sass/checkout.scss */
+/* line 660, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login .col-sm-6:first-child {
   padding-left: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 599, ../sass/checkout.scss */
+  /* line 660, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login .col-sm-6:first-child {
     padding-right: 0;
   }
 }
-/* line 607, ../sass/checkout.scss */
+/* line 668, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login .col-sm-6:last-child {
   padding-right: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 607, ../sass/checkout.scss */
+  /* line 668, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login .col-sm-6:last-child {
     padding-left: 0;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 595, ../sass/checkout.scss */
+  /* line 656, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login .col-sm-6 {
     float: none;
     clear: both;
@@ -2579,7 +2766,7 @@ svg {
     width: 100%;
   }
 }
-/* line 624, ../sass/checkout.scss */
+/* line 685, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login .col-sm-6 a.social-login-button {
   display: block;
   text-align: center;
@@ -2595,7 +2782,7 @@ svg {
   color: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 624, ../sass/checkout.scss */
+  /* line 685, ../sass/checkout.scss */
   .page-content section .left-user-div .sections .social-login .col-sm-6 a.social-login-button {
     width: 240px;
     float: none;
@@ -2604,15 +2791,15 @@ svg {
     margin-right: auto;
   }
 }
-/* line 643, ../sass/checkout.scss */
+/* line 704, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login .col-sm-6 .fb-button {
   background-color: #3b5998;
 }
-/* line 644, ../sass/checkout.scss */
+/* line 705, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .social-login .col-sm-6 .gmail-button {
   background-color: #d34836;
 }
-/* line 649, ../sass/checkout.scss */
+/* line 710, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .text-box-div input {
   outline: none;
   border: none;
@@ -2632,79 +2819,7 @@ svg {
   padding-left: 20px;
   padding-right: 20px;
 }
-/* line 729, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div {
-  text-align: left;
-}
-/* line 731, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden;
-  clear: both;
-  text-align: left;
-}
-/* line 739, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div {
-  display: inline-block;
-  float: left;
-  width: 20px;
-}
-/* line 743, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox] {
-  display: none;
-}
-/* line 746, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style {
-  display: inline-block;
-  color: #757575;
-  border-color: #009587;
-  background-color: #009587;
-}
-/* line 758, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div input[type=checkbox]:checked + .checkbox-style svg {
-  display: block;
-  width: 16px;
-  height: 16px;
-  fill: #fff;
-}
-/* line 766, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style {
-  float: left;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  text-align: center;
-  border: 2px solid #757575;
-  -moz-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-}
-/* line 781, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-icon-div .checkbox-style svg {
-  display: none;
-}
-/* line 786, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-label-text {
-  display: inline-block;
-  float: left;
-  width: calc(100% - 20px);
-  height: auto;
-}
-/* line 791, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .checkbox-div .checkbox-icon-label-div .checkbox-label-text .same-address-label {
-  float: left;
-  padding-left: 5px;
-  font-family: "blogger_sansregular";
-  line-height: 20px;
-  color: #777;
-  font-size: 14px;
-  font-size: 1.4rem;
-}
-/* line 807, ../sass/checkout.scss */
+/* line 792, ../sass/checkout.scss */
 .page-content section .left-user-div .sections a.submit-button {
   float: right;
   display: block;
@@ -2723,7 +2838,7 @@ svg {
   background-color: #ffc400;
 }
 @media all and (max-width: 768px) {
-  /* line 807, ../sass/checkout.scss */
+  /* line 792, ../sass/checkout.scss */
   .page-content section .left-user-div .sections a.submit-button {
     float: none;
     clear: both;
@@ -2732,7 +2847,7 @@ svg {
     margin-top: 20px;
   }
 }
-/* line 826, ../sass/checkout.scss */
+/* line 811, ../sass/checkout.scss */
 .page-content section .left-user-div .sections a.add-new-address-button {
   float: left;
   display: block;
@@ -2752,7 +2867,7 @@ svg {
   background-color: #fff;
 }
 @media all and (max-width: 768px) {
-  /* line 826, ../sass/checkout.scss */
+  /* line 811, ../sass/checkout.scss */
   .page-content section .left-user-div .sections a.add-new-address-button {
     float: none;
     clear: both;
@@ -2761,13 +2876,13 @@ svg {
     margin-top: 20px;
   }
 }
-/* line 846, ../sass/checkout.scss */
+/* line 831, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list {
   clear: both;
   overflow: hidden;
   border-bottom: none;
 }
-/* line 851, ../sass/checkout.scss */
+/* line 836, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li {
   clear: both;
   overflow: hidden;
@@ -2777,11 +2892,11 @@ svg {
   padding-bottom: 20px;
   margin-top: auto;
 }
-/* line 859, ../sass/checkout.scss */
+/* line 844, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li:last-child {
   border-bottom: 1px solid #ccc;
 }
-/* line 861, ../sass/checkout.scss */
+/* line 846, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .address-div {
   float: left;
   display: inline-block;
@@ -2792,7 +2907,7 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 870, ../sass/checkout.scss */
+/* line 855, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.correction-icon {
   width: 10px;
   text-align: center;
@@ -2802,7 +2917,7 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 881, ../sass/checkout.scss */
+/* line 866, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.delete-icon {
   width: 10px;
   text-align: center;
@@ -2812,26 +2927,26 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 895, ../sass/checkout.scss */
+/* line 880, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment {
   clear: both;
   overflow: hidden;
   border-bottom: none;
 }
-/* line 900, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li {
-  clear: both;
-  overflow: hidden;
-  display: block;
+/* line 885, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row {
   margin-top: auto;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   /* One radio button per line */
 }
-/* line 908, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li:last-child {
+/* line 897, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row:last-child {
   border-bottom: 1px solid #ccc;
 }
-/* line 910, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li [type="radio"] {
+/* line 899, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row [type="radio"] {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -2841,27 +2956,86 @@ svg {
   position: absolute;
   width: 1px;
 }
-/* line 921, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li label {
+/* line 910, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row label {
   display: block;
   cursor: pointer;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
 }
-/* line 926, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li .radio-button-div {
+/* line 918, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .radio-button-div {
   display: inline-block;
   padding-top: 2px;
   padding-left: 2px;
 }
-/* line 933, ../sass/checkout.scss */
-.page-content section .left-user-div .sections .preferred-payment li .text-div {
+/* line 925, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div {
   display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+  width: 24px;
+  /* the basic, unchecked style */
+  /* the checked style using the :checked pseudo class */
+}
+/* line 935, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"] + .radio-button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #777;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  float: left;
+  position: relative;
+}
+/* line 952, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div input {
+  display: none;
+  visibility: hidden;
+}
+/* line 954, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"] + .radio-button:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  -moz-border-radius: 16px;
+  -o-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  background: transparent;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: 0.5s ease all;
+}
+/* line 971, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"]:checked + .radio-button {
+  position: relative;
+  border: 2px solid #009688;
+}
+/* line 975, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"]:checked + .radio-button:before {
+  background: #009688;
+}
+/* line 983, ../sass/checkout.scss */
+.page-content section .left-user-div .sections .preferred-payment .row .text-div {
+  float: left;
   font-family: "blogger_sansregular";
   font-size: 18px;
   font-size: 1.8rem;
-  line-height: 1;
+  line-height: 1.5;
   color: #555;
+  display: table-cell;
+  vertical-align: middle;
 }
-/* line 948, ../sass/checkout.scss */
+/* line 1003, ../sass/checkout.scss */
 .page-content section .right-summary-div {
   float: left;
   margin-left: 30px;
@@ -2876,19 +3050,19 @@ svg {
   padding: 20px 30px 30px;
 }
 @media all and (max-width: 1024px) {
-  /* line 948, ../sass/checkout.scss */
+  /* line 1003, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     width: 300px;
     padding: 20px 20px 30px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 948, ../sass/checkout.scss */
+  /* line 1003, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     display: none;
   }
 }
-/* line 965, ../sass/checkout.scss */
+/* line 1020, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-head {
   font-family: "blogger_sansregular";
   font-size: 20px;
@@ -2900,7 +3074,7 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 975, ../sass/checkout.scss */
+/* line 1030, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-sub-text {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -2914,11 +3088,11 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 987, ../sass/checkout.scss */
+/* line 1042, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list {
   width: 100%;
 }
-/* line 989, ../sass/checkout.scss */
+/* line 1044, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li {
   border-top: 1px solid #ddd;
   padding: 20px;
@@ -2928,11 +3102,11 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 996, ../sass/checkout.scss */
+/* line 1051, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li:last-child {
   border-bottom: 1px solid #ddd;
 }
-/* line 999, ../sass/checkout.scss */
+/* line 1054, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-text {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -2945,13 +3119,13 @@ svg {
   display: block;
   text-transform: capitalize;
 }
-/* line 1010, ../sass/checkout.scss */
+/* line 1065, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
 }
-/* line 1014, ../sass/checkout.scss */
+/* line 1069, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div .comments-input {
   outline: none;
   border: none;
@@ -2963,14 +3137,14 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 1025, ../sass/checkout.scss */
+/* line 1080, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
   background-color: #fff;
 }
-/* line 1031, ../sass/checkout.scss */
+/* line 1086, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .time-div {
   clear: both;
   float: left;
@@ -2985,7 +3159,7 @@ svg {
   padding-top: 8px;
   color: #555;
 }
-/* line 1044, ../sass/checkout.scss */
+/* line 1099, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .price-div {
   float: left;
   width: 50%;
@@ -2996,4 +3170,10 @@ svg {
   font-size: 2.4rem;
   line-height: 1;
   color: #555;
+}
+
+/* line 1116, ../sass/checkout.scss */
+.ui-datepicker {
+  font-size: 12px;
+  font-size: 1.2rem;
 }
