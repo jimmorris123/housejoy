@@ -9,7 +9,7 @@
         position: relative;
 
         width: 100%;
-        height: 80vh;
+        height: 70vh;
         padding-top: 60px;
         // background-image: url("../../images/laundry_images/laundry.jpg");
 
@@ -17,7 +17,7 @@
         background-position: center center;
         background-size: cover;
 
-        @include medmx(768px) {
+        @include medmx(767px) {
             height: 60vh;
         }
         .container {
@@ -27,16 +27,16 @@
 
             margin: 30px auto;
 
-            @include medmx(768px) {
+            @include transform(translate(-50%, -50%));
+            @include medmx(767px) {
                 width: 100%;
             }
-            @include transform(translate(-50%, -50%));
         }
         &.house-cleaning-bg {
             .container {
-                top: 20%;
+                top: 50%;
 
-                @include transform(translate(-50%, -20%));
+                @include transform(translate(-50%, -50%));
             }
         }
         .gradient-white {
@@ -47,7 +47,7 @@
             left: 0;
         }
         .divider {
-            @include medmx(768px) {
+            @include medmx(767px) {
                 margin-bottom: 20px;
 
                 text-align: center;
@@ -60,24 +60,24 @@
 
                 background-color: $white;
 
-                @include medmx(768px) {
+                @include transform(rotate(30deg));
+                @include medmx(767px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
-                @include transform(rotate(30deg));
             }
         }
         .title {
             // margin-bottom: 60px;
-            @include medmx(768px) {
+            @include medmx(767px) {
                 margin-bottom: 20px;
 
                 text-align: center;
             }
             &.text-right {
-                @include medmx(768px) {
+                @include medmx(767px) {
                     text-align: center;
                 }
             }
@@ -92,32 +92,32 @@
 
                     color: $white;
 
-                    @include rem(font-size, 70px);
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 56px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 40px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 50px);
                     }
-                    @include medmx(768px) {
-                        @include rem(font-size, 40px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 56px);
                     }
+                    @include rem(font-size, 70px);
                 }
                 &.l-left-title {
                     font-family: $bebasneue_R;
 
                     color: $white;
 
-                    @include rem(font-size, 60px);
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 46px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 30px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 48px);
                     }
-                    @include medmx(768px) {
-                        @include rem(font-size, 30px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 46px);
                     }
+                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -126,12 +126,12 @@
                 max-width: 100px;
                 min-width: 80px;
 
-                @include rem(font-size, 16px);
-                @include medmx(768px) {
+                @include medmx(767px) {
                     float: none;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
+                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
@@ -147,19 +147,60 @@
 
         background-image: url("../../images/laundry_images/laundry_blurred.jpg");
         background-position: center center;
+        &.applinces-blur-bg {
+            background-image: url("../../images/categories/Appliances_blur_result.jpg");
+        }
+        &.beauty-blur-bg {
+            background-image: url("../../images/categories/Beauty_blur_result.jpg");
+        }
+        &.carpentry-blur-bg {
+            background-image: url("../../images/categories/Carpentry_blur_result.jpg");
+        }
+        &.electrician-blur-bg {
+            background-image: url("../../images/categories/Electrician_blur_result.jpg");
+        }
+        &.fitness-blur-bg {
+            background-image: url("../../images/categories/Fitness_blur_result.jpg");
+        }
+        &.house-cleaning-blur-bg {
+            background-image: url("../../images/categories/HouseCleaning_blur_result.jpg");
+        }
+        &.laptop-blur-bg {
+            background-image: url("../../images/categories/LaptopRepair_blur_result.jpg");
+        }
+        &.laundry-blur-bg {
+            background-image: url("../../images/categories/Laundry_blur_result.jpg");
+        }
+        &.mobile-blur-bg {
+            background-image: url("../../images/categories/MobileRepair_blur_result.jpg");
+        }
+        &.painting-blur-bg {
+            background-image: url("../../images/categories/Painting_blur_result.jpg");
+        }
+        &.pest-control-blur-bg {
+            background-image: url("../../images/categories/PestControl_blur_result.jpg");
+        }
+        &.plumbing-blur-bg {
+            background-image: url("../../images/categories/Plumbing_blur_result.jpg");
+        }
         // background-size: cover;
         .f-block {
+            display: table;
+            height: 200px;
+            min-height: 100%;
             padding: 30px 15px;
 
             text-align: center;
 
             border-right: 1px solid #ccc;
 
-            @include medmx(768px) {
+            @include medmx(767px) {
                 border: none;
             }
             a {
-                display: block;
+                display: table-cell;
+
+                vertical-align: middle;
                 img,
                 svg {
                     width: 50px;
@@ -189,7 +230,7 @@
                 max-height: 240px;
                 overflow: hidden;
 
-                @include medmx(768px) {
+                @include medmx(767px) {
                     max-height: 115px;
                 }
                 .overlay {
@@ -214,8 +255,8 @@
 
                     color: $white;
 
-                    @include transform(translateY(-50%));
                     @include rem(font-size, 30px);
+                    @include transform(translateY(-50%));
                 }
             }
         }
@@ -275,8 +316,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(line-height, 22px);
                     @include rem(font-size, 16px);
+                    @include rem(line-height, 22px);
                 }
             }
         }

@@ -52,6 +52,68 @@
 }
 // end
 
+/* ***********************************************************************************/
+/* Custom radio buttons*/
+/* ***********************************************************************************/
+
+.radio-div {
+    margin-bottom: 20px;
+    /* One radio button per line */
+    label {
+        display: block;
+
+        cursor: pointer;
+
+        // custom radio buttons unit style
+        [type="radio"] {
+            position: absolute;
+
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+
+            border: 0;
+        }
+
+
+        /* the basic, unchecked style */
+        [type="radio"] + .radio-button:before {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 15px;
+            margin-left: 1px;
+
+            content: "";
+            transition: .5s ease all;
+            vertical-align: -.25em;
+
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 2px #555;
+
+            @include border-radius(16px);
+        }
+
+        /* the checked style using the :checked pseudo class */
+        [type="radio"]:checked + .radio-button:before {
+            background: $green;
+            box-shadow: 0 0 0 2px $green;
+        }
+        span {
+            display: inline-block;
+            &.text-div {
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 18px);
+            }
+        }
+    }
+}
 
 /* ***********************************************************************************/
 /* Custom checkbox buttons*/
@@ -203,9 +265,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -342,6 +404,8 @@
     outline: none;
     background-color: #ffc400;
 
+    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -349,6 +413,4 @@
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
-    @include border-radius(4px);
 }

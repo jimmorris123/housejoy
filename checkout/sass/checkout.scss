@@ -858,53 +858,6 @@
 						margin-top: auto;
 						&:last-child {border-bottom: 1px solid #ccc;}
 
-						[type="radio"] {
-						  border: 0; 
-						  clip: rect(0 0 0 0); 
-						  height: 1px; margin: -1px; 
-						  overflow: hidden; 
-						  padding: 0; 
-						  position: absolute; 
-						  width: 1px;
-						}
-
-						/* One radio button per line */
-						label {
-						  display: block;
-						  cursor: pointer;
-						}
-						
-						.radio-button-div {
-							display: table;
-							table-layout: fixed;
-							float: left;
-							[type="radio"] + .radio-button {
-							  	display: table-cell;
-								vertical-align: middle;
-							}
-
-							/* the basic, unchecked style */
-							[type="radio"] + .radio-button:before {
-							  content: '';
-							  display: inline-block;
-							  width: 16px;
-							  height: 16px;
-							  vertical-align: -0.25em;
-							  @include border-radius(16px);
-							  border: 2px solid #fff;
-							  box-shadow: 0 0 0 2px #555;
-							  margin-left: 1px;
-							  margin-right: 20px;
-							  transition: 0.5s ease all;
-							}
-
-							/* the checked style using the :checked pseudo class */
-							[type="radio"]:checked + .radio-button:before {
-							  background: $green;
-							  box-shadow: 0 0 0 2px $green;
-							}
-						}
-
 						.address-div {
 							float: left;
 							display: inline-block;
@@ -950,7 +903,7 @@
 						display: block;
 						// border-top: 1px solid #ccc;
 						// padding-top: 20px;
-						padding-bottom: 20px;
+						// padding-bottom: 20px;
 						margin-top: auto;
 						&:last-child {border-bottom: 1px solid #ccc;}
 
@@ -971,41 +924,13 @@
 						}
 						
 						.radio-button-div {
-							display: table;
-							table-layout: fixed;
-							float: left;
+						  	display: inline-block;
 							padding-top: 2px;
 							padding-left: 2px;
-							[type="radio"] + .radio-button {
-							  	display: table-cell;
-								vertical-align: middle;
-							}
-
-							/* the basic, unchecked style */
-							[type="radio"] + .radio-button:before {
-							  content: '';
-							  display: inline-block;
-							  width: 16px;
-							  height: 16px;
-							  vertical-align: -0.25em;
-							  @include border-radius(16px);
-							  border: 2px solid #fff;
-							  box-shadow: 0 0 0 2px #555;
-							  margin-top: 2px;
-							  margin-left: 1px;
-							  margin-right: 20px;
-							  transition: 0.5s ease all;
-							}
-
-							/* the checked style using the :checked pseudo class */
-							[type="radio"]:checked + .radio-button:before {
-							  background: $green;
-							  box-shadow: 0 0 0 2px $green;
-							}
+							
 						}
 
 						.text-div {
-							float: left;
 							display: inline-block;
 							// width: 70%;
 							font-family: "blogger_sansregular";

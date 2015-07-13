@@ -75,7 +75,6 @@
 
                         color: $medium-gray;
 
-                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -83,6 +82,7 @@
 
                             @include rem(font-size, 18px);
                         }
+                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;
@@ -194,8 +194,8 @@
 
                 color: $dark-gray;
 
-                @include rem(line-height, 22px);
                 @include rem(font-size, 18px);
+                @include rem(line-height, 22px);
                 &.remove-box {
                     display: inline-block;
                     width: 20%;
@@ -285,6 +285,28 @@
 
                 text-align: right;
             }
+        }
+    }
+}
+
+
+// Fitness page style
+.select-days {
+    .checkbox {
+        label {
+            width: auto;
+            height: auto;
+            min-height: 0;
+
+            font-family: $blogger_R;
+
+            border: none;
+            border-bottom: 1px solid transparent;
+            border-radius: 0;
+        }
+        input[type="checkbox"]:checked + label {
+            color: $green;
+            border-bottom: 1px solid $green;
         }
     }
 }
