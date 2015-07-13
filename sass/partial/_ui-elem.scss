@@ -107,6 +107,9 @@
             margin-left: 2px;
 
             vertical-align: top;
+            input {
+                display: none;
+            }
             &.text-div {
                 font-family: $blogger_R;
 
@@ -268,9 +271,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -407,6 +410,8 @@
     outline: none;
     background-color: #ffc400;
 
+    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -414,6 +419,4 @@
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
-    @include border-radius(4px);
 }
