@@ -36,7 +36,8 @@
         .top-heading {
             position: relative;
 
-            padding: 15px 20px;
+            padding: 20px;
+            overflow: hidden;
 
             border-bottom: 1px solid #ccc;
             background-repeat: no-repeat;
@@ -45,6 +46,8 @@
             .container {
                 position: relative;
 
+                padding-left: 50px;
+
                 background-color: transparent;
             }
             .broom {
@@ -52,9 +55,13 @@
                 z-index: 1;
 
                 display: inline-block;
-                margin-right: 15px;
+                margin-right: 45px;
 
                 vertical-align: top;
+
+                @include medmx(768px) {
+                    margin-bottom: 15px;
+                }
                 img {
                     width: 50px;
                     height: 50px;
@@ -66,13 +73,29 @@
 
                 display: inline-block;
                 h2 {
-                    margin-bottom: 5px;
+                    margin-bottom: 20px;
 
                     font-family: $blogger_M;
 
                     color: rgba(255,255,255,.8);
 
                     @include rem(font-size, 24px);
+                }
+                .nav-modal-btn {
+                    padding: 0;
+
+                    cursor: pointer;
+                    &:focus,
+                    &:active {
+                        outline: none;
+                    }
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        margin-bottom: -4px;
+
+                        color: #fff;
+                    }
                 }
                 .amount {
                     margin-bottom: 5px;
@@ -131,14 +154,26 @@
                         right: 1px;
 
                         display: inline-block;
-                        height: 95%;
+                        height: 80%;
                         padding-top: 4px;
-                        padding-right: 16px;
+                        padding-right: 20px;
                         padding-left: 5px;
 
                         background-color: #fff;
 
                         @include border-radius(3px);
+                    }
+
+                    .btn-default {
+                        background-color: #fff !important;
+                        &:active,
+                        &:focus,
+                        &.active,
+                        &:hover,
+                        &.open {
+                            outline: none !important;
+                            box-shadow: none;
+                        }
                     }
                 }
                 h4 {

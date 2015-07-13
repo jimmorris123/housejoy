@@ -163,6 +163,9 @@ svg {
 .f-cl-white {
     color: $white;
 }
+.f-cl-white-imp {
+    color: $white !important;
+}
 // text-transform
 .text-uppercase {
     text-transform: uppercase;
@@ -191,7 +194,12 @@ svg {
 .H-auto {
     height: auto !important;
 }
-
+.MX-H60 {
+    max-height: 60px;
+}
+.o-flow-y-sc {
+    overflow-y: scroll;
+}
 .o-flow-H {
     overflow: hidden;
 }
@@ -220,8 +228,21 @@ svg {
 .MB10 {
     margin-bottom: 10px;
 }
+.MB10-imp {
+    margin-bottom: 10px !important;
+}
 .MB20 {
     margin-bottom: 20px;
+}
+.MB40 {
+    margin-bottom: 40px;
+}
+.MB40-imp {
+    margin-bottom: 40px !important;
+}
+.MLR15 {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 @include medmx(768px) {
     .MB-sm-0 {
@@ -234,20 +255,51 @@ svg {
 }
 
 
-.laundry-bg {
-    background-image: url("../../images/laundry_images/laundry.jpg");
-}
 .house-cleaning-bg {
     background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
+// .beauty-bg {
+//     background-image: url("../../images/beauty_images/Hair_Color.jpg");
+// }
+// .house-cleaning-bg {
+//     background-image: url("../../images/housing_images/housing_bg.jpg");
+// }
+.appliance-bg {
+    background-image: url("../../images/categories/Appliances_result.jpg");
+}
 .beauty-bg {
-    background-image: url("../../images/beauty_images/Hair_Color.jpg");
+    background-image: url("../../images/categories/Beauty_result.jpg");
+}
+.carpentry-bg {
+    background-image: url("../../images/categories/Carpentry_result.jpg");
+}
+.electrician-bg {
+    background-image: url("../../images/categories/Electrician_result.jpg");
+}
+.fitness-bg {
+    background-image: url("../../images/categories/Fitness_result.jpg");
 }
 .house-cleaning-bg {
-    background-image: url("../../images/housing_images/housing_bg.jpg");
+    background-image: url("../../images/categories/HouseCleaning_result.jpg");
 }
-
-
+.laptop-bg {
+    background-image: url("../../images/categories/LaptopRepair_result.jpg");
+}
+.laundry-bg {
+    background-image: url("../../images/categories/Laundry_result.jpg");
+}
+.mobile-bg {
+    background-image: url("../../images/categories/MobileRepair_result.jpg");
+}
+.painting-bg {
+    background-image: url("../../images/categories/Painting_result.jpg");
+}
+.pest-control-bg {
+    background-image: url("../../images/categories/PestControl_result.jpg");
+}
+.plumbing-bg {
+    background-image: url("../../images/categories/Plumbing_result.jpg");
+}
 /*Class to align text right in dexktop and center in mobile */
 
 .text-r-c {

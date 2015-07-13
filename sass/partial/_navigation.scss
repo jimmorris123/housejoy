@@ -1,18 +1,25 @@
 
 // New nav list-style
-
-@media screen and (max-width: 768px) {
+.side-collapse-container {
+    .overlay {
+        &.after-slide {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
     .side-collapse-container {
         position: relative;
         left: 0;
 
         width: 100%;
 
-        transition: left .4s;
+        @include transition(left .4s);
         .hamburger {
             display: none !important;
         }
         .overlay {
+            display: none;
             &.after-slide {
                 display: none;
             }
@@ -43,7 +50,16 @@
         width: 80%;
         overflow: hidden;
 
-        transition: width .4s;
+        @include transition(width .4s);
+        .logo-box {
+            height: 60px;
+            padding: 20px 20px;
+            a {
+                display: block;
+                max-width: 175px;
+                margin: 0 auto;
+            }
+        }
     }
     .side-collapse.in {
         width: 0;
@@ -80,20 +96,21 @@
     line-height: 32px;
 
     content: "";
-    -webkit-transition: all .35s ease-in-out;
     -webkit-transform: translate3d(0,0,0);
     text-align: center;
 
     opacity: 0;
     color: #fff;
+
+    @include transition( all .35s ease-in-out);
 }
 .hamburger.is-closed:hover:before {
     display: block;
 
-    -webkit-transition: all .35s ease-in-out;
-    -webkit-transform: translate3d(-100px,0,0);
-
     opacity: 1;
+
+    @include transform(translate3d(-100px,0,0));
+    @include transition(all .35s ease-in-out);
 }
 
 .hamburger.is-closed .hamb-top,
@@ -116,7 +133,7 @@
 .hamburger.is-closed .hamb-top {
     top: 5px;
 
-    -webkit-transition: all .35s ease-in-out;
+    @include transition(all .35s ease-in-out);
 }
 .hamburger.is-closed .hamb-middle {
     top: 50%;
@@ -126,18 +143,18 @@
 .hamburger.is-closed .hamb-bottom {
     bottom: 5px;
 
-    -webkit-transition: all .35s ease-in-out;
+    @include transition(all .35s ease-in-out);
 }
 
 .hamburger.is-closed:hover .hamb-top {
     top: 0;
 
-    -webkit-transition: all .35s ease-in-out;
+    @include transition(all .35s ease-in-out);
 }
 .hamburger.is-closed:hover .hamb-bottom {
     bottom: 0;
 
-    -webkit-transition: all .35s ease-in-out;
+    @include transition(all .35s ease-in-out);
 }
 .hamburger.is-open .hamb-top,
 .hamburger.is-open .hamb-middle,
@@ -152,14 +169,24 @@
 }
 .hamburger.is-open .hamb-top {
     -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
-    -webkit-transform: rotate(45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+       -moz-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+        -ms-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+         -o-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+
+    @include transform(rotate(45deg));
 }
 .hamburger.is-open .hamb-middle {
     display: none;
 }
 .hamburger.is-open .hamb-bottom {
     -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
-    -webkit-transform: rotate(-45deg);
+    -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+       -moz-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+        -ms-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+         -o-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
+
+    @include transform(rotate(-45deg));
 }
 .hamburger.is-open:before {
     display: block;
@@ -169,20 +196,21 @@
     line-height: 32px;
 
     content: "";
-    -webkit-transition: all .35s ease-in-out;
-    -webkit-transform: translate3d(0,0,0);
     text-align: center;
 
     opacity: 0;
     color: #fff;
+
+    @include transform(translate3d(0,0,0));
+    @include transition(all .35s ease-in-out);
 }
 .hamburger.is-open:hover:before {
     display: block;
 
-    -webkit-transition: all .35s ease-in-out;
-    -webkit-transform: translate3d(-100px,0,0);
-
     opacity: 1;
+
+    @include transition(all .35s ease-in-out);
+    @include transform(translate3d(-100px,0,0));
 }
 
 
@@ -201,18 +229,18 @@
     .logo-div {
         padding: 20px 15px;
 
-        @include medmx(768px) {
+        @include medmx(767px) {
             padding: 20px 0;
         }
         .hamburger.is-open {
-            display: none;
+            display: none !important;
         }
     }
     .navbar-inverse {
         border: none;
         background-color: transparent;
         .side-collapse {
-            @include medmx(768px) {
+            @include medmx(767px) {
                 // position: relative;
                 top: 0;
                 left: 0;
@@ -222,6 +250,7 @@
         }
         .navbar-collapse {
             border: none;
+
             .navbar-nav {
                 background-color: transparent;
                 li {
@@ -232,26 +261,27 @@
 
                         color: $white;
 
-                        @include rem(font-size, 16px);
-                        @include medmx(768px) {
+                        @include medmx(767px) {
                             color: $medium-gray;
                         }
+                        @include rem(font-size, 16px);
                         .icon {
                             margin-right: 10px;
                         }
                     }
                     .dropdown-select {
                         button {
+                            max-height: 60px;
                             padding: 20px 15px;
 
                             color: $white;
                             border: none;
                             background-color: transparent;
 
-                            @include medmx(768px) {
+                            @include rem(font-size, 16px);
+                            @include medmx(767px) {
                                 color: $medium-gray;
                             }
-                            @include rem(font-size, 16px);
                             &:hover,
                             &:focus,
                             &:active {
@@ -261,13 +291,18 @@
                                 background-color: transparent;
                                 box-shadow: none;
 
-                                @include medmx(768px) {
+                                @include medmx(767px) {
                                     color: $medium-gray;
                                     // background-color: $green;
                                 }
                             }
                             .caret {
+                                display: inline;
+                                float: none !important;
                                 margin-left: 10px;
+                                svg {
+                                    color: $white;
+                                }
                             }
                         }
                         .dropdown-menu {
@@ -308,10 +343,23 @@
     }
 }
 
+.navbar-right {
+    li {
+        a {
+            img {
+                width: 18px;
+                height: 18px;
+                margin-right: 8px;
+                margin-bottom: -3px;
+            }
+        }
+    }
+}
+
 /* Post Login Dropdown */
 
 .user-dropdown {
-    // @include medmx(768px) {
+    // @include medmx(767px) {
     //     position: fixed;
     //     top: 0;
     //     right: 0;
@@ -339,7 +387,7 @@
         border: none;
         outline: none;
         background-color: transparent;
-        // @include medmx(768px) {
+        // @include medmx(767px) {
         //     position: fixed;
         //     right: 0;
         // }
@@ -374,7 +422,7 @@
             line-height: 30px;
 
             color: $white;
-            // @include medmx(768px) {
+            // @include medmx(767px) {
             //     display: none;
             // }
 
@@ -397,7 +445,7 @@
 
         border: none;
         background-color: #f1f5f9;
-        // @include medmx(768px) {
+        // @include medmx(767px) {
         //     position: relative !important;
         //     min-width: 100px !important;
         //     padding: 0;

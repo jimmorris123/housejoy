@@ -60,4 +60,8 @@
 }
 .right-section {
     padding-left: 30px;
+
+    @include medmx(767px) {
+        padding-left: 0;
+    }
 }
