@@ -374,17 +374,17 @@
             margin-right: 10px;
             margin-bottom: 40px;
 
-            @include medmx(479px) {
-                width: 48%;
-            }
             @include medmxn(768px, 991px) {
                 width: 28%;
             }
             @include medmxn(992px, 1199px) {
                 width: 22%;
             }
-            @include medmxn(480px, 768px) {
-                width: 30%;
+            @include medmx(419px) {
+                width: 110px;
+            }
+            @include medmxn(420px, 767px) {
+                width: 150px;
             }
             @include transition(all .3s);
             &:hover,
@@ -418,6 +418,13 @@
 
                 text-align: center;
 
+                @include medmx(419px) {
+                    width: 100px;
+                    height: 100px;
+                }
+                @include medmxn(420px, 767px) {
+                    width: 140px;
+                }
                 @include border-radius(50%);
                 .overlay {
                     background-color: rgba(0,0,0,.3);
