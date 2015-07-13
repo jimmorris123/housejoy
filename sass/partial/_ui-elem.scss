@@ -84,7 +84,7 @@
             display: inline-block;
             width: 16px;
             height: 16px;
-            margin-right: 15px;
+            margin-right: 10px;
             margin-left: 1px;
 
             content: "";
@@ -104,6 +104,12 @@
         }
         span {
             display: inline-block;
+            margin-left: 2px;
+
+            vertical-align: top;
+            input {
+                display: none;
+            }
             &.text-div {
                 font-family: $blogger_R;
 

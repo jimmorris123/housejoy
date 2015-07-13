@@ -1,4 +1,4 @@
-/* line 5, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Ruby21/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -1136,6 +1136,11 @@ svg {
   }
 }
 
+/* line 313, ../../sass/partial/_helperclasses.scss */
+.initial-hide {
+  display: none;
+}
+
 /* line 1, ../../sass/partial/_material-input.scss */
 * {
   box-sizing: border-box;
@@ -1394,7 +1399,7 @@ svg {
   display: inline-block;
   width: 16px;
   height: 16px;
-  margin-right: 15px;
+  margin-right: 10px;
   margin-left: 1px;
   content: "";
   transition: .5s ease all;
@@ -1415,8 +1420,14 @@ svg {
 /* line 105, ../../sass/partial/_ui-elem.scss */
 .radio-div label span {
   display: inline-block;
+  margin-left: 2px;
+  vertical-align: top;
 }
-/* line 107, ../../sass/partial/_ui-elem.scss */
+/* line 110, ../../sass/partial/_ui-elem.scss */
+.radio-div label span input {
+  display: none;
+}
+/* line 113, ../../sass/partial/_ui-elem.scss */
 .radio-div label span.text-div {
   font-family: "blogger_sansregular";
   color: #555;
@@ -1427,12 +1438,12 @@ svg {
 /* ***********************************************************************************/
 /* Custom checkbox buttons*/
 /* ***********************************************************************************/
-/* line 121, ../../sass/partial/_ui-elem.scss */
+/* line 127, ../../sass/partial/_ui-elem.scss */
 .checkbox-small {
   position: relative;
   margin-top: 0 !important;
 }
-/* line 125, ../../sass/partial/_ui-elem.scss */
+/* line 131, ../../sass/partial/_ui-elem.scss */
 .checkbox-small label.sm-label {
   position: relative;
   font-family: "blogger_sansregular";
@@ -1440,7 +1451,7 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 133, ../../sass/partial/_ui-elem.scss */
+/* line 139, ../../sass/partial/_ui-elem.scss */
 .checkbox-small label.sm-label .custom-checkbox {
   display: inline-block;
   width: 20px;
@@ -1458,40 +1469,40 @@ svg {
   background-position: 3px 3px;
   -o-border-radius: 4px;
 }
-/* line 152, ../../sass/partial/_ui-elem.scss */
+/* line 158, ../../sass/partial/_ui-elem.scss */
 .checkbox-small label.sm-label .custom-checkbox .highlight {
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 156, ../../sass/partial/_ui-elem.scss */
+/* line 162, ../../sass/partial/_ui-elem.scss */
 .checkbox-small label.sm-label .custom-checkbox i {
   display: none;
   vertical-align: initial;
 }
-/* line 163, ../../sass/partial/_ui-elem.scss */
+/* line 169, ../../sass/partial/_ui-elem.scss */
 .checkbox-small input[type=checkbox].sm-input {
   display: none;
 }
-/* line 167, ../../sass/partial/_ui-elem.scss */
+/* line 173, ../../sass/partial/_ui-elem.scss */
 .checkbox-small input[type=checkbox].sm-input:checked + label.sm-label .custom-checkbox {
   text-align: center;
   opacity: 1;
   border: none !important;
   background-color: #009688;
 }
-/* line 173, ../../sass/partial/_ui-elem.scss */
+/* line 179, ../../sass/partial/_ui-elem.scss */
 .checkbox-small input[type=checkbox].sm-input:checked + label.sm-label .custom-checkbox i {
   display: inline-block;
   font-size: 12px;
 }
 @media all and (max-width: 768px) {
-  /* line 173, ../../sass/partial/_ui-elem.scss */
+  /* line 179, ../../sass/partial/_ui-elem.scss */
   .checkbox-small input[type=checkbox].sm-input:checked + label.sm-label .custom-checkbox i {
     vertical-align: middle !important;
   }
 }
 
-/* line 188, ../../sass/partial/_ui-elem.scss */
+/* line 194, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button {
   width: 100%;
   font-family: "blogger_sanslight";
@@ -1500,64 +1511,64 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 198, ../../sass/partial/_ui-elem.scss */
+/* line 204, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button:hover, .dropdown-select button:focus {
   background-color: #fff;
 }
-/* line 202, ../../sass/partial/_ui-elem.scss */
+/* line 208, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button .caret {
   width: 16px;
   height: 16px;
   margin-top: 3px;
   border: none;
 }
-/* line 208, ../../sass/partial/_ui-elem.scss */
+/* line 214, ../../sass/partial/_ui-elem.scss */
 .dropdown-select button .caret svg {
   width: 14px;
   height: 14px;
   color: #333;
 }
-/* line 216, ../../sass/partial/_ui-elem.scss */
+/* line 222, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu {
   width: 100%;
 }
-/* line 219, ../../sass/partial/_ui-elem.scss */
+/* line 225, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li a {
   font-family: "blogger_sanslight";
   color: #777;
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 225, ../../sass/partial/_ui-elem.scss */
+/* line 231, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li a:hover {
   color: #fff;
   background-color: #009688;
 }
-/* line 231, ../../sass/partial/_ui-elem.scss */
+/* line 237, ../../sass/partial/_ui-elem.scss */
 .dropdown-select .dropdown-menu li.active a {
   color: #fff;
   background-color: #009688;
 }
 
-/* line 243, ../../sass/partial/_ui-elem.scss */
+/* line 249, ../../sass/partial/_ui-elem.scss */
 .tabs-row {
   padding: 15px 20px;
   overflow-x: scroll;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
 }
-/* line 250, ../../sass/partial/_ui-elem.scss */
+/* line 256, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs {
   width: 1500px;
 }
-/* line 252, ../../sass/partial/_ui-elem.scss */
+/* line 258, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li {
   display: inline-block;
   float: left;
   margin-right: 10px;
   box-sizing: border-box;
 }
-/* line 258, ../../sass/partial/_ui-elem.scss */
+/* line 264, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li a {
   height: 40px;
   padding: 10px 0;
@@ -1574,13 +1585,13 @@ svg {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-/* line 272, ../../sass/partial/_ui-elem.scss */
+/* line 278, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
   color: #009688;
   border-bottom: 2px solid #009688;
 }
 
-/* line 289, ../../sass/partial/_ui-elem.scss */
+/* line 295, ../../sass/partial/_ui-elem.scss */
 .arrow-down {
   width: 0;
   height: 0;
@@ -1589,7 +1600,7 @@ svg {
   border-left: 20px solid transparent;
 }
 
-/* line 299, ../../sass/partial/_ui-elem.scss */
+/* line 305, ../../sass/partial/_ui-elem.scss */
 .yellow-btn {
   height: 40px;
   min-width: 170px;
@@ -1607,7 +1618,7 @@ svg {
   font-size: 1.8rem;
 }
 
-/* line 318, ../../sass/partial/_ui-elem.scss */
+/* line 324, ../../sass/partial/_ui-elem.scss */
 .green-btn {
   width: 100%;
   height: 40px;
@@ -1625,7 +1636,7 @@ svg {
   font-size: 1.8rem;
 }
 
-/* line 338, ../../sass/partial/_ui-elem.scss */
+/* line 344, ../../sass/partial/_ui-elem.scss */
 .heading {
   position: relative;
   display: inline-block;
@@ -1635,7 +1646,7 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 349, ../../sass/partial/_ui-elem.scss */
+/* line 355, ../../sass/partial/_ui-elem.scss */
 .heading .border-inner-bottom {
   position: absolute;
   bottom: -10px;
@@ -1653,7 +1664,7 @@ svg {
 
 /* start of modification for 5 columns */
 /*Checkout Button */
-/* line 393, ../../sass/partial/_ui-elem.scss */
+/* line 399, ../../sass/partial/_ui-elem.scss */
 .checkout-yellow-button {
   min-width: 120px;
   font-family: "blogger_sansregular";
@@ -1670,7 +1681,7 @@ svg {
   font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
-  /* line 393, ../../sass/partial/_ui-elem.scss */
+  /* line 399, ../../sass/partial/_ui-elem.scss */
   .checkout-yellow-button {
     float: none;
     margin-top: 20px;
@@ -2898,7 +2909,6 @@ svg {
 }
 /* line 846, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li .address-div {
-  float: left;
   display: inline-block;
   width: 70%;
   font-family: "blogger_sanslight";
@@ -2906,8 +2916,9 @@ svg {
   font-size: 1.6rem;
   line-height: 1;
   color: #555;
+  vertical-align: middle;
 }
-/* line 855, ../sass/checkout.scss */
+/* line 856, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.correction-icon {
   width: 10px;
   text-align: center;
@@ -2917,7 +2928,7 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 866, ../sass/checkout.scss */
+/* line 867, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .address-list li a.delete-icon {
   width: 10px;
   text-align: center;
@@ -2927,13 +2938,13 @@ svg {
   color: #fff;
   background-color: #ffc400;
 }
-/* line 880, ../sass/checkout.scss */
+/* line 881, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment {
   clear: both;
   overflow: hidden;
   border-bottom: none;
 }
-/* line 885, ../sass/checkout.scss */
+/* line 886, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row {
   margin-top: auto;
   padding-bottom: 20px;
@@ -2941,11 +2952,11 @@ svg {
   margin-right: auto;
   /* One radio button per line */
 }
-/* line 897, ../sass/checkout.scss */
+/* line 898, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row:last-child {
   border-bottom: 1px solid #ccc;
 }
-/* line 899, ../sass/checkout.scss */
+/* line 900, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row [type="radio"] {
   border: 0;
   clip: rect(0 0 0 0);
@@ -2956,7 +2967,7 @@ svg {
   position: absolute;
   width: 1px;
 }
-/* line 910, ../sass/checkout.scss */
+/* line 911, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row label {
   display: block;
   cursor: pointer;
@@ -2964,22 +2975,21 @@ svg {
   table-layout: fixed;
   width: 100%;
 }
-/* line 918, ../sass/checkout.scss */
+/* line 919, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .radio-button-div {
   display: inline-block;
   padding-top: 2px;
   padding-left: 2px;
 }
-/* line 925, ../sass/checkout.scss */
+/* line 926, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div {
-  display: inline-block;
+  float: left;
   display: table-cell;
   vertical-align: middle;
-  width: 24px;
   /* the basic, unchecked style */
   /* the checked style using the :checked pseudo class */
 }
-/* line 935, ../sass/checkout.scss */
+/* line 936, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"] + .radio-button {
   width: 20px;
   height: 20px;
@@ -2992,12 +3002,12 @@ svg {
   float: left;
   position: relative;
 }
-/* line 952, ../sass/checkout.scss */
+/* line 953, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div input {
   display: none;
   visibility: hidden;
 }
-/* line 954, ../sass/checkout.scss */
+/* line 955, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"] + .radio-button:before {
   content: '';
   display: inline-block;
@@ -3015,16 +3025,16 @@ svg {
   left: 2px;
   transition: 0.5s ease all;
 }
-/* line 971, ../sass/checkout.scss */
+/* line 972, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"]:checked + .radio-button {
   position: relative;
   border: 2px solid #009688;
 }
-/* line 975, ../sass/checkout.scss */
+/* line 976, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div [type="radio"]:checked + .radio-button:before {
   background: #009688;
 }
-/* line 983, ../sass/checkout.scss */
+/* line 984, ../sass/checkout.scss */
 .page-content section .left-user-div .sections .preferred-payment .row .text-div {
   float: left;
   font-family: "blogger_sansregular";
@@ -3035,7 +3045,7 @@ svg {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 1003, ../sass/checkout.scss */
+/* line 1004, ../sass/checkout.scss */
 .page-content section .right-summary-div {
   float: left;
   margin-left: 30px;
@@ -3050,19 +3060,19 @@ svg {
   padding: 20px 30px 30px;
 }
 @media all and (max-width: 1024px) {
-  /* line 1003, ../sass/checkout.scss */
+  /* line 1004, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     width: 300px;
     padding: 20px 20px 30px;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 1003, ../sass/checkout.scss */
+  /* line 1004, ../sass/checkout.scss */
   .page-content section .right-summary-div {
     display: none;
   }
 }
-/* line 1020, ../sass/checkout.scss */
+/* line 1021, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-head {
   font-family: "blogger_sansregular";
   font-size: 20px;
@@ -3074,7 +3084,7 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 1030, ../sass/checkout.scss */
+/* line 1031, ../sass/checkout.scss */
 .page-content section .right-summary-div .summary-sub-text {
   margin-top: 5px;
   margin-bottom: 20px;
@@ -3088,11 +3098,11 @@ svg {
   text-transform: capitalize;
   text-align: center;
 }
-/* line 1042, ../sass/checkout.scss */
+/* line 1043, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list {
   width: 100%;
 }
-/* line 1044, ../sass/checkout.scss */
+/* line 1045, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li {
   border-top: 1px solid #ddd;
   padding: 20px;
@@ -3102,11 +3112,11 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 1051, ../sass/checkout.scss */
+/* line 1052, ../sass/checkout.scss */
 .page-content section .right-summary-div .service-list li:last-child {
   border-bottom: 1px solid #ddd;
 }
-/* line 1054, ../sass/checkout.scss */
+/* line 1055, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-text {
   margin-top: 20px;
   font-family: "blogger_sansregular";
@@ -3119,13 +3129,13 @@ svg {
   display: block;
   text-transform: capitalize;
 }
-/* line 1065, ../sass/checkout.scss */
+/* line 1066, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
 }
-/* line 1069, ../sass/checkout.scss */
+/* line 1070, ../sass/checkout.scss */
 .page-content section .right-summary-div .comments-input-div .comments-input {
   outline: none;
   border: none;
@@ -3137,14 +3147,14 @@ svg {
   line-height: 1;
   color: #555;
 }
-/* line 1080, ../sass/checkout.scss */
+/* line 1081, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div {
   clear: both;
   overflow: hidden;
   margin-top: 10px;
   background-color: #fff;
 }
-/* line 1086, ../sass/checkout.scss */
+/* line 1087, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .time-div {
   clear: both;
   float: left;
@@ -3159,7 +3169,7 @@ svg {
   padding-top: 8px;
   color: #555;
 }
-/* line 1099, ../sass/checkout.scss */
+/* line 1100, ../sass/checkout.scss */
 .page-content section .right-summary-div .time-and-price-div .price-div {
   float: left;
   width: 50%;
@@ -3172,7 +3182,7 @@ svg {
   color: #555;
 }
 
-/* line 1116, ../sass/checkout.scss */
+/* line 1117, ../sass/checkout.scss */
 .ui-datepicker {
   font-size: 12px;
   font-size: 1.2rem;

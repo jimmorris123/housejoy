@@ -56,7 +56,7 @@
 								<div class="left-user-div">								
 									<div class="left-section-head">Select your Preffered Payment</div>
 									<div class="sections">
-										<ul class="preferred-payment">										
+										<ul class="">										
 											<div class="row">
 												<div class="radio-div">
 													<label for="preferred-payment1">
@@ -117,7 +117,7 @@
 														<div class="section-head">Card Number</div>
 														<!-- <input placeholder="XXXX XXXX XXXX XXXX" name="card-number"> -->
 														<div class="controls">
-															<input required="" id="card-number" name="card-number" type="text" class="form-control" placeholder="XXX55X XXXX XXXX XXXX" class="input-medium" required="">
+															<input required="" id="card-number" name="card-number" type="text" class="form-control" placeholder="XXX55X XXXX XXXX XXXX" required="">
 														</div>
 													</div>
 													<div class="row sections">
@@ -128,15 +128,15 @@
 													<div class="row sections card-expiry-section">
 														<div class="col-xs-4">
 															<div class="section-head">Month</div>
-															<input name="card-expiry-month">
+															<input name="card-expiry-month" type="text" class="form-control">
 														</div>
 														<div class="col-xs-4">
 															<div class="section-head">year</div>
-															<input name="card-expiry-year">
+															<input name="card-expiry-year" type="text" class="form-control">
 														</div>
 														<div class="col-xs-4">
 															<div class="section-head">CVV</div>
-															<input name="card-cvv">
+															<input name="card-cvv" type="text" class="form-control">
 														</div>
 													</div>
 													<div class="row sections">
@@ -179,7 +179,7 @@
 																		</span>
 																	</span>
 																	<span class="text-div">
-																	Pay $500 advance and get 20% ggdfrgoff
+																	Pay $500 advance and get 20% off
 																	</span>
 																</label>
 										                    </div>
@@ -234,19 +234,21 @@
 									                        </div>
 														</div> -->
 														<div class="checkbox-div">
-															<div class="checkbox-icon-label-div">
-																<div class="checkbox-icon-div">
-																	<input type="checkbox" name="save-card-wallet" id="save-card-wallet" value="same-address" />
-																	<label class="checkbox-style" for="save-card-wallet">
-											                            <svg class="icon ">
-																			<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
-																		</svg>
-											                        </label>
-										                        </div>
-										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout</span>
-										                        </div>
-									                        </div>
+									                        <div class="check-div">
+																<label for="save-card-check">
+																	<span class="check-button-div">
+																		<input type="checkbox" value="preferred-payment2" name="save-card-check" id="save-card-check">
+																		<span class="check-button">
+																			<svg class="icon ">
+																				<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+																			</svg>
+																		</span>
+																	</span>
+																	<span class="text-div">
+																	Save this card for Future Checkout
+																	</span>
+																</label>
+										                    </div>
 								                        </div>
 													</div>
 													<div class="row sections">

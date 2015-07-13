@@ -844,13 +844,14 @@
 						&:last-child {border-bottom: 1px solid #ccc;}
 
 						.address-div {
-							float: left;
+							// float: left;
 							display: inline-block;
 							width: 70%;
 							font-family: "blogger_sanslight";
 							@include rem(font-size, 16px);
 							line-height: 1;
 							color: #555;
+							vertical-align: middle;
 						}
 						a.correction-icon {
 							// display: block;
@@ -923,15 +924,15 @@
 						}
 
 						.text-div {
-							display: inline-block;
+							// display: inline-block;
 							// display: table;
 							// table-layout: fixed;
-							// float: left;
+							float: left;
 							// padding-top: 2px;
 							// padding-left: 2px;
 							display: table-cell;
 							vertical-align: middle;
-							width: 24px;
+							// width: 24px;
 							[type="radio"] + .radio-button {
 							  	// display: table-cell;
 								// vertical-align: middle;
