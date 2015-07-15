@@ -77,38 +77,56 @@
 
 .price-tabs {
     padding: 0 15px;
-    .nav-tabs {
-        margin: 0 15px;
-        li {
-            &:first-child {
-                a {
-                    padding-left: 0;
-                }
-            }
-            a {
-                font-family: $blogger_L;
+    .scroll-tabs {
+        @include medmx(767px) {
+            overflow-x: scroll;
+            overflow-y: hidden;
 
-                opacity: .5;
-                color: $medium-gray;
-                border-bottom: 3px solid transparent;
+            -webkit-overflow-scrolling: touch;
+        }
+        .nav-tabs {
+            margin: 0 15px;
 
-                @include rem(font-size, 24px);
-                &:hover,
-                &:focus,
-                &:active {
-                    opacity: 1;
-                    color: $green;
-                    border-bottom-color: $green;
-                    background-color: transparent;
-                }
+            @include medmx(767px) {
+                width: 800px;
             }
-            &.active {
+            li {
+                &:first-child {
+                    a {
+                        padding-left: 0;
+                    }
+                }
                 a {
-                    opacity: 1;
-                    color: $green;
-                    border-color: transparent;
-                    border-bottom: 3px solid $green;
-                    background-color: transparent;
+                    font-family: $blogger_L;
+
+                    opacity: .5;
+                    color: $medium-gray;
+                    border-bottom: 3px solid transparent;
+
+                    @include rem(font-size, 24px);
+                    @include medmx(767px) {
+                        padding-right: 5px;
+                        padding-left: 5px;
+
+                        @include rem(font-size, 18px);
+                    }
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        opacity: 1;
+                        color: $green;
+                        border-bottom-color: $green;
+                        background-color: transparent;
+                    }
+                }
+                &.active {
+                    a {
+                        opacity: 1;
+                        color: $green;
+                        border-color: transparent;
+                        border-bottom: 3px solid $green;
+                        background-color: transparent;
+                    }
                 }
             }
         }
@@ -116,6 +134,22 @@
     .price-list {
         padding-top: 40px;
         .tab-pane {
+            // & > .clear:nth-child(5n)::before {
+            //     @include medmxn(768px, 991px) {
+            //         display: table;
+            //         clear: both;
+
+            //         content: "";
+            //     }
+            // }
+            // & > .clear:nth-child(7n)::before {
+            //     @include medmn(992px) {
+            //         display: table;
+            //         clear: both;
+
+            //         content: "";
+            //     }
+            // }
             & > div {
                 margin-bottom: 30px;
             }

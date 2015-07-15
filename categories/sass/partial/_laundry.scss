@@ -5,6 +5,9 @@
 // **************************************************
 
 .laundry-wrapper {
+    & > .overlay {
+        max-height: 70vh;
+    }
     .top-banner {
         position: relative;
 
@@ -27,10 +30,10 @@
 
             margin: 30px auto;
 
-            @include transform(translate(-50%, -50%));
             @include medmx(767px) {
                 width: 100%;
             }
+            @include transform(translate(-50%, -50%));
         }
         &.house-cleaning-bg {
             .container {
@@ -60,13 +63,13 @@
 
                 background-color: $white;
 
-                @include transform(rotate(30deg));
                 @include medmx(767px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
+                @include transform(rotate(30deg));
             }
         }
         .title {
@@ -92,32 +95,32 @@
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 40px);
+                    @include rem(font-size, 70px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 56px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 50px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 56px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 40px);
                     }
-                    @include rem(font-size, 70px);
                 }
                 &.l-left-title {
                     font-family: $bebasneue_R;
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 30px);
+                    @include rem(font-size, 60px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 46px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 48px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 46px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 30px);
                     }
-                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -126,12 +129,12 @@
                 max-width: 100px;
                 min-width: 80px;
 
+                @include rem(font-size, 16px);
                 @include medmx(767px) {
                     float: none;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
-                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
@@ -183,7 +186,9 @@
         &.plumbing-blur-bg {
             background-image: url("../../images/categories/Plumbing_blur_result.jpg");
         }
-        // background-size: cover;
+        .overlay {
+            background-color: rgba(0,0,0,.8);
+        }
         .f-block {
             display: table;
             height: 200px;
@@ -192,7 +197,7 @@
 
             text-align: center;
 
-            border-right: 1px solid #ccc;
+            border-right: 1px solid #555;
 
             @include medmx(767px) {
                 border: none;
@@ -255,8 +260,8 @@
 
                     color: $white;
 
-                    @include rem(font-size, 30px);
                     @include transform(translateY(-50%));
+                    @include rem(font-size, 30px);
                 }
             }
         }
@@ -316,8 +321,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(font-size, 16px);
                     @include rem(line-height, 22px);
+                    @include rem(font-size, 16px);
                 }
             }
         }
@@ -357,12 +362,10 @@
     .W-block {
         padding-top: 20px;
         padding-bottom: 20px;
-        svg {
+        img {
             width: 100px;
             height: 100px;
             margin-bottom: 20px;
-
-            color: $yellow;
         }
     }
 }
@@ -384,10 +387,10 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 20px);
         @include medmx(479px) {
             margin-bottom: 6px;
         }
+        @include rem(font-size, 20px);
     }
     p {
         float: none;
@@ -442,6 +445,9 @@
         box-shadow: none;
         p {
             margin-bottom: 10px;
+
+            font-family: $blogger_L;
+            font-style: normal;
         }
         .name {
             display: block;
@@ -454,7 +460,7 @@
             @include rem(font-size, 22px);
         }
         p.helper-text {
-            font-family: $blogger_L;
+            font-family: $blogger_R;
 
             color: $green;
 
