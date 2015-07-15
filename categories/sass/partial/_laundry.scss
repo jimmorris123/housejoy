@@ -18,7 +18,7 @@
         background-size: cover;
 
         @include medmx(767px) {
-            height: 60vh;
+            height: 400px;
         }
         .container {
             position: absolute;
@@ -385,6 +385,9 @@
         color: $dark-gray;
 
         @include rem(font-size, 20px);
+        @include medmx(479px) {
+            margin-bottom: 6px;
+        }
     }
     p {
         float: none;
@@ -401,6 +404,10 @@
     }
     & > div {
         margin-bottom: 20px;
+
+        @include medmx(479px) {
+            padding: 6px;
+        }
     }
 }
 
@@ -475,6 +482,16 @@
     }
     &.left {
         left: 0;
+    }
+}
+
+.testimonials {
+    .carousel-inner {
+        .owl-controls {
+            @include medmn(768px) {
+                display: none !important;
+            }
+        }
     }
 }
 // **************************************************

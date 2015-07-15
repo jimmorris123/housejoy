@@ -4,15 +4,20 @@
     // }
     .plumbing-content {
         .dropdown-select {
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
+            @include medmx(767px) {
+                margin-bottom: 0;
+            }
             &:first-child {
                 margin-top: 20px;
             }
         }
         .panel {
             border: none;
+            border-bottom: 1px solid #ccc;
+            box-shadow: none;
             .panel-heading {
-                padding: 20px 15px;
+                padding: 20px 30px;
                 .panel-title {
                     .checkbox-small {
                         display: inline-block;
