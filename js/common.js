@@ -38,6 +38,15 @@ $(document).ready(function() {
   });  
   // ends
 
+  //body scroll disable on side menu open
+  $('.hamburger').on('click', function(){
+    if($('.hamburger').hasClass('is-closed')){
+      $(this).parents('body, html').css({"overflow-y":"visible"});
+    }else{
+      $(this).parents('body, html').css({"overflow-y":"hidden"});
+    }
+  });
+
   // custom dropdown script multiple
   $('.dropdown-select').on( 'click', '.dropdown-menu li a', function() { 
     var target = $(this).html();

@@ -47,10 +47,10 @@
 
                                 color: $dark-gray;
 
+                                @include rem(font-size, 16px);
                                 @include placeholder {
                                     color: $medium-gray;
                                 }
-                                @include rem(font-size, 16px);
                             }
                         }
                     }
@@ -59,7 +59,7 @@
             .modal-footer {
                 padding: 0;
                 .not-member {
-                    height: 70px;
+                    height: 80px;
                     padding: 20px 30px;
 
                     cursor: pointer;

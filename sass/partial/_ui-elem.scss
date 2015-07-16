@@ -159,6 +159,9 @@
                 display: inline-block;
                 margin-bottom: 10px;
             }
+            svg {
+                display: none;
+            }
             i {
                 display: none;
 
@@ -176,6 +179,13 @@
             opacity: 1;
             border: none !important;
             background-color: $green;
+            svg {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+
+                color: $white;
+            }
             i {
                 display: inline-block;
 
@@ -418,5 +428,19 @@
         margin-right: auto;
         margin-left: auto;
         clear: both;
+    }
+}
+
+// bottom sticky button
+.bottom-sticky-btn {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    button {
+        width: 100%;
+        margin: 0;
+
+        border-radius: 0;
     }
 }
