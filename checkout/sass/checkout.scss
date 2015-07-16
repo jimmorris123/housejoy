@@ -306,7 +306,10 @@
 		        .tab-icon {
 		        	display: block;
 					text-align: center;
-
+					img{
+						width:32px;
+						height:32px;
+					}
 					@include medmx(768px) {
 						height: 50px;
 						padding-top: 10px;
