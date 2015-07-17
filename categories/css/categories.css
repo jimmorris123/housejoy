@@ -985,9 +985,9 @@ a:hover, a:focus {
   -moz-filter: blur(15px);
   -ms-filter: blur(15px);
   -o-filter: blur(15px);
+  filter: blur(15px);
+  filter: blur(15px);
   filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-  filter: blur(15px);
-  filter: blur(15px);
 }
 
 /* line 163, ../../sass/partial/_helperclasses.scss */
@@ -1166,79 +1166,79 @@ svg {
   background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
 
-/* line 293, ../../sass/partial/_helperclasses.scss */
+/* line 287, ../../sass/partial/_helperclasses.scss */
 .appliance-bg {
   background-image: url("../../images/categories/Appliances_result.jpg");
 }
 
-/* line 296, ../../sass/partial/_helperclasses.scss */
+/* line 290, ../../sass/partial/_helperclasses.scss */
 .beauty-bg {
   background-image: url("../../images/categories/Beauty_result.jpg");
 }
 
-/* line 299, ../../sass/partial/_helperclasses.scss */
+/* line 293, ../../sass/partial/_helperclasses.scss */
 .carpentry-bg {
   background-image: url("../../images/categories/Carpentry_result.jpg");
 }
 
-/* line 302, ../../sass/partial/_helperclasses.scss */
+/* line 296, ../../sass/partial/_helperclasses.scss */
 .electrician-bg {
   background-image: url("../../images/categories/Electrician_result.jpg");
 }
 
-/* line 305, ../../sass/partial/_helperclasses.scss */
+/* line 299, ../../sass/partial/_helperclasses.scss */
 .fitness-bg {
   background-image: url("../../images/categories/Fitness_result.jpg");
 }
 
-/* line 308, ../../sass/partial/_helperclasses.scss */
+/* line 302, ../../sass/partial/_helperclasses.scss */
 .house-cleaning-bg {
   background-image: url("../../images/categories/HouseCleaning_result.jpg");
 }
 
-/* line 311, ../../sass/partial/_helperclasses.scss */
+/* line 305, ../../sass/partial/_helperclasses.scss */
 .laptop-bg {
   background-image: url("../../images/categories/LaptopRepair_result.jpg");
 }
 
-/* line 314, ../../sass/partial/_helperclasses.scss */
+/* line 308, ../../sass/partial/_helperclasses.scss */
 .laundry-bg {
   background-image: url("../../images/categories/Laundry_result.jpg");
 }
 
-/* line 317, ../../sass/partial/_helperclasses.scss */
+/* line 311, ../../sass/partial/_helperclasses.scss */
 .mobile-bg {
   background-image: url("../../images/categories/MobileRepair_result.jpg");
 }
 
-/* line 320, ../../sass/partial/_helperclasses.scss */
+/* line 314, ../../sass/partial/_helperclasses.scss */
 .painting-bg {
   background-image: url("../../images/categories/Painting_result.jpg");
 }
 
-/* line 323, ../../sass/partial/_helperclasses.scss */
+/* line 317, ../../sass/partial/_helperclasses.scss */
 .pest-control-bg {
   background-image: url("../../images/categories/PestControl_result.jpg");
 }
 
-/* line 326, ../../sass/partial/_helperclasses.scss */
+/* line 320, ../../sass/partial/_helperclasses.scss */
 .plumbing-bg {
   background-image: url("../../images/categories/Plumbing_result.jpg");
 }
 
 /*Class to align text right in dexktop and center in mobile */
-/* line 331, ../../sass/partial/_helperclasses.scss */
+/* line 325, ../../sass/partial/_helperclasses.scss */
 .text-r-c {
   text-align: right;
 }
 @media all and (max-width: 768px) {
-  /* line 331, ../../sass/partial/_helperclasses.scss */
+  /* line 325, ../../sass/partial/_helperclasses.scss */
   .text-r-c {
     text-align: center;
   }
 }
 
-/* line 339, ../../sass/partial/_helperclasses.scss */
+/* line 333, ../../sass/partial/_helperclasses.scss */
 .initial-hide {
   display: none;
 }
@@ -3459,10 +3459,10 @@ svg {
   font-family: "blogger_sansregular";
   opacity: .8;
   color: #777;
-  line-height: 20px;
-  line-height: 2rem;
   font-size: 16px;
   font-size: 1.6rem;
+  line-height: 20px;
+  line-height: 2rem;
 }
 /* line 53, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .action {
@@ -3556,7 +3556,7 @@ svg {
   padding-top: 40px;
 }
 /* line 153, ../sass/partial/_beauty.scss */
-.price-tabs .price-list .tab-pane > div {
+.price-tabs .price-list .tab-pane .row > div {
   margin-bottom: 30px;
 }
 /* line 156, ../sass/partial/_beauty.scss */
