@@ -8,24 +8,74 @@
 
 	<!-- Bootstrap CSS -->
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="stylesheets/checkout-tabs.css"> -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/checkout.css">
 	
 	</head>
-	<body>
+	<body class="body-HB">
 		<div class="page-wrapper gray-bg">
 			<div class="header">
-				<div class="left-header">
-					<div class="logo-div">
-						<img src="../images/housejoy-logo.png" alt="Housejoy logo">
+				<header class="navbar navbar-default">
+					<div class="navbar-header">
+						<div class="logo-div text-center">
+							<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
+	                    	<!-- <a class="hide visible-xs" href="#"><img class="img-responsive" src="../images/logo-green.png" alt=""></a> -->
+							<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
+								<span class="hamb-top"></span>
+								<span class="hamb-middle"></span>
+								<span class="hamb-bottom"></span>
+							</button>
+						</div>
 					</div>
-					
-				</div>
-				<div class="right-header">
-					<li><a href="#">help</a></li>
-					<li><a href="#">login</a></li>
-					<li><a href="#">080 33 51 2156</a></li>
-				</div>
+					<div class="navbar-inverse side-collapse in">
+	                    <div class="logo-box hide visible-xs">
+	                    	<a href="#"><img src="../images/logo-green.png" alt=""></a>
+	                    </div>
+						<nav class="navbar-collapse">
+							<ul class="nav navbar-nav hidden-xs">
+								<li>
+									<div class="dropdown dropdown-select">
+										<button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+											Bangalore
+	                                        <span class="caret pull-right">
+	                                            <svg class="f-cl-white-imp">
+	                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+	                                            </svg>
+	                                        </span>
+										</button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+											<li role="presentation" class="active">
+												<a role="menuitem" tabindex="-1" href="#">Bangalore</a>
+											</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">Chennai</a>
+											</li>
+											<li role="presentation">
+												<a role="menuitem" tabindex="-1" href="#">Mumbai</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="hide visible-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login or Signup</a></li>
+								<li class="hide visible-xs"><a class="text-uppercase" href="#">Home</a></li>
+								<li class="hide visible-xs"><a class="text-uppercase" href="#">Services</a></li>
+								<li class="hide visible-xs"><a class="text-uppercase" href="#">About Us</a></li>
+								<li><a class="text-uppercase" href="#">Help</a></li>
+								<li class=" hidden-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login</a></li>
+								<li class=" hidden-xs"><a href="#"><img src="../images/svg/call.svg" alt=""></a></li>
+								<li class=" hidden-xs"><a href="#"><img src="../images/svg/call.svg" alt=""></a></li>
+							</ul>
+							<div class="play-store hide visible-xs">
+								<span class="text">Download our App</span>
+								<a href="#">
+									<span class="img"><img src="../images/home_images/google_store.png" alt=""></span>
+								</a>
+							</div>
+						</nav>
+					</div>
+				</header>
 			</div>
 			<!-- TAB TO ACCORDIAN -->
 			<!-- <div class="checkout-responsive-tabs"> -->
@@ -34,59 +84,62 @@
 						<ul>
 							<li class="col-xs-4 ">
 								<a href="checkout-schedule-appointment.html">
-									<span class="tab-icon"><img src="../images/svg/schedule.svg" alt=""></span>
-									<span class="tab-text tab-text-left-text">Schedule an Appointment</span>
+									<span class="tab-icon">
+										<span class="schedule"></span>
+									</span>
+									<span class="tab-text">Schedule an Appointment</span>
 								</a>
 							</li>
 							<li class="col-xs-4 ">
 								<a href="checkout-personal-details.html">
-									<span class="tab-icon"><img src="../images/svg/credit_card.svg" alt=""></span>
-									<span class="tab-text tab-text-center-text">Your Details</span>
+									<span class="tab-icon">
+										<span class="credit-card"></span>
+									</span>
+									<span class="tab-text">Your Details</span>
 								</a>
 							</li>
 							<li class="col-xs-4 active">
 								<a href="checkout-make-payment.html">
-									<span class="tab-icon no-border-right"><img src="../images/svg/make_payment.svg" alt=""></span>
-									<span class="tab-text tab-text-right-text">Make Payment</span>
+									<span class="tab-icon no-border-right">
+										<span class="make-payment"></span>
+									</span>
+									<span class="tab-text">Make Payment</span>
 								</a>
 							</li>									
 						</ul>
 					</nav>
 					<div class="page-content-wrapper">
 						<div class="page-content">
-							<section id="one">
+							<div class="section-div" id="one">
 								<div class="left-user-div">								
 									<div class="left-section-head">Select your Preffered Payment</div>
-									<div class="sections">
-										<ul class="">										
-											<div class="row-fluid">
-												<div class="radio-div">
-													<label for="preferred-payment1">
-														<span class="radio-button-div">
-															<input type="radio" value="preferred-payment1" name="preferred-payment" id="preferred-payment1">
-															<span class="radio-button"></span>
-														</span>
-														<span class="text-div">
-														Pay full amount after Task
-														</span>
-													</label>
-							                    </div>
-											</div>
-
-											<div class="row-fluid">
-												<div class="radio-div">
-													<label for="preferred-payment2">
-														<span class="radio-button-div">
-															<input type="radio" value="preferred-payment2" name="preferred-payment" id="preferred-payment2">
-															<span class="radio-button"></span>
-														</span>
-														<span class="text-div">
-														Pay $500 advance and get 20% off
-														</span>
-													</label>
-							                    </div>
-											</div>
-										</ul>
+									<div class="sections">									
+										<div class="row-fluid">
+											<div class="radio-div">
+												<label for="preferred-payment1">
+													<span class="radio-button-div">
+														<input type="radio" value="preferred-payment1" name="preferred-payment" id="preferred-payment1">
+														<span class="radio-button"></span>
+													</span>
+													<span class="text-div">
+													Pay full amount after Task
+													</span>
+												</label>
+						                    </div>
+										</div>
+										<div class="row-fluid">
+											<div class="radio-div">
+												<label for="preferred-payment2">
+													<span class="radio-button-div">
+														<input type="radio" value="preferred-payment2" name="preferred-payment" id="preferred-payment2">
+														<span class="radio-button"></span>
+													</span>
+													<span class="text-div">
+													Pay $500 advance and get 20% off
+													</span>
+												</label>
+						                    </div>
+										</div>
 									</div>
 									<div class="left-section-head left-section-head-top-margin">Select your Payment method</div>
 									
@@ -98,29 +151,37 @@
 												<ul>
 													<li>
 														<a href="#credidt-debit-card-tab">
-															<span class="tab-icon"><img src="../images/svg/credit_card.svg" alt=""></span>
+															<span class="tab-icon">
+																<span class="schedule"></span>
+															</span>
 															<span class="tab-text">Credit / Debit Card</span>
 														</a>
 													</li>
 													<li>
 														<a href="#net-banking-tab">
-															<span class="tab-icon"><img src="../images/svg/netbanking.svg" alt=""></span><span class="tab-text">Net Banking</span>
+															<span class="tab-icon">
+																<span class="net-banking"></span>
+															</span>
+															<span class="tab-text">Net Banking</span>
 														</a>
 													</li>
 													<li>
 														<a href="#housejoy-wallet-tab">
-															<span class="tab-icon"><img src="../images/svg/make_payment.svg" alt=""></span><span class="tab-text">HouseJoy Wallet</span>
+															<span class="tab-icon">
+																<span class="make-payment"></span>
+															</span>
+															<span class="tab-text">HouseJoy Wallet</span>
 														</a>
 													</li>									
 												</ul>
 											</nav>
 											<div class="content">
-												<section id="credidt-debit-card-tab">
+												<div class="section-div" id="credidt-debit-card-tab">
 													<div class="row sections">
 														<div class="section-head">Card Number</div>
 														<!-- <input placeholder="XXXX XXXX XXXX XXXX" name="card-number"> -->
 														<div class="controls">
-															<input required="" id="card-number" name="card-number" type="text" class="form-control" placeholder="XXX55X XXXX XXXX XXXX" required="">
+															<input id="card-number" name="card-number" type="text" class="form-control" placeholder="XXX55X XXXX XXXX XXXX" required="">
 														</div>
 													</div>
 													<div class="row sections">
@@ -131,46 +192,19 @@
 													<div class="row sections card-expiry-section">
 														<div class="col-xs-4">
 															<div class="section-head">Month</div>
-															<input name="card-expiry-month" type="text" class="form-control">
+															<input name="card-expiry-month" type="text" class="form-control" placeholder="Month">
 														</div>
 														<div class="col-xs-4">
 															<div class="section-head">year</div>
-															<input name="card-expiry-year" type="text" class="form-control">
+															<input name="card-expiry-year" type="text" class="form-control" placeholder="Year">
 														</div>
 														<div class="col-xs-4">
 															<div class="section-head">CVV</div>
-															<input name="card-cvv" type="text" class="form-control">
+															<input name="card-cvv" type="text" class="form-control" placeholder="CVV">
 														</div>
 													</div>
 													<div class="row sections">
-														<!-- <div class="checkbox-div">
-															<div class="checkbox-icon-label-div">
-																<div class="checkbox-icon-div">
-																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
-																	<label class="checkbox-style" for="save-card-for-future"> 
-											                        </label>
-										                        </div>
-										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout</span>
-										                        </div>
-									                        </div>
-														</div> -->
 														<div class="checkbox-div">
-															<!-- <div class="checkbox-icon-label-div">
-																<div class="checkbox-icon-div">				
-																	<label for="save-card">
-																		<span class="checkbox-style">
-																			<input type="checkbox" name="save-card" id="save-card" value="same-address" />
-												                            <svg class="icon ">
-																				<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
-																			</svg>
-																		</span>
-																		<span class="checkbox-label-text">
-												                        	<span class="same-address-label">Save this card for Future Checkout</span>
-												                        </span>
-											                        </label>
-										                        </div>                        
-									                        </div> -->
 									                        <div class="check-div">
 																<label for="ly1">
 																	<span class="check-button-div">
@@ -191,24 +225,22 @@
 													<div class="row sections text-r-c">
 														<button type="button" class="btn btn-default checkout-yellow-button">Continue</button>
 													</div>
-												</section>
+												</div>
 
-												<section id="net-banking-tab">
+												<div class="section-div" id="net-banking-tab">
 
 												Net banking content
 
-												</section>
-												<section id="housejoy-wallet-tab">
-
-												<div class="row sections">
+												</div>
+												<div class="section-div" id="housejoy-wallet-tab">
+													<div class="row sections">
 														<div class="section-head">Card Number</div>
 														<input placeholder="XXXX XXXX XXXX XXXX" name="card-number">
 													</div>
 													<div class="row sections">
 														<div class="section-head">Name on the Card</div>
 														<input placeholder="Mr. / Mrs. / Miss" name="name-on-card">
-													</div>	
-																							
+													</div>										
 													<div class="row sections card-expiry-section">
 														<div class="col-xs-4">
 															<div class="section-head">Month</div>
@@ -224,18 +256,6 @@
 														</div>
 													</div>
 													<div class="row sections">
-														<!-- <div class="checkbox-div">
-															<div class="checkbox-icon-label-div">
-																<div class="checkbox-icon-div">
-																	<input type="checkbox" name="save-card-for-future" id="save-card-for-future" value="same-address" checked="checked" />
-																	<label class="checkbox-style" for="save-card-for-future">
-											                        </label>
-										                        </div>
-										                        <div class="checkbox-label-text">
-										                        	<span class="same-address-label">Save this card for Future Checkout 2nd</span>
-										                        </div>
-									                        </div>
-														</div> -->
 														<div class="checkbox-div">
 									                        <div class="check-div">
 																<label for="save-card-check">
@@ -257,16 +277,9 @@
 													<div class="row sections">
 														<a href="#" class="submit-button">Continue</a>
 													</div>
-
-												</section>
+												</div>
 											</div>
 										</div>
-										
-
-
-
-
-
 									</div>
 								</div>
 								<div class="right-summary-div">
@@ -296,25 +309,200 @@
 									</div>
 								</div>
 								
-							</section>
+							</div>
 						</div>
 					</div>
 				<!-- </div> -->
 			<!-- </div> -->
 		</div>
-		
+		<!-- footer -->
+		<footer class="home-footer clearfix">
+	        <div class="foot-content col-xs-12 col-sm-4">
+	            <h3 class="heading">Cities<span class="border-top"></span></h3>
+	            <ul>
+	                <li><a href="#">Ahmedabad</a></li>
+	                <li><a href="#">Bangalore</a></li>
+	                <li><a href="#">Chennai</a></li>
+	                <li><a href="#">Delhi &amp; NCR</a></li>
+	                <li><a href="#">Hyderabad</a></li>
+	                <li><a href="#">Mumbai</a></li>
+	                <li><a href="#">Pune</a></li>
+	            </ul>
+	        </div>
+	        <div class="foot-content col-xs-12 col-sm-4">
+	            <h3 class="heading">Services<span class="border-top"></span></h3>
+	            <ul>
+	                <li><a href="#">House Cleaning</a></li>
+	                <li><a href="#">Plumbing</a></li>
+	                <li><a href="#">Electrical</a></li>
+	                <li><a href="#">Beauty</a></li>
+	                <li><a href="#">Laptop Repairs</a></li>
+	                <li><a href="#">Laundry</a></li>
+	                <li><a href="#">Appliance Repair</a></li>
+	                <li><a href="#">Mobile Repairs</a></li>
+	            </ul>
+	        </div>
+	        <div class="foot-content col-xs-12 col-sm-4">
+	            <h3 class="heading">Subscribe to Updates<span class="border-top"></span></h3>
+	            <div class="newsletter">
+	                <input type="text" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Type your email">
+	                <span class="arrow"><i class="fa fa-arrow-circle-right"></i></span>
+	            </div>
+	            <div class="socials">
+	                <a href="#"><i class="fa fa-facebook"></i></a>
+	                <a href="#"><i class="fa fa-twitter"></i></a>
+	                <a href="#"><i class="fa fa-google-plus"></i></a>
+	            </div>
+	        </div>
+	        <div class="col-xs-12 foot-content bottom text-center MB-sm-0">
+	            <ul>
+	                <li><a href="#">About</a></li>
+	                <li><a href="#">Blog</a></li>
+	                <li><a href="#">Our Team</a></li>
+	                <li><a href="#">Jobs</a></li>
+	                <li><a href="#">Terms</a></li>
+	                <li><a href="#">Privacy</a></li>
+	                <li><a href="#">Help / F.A.Q</a></li>
+	                <li><a href="#">Contact Us</a></li>
+	            </ul>
+	        </div>
+	    </footer>
+	    <div class="copyrights row-fluid text-center">
+	        © Housejoy 2014 - 2015. All Rights Reserved.
+	    </div>
+	    <!--Login Modal -->
+	    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title">Login to your account</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <form class="form-horizontal">
+	                        <!-- Sign In Form -->
+	                        <!-- Text input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="userid">Email Address</label>
+	                            <div class="controls">
+	                                <input id="userid" name="userid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Password input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="passwordinput1">Password</label>
+	                            <div class="controls">
+	                                <input id="passwordinput1" name="passwordinput" class="form-control input-medium" type="password" placeholder="********">
+	                            </div>
+	                        </div>
+	                        <div class="control-group clearfix">
+	                            <div class="checkbox-small col-xs-12 col-sm-6 PD0">
+	                                <input class="sm-input" id="ck1" type="checkbox" value="">
+	                                <label class="sm-label" for="ck1">
+	                                    <span class="custom-checkbox">
+	                                        <svg class="f-cl-white-imp">
+	                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+	                                        </svg>
+	                                    </span>Remember Me
+	                                </label>
+	                            </div>
+	                            <div class="action col-xs-12 col-sm-6 text-center">
+	                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>
+	                                <a href="#" class="helper-text f-14">Forgot password?</a>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
+	                        <p class="helper-text f-14 MB5">Not a member yet?</p>
+	                        <p class="helper-text MB5">Register Now!</p>
+	                    </div>
+	                    <a class="social-btns text-left">
+	                        <span>Continue with Facebook</span>
+	                        <span class="pull-right"><i class="fa fa-facebook"></i></span>
+	                    </a>
+	                    <a class="social-btns text-left">
+	                        <span class="helper-text f-14 MB5">Continue with Google</span>
+	                        <span class="pull-right"><i class="fa fa-google"></i></span>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Register Modal -->
+	    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title" id="myModalLabel-2">Sign up to your Account</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <form class="form-horizontal">
+	                        <!-- Sign In Form -->
+	                        <!-- Text input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="userid">Username</label>
+	                            <div class="controls">
+	                                <input id="userid2" name="userid" type="text" class="form-control input-medium" placeholder="John Doe" required="">
+	                            </div>
+	                        </div>
+	                        <div class="control-group">
+	                            <label class="control-label" for="emailid">Email Address</label>
+	                            <div class="controls">
+	                                <input id="emailid" name="emailid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Password input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="passwordinput2">Password</label>
+	                            <div class="controls">
+	                                <input type="password" id="passwordinput2" name="passwordinput" class="form-control input-medium" placeholder="********" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Mobile input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="mobile">Mobile</label>
+	                            <div class="controls">
+	                                <input id="mobile" name="mobilenumber" class="form-control input-medium" type="tel" placeholder="9848022338" required="">
+	                            </div>
+	                        </div>
+	                        <div class="control-group clearfix">
+	                            <div class="checkbox-small col-xs-12 PD0 MB10">
+	                                <input class="sm-input" id="ck2" type="checkbox" value="">
+	                                <label class="sm-label" for="ck2">
+	                                    <span class="custom-checkbox">
+	                                        <svg class="f-cl-white-imp">
+	                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+	                                        </svg>
+	                                    </span>I Agree to Housejoy
+	                                    <a href="#" class="f-cl-green highlight">Terms of Service</a>
+	                                </label>
+	                            </div>
+	                            <div class="action col-xs-12 text-right PR0">
+	                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Signup</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <div class="not-member text-left" id="already-member">
+	                        <p class="helper-text f-14 MB5">Already a member?</p>
+	                        <p class="helper-text MB5">Login Now!</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 		<!-- jQuery -->
 		<script src="//code.jquery.com/jquery.js"></script>
 		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-		<script src="../js/checkout-tabs.js"></script>
-		<script src="../js/svg4everybody.ie8.min.js"></script>
 		<script src="../js/responsiveTabs.js"></script>
-		<script src="../js/svg4everybody.min.js"></script>
 		<script src="../js/svg4everybody.ie8.min.js"></script>
 		<script src="../js/common.js"></script>
-		<script src="js/checkout.js"></script>
 
 		<script type="text/javascript">
 			$(document).ready( function() {

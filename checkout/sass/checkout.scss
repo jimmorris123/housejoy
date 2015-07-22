@@ -122,7 +122,11 @@
     padding: 0;
     	
 		.content {
-			clear: both
+			clear: both;
+			// @include medmx(768px){
+			//  	padding: 0 15px !important;
+			// 	background-color: #fff !important;
+			// }
 		}
 		.accordion {
 		    border:1px solid #e1e1e1;
@@ -130,14 +134,28 @@
 		    -moz-box-shadow:0 1px 1px 0 rgba(50,50,50,.1);
 		    box-shadow:0 1px 1px 0 rgba(50,50,50,.1);
 
+	        @include medmx(768px) {
+			   border: 1px solid #ccc;
+			   // padding: 10px;
+			   background-color: $white;
+	    	}
 			nav {display:none}
-		    .accordion-title{margin:0}
+		    .accordion-title{
+		    	margin:0;
+		    	&.active{
+		    		border-bottom:1px solid #ccc;
+		    	}
+		    }
 		    .accordion-title a{
-		        background:#fff;font-weight:400;
+		        background:#fff;
+		        font-weight:400;
 		        border-top:1px solid #e1e1e1;
-		        padding: 10px 10px;display:block;
+		        padding: 20px 15px;
+		        display:block;
 		        font-family: "blogger_sansregular";
-		        font-size:16px;color:#333;text-decoration:none;
+		        font-size:16px;
+		        color:#333;
+		        text-decoration:none;
         	}
     		.accordion-title.active a{font-weight:700}
 		    .accordion-title:first-child a{border-top:none}
@@ -185,8 +203,6 @@
 	    			}
 
 	    			li {
-	    				// margin-top: auto;
-// margin-bottom: 0 !important;
 
 	    				width: calc( ( 100% - 2px ) / 3);
 				        font-family: $blogger_R;
@@ -204,6 +220,22 @@
 					        	display: block;
 								text-align: center;
 								padding-top: 20px;
+								&>span{
+									width:32px;
+									height:32px;
+								  	display: block;
+									background-size: cover;
+								  	margin: 0 auto;
+									&.schedule{
+										background-image:url(../../images/svg/schedule.svg);
+									}
+									&.net-banking{
+										background-image:url(../../images/svg/netbanking.svg);
+									}
+									&.make-payment{
+										background-image:url(../../images/svg/make_payment.svg);
+									}
+								}
 					        }
 					        .tab-text {					        	
 						        // background:#fff;
@@ -214,7 +246,21 @@
 					        }
 				        }
 				    }
-				    .active>a {color: $green;}
+				    .active>a {
+				    	color: $green;
+				    	.tab-icon {
+			    			border-bottom: none;
+				    		.schedule{
+								background-image:url(../../images/svg/schedule_green.svg);
+							}
+							.net-banking{
+								background-image:url(../../images/svg/netbanking_green.svg);
+							}
+							.make-payment{
+								background-image:url(../../images/svg/make_payment_green.svg);
+							}
+				    	}
+				    }
 	    		}
 
 	    	}
@@ -294,10 +340,6 @@
 			@include medmx(768px) {
 				border-right: none;
 				margin-bottom: 0;
-				// position: static;
-			}
-			@include medmx(480px) {
-				// border-right: none;
 				position: static;
 			}
 			a {
@@ -306,9 +348,22 @@
 		        .tab-icon {
 		        	display: block;
 					text-align: center;
-					img{
+					&>span{
 						width:32px;
 						height:32px;
+						display:block;
+						background-size: cover;
+						  margin: 0 auto;
+						&.schedule{
+							background-image:url(../../images/svg/schedule.svg);
+							
+						}
+						&.credit-card{
+							background-image:url(../../images/svg/credit_card.svg);
+						}
+						&.make-payment{
+							background-image:url(../../images/svg/make_payment.svg);
+						}
 					}
 					@include medmx(768px) {
 						height: 50px;
@@ -327,6 +382,7 @@
 
 			        @include medmx(768px) {
 						display: none;
+						text-align:left;
 			        }
 		        }
 	        }
@@ -337,6 +393,15 @@
 
 	    	.tab-icon {
 	    		border-bottom: none;
+	    		.schedule{
+					background-image:url(../../images/svg/schedule_green.svg);
+				}
+				.credit-card{
+					background-image:url(../../images/svg/credit_card_green.svg);
+				}
+				.make-payment{
+					background-image:url(../../images/svg/make_payment_green.svg);
+				}
 	    	}
 
 	    	.tab-text {		        
@@ -395,11 +460,16 @@
 		width: 100%;
 		margin-left: auto;
 	}
-	@include medmx(768px) {
+	@include medmx(767px) {
 		width: 100%;
 		margin: 0 auto;
 	}
-    section {
+    .section-div {
+
+        @include medmx(768px) {
+			margin-bottom:20px;
+			padding: 10px;
+    	}
     	li {
         	// margin-top: 5px;
         }
@@ -417,9 +487,11 @@
 				width: calc(100% - 330px);
 				padding: 20px;
 			}
-			@include medmx(768px) {
+			@include medmx(767px) {
 				width: 100%;
 				background-color: transparent;
+			  	padding: 0 5px;
+			  	margin-bottom: 20px;
 			}
 
 			.left-section-head {
@@ -663,7 +735,8 @@
 						&:first-child {
 							// margin-left: 0;
 							padding-left: 0;
-							@include medmx(768px) {
+							  margin-top: 0;
+							@include medmx(767px) {
 								padding-right: 0;
 							}
 						}
@@ -671,12 +744,12 @@
 						&:last-child {
 							// margin-left: 0;
 							padding-right: 0;
-							@include medmx(768px) {
+							@include medmx(767px) {
 								padding-left: 0;
 							}
 						}
 					
-						@include medmx(768px) {
+						@include medmx(767px) {
 							float: none;
 							clear: both;
 							margin-left: auto;
@@ -803,7 +876,7 @@
 					line-height: 36px;
 					color: $white;
 					background-color: #ffc400;
-					@include medmx(768px) {
+					@include medmx(767px) {
 						float: none;
 						clear: both;
 						margin-left: auto;
@@ -823,7 +896,7 @@
 					line-height: 36px;
 					color: $green;
 					background-color: $white;
-					@include medmx(768px) {
+					@include medmx(767px) {
 						float: none;
 						clear: both;
 						margin-left: auto;
@@ -1018,7 +1091,7 @@
 							padding: 20px 20px 30px;
 						}
 
-			        	@include medmx(768px) {
+			        	@include medmx(767px) {
 			        		display: none;
 			        	}
 			        	.summary-head {
