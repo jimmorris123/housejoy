@@ -3,7 +3,9 @@
 
 .housing-wrapper {
     position: relative;
-    z-index: 0;
+    z-index: 1;
+
+    // margin-bottom: 20px;
     .bg-image {
         position: absolute;
         top: 0;
@@ -32,8 +34,7 @@
                 padding: 0;
             }
             .mid-content {
-                padding-bottom: 100px;
-
+                // padding-bottom: 100px;
                 background-color: #fff;
             }
         }
@@ -164,6 +165,11 @@
                 @include medmx(768px) {
                     margin-bottom: 20px;
                 }
+                .radio-div {
+                    label {
+                        display: inline-block;
+                    }
+                }
                 .dropdown {
                     .caret {
                         position: absolute;
@@ -194,7 +200,7 @@
                     }
                 }
                 h4 {
-                    margin-bottom: 5px;
+                    margin-bottom: 15px !important;
 
                     font-family: $blogger_R;
 

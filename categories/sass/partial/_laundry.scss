@@ -193,7 +193,7 @@
             display: table;
             height: 200px;
             min-height: 100%;
-            padding: 30px 15px;
+            padding: 0;
 
             text-align: center;
 
@@ -203,9 +203,9 @@
                 border: none;
             }
             a {
-                display: table-cell;
-
-                vertical-align: middle;
+                // display: table-cell;
+                display: block;
+                padding: 40px 15px;
                 img,
                 svg {
                     width: 50px;
@@ -367,6 +367,9 @@
             height: 100px;
             margin-bottom: 20px;
         }
+        p {
+            @include rem(font-size, 20px);
+        }
     }
 }
 
@@ -388,6 +391,7 @@
         color: $dark-gray;
 
         @include medmx(479px) {
+            min-height: 35px;
             margin-bottom: 6px;
         }
         @include rem(font-size, 20px);
@@ -408,7 +412,10 @@
     & > div {
         margin-bottom: 20px;
 
-        @include medmx(479px) {
+        @include medmn(480px) {
+            margin-bottom: 26px;
+        }
+        @include medmx(479 px) {
             padding: 6px;
         }
     }

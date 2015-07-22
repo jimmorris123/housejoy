@@ -35,7 +35,7 @@
                 }
             }
             .info {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
 
                 @include medmx(768px) {
                     padding: 0;
@@ -46,8 +46,8 @@
                     opacity: .8;
                     color: $medium-gray;
 
-                    @include rem(font-size, 16px);
                     @include rem(line-height, 20px);
+                    @include rem(font-size, 16px);
                 }
             }
             .action {
@@ -103,13 +103,13 @@
                     color: $medium-gray;
                     border-bottom: 3px solid transparent;
 
+                    @include rem(font-size, 24px);
                     @include medmx(767px) {
                         padding-right: 5px;
                         padding-left: 5px;
 
                         @include rem(font-size, 18px);
                     }
-                    @include rem(font-size, 24px);
                     &:hover,
                     &:focus,
                     &:active {
@@ -152,35 +152,47 @@
             // }
             & .row > div {
                 margin-bottom: 30px;
+
+                @include medmxn(768px, 991px) {
+                    padding: 0 5px;
+                }
             }
-            ul {
+            .rates-box {
                 padding: 20px;
 
-                font-family: $blogger_M;
-
-                color: $medium-gray;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 background-color: #fff;
 
-                @include rem(font-size, 24px);
-                li {
-                    margin-bottom: 15px;
-                    clear: both;
-                    &:first-child {
-                        margin-top: 20px;
-                    }
-                    span {
-                        font-family: $blogger_L;
+                @include medmxn(768px, 991px) {
+                    padding: 10px;
+                }
+                h4 {
+                    font-family: $blogger_M;
 
-                        color: $medium-gray;
+                    color: $medium-gray;
 
-                        @include rem(font-size, 16px);
-                        &.type {
-                            // float: left;
+                    @include rem(font-size, 24px);
+                }
+                ul {
+                    li {
+                        margin-bottom: 15px;
+                        clear: both;
+                        &:first-child {
+                            margin-top: 20px;
                         }
-                        &.price {
-                            float: right;
+                        span {
+                            font-family: $blogger_L;
+
+                            color: $medium-gray;
+
+                            @include rem(font-size, 16px);
+                            &.type {
+                                // float: left;
+                            }
+                            &.price {
+                                float: right;
+                            }
                         }
                     }
                 }

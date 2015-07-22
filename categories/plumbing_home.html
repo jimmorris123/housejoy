@@ -20,12 +20,12 @@
 <body>
 	<div class="page-wrapper">
 		<div class="header">
-			<header role="banner" class="navbar navbar-default">
+			<header class="navbar navbar-default">
 				<div class="navbar-header">
 					<div class="logo-div text-center">
 						<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
                     	<!-- <a class="hide visible-xs" href="#"><img class="img-responsive" src="../images/logo-green.png" alt=""></a> -->
-						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs" data-toggle="offcanvas">
+						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
 							<span class="hamb-top"></span>
 							<span class="hamb-middle"></span>
 							<span class="hamb-bottom"></span>
@@ -36,7 +36,7 @@
                     <div class="logo-box hide visible-xs">
                     	<a href="#"><img src="../images/logo-green.png" alt=""></a>
                     </div>
-					<nav role="navigation" class="navbar-collapse">
+					<nav class="navbar-collapse">
 						<ul class="nav navbar-nav hidden-xs">
 							<li>
 								<div class="dropdown dropdown-select">
@@ -83,11 +83,6 @@
 			</header>
 		</div>
 		<div class="laundry-wrapper side-collapse-container">
-			<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs" data-toggle="offcanvas">
-				<span class="hamb-top"></span>
-				<span class="hamb-middle"></span>
-				<span class="hamb-bottom"></span>
-			</button>
 			<div class="overlay after-slide"></div>
 			<div class="row-fluid top-banner plumbing-bg">
 				<div class="overlay"></div>
@@ -140,31 +135,31 @@
 				<h1 class="heading-h2 text-center">Services
 					<span class="border-inner-bottom"></span>
 				</h1>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<a href="#">
 						<img class="img-responsive" src="../images/housing_images/complete_cleaning.jpg" alt="">
 						<h4>Leak Detection/Repair</h4>
 					</a>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<a href="#">
 						<img class="img-responsive" src="../images/housing_images/kitchen_cleaning.jpg" alt="">
 						<h4>Faucet &amp; Pipe Repair/Replacement</h4>
 					</a>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<a href="#">
 						<img class="img-responsive" src="../images/housing_images/bathroom_clean.jpg" alt="">
 						<h4>Bottle/Nanny/Floor Trap Cleaning</h4>
 					</a>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<a href="#">
 						<img class="img-responsive" src="../images/housing_images/bedroom-clean.jpg" alt="">
 						<h4>Shower Cleaning/Repair/Replacement</h4>
 					</a>
 				</div>
-				<div class="col-xs-12 col-sm-4">
+				<div class="col-xs-6 col-sm-4">
 					<a href="#">
 						<img class="img-responsive" src="../images/housing_images/bedroom-clean.jpg" alt="">
 						<h4>Tap Repair/Replacement</h4>
@@ -218,7 +213,7 @@
 										<div class="arrow-down hidden-xs"></div>
 									</div>
 									<div class="person-text rel hidden-xs">
-										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg"/>
+										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg" alt="" />
 									</div>
 								</div>
 								<div>
@@ -235,7 +230,7 @@
 										<div class="arrow-down hidden-xs"></div>
 									</div>
 									<div class="person-text rel hidden-xs">
-										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg"/>
+										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg" alt="" />
 									</div>
 								</div> 
 								<div>
@@ -252,7 +247,7 @@
 										<div class="arrow-down hidden-xs"></div>
 									</div>
 									<div class="person-text rel hidden-xs">
-										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg"/>
+										<img class="img-responsive" src="../images/laundry_images/profile_pic.jpg" alt="" />
 									</div>
 								</div>   
 							</div>
@@ -292,7 +287,7 @@
 		<div class="foot-content col-xs-12 col-sm-4">
 			<h3 class="heading">Subscribe to Updates<span class="border-top"></span></h3>
 			<div class="newsletter">
-				<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+				<input type="text" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Type your email">
 				<span class="arrow"><i class="fa fa-arrow-circle-right"></i></span>
 			</div>
 			<div class="socials">
@@ -318,122 +313,130 @@
 		&copy; Housejoy 2014 - 2015. All Rights Reserved.
 	</div>
     <!--Login Modal -->
-    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" action="">
-                        <!-- Sign In Form -->
-                        <!-- Text input-->
-                        <div class="control-group">
-                            <label class="control-label" for="userid">Email Address</label>
-                            <div class="controls">
-                                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
-                            </div>
-                        </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                            <label class="control-label" for="passwordinput">Password</label>
-                            <div class="controls">
-                                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-                            </div>
-                        </div>
-                        <div class="control-group clearfix">
-                            <div class="checkbox-small col-xs-12 col-sm-6 PD0">
-                                <input class="sm-input" id="ck1" type="checkbox" value="">
-                                <label class="sm-label" for="ck1">
-                                    <div class="custom-checkbox"><i class="fa fa-check"></i></div>Remember Me
-                                </label>
-                            </div>
-                            <div class="action col-xs-12 col-sm-6 text-center">
-                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>
-                                <a href="#" class="helper-text f-14">Forgot password?</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
-                        <p class="helper-text f-14 MB5">Not a member yet?</p>
-                        <p class="helper-text MB5">Register Now!</p>
-                    </div>
-                    <a class="social-btns text-left">
-                        <span>Continue with Facebook</span>
-                        <span class="pull-right"><i class="fa fa-facebook"></i></span>
-                    </a>
-                    <a class="social-btns text-left">
-                        <span class="helper-text f-14 MB5">Continue with Google</span>
-                        <span class="pull-right"><i class="fa fa-google"></i></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Register Modal -->
-    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Sign up to your Account</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" action="">
-                        <!-- Sign In Form -->
-                        <!-- Text input-->
-                        <div class="control-group">
-                            <label class="control-label" for="userid">Username</label>
-                            <div class="controls">
-                                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="John Doe" class="input-medium" required="">
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label" for="emailid">Email Address</label>
-                            <div class="controls">
-                                <input required="" id="userid" name="emailid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
-                            </div>
-                        </div>
-                        <!-- Password input-->
-                        <div class="control-group">
-                            <label class="control-label" for="passwordinput">Password</label>
-                            <div class="controls">
-                                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-                            </div>
-                        </div>
-                        <!-- Mobile input-->
-                        <div class="control-group">
-                            <label class="control-label" for="mobile">Password</label>
-                            <div class="controls">
-                                <input required="" id="mobile" name="mobilenumber" class="form-control" type="tel" placeholder="9848022338" class="input-medium">
-                            </div>
-                        </div>
-                        <div class="control-group clearfix">
-                            <div class="checkbox-small col-xs-12 PD0 MB10">
-                                <input class="sm-input" id="ck2" type="checkbox" value="">
-                                <label class="sm-label" for="ck2">
-                                    <div class="custom-checkbox"><i class="fa fa-check"></i></div>I Agree to Housejoy
-                                    <a href="#" class="f-cl-green highlight">Terms of Service</a>
-                                </label>
-                            </div>
-                            <div class="action col-xs-12 text-right PR0">
-                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Signup</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <div class="not-member text-left" id="already-member">
-                        <p class="helper-text f-14 MB5">Already a member?</p>
-                        <p class="helper-text MB5">Login Now!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+	    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title">Login to your account</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <form class="form-horizontal">
+	                        <!-- Sign In Form -->
+	                        <!-- Text input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="userid">Email Address</label>
+	                            <div class="controls">
+	                                <input id="userid" name="userid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Password input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="passwordinput1">Password</label>
+	                            <div class="controls">
+	                                <input id="passwordinput1" name="passwordinput" class="form-control input-medium" type="password" placeholder="********">
+	                            </div>
+	                        </div>
+	                        <div class="control-group clearfix">
+	                            <div class="checkbox-small col-xs-12 col-sm-6 PD0">
+	                                <input class="sm-input" id="ck1" type="checkbox" value="">
+	                                <label class="sm-label" for="ck1">
+	                                    <span class="custom-checkbox">
+	                                    	<svg class="f-cl-white-imp">
+                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                            </svg>
+	                                    </span>Remember Me
+	                                </label>
+	                            </div>
+	                            <div class="action col-xs-12 col-sm-6 text-center">
+	                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Login</button>
+	                                <a href="#" class="helper-text f-14">Forgot password?</a>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <div class="not-member text-left" id="not-member" data-toggle="modal" data-target="#registerModal">
+	                        <p class="helper-text f-14 MB5">Not a member yet?</p>
+	                        <p class="helper-text MB5">Register Now!</p>
+	                    </div>
+	                    <a class="social-btns text-left">
+	                        <span>Continue with Facebook</span>
+	                        <span class="pull-right"><i class="fa fa-facebook"></i></span>
+	                    </a>
+	                    <a class="social-btns text-left">
+	                        <span class="helper-text f-14 MB5">Continue with Google</span>
+	                        <span class="pull-right"><i class="fa fa-google"></i></span>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <!--Register Modal -->
+	    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                    <h4 class="modal-title" id="myModalLabel-2">Sign up to your Account</h4>
+	                </div>
+	                <div class="modal-body">
+	                    <form class="form-horizontal">
+	                        <!-- Sign In Form -->
+	                        <!-- Text input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="userid">Username</label>
+	                            <div class="controls">
+	                                <input id="userid2" name="userid" type="text" class="form-control input-medium" placeholder="John Doe" required="">
+	                            </div>
+	                        </div>
+	                        <div class="control-group">
+	                            <label class="control-label" for="emailid">Email Address</label>
+	                            <div class="controls">
+	                                <input id="emailid" name="emailid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Password input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="passwordinput2">Password</label>
+	                            <div class="controls">
+	                                <input type="password" id="passwordinput2" name="passwordinput" class="form-control input-medium" placeholder="********" required="">
+	                            </div>
+	                        </div>
+	                        <!-- Mobile input-->
+	                        <div class="control-group">
+	                            <label class="control-label" for="mobile">Mobile</label>
+	                            <div class="controls">
+	                                <input id="mobile" name="mobilenumber" class="form-control input-medium" type="tel" placeholder="9848022338" required="">
+	                            </div>
+	                        </div>
+	                        <div class="control-group clearfix">
+	                            <div class="checkbox-small col-xs-12 PD0 MB10">
+	                                <input class="sm-input" id="ck2" type="checkbox" value="">
+	                                <label class="sm-label" for="ck2">
+	                                    <span class="custom-checkbox">
+	                                    	<svg class="f-cl-white-imp">
+                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                            </svg>
+	                                    </span>I Agree to Housejoy
+	                                    <a href="#" class="f-cl-green highlight">Terms of Service</a>
+	                                </label>
+	                            </div>
+	                            <div class="action col-xs-12 text-right PR0">
+	                                <button type="button" class="btn btn-default yellow-btn text-uppercase">Signup</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="modal-footer">
+	                    <div class="not-member text-left" id="already-member">
+	                        <p class="helper-text f-14 MB5">Already a member?</p>
+	                        <p class="helper-text MB5">Login Now!</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
@@ -445,11 +448,17 @@
 	<script>
 		$(document).ready(function() {
 
-		  $("#carousel-reviews").owlCarousel({
-		  	items : 3,
-		  	navigation : false,
-		  	pagination : false
-		  });
+		  	$("#carousel-reviews").owlCarousel({
+                items : 3,
+                navigation : false,
+                pagination : true,
+                itemsDesktop : [1199,3],
+                itemsDesktopSmall : [980,3],
+                itemsTablet: [768,2],
+                itemsTabletSmall: false,
+                itemsMobile : [479,1],
+                singleItem : false
+            });
 		 
 		});
 	</script>
