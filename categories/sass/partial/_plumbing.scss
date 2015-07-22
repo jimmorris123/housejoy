@@ -12,6 +12,13 @@
                 margin-top: 20px;
             }
         }
+        &.m-content {
+            .dropdown-select {
+                @include medmx(767px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
         .panel {
             border: none;
             border-bottom: 1px solid #ccc;
@@ -80,7 +87,6 @@
 
                         color: $medium-gray;
 
-                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -88,6 +94,7 @@
 
                             @include rem(font-size, 18px);
                         }
+                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;
@@ -206,11 +213,11 @@
 
                 color: $dark-gray;
 
+                @include rem(font-size, 18px);
+                @include rem(line-height, 22px);
                 @include medmxn(768px, 991px) {
                     @include rem(font-size, 16px);
                 }
-                @include rem(line-height, 22px);
-                @include rem(font-size, 18px);
                 &.remove-box {
                     display: inline-block;
                     width: 25%;
