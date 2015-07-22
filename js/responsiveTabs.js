@@ -11,7 +11,7 @@
 
         this.nav    = this.$el.find('> nav');
         this.links  = this.nav.find('a');
-        this.panels = this.$el.find('div.content > section'); 
+        this.panels = this.$el.find('div.content > .section-div'); 
 
         this._checkType();
 

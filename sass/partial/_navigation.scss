@@ -114,8 +114,8 @@
 
     opacity: 1;
 
-    @include transform(translate3d(-100px,0,0));
     @include transition(all .35s ease-in-out);
+    @include transform(translate3d(-100px,0,0));
 }
 
 .hamburger.is-closed .hamb-top,
@@ -206,16 +206,16 @@
     opacity: 0;
     color: #fff;
 
-    @include transform(translate3d(0,0,0));
     @include transition(all .35s ease-in-out);
+    @include transform(translate3d(0,0,0));
 }
 .hamburger.is-open:hover:before {
     display: block;
 
     opacity: 1;
 
-    @include transition(all .35s ease-in-out);
     @include transform(translate3d(-100px,0,0));
+    @include transition(all .35s ease-in-out);
 }
 
 
@@ -269,9 +269,9 @@
                 border: 2px solid transparent;
                 background-color: $white;
 
-                @include rem(font-size, 20px);
-                @include border-radius(100%);
                 @include rem(line-height, 27px);
+                @include border-radius(100%);
+                @include rem(font-size, 20px);
             }
         }
         .navbar-inverse {
@@ -308,6 +308,7 @@
 
                             color: $white;
 
+                            @include rem(font-size, 16px);
                             @include medmx(767px) {
                                 padding-bottom: 0;
 
@@ -317,7 +318,6 @@
 
                                 @include rem(font-size, 20px);
                             }
-                            @include rem(font-size, 16px);
                             .icon {
                                 margin-right: 10px;
                             }
@@ -331,10 +331,10 @@
                                 border: none;
                                 background-color: transparent;
 
-                                @include rem(font-size, 16px);
                                 @include medmx(767px) {
                                     color: $medium-gray;
                                 }
+                                @include rem(font-size, 16px);
                                 &:hover,
                                 &:focus,
                                 &:active {
@@ -462,10 +462,18 @@
         // }
         -webkit-box-shadow: none;
                 box-shadow: none;
+
+        @include medmx(767px) {
+            margin-left: 0;
+        }
         .profile-image-div {
             display: table;
 
             table-layout: fixed;
+
+            @include medmx(767px) {
+                width: 100%;
+            }
 
             .profile-image {
                 display: table-cell;
@@ -477,9 +485,16 @@
 
                 border: 2px solid $white;
 
-                @include border-radius(30px);
+                @include medmx(767px) {
+                    display: block;
+                    float: none;
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 20px;
+                }
+                @include border-radius(50px);
                 img {
-                    @include border-radius(30px);
+                    @include border-radius(50px);
                 }
             }
         }
@@ -496,6 +511,15 @@
             // }
 
             @include rem(font-size, 16px);
+            @include medmx(767px) {
+                display: block;
+                float: none;
+                margin-left: 20px;
+
+                text-align: left;
+
+                color: $dark-gray;
+            }
         }
         .caret {
             float: left;
@@ -544,6 +568,8 @@
     svg {
         width: 30px;
         height: 30px;
+
+        color: $white;
     }
     svg:after {
         position: absolute;

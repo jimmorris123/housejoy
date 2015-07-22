@@ -155,9 +155,9 @@ a {
        -moz-filter: blur(15px);
         -ms-filter: blur(15px);
          -o-filter: blur(15px);
+            filter: blur(15px);
+            filter: blur(15px);
             filter: progid:dximagetransform.Microsoft.Blur(PixelRadius="15");
-            filter: blur(15px);
-            filter: blur(15px);
 }
 
 svg {
@@ -284,12 +284,6 @@ svg {
 .house-cleaning-bg {
     background-image: url("../../images/laundry_images/laundry_banner.jpg");
 }
-// .beauty-bg {
-//     background-image: url("../../images/beauty_images/Hair_Color.jpg");
-// }
-// .house-cleaning-bg {
-//     background-image: url("../../images/housing_images/housing_bg.jpg");
-// }
 .appliance-bg {
     background-image: url("../../images/categories/Appliances_result.jpg");
 }

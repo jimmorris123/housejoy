@@ -1,9 +1,10 @@
 .home-footer {
     padding: 20px;
+    padding-bottom: 0;
 
     background-color: #222;
     .foot-content {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         .heading {
             padding-top: 10px;
 
@@ -23,6 +24,7 @@
             li {
                 float: left;
                 min-width: 50%;
+                margin-right: 10px;
                 margin-bottom: 10px;
                 a {
                     font-family: $blogger_R;

@@ -32,8 +32,13 @@
             right: 10px;
 
             display: none;
+            svg {
+                width: 18px;
+                height: 18px;
+            }
         }
         .icon {
+            display: block;
             width: 32px;
             height: 32px;
             margin: 0 auto;
@@ -281,9 +286,9 @@
 
                 color: $dark-gray;
 
-                @include rem(line-height, 24px);
-                @include rem(font-size, 22px);
                 @include transition(all .2s ease-in-out);
+                @include rem(font-size, 22px);
+                @include rem(line-height, 24px);
             }
             &:hover a,
             &:focus a,
@@ -325,11 +330,20 @@
          -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 
+    opacity: .8;
     color: $white;
     border: none;
     background-color: $yellow;
 
     @include rem(font-size, 18px);
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 1;
+        color: $white;
+        outline: none !important;
+        background-color: $yellow;
+    }
 }
 .green-btn {
     width: 100%;
@@ -344,11 +358,20 @@
          -o-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
 
+    opacity: .8;
     color: $white;
     border: none;
     background-color: $green;
 
     @include rem(font-size, 18px);
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 1;
+        color: $white;
+        outline: none !important;
+        background-color: $green;
+    }
 }
 
 .heading {
@@ -377,33 +400,6 @@
     }
 }
 
-/* start of modification for 5 columns */
-// .fivecolumns .span2 {
-//     float: left;
-// }
-// @media (min-width: 768px) {
-//     .fivecolumns .span2 {
-//         width: 18.297872340425532%;
-
-//         *width: 18.2234042553191494%;
-//     }
-// }
-// @media (min-width: 1200px) {
-//     .fivecolumns .span2 {
-//         width: 17.9487179487179488%;
-
-//         *width: 17.87424986361156592%;
-//     }
-// }
-// @media (min-width: 768px) and (max-width: 979px) {
-//     .fivecolumns .span2 {
-//         width: 17.79005524861878448%;
-
-//         *width: 17.7155871635124022%;
-//     }
-// }
-//end
-
 
 /*Checkout Button */
 .checkout-yellow-button {
@@ -420,8 +416,6 @@
     outline: none;
     background-color: #ffc400;
 
-    @include border-radius(4px);
-    @include rem(font-size, 16px);
     @include medmx(768px) {
         float: none;
         margin-top: 20px;
@@ -429,14 +423,18 @@
         margin-left: auto;
         clear: both;
     }
+    @include rem(font-size, 16px);
+    @include border-radius(4px);
 }
 
 // bottom sticky button
 .bottom-sticky-btn {
     position: fixed;
-    bottom: 0;
+    bottom: -1px;
 
     width: 100%;
+
+    background-color: $white;
     button {
         width: 100%;
         margin: 0;
