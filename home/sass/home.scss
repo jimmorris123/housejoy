@@ -112,9 +112,10 @@
 
             height: 150px;
             margin-bottom: 20px;
+            // background-image: url(../../images/home_images/tabs_banner.jpg);
 
-            background-image: url(../../images/home_images/tabs_banner.jpg);
             background-position-y: center;
+            background-size: cover;
             .overlay {
                 position: absolute;
                 top: 0;
@@ -212,8 +213,13 @@
             padding: 0;
         }
         section {
-            @include medmx(768px) {
+            @include medmx(767px) {
+                padding: 0 !important;
+
                 background: transparent !important;
+            }
+            .panel-group {
+                margin-bottom: 0;
             }
             .panel {
                 border: none;
@@ -341,7 +347,7 @@
 }
 
 .expert-row {
-    @include medmx(768px) {
+    @include medmx(767px) {
         background-color: $white;
     }
 }
@@ -371,8 +377,9 @@
             display: inline-block;
             // float: left;
             width: 18%;
-            margin-right: 10px;
+            margin-right: 12px;
             margin-bottom: 40px;
+            margin-left: 12px;
 
             @include medmxn(768px, 991px) {
                 width: 28%;
@@ -394,10 +401,29 @@
                 h4 {
                     color: $green;
                 }
+                &.with-icon {
+                    img {
+                        display: block;
+                        &:first-child {
+                            display: none;
+                        }
+                    }
+                }
             }
             &.with-icon {
                 @include medmn(480px) {
-                    float: left;
+                    // float: left;
+                }
+                @include transition(all .8s);
+                img {
+                    display: none;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                    &:first-child {
+                        display: block;
+                    }
                 }
             }
             svg {
