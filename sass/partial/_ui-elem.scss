@@ -286,9 +286,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -406,25 +406,36 @@
     // display: block;
     // float: right;
     min-width: 120px;
+    margin-right: 10px;
 
     font-family: "blogger_sansregular";
     // line-height: 36px;
     // text-align: center;
+
+    text-transform: capitalize;
 
     color: $white;
     border: none;
     outline: none;
     background-color: #ffc400;
 
+    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
-        float: none;
+        display: block;
+        // float: none;
         margin-top: 20px;
         margin-right: auto;
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
-    @include border-radius(4px);
+    &:last-child {
+        margin-right: 0;
+
+        @include medmx(768px) {
+            margin-right: auto;
+        }
+    }
 }
 
 // bottom sticky button
@@ -440,5 +451,70 @@
         margin: 0;
 
         border-radius: 0;
+    }
+}
+
+//Green Icon Button
+.green-icon-button {
+    display: inline-block;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    color: $green;
+    border: 1px solid $green;
+    background-color: transparent;
+
+    @include medmx(768px) {
+        position: relative;
+        top: auto;
+        right: auto;
+
+        display: inline-block;
+        padding: 0;
+        margin-right: 15px;
+
+        border: none;
+    }
+    @include border-radius(4px);
+    .button-icon {
+        display: inline-block;
+        // float: left;
+        width: 15px;
+        height: 15px;
+
+        @include medmx(768px) {
+            width: 12px;
+            height: 12px;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            margin-top: 2px;
+
+            fill: currentColor;
+        }
+    }
+
+    .button-text {
+        display: inline-block;
+        margin-left: 10px;
+
+        font-family: $blogger_R;
+        line-height: 18px;
+
+        vertical-align: middle;
+
+        color: $green;
+
+        @include rem(font-size, 16px);
+        @include medmx(768px) {
+            display: inline-block;
+            margin-left: 5px;
+
+            font-family: $blogger_R;
+
+            @include rem(font-size, 14px);
+        }
     }
 }

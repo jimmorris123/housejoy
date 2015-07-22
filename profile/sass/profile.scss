@@ -165,35 +165,63 @@
             width: 100%;
             height: 100%;
             margin-top: 2px;
+            // .green-icon-button {
+            //     display: inline-block;
+            //     padding: 10px 20px;
+            //     cursor: pointer;
+            //     color: $green;
+            //     border: 1px solid $green;
+            //     @include medmx(768px) {
+            //         position: relative;
+            //         top: auto;
+            //         right: auto;
+            //         display: inline-block;
+            //         padding: 0;
+            //         margin-right: 15px;
+            //         border: none;
+            //     }
+            //     @include border-radius(4px);
+            //     .button-icon {
+            //         display: inline-block;
+            //         float: left;
+            //         width: 15px;
+            //         height: 15px;
+            //         @include medmx(768px) {
+            //             width: 12px;
+            //             height: 12px;
+            //         }
+            //         svg {
+            //             width: 100%;
+            //             height: 100%;
+            //             margin-top: 2px;
+            //             fill: currentColor;
+            //         }
+            //     }
+            //     .button-text {
+            //         display: inline-block;
+            //         margin-left: 10px;
+            //         font-family: $blogger_R;
+            //         line-height: 18px;
 
-            fill: currentColor;
-        }
-    }
-
-    .button-text {
-        display: inline-block;
-        margin-left: 10px;
-
-        font-family: $blogger_R;
-        line-height: 18px;
-
-        vertical-align: middle;
-
-        color: $green;
-
-        @include rem(font-size, 16px);
-        @include medmx(768px) {
-            display: inline-block;
-            margin-left: 5px;
-
-            font-family: $blogger_R;
-
+            vertical-align: middle;
+            //         color: $green;
+            //         @include rem(font-size, 16px);
+            //         @include medmx(768px) {
+            //             display: inline-block;
+            //             margin-left: 5px;
+            //             font-family: $blogger_R;
             vertical-align: baseline;
+
+            color: $green;
 
             @include rem(font-size, 14px);
         }
     }
 }
+//             @include rem(font-size, 14px);
+//         }
+//     }
+// }
 .myorders-right-button {
     position: absolute;
     top: 20px;
@@ -1048,6 +1076,8 @@ a.submit-button {
         cursor: pointer;
 
         color: $green;
+        border: none;
+        background-color: transparent;
         img,
         svg {
             display: inline-block;
