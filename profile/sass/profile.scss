@@ -10,7 +10,7 @@
 .section-padding {
     padding-top: 30px;
 
-    @include medmx(768px) {
+    @include medmx(767px) {
         padding-right: 0;
         padding-left: 0;
     }
@@ -149,14 +149,18 @@
     @include border-radius(4px);
     .button-icon {
         display: inline-block;
-        float: left;
-        width: 15px;
-        height: 15px;
+        width: 26px;
+        height: 26px;
+
+        vertical-align: middle;
 
         @include medmx(768px) {
-            width: 12px;
-            height: 12px;
+            width: 15px;
+            height: 15px;
+
+            vertical-align: baseline;
         }
+        img,
         svg {
             width: 100%;
             height: 100%;
@@ -173,6 +177,8 @@
         font-family: $blogger_R;
         line-height: 18px;
 
+        vertical-align: middle;
+
         color: $green;
 
         @include rem(font-size, 16px);
@@ -181,6 +187,8 @@
             margin-left: 5px;
 
             font-family: $blogger_R;
+
+            vertical-align: baseline;
 
             @include rem(font-size, 14px);
         }
@@ -202,6 +210,21 @@
     }
 }
 
+.left-section {
+    margin-bottom: 200px;
+
+    @include medmx(767px) {
+        display: none;
+        margin-bottom: 0;
+    }
+}
+.right-section {
+    margin-bottom: 200px;
+
+    @include medmx(767px) {
+        padding-top: 0;
+    }
+}
 .profile-img-div {
     padding-bottom: 30px;
     // margin-top: 30px;
@@ -303,12 +326,12 @@ a.account-links {
 
             border-bottom: 0;
 
-            @include medmx(768px) {
+            @include medmx(767px) {
                 // display: block;
-                float: none;
-                width: 100%;
+                // float: none;
+                // width: 100%;
                 overflow: hidden;
-                clear: both;
+                // clear: both;
 
                 border-right: none;
                 // border-bottom: 1px solid $green;
@@ -390,6 +413,21 @@ a.account-links {
         }
         &:hover {
             color: $green;
+        }
+        .trash-icon {
+            display: block;
+            width: 16px;
+            height: 16px;
+
+            opacity: .6;
+            background-image: url(../../images/svg/trash.svg);
+            background-size: cover;
+
+            // @include transition(all .5s);
+            &:hover {
+                background-image: url(../../images/svg/trash_green.svg);
+                background-size: cover;
+            }
         }
         svg {
             width: 16px;
@@ -477,7 +515,7 @@ a.submit-button {
     background-color: #ffc400;
 
     @include border-radius(4px);
-    @include medmx(768px) {
+    @include medmx(767px) {
         float: none;
         margin-top: 20px;
         margin-right: auto;
@@ -504,6 +542,9 @@ a.submit-button {
         @include medmx(768px) {
             padding: 20px;
         }
+        // &:last-child {
+        //     padding-bottom: 0;
+        // }
     }
     .row-type2 {
         padding: 20px 0 20px 20px;
@@ -554,11 +595,15 @@ a.submit-button {
         display: inline-block;
         float: left;
         width: 50px;
-        // height: 50px;
 
         @include medmx(768px) {
             width: 30px;
             height: 30px;
+        }
+        // height: 50px;
+        img {
+            width: 100%;
+            height: 100%;
         }
         svg {
             width: 40px;
@@ -744,6 +789,10 @@ a.submit-button {
         -webkit-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
            -moz-box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
                 box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2);
+
+        @include medmx(767px) {
+            width: 100%;
+        }
         &:after {
             position: absolute;
             top: -6px;
@@ -999,6 +1048,7 @@ a.submit-button {
         cursor: pointer;
 
         color: $green;
+        img,
         svg {
             display: inline-block;
             width: 13px;
@@ -1273,7 +1323,7 @@ a.submit-button {
 
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 
     background-color: $white;
 
@@ -1385,7 +1435,7 @@ a.submit-button {
         border-bottom: 2px solid #e5e5e5;
 
         @include rem(font-size, 16px);
-        @include medmx(768px) {
+        @include medmx(767px) {
             width: 100%;
             padding: 20px 0;
         }

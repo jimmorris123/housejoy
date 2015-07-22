@@ -14,27 +14,34 @@
 </head>
 <body class="body-HB">
 	<div class="page-wrapper">
-		
 		<div class="header">
-			<header role="banner" class="navbar navbar-default navbar-inverse">
+			<header class="navbar navbar-default">
 				<div class="navbar-header">
 					<div class="logo-div text-center">
 						<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
-						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs" data-toggle="offcanvas">
-			                <span class="hamb-top"></span>
-			    			<span class="hamb-middle"></span>
+                    	<!-- <a class="hide visible-xs" href="#"><img class="img-responsive" src="../images/logo-green.png" alt=""></a> -->
+						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
+							<span class="hamb-top"></span>
+							<span class="hamb-middle"></span>
 							<span class="hamb-bottom"></span>
-			            </button>
+						</button>
 					</div>
 				</div>
 				<div class="navbar-inverse side-collapse in">
-					<nav role="navigation" class="navbar-collapse">
-						<ul class="nav navbar-nav">
+                    <div class="logo-box hide visible-xs">
+                    	<a href="#"><img src="../images/logo-green.png" alt=""></a>
+                    </div>
+					<nav class="navbar-collapse">
+						<ul class="nav navbar-nav hidden-xs">
 							<li>
 								<div class="dropdown dropdown-select">
 									<button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
 										Bangalore
-										<span class="caret pull-right"><i class="fa fa-chevron-down" ></i></span>
+                                        <span class="caret pull-right">
+                                            <svg class="f-cl-white-imp">
+                                                <use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                                            </svg>
+                                        </span>
 									</button>
 									<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 										<li role="presentation" class="active">
@@ -51,18 +58,13 @@
 							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right user-dropdown">
-							<li class="dropdown">
-								<!-- <a class="notification" href="#fsf">
-									<svg class="icon new-notification">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-appointment"></use>
-									</svg>
-								</a> -->
+							<li class="dropdown hidden-xs">
 								<button class="btn btn-default dropdown-toggle notification" type="button" id="notification-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									<a class="notification" href="#fsf">
+									<span class="notification">
 										<svg class="icon new-notification">
 											<use xlink:href="../images/profile_images/svg-icon.svg#icon-appointment"></use>
 										</svg>
-									</a>									
+									</span>									
 								</button>
 								<ul class="dropdown-menu notification-dropdown-class" aria-labelledby="notification-dropdown">
 									<li class="read">Ramesh will deliver your handset on 19th March between 3pm - 5pm. Please be present at the shared address during pickup time.</li>
@@ -73,13 +75,13 @@
 							</li>
 							<li class="dropdown">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-									<div class="profile-image-div">						
-										<div class="profile-image">
+									<span class="profile-image-div">						
+										<span class="profile-image">
 											<img src="../images/profile_images/profile-pic.jpg" alt="profile picture" class="img-responsive">
-										</div>
-										<div class="profile-name">Robin Dhanwani</div>
-										<span class="caret"style="color:#fff;"></span>									
-									</div>									
+										</span>
+										<span class="profile-name">Robin Dhanwani</span>
+										<span class="caret" style="color:#fff;"></span>									
+									</span>									
 								</button>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu">
 									<li><a href="#" class="active">my account</a></li>
@@ -89,13 +91,23 @@
 									<li><a href="#">logout</a></li>
 								</ul>
 							</li>
+							<li class="hide visible-xs"><a href="#">Book A Service</a></li>
+							<li class="hide visible-xs"><a href="#">My Account</a></li>
+							<li class="hide visible-xs"><a href="#">My Orders</a></li>
+							<li class="hide visible-xs"><a href="#">My Appointment</a></li>
+							<li class="hide visible-xs"><a href="#">Housejoy Wallet</a></li>
+							<li class="hide visible-xs"><a href="#">Logout</a></li>
 						</ul>
+						<div class="play-store hide visible-xs">
+							<span class="text">Download our App</span>
+							<a href="#">
+								<span class="img"><img src="../images/home_images/google_store.png" alt=""></span>
+							</a>
+						</div>
 					</nav>
-					
 				</div>
-
 			</header>
-		</div>
+		</div>		
 		<div class="housing-wrapper gray-bg">
 			<!-- <div class="bg-image blur"></div> -->
 			<div class="container page-content transparent-bg-imp PD0-imp">				
@@ -357,9 +369,7 @@
 								<div class="button-div">
 									<a href="#" class="green-icon-button">
 										<span class="button-icon">
-											<svg class="icon ">
-												<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-											</svg>
+											<img src="../images/svg/reset.svg" alt="">
 										</span>
 										<span class="button-text">
 											Reset
@@ -369,9 +379,7 @@
 								<div class="button-div">
 									<a href="#" class="green-icon-button">
 										<span class="button-icon">
-											<svg class="icon ">
-												<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-											</svg>
+											<img src="../images/svg/checkmark.svg" alt="">
 										</span>
 										<span class="button-text">
 											Apply
@@ -385,9 +393,7 @@
 						<div class="row row-type1">
 							<div class="row">
 								<div class="order-icon-div">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/beauty_black.svg" alt="">
 								</div>
 								<div class="order-details">
 									<div class="order-id">Order ID : HC02B0014</div>
@@ -398,24 +404,20 @@
 								Our expert John Doe will visit your address on 18th March between 6am to 8am.
 							</div>							
 							<div class="row myorders-order-log-actions">
-								<li class="green-icon-button myorders-right-button">
+								<a href="#" class="green-icon-button myorders-right-button">
 									<span class="button-icon">
-										<svg class="icon ">
-											<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-										</svg>
+										<img src="../images/svg/message.svg" alt="">
 									</span>
 									<span class="button-text">
 										Message
 									</span>
-								</li>
+								</a>
 							</div>							
 						</div>
 						<div class="row row-type1">
 							<div class="row">
 								<div class="order-icon-div">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/house_cleaning_black.svg" alt="">
 								</div>
 								<div class="order-details">
 									<div class="order-id">Order ID : HC02B0014</div>
@@ -428,37 +430,29 @@
 							<div class="row order-brief-text">
 								Will require : 3 - 4 days  |  $5000
 							</div>
-							<div class="row myorders-order-log-actions">
+							<ul class="row myorders-order-log-actions">
 								<li class="log-action-button">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/invoice.svg" alt="">
 									<span>Invoice</span>
 								</li>
 								<li class="log-action-button">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/complaint.svg" alt="">
 									<span>Complaint</span>
 								</li>
 								<li class="green-icon-button myorders-right-button">
 									<span class="button-icon">
-										<svg class="icon ">
-											<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-										</svg>
+										<img src="../images/svg/message.svg" alt="">
 									</span>
 									<span class="button-text">
 										Message
 									</span>
 								</li>
-							</div>							
+							</ul>							
 						</div>
 						<div class="row row-type1">
 							<div class="row">
 								<div class="order-icon-div">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/appliances_black.svg" alt="">
 								</div>
 								<div class="order-details">
 									<div class="order-id">Order ID : HC02B0014</div>
@@ -469,24 +463,20 @@
 								Our expert John Doe will visit your address on 18th March between 6am to 8am.
 							</div> -->							
 							<div class="row myorders-order-log-actions">
-								<li class="green-icon-button myorders-right-button">
+								<a href="#" class="green-icon-button myorders-right-button">
 									<span class="button-icon">
-										<svg class="icon ">
-											<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-										</svg>
+										<img src="../images/svg/repeat.svg" alt="">
 									</span>
 									<span class="button-text">
 										Repeat order
 									</span>
-								</li>
+								</a>
 							</div>
 						</div>
 						<div class="row row-type1">
 							<div class="row">
 								<div class="order-icon-div">
-									<svg class="icon ">
-										<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-									</svg>
+									<img src="../images/svg/pest_control_black.svg" alt="">
 								</div>
 								<div class="order-details">
 									<div class="order-id">Order ID : HC02B0014</div>
@@ -497,16 +487,14 @@
 								Our expert John Doe will visit your address on 18th March between 6am to 8am.
 							</div>							
 							<div class="row myorders-order-log-actions">
-								<li class="green-icon-button myorders-right-button">
+								<a href="#" class="green-icon-button myorders-right-button">
 									<span class="button-icon">
-										<svg class="icon ">
-											<use xlink:href="../images/profile_images/svg-icon.svg#icon-pencil"></use>
-										</svg>
+										<img src="../images/svg/repeat.svg" alt="">
 									</span>
 									<span class="button-text">
 										Repeat Order
 									</span>
-								</li>
+								</a>
 							</div>							
 						</div>
 					</div>
@@ -516,89 +504,93 @@
 	</div>
 	<!-- footer -->
 	<footer class="home-footer clearfix">
-		<div class="foot-content col-xs-12 col-sm-4">
-			<h3 class="heading">Cities<span class="border-top"></span></h3>
-			<ul>
-				<li><a href="#">Ahmedabad</a></li>
-				<li><a href="#">Bangalore</a></li>
-				<li><a href="#">Chennai</a></li>
-				<li><a href="#">Delhi &amp; NCR</a></li>
-				<li><a href="#">Hyderabad</a></li>
-				<li><a href="#">Mumbai</a></li>
-				<li><a href="#">Pune</a></li>
-			</ul>
-		</div>
-		<div class="foot-content col-xs-12 col-sm-4">
-			<h3 class="heading">Services<span class="border-top"></span></h3>
-			<ul>
-				<li><a href="#">House Cleaning</a></li>
-				<li><a href="#">Plumbing</a></li>
-				<li><a href="#">Electrical</a></li>
-				<li><a href="#">Beauty</a></li>
-				<li><a href="#">Laptop Repairs</a></li>
-				<li><a href="#">Laundry</a></li>
-				<li><a href="#">Appliance Repair</a></li>
-				<li><a href="#">Mobile Repairs</a></li>
-			</ul>
-		</div>
-		<div class="foot-content col-xs-12 col-sm-4">
-			<h3 class="heading">Subscribe to Updates<span class="border-top"></span></h3>
-			<div class="newsletter">
-				<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
-				<span class="arrow"><i class="fa fa-arrow-circle-right"></i></span>
-			</div>
-			<div class="socials">
-				<a href="#"><i class='fa fa-facebook'></i></a>
-				<a href="#"><i class='fa fa-twitter'></i></a>
-				<a href="#"><i class='fa fa-google-plus'></i></a>
-			</div>
-		</div>
-		<div class="col-xs-12 foot-content bottom text-center MB-sm-0">
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Our Team</a></li>
-				<li><a href="#">Jobs</a></li>
-				<li><a href="#">Terms</a></li>
-				<li><a href="#">Privacy</a></li>
-				<li><a href="#">Help / F.A.Q</a></li>
-				<li><a href="#">Contact Us</a></li>
-			</ul>
-		</div>
-	</footer>
-	<div class="copyrights row-fluid text-center">
-		&copy; Housejoy 2014 - 2015. All Rights Reserved.
-	</div>
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Cities<span class="border-top"></span></h3>
+            <ul>
+                <li><a href="#">Ahmedabad</a></li>
+                <li><a href="#">Bangalore</a></li>
+                <li><a href="#">Chennai</a></li>
+                <li><a href="#">Delhi &amp; NCR</a></li>
+                <li><a href="#">Hyderabad</a></li>
+                <li><a href="#">Mumbai</a></li>
+                <li><a href="#">Pune</a></li>
+            </ul>
+        </div>
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Services<span class="border-top"></span></h3>
+            <ul>
+                <li><a href="#">House Cleaning</a></li>
+                <li><a href="#">Plumbing</a></li>
+                <li><a href="#">Electrical</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Laptop Repairs</a></li>
+                <li><a href="#">Laundry</a></li>
+                <li><a href="#">Appliance Repair</a></li>
+                <li><a href="#">Mobile Repairs</a></li>
+            </ul>
+        </div>
+        <div class="foot-content col-xs-12 col-sm-4">
+            <h3 class="heading">Subscribe to Updates<span class="border-top"></span></h3>
+            <div class="newsletter">
+                <input type="text" id="input" class="form-control" value="" required="required" pattern="" title="" placeholder="Type your email">
+                <span class="arrow"><i class="fa fa-arrow-circle-right"></i></span>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+        <div class="col-xs-12 foot-content bottom text-center MB-sm-0">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Help / F.A.Q</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyrights row-fluid text-center">
+        © Housejoy 2014 - 2015. All Rights Reserved.
+    </div>
     <!--Login Modal -->
-    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Login to your account</h4>
+                    <h4 class="modal-title">Login to your account</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" action="">
+                    <form class="form-horizontal">
                         <!-- Sign In Form -->
                         <!-- Text input-->
                         <div class="control-group">
                             <label class="control-label" for="userid">Email Address</label>
                             <div class="controls">
-                                <input required="" id="userid" name="userid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+                                <input id="userid" name="userid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
                             </div>
                         </div>
                         <!-- Password input-->
                         <div class="control-group">
-                            <label class="control-label" for="passwordinput">Password</label>
+                            <label class="control-label" for="passwordinput1">Password</label>
                             <div class="controls">
-                                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                                <input id="passwordinput1" name="passwordinput" class="form-control input-medium" type="password" placeholder="********">
                             </div>
                         </div>
                         <div class="control-group clearfix">
                             <div class="checkbox-small col-xs-12 col-sm-6 PD0">
                                 <input class="sm-input" id="ck1" type="checkbox" value="">
                                 <label class="sm-label" for="ck1">
-                                    <div class="custom-checkbox"><i class="fa fa-check"></i></div>Remember Me
+                                    <span class="custom-checkbox">
+                                        <svg class="f-cl-white-imp">
+                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                        </svg>
+                                    </span>Remember Me
                                 </label>
                             </div>
                             <div class="action col-xs-12 col-sm-6 text-center">
@@ -626,48 +618,52 @@
         </div>
     </div>
     <!--Register Modal -->
-    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade login-modal" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Sign up to your Account</h4>
+                    <h4 class="modal-title" id="myModalLabel-2">Sign up to your Account</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal" action="">
+                    <form class="form-horizontal">
                         <!-- Sign In Form -->
                         <!-- Text input-->
                         <div class="control-group">
                             <label class="control-label" for="userid">Username</label>
                             <div class="controls">
-                                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="John Doe" class="input-medium" required="">
+                                <input id="userid2" name="userid" type="text" class="form-control input-medium" placeholder="John Doe" required="">
                             </div>
                         </div>
                         <div class="control-group">
                             <label class="control-label" for="emailid">Email Address</label>
                             <div class="controls">
-                                <input required="" id="userid" name="emailid" type="email" class="form-control" placeholder="Johndoe@email.co" class="input-medium" required="">
+                                <input id="emailid" name="emailid" type="email" class="form-control input-medium" placeholder="Johndoe@email.co" required="">
                             </div>
                         </div>
                         <!-- Password input-->
                         <div class="control-group">
-                            <label class="control-label" for="passwordinput">Password</label>
+                            <label class="control-label" for="passwordinput2">Password</label>
                             <div class="controls">
-                                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                                <input type="password" id="passwordinput2" name="passwordinput" class="form-control input-medium" placeholder="********" required="">
                             </div>
                         </div>
                         <!-- Mobile input-->
                         <div class="control-group">
-                            <label class="control-label" for="mobile">Password</label>
+                            <label class="control-label" for="mobile">Mobile</label>
                             <div class="controls">
-                                <input required="" id="mobile" name="mobilenumber" class="form-control" type="tel" placeholder="9848022338" class="input-medium">
+                                <input id="mobile" name="mobilenumber" class="form-control input-medium" type="tel" placeholder="9848022338" required="">
                             </div>
                         </div>
                         <div class="control-group clearfix">
                             <div class="checkbox-small col-xs-12 PD0 MB10">
                                 <input class="sm-input" id="ck2" type="checkbox" value="">
                                 <label class="sm-label" for="ck2">
-                                    <div class="custom-checkbox"><i class="fa fa-check"></i></div>I Agree to Housejoy
+                                    <span class="custom-checkbox">
+                                        <svg class="f-cl-white-imp">
+                                            <use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+                                        </svg>
+                                    </span>I Agree to Housejoy
                                     <a href="#" class="f-cl-green highlight">Terms of Service</a>
                                 </label>
                             </div>
@@ -692,6 +688,7 @@
 	<!-- Bootstrap JavaScript -->
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	<script src="../js/svg4everybody.ie8.min.js"></script>
+	<script src="../js/common.js"></script>
 
 	<script>
 		$('.filterby-button-div').click(function() {	        
