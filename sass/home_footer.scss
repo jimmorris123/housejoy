@@ -23,7 +23,7 @@
         ul {
             li {
                 float: left;
-                min-width: 50%;
+                min-width: 45%;
                 margin-right: 10px;
                 margin-bottom: 10px;
                 a {
@@ -84,8 +84,8 @@
                 color: $white;
                 background: transparent;
 
-                @include rem(font-size, 16px);
                 @include transition(all .15s ease);
+                @include rem(font-size, 16px);
                 &:hover {
                     border-radius: 50%;
                 }

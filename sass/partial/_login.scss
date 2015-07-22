@@ -47,10 +47,22 @@
 
                                 color: $dark-gray;
 
+                                @include rem(font-size, 16px);
                                 @include placeholder {
                                     color: $medium-gray;
                                 }
-                                @include rem(font-size, 16px);
+                            }
+                        }
+                    }
+                    .checkbox-small {
+                        @include medmx(479px) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .action {
+                        a {
+                            @include medmx(479px) {
+                                display: block;
                             }
                         }
                     }
@@ -211,10 +223,10 @@
 
                             color: $white;
 
+                            @include rem(font-size, 32px);
                             @include medmx(767px) {
                                 @include rem(font-size, 22px);
                             }
-                            @include rem(font-size, 32px);
                             &:hover {
                                 opacity: .9;
                             }
