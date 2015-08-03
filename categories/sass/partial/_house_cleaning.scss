@@ -92,10 +92,10 @@
 
                     color: rgb(255,255,255);
 
+                    @include rem(font-size, 28px);
                     @include medmx(767px) {
                         margin-bottom: 20px;
                     }
-                    @include rem(font-size, 28px);
                 }
                 .nav-modal-btn {
                     padding: 0;
@@ -168,6 +168,9 @@
                 .radio-div {
                     label {
                         display: inline-block;
+                        .text-div {
+                            opacity: .7;
+                        }
                     }
                 }
                 .dropdown {

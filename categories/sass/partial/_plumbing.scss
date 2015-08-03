@@ -320,17 +320,28 @@
 
 // Fitness page style
 .select-days {
+    h4 {
+        clear: both;
+    }
     .checkbox {
+        padding-left: 15px;
         label {
             width: auto;
             height: auto;
             min-height: 0;
+            padding: 0;
+            padding-bottom: 5px;
 
             font-family: $blogger_R;
 
+            opacity: .7;
+            color: #555;
             border: none;
             border-bottom: 1px solid transparent;
             border-radius: 0;
+        }
+        &:nth-of-type(1) {
+            padding-left: 0;
         }
         input[type="checkbox"]:checked + label {
             color: $green;
