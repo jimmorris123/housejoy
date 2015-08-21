@@ -243,19 +243,24 @@
 		            </div> -->
 	            	<div class="col-xs-12 col-sm-6">
 	            		<label class="control-label" for="userid">Date</label>
-						<div class="dropdown location-dropdown mobi-dropdown">  
-		                    <p><input type="text" id="datepicker"></p>  
-		                </div>
-		            </div>
+						<div class="dropdown location-dropdown mobi-dropdown date">  
+		                    <input type="text" id="datepicker" placeholder="28 Aug 2015">  
+		                    <img src="../images/svg/calendar.svg" alt="calender icon">
+	           		    </div>
+ 		            </div>
 
 		            <!-- Password input-->
 		            <div class="col-xs-12 col-sm-6">
 						<!-- dropdown for location -->
 						<label class="control-label" for="userid">Time Slot</label>
                         <div class="dropdown location-dropdown dropdown-select mobi-dropdown">
-                            <button class="btn btn-default dropdown-toggle PA12 ln-h1" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                            <button class="btn btn-default dropdown-toggle PA12" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
                                 <span class="pull-left">10am to 11am</span>
-                                <span class="dropdown-icon pull-right"><i class="caret"></i></span>
+                                <span class="caret pull-right">
+                                	<svg>
+                                		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use>
+                            		</svg>
+                        		</span>
                             </button>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">11am to 12pm</a></li>
@@ -485,9 +490,9 @@
 	<script>
 	  $(function() {
 	    $( "#datepicker" ).datepicker({
+	    	dateFormat: "dd M, yy",
 	    	minDate: 0,
-	    	maxDate: "+1m",
-	    	dateFormat: "dd M, yy"
+            prevText: "<"
 	    });
 	  });
 	</script>

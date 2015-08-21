@@ -303,11 +303,11 @@
 										</ul>
 									</div>
 									<ul class="row">
-										<li class="log-action-button">
+										<li class="log-action-button" data-toggle="modal" data-target="#accept">
 											<img src="../images/svg/checkmark.svg" alt="">
 											<span>Accept</span>
 										</li>
-										<li class="log-action-button">
+										<li class="log-action-button" data-toggle="modal" data-target="#decline">
 											<img src="../images/svg/close.svg" alt="">
 											<span>Decline</span>
 										</li>
@@ -500,6 +500,47 @@
             </div>
         </div>
     </div>
+    <!--Confirmation Modal -->
+    <!-- For accept -->
+	<div class="modal fade profile-modal" id="accept" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+	      </div>
+	      <div class="modal-body">
+      		<div class="confirm-text">Are you sure accept this order?</div>
+            <div class="control-group clearfix">
+                <div class="action col-xs-12 text-center PD0">
+        			<a href="" class="submit-button">yes</a>
+					<a href="" class="submit-button">no</a>				
+        		</div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- For Decline -->
+	<div class="modal fade profile-modal" id="decline" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
+	      </div>
+	      <div class="modal-body">
+      		<div class="confirm-text">Are you sure decline this order?</div>
+            <div class="control-group clearfix">
+                <div class="action col-xs-12 text-center PD0">
+        			<a href="" class="submit-button">yes</a>
+					<a href="" class="submit-button">no</a>				
+        		</div>
+            </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<!-- jQuery -->
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
