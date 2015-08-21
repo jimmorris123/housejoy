@@ -40,6 +40,13 @@ a {
     padding-right: 15px;
     padding-left: 15px;
 }
+
+.PLR15-sm {
+    @media (max-width: 767px) {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 .PA12 {
     padding: 12px;
 }
@@ -189,11 +196,18 @@ svg {
     text-transform: uppercase;
 }
 // font size
+.f-12-imp {
+    font-size: 12px !important;
+    font-size: 1.2rem !important;
+}
 .f-14 {
     @include rem(font-size, 14px);
 }
 .f-16 {
     @include rem(font-size, 16px);
+}
+.f-fam-M {
+    font-family: "blogger_sansmedium";
 }
 // background color
 .gray-bg {
@@ -266,6 +280,9 @@ svg {
 .MB40-imp {
     margin-bottom: 40px !important;
 }
+.MT0-imp {
+    margin-top: 0 !important;
+}
 .MT40-imp {
     margin-top: 40px !important;
 }
@@ -335,4 +352,85 @@ svg {
 
 .initial-hide {
     display: none;
+}
+
+// DATEPICKER STYLE
+// -------------------------------
+.ui-datepicker {
+    width: 21em;
+
+    @include medmx(767px) {
+        width: calc(100% - 62px);
+    }
+    @include rem(font-size, 12px);
+}
+.ui-widget-header {
+    border-color: transparent;
+    background: none;
+    background-color: transparent;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+
+    text-align: center;
+
+    border-color: transparent;
+    border-radius: 100%;
+    background: none;
+    background-color: #fff;
+
+    @include medmx(767px) {
+        padding: 5px 0;
+
+        @include rem(font-size, 16px);
+    }
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+    color: $white;
+    background-color: $green;
+}
+.ui-datepicker-prev span {
+    background-position: 0 0;
+
+    @include transform(rotate(-90deg));
+}
+
+.ui-datepicker-next span {
+    background-position: 0 0;
+
+    @include transform(rotate(90deg));
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    top: auto !important;
+
+    border: none !important;
+    background: none !important;
+}
+.ui-datepicker th,
+.ui-datepicker .ui-datepicker-title {
+    font-family: $blogger_R;
+
+    color: #555;
+
+    @include medmx(767px) {
+        @include rem(font-size, 16px);
+    }
+}
+
+
+.fadeInBlock {
+    opacity: 0;
+}
+.fadeOutOverlay {
+    background-color: rgba(0,0,0,.6);
+}
+.fadeElem {
+    // opacity: 0;
 }
