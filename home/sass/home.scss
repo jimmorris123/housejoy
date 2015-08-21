@@ -23,8 +23,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
         ul {
             padding-left: 15px;
@@ -39,8 +39,8 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 16px);
                 @include rem(line-height, 20px);
+                @include rem(font-size, 16px);
                 span {
                     position: absolute;
                     top: 0;
@@ -76,8 +76,8 @@
                     border: transparent;
                     border-top: 3px solid transparent;
 
-                    @include rem(font-size, 20px);
                     @include transition(.3s all);
+                    @include rem(font-size, 20px);
                 }
                 &:hover,
                 &:focus,
@@ -137,8 +137,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 24px);
+                @include transform(translateY(-50%));
                 img {
                     margin-bottom: 10px;
                 }
@@ -151,8 +151,8 @@
 
             color: $dark-gray;
 
-            @include rem(line-height, 24px);
             @include rem(font-size, 16px);
+            @include rem(line-height, 24px);
         }
     }
 }
@@ -261,8 +261,8 @@
                         color: $dark-gray;
                         border-top: none;
 
-                        @include rem(line-height, 28px);
                         @include rem(font-size, 18px);
+                        @include rem(line-height, 28px);
                     }
                 }
             }
@@ -291,6 +291,51 @@
     }
 }
 
+// .about-tabs {
+//     padding-top: 0;
+//     margin: 0;
+
+//     border-top: 1px solid #ccc !important;
+//     &.responsive-tabs {
+//         & > nav {
+//             ul {
+//                 li {
+//                     float: left;
+//                 }
+//             }
+//         }
+//         & > .content {
+//             & .section-div {
+//                 ol {
+//                     padding: 20px 15px;
+//                     li {
+//                         margin-bottom: 15px;
+//                         overflow: hidden;
+
+//                         font-family: $blogger_R;
+
+//                         color: $dark-gray;
+
+//                         @include rem(font-size, 16px);
+//                         span {
+//                             &.name {
+//                                 float: left;
+//                                 width: 90%;
+//                             }
+//                             &:last-child {
+//                                 width: 10%;
+//                                 max-width: 140px;
+//                                 min-width: 60px;
+
+//                                 text-align: right;
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // home page style
 .home-banner {
@@ -326,10 +371,10 @@
 
             color: $white;
 
+            @include rem(font-size, 68px);
             @include medmx(768px) {
                 @include rem(font-size, 58px);
             }
-            @include rem(font-size, 68px);
             &.city-title {
                 @include rem(font-size, 70px);
             }
@@ -376,24 +421,24 @@
         .categories-box {
             display: inline-block;
             // float: left;
-            width: 18%;
+            width: 16%;
             margin-right: 12px;
             margin-bottom: 40px;
             margin-left: 12px;
 
-            @include medmxn(768px, 991px) {
-                width: 28%;
-            }
-            @include medmxn(992px, 1199px) {
-                width: 22%;
+            @include transition(all .3s);
+            @include medmxn(420px, 767px) {
+                width: 150px;
             }
             @include medmx(419px) {
                 width: 110px;
             }
-            @include medmxn(420px, 767px) {
-                width: 150px;
+            @include medmxn(992px, 1199px) {
+                width: 22%;
             }
-            @include transition(all .3s);
+            @include medmxn(768px, 991px) {
+                width: 28%;
+            }
             &:hover,
             &:focus,
             &:active {
@@ -411,10 +456,10 @@
                 }
             }
             &.with-icon {
+                @include transition(all .8s);
                 @include medmn(480px) {
                     // float: left;
                 }
-                @include transition(all .8s);
                 img {
                     display: none;
                     width: 40px;
@@ -444,14 +489,14 @@
 
                 text-align: center;
 
+                @include border-radius(50%);
+                @include medmxn(420px, 767px) {
+                    width: 140px;
+                }
                 @include medmx(419px) {
                     width: 100px;
                     height: 100px;
                 }
-                @include medmxn(420px, 767px) {
-                    width: 140px;
-                }
-                @include border-radius(50%);
                 .overlay {
                     background-color: rgba(0,0,0,.3);
                 }
@@ -471,14 +516,15 @@
         }
     }
     .work-categories {
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 20px;
+        overflow: hidden;
         .box {
             margin-bottom: 20px;
             img {
-                width: 80px;
-                height: 80px;
-                margin-bottom: 20px;
+                width: 120px;
+                height: 120px;
+                margin-bottom: 40px;
             }
             h4 {
                 margin-bottom: 20px;
@@ -535,16 +581,16 @@
         a {
             padding-left: 0;
 
-            @include medmn(768px) {
-                display: inline-block;
-                padding: 0;
-                padding-right: 15px;
+            @include medmn(992px) {
+                width: auto;
             }
             @include medmxn(480px, 767px) {
                 width: auto;
             }
-            @include medmn(992px) {
-                width: auto;
+            @include medmn(768px) {
+                display: inline-block;
+                padding: 0;
+                padding-right: 15px;
             }
         }
     }
@@ -619,8 +665,8 @@
 
                 color: $white;
 
-                @include transform(translateY(-50%));
                 @include rem(font-size, 30px);
+                @include transform(translateY(-50%));
                 p {
                     width: 60%;
                     margin: 0 auto;
@@ -632,12 +678,12 @@
 
                     color: $white;
 
+                    @include rem(font-size, 30px);
                     @include medmx(479px) {
                         margin-bottom: 15px;
 
                         @include rem(font-size, 16px);
                     }
-                    @include rem(font-size, 30px);
                     &:before {
                         content: open-quote;
                     }
@@ -650,10 +696,10 @@
 
                     color: $white;
 
-                    @include rem(font-size, 18px);
                     @include medmx(479px) {
                         @include rem(font-size, 14px);
                     }
+                    @include rem(font-size, 18px);
                 }
             }
         }
@@ -700,8 +746,8 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 18px);
         @include border-radius(5px);
+        @include rem(font-size, 18px);
     }
     #tipue_drop_content {
         width: 100%;
@@ -867,10 +913,10 @@
 
     color: $medium-gray;
 
-    @include rem(font-size, 16px);
     @include medmx(767px) {
         padding-top: 0;
     }
+    @include rem(font-size, 16px);
     .col-xs-12 {
         @include medmx(767px) {
             padding-right: 0;
@@ -891,12 +937,12 @@
 
         color: $dark-gray;
 
+        @include rem(font-size, 24px);
         @include medmx(767px) {
             padding-top: 40px;
 
             text-align: center;
         }
-        @include rem(font-size, 24px);
     }
     .sub-head {
         padding-top: 30px;
@@ -904,10 +950,10 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 20px);
         @include medmx(767px) {
             text-align: center;
         }
+        @include rem(font-size, 20px);
     }
 
     .contact-form {
@@ -944,8 +990,345 @@
                     box-shadow: none !important;
 
             -webkit-appearance: none;
-            @include rem(font-size, 18px);
             @include border-radius(5px);
+            @include rem(font-size, 18px);
+        }
+    }
+}
+
+
+// Rate card page style
+.accordion-flow {
+    position: relative;
+    .main-workflow {
+        width: 95%;
+
+        border: none !important;
+    }
+    .inner-accordian {
+        // overflow: hidden;
+        background-color: #fff;
+        .service {
+            display: none;
+            a {
+                float: left;
+                width: 100%;
+                padding: 15px 0;
+            }
+        }
+    }
+    .panel-default,
+    .main-workflow {
+        margin: 0 auto;
+        overflow: visible;
+
+        border: none;
+        border-bottom: 1px solid #ccc;
+
+        @include transition(all .3s);
+        @include border-radius(0);
+        .panel-heading,
+        .service-heading {
+            padding: 0 20px;
+            // height: 65px;
+            overflow: hidden;
+
+            font-family: "blogger_sansregular";
+
+            color: #555;
+            background-color: #fff;
+            box-shadow: none;
+
+            @include rem(font-size, 18px);
+            .panel-title {
+                .back-arrow {
+                    display: none;
+                    float: left;
+                    padding-right: 15px;
+
+                    cursor: pointer;
+
+                    @include rem(font-size, 20px);
+                    @include rem(line-height, 35px);
+                    & i {
+                        color: #777;
+                    }
+                }
+                a {
+                    font-family: "blogger_sansregular";
+
+                    color: #555;
+
+                    @include rem(line-height, 65px);
+                    @include rem(font-size, 18px);
+                    @include medmx(991px) {
+                        &.f-24 {
+                            font-size: 18px !important;
+                            font-size: 1.8rem !important;
+                        }
+                    }
+                    .title,
+                    span {
+                        font-family: "blogger_sansregular";
+                        line-height: 50px;
+
+                        color: #555;
+
+                        @include rem(line-height, 35px);
+                        @include rem(font-size, 18px);
+                    }
+                }
+                span.check-big,
+                span.edit-big {
+                    // display: none;
+                    margin-top: 25px;
+
+                    cursor: pointer;
+                    i {
+                        color: #999;
+
+                        @include rem(font-size, 20px);
+                    }
+                }
+                span.edit-big {
+                    display: none;
+                }
+
+                // span.check-big:hover span.edit-big {
+                //     display: block;
+                // }
+            }
+            .append-title {
+                height: 65px;
+                padding: 15px 0;
+                .title {
+                    // padding: 10px 15px;
+                }
+            }
+        }
+        .select-services {
+            padding-right: 15px;
+            padding-left: 15px;
+            overflow: hidden;
+
+            text-align: center;
+
+            .service-img {
+                position: relative;
+
+                width: auto;
+                max-width: 130px;
+                margin: 0 auto;
+                overflow: hidden;
+
+                @include border-radius(100%);
+                @include medmxn(481px, 991px) {
+                    width: 200px;
+                    height: 200px;
+                    max-width: none;
+                }
+                @include medmxn(360px, 480px) {
+                    width: 130px;
+                    height: 130px;
+                }
+                @include medmx(360px) {
+                    width: 105px;
+                    height: 105px;
+                }
+                @include medmn(992px) {
+                    max-width: 75%;
+                    margin-top: 20px;
+                    // padding-left: 10px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+
+                    // @include border-radius(0);
+                }
+                .overlay-img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    // margin: 0 15px;
+
+                    background-color: rgba(0,0,0,.4);
+                }
+                img {
+                    height: 100%;
+
+                    @include medmn(992px) {
+                        height: auto;
+                    }
+                }
+            }
+            .title {
+                margin-top: 15px;
+                margin-bottom: 25px;
+
+                font-family: "blogger_sansregular";
+
+                color: #555;
+                // @include medmn(992px) {
+                //     position: absolute;
+                //     bottom: 0;
+                //     padding-right: 15px;
+                //     padding-left: 15px;
+                //     font-family: "blogger_sanslight";
+                //     color: #fff;
+                //     @include rem(font-size, 40px);
+                // }
+
+                @include rem(font-size, 20px);
+            }
+        }
+        .panel-body {
+            padding: 0;
+
+            background-color: #f6f6f6;
+            .product-detail {
+                display: inline-block;
+                width: 100%;
+                padding: 15px;
+
+                border-bottom: 1px solid #ccc;
+                .arrow-right {
+                    margin-top: 10px;
+                    i {
+                        color: #777;
+
+                        @include rem(font-size, 16px);
+                    }
+                }
+                .title {
+                    padding-left: 30px;
+
+                    font-family: "blogger_sansregular";
+
+                    color: #555;
+
+                    @include rem(font-size, 16px);
+                }
+                p {
+                    padding-left: 30px;
+
+                    font-family: "blogger_sansregular";
+
+                    color: #555;
+
+                    @include rem(font-size, 14px);
+                }
+            }
+            .empty-body {
+                border-bottom: none;
+                .description {
+                    h4,
+                    p {
+                        padding-left: 5px;
+                    }
+                }
+                .action {
+                    padding-top: 10px;
+                }
+            }
+            .clock-timing {
+                padding-top: 25px;
+                padding-bottom: 15px;
+                // overflow-x: auto;
+                // -webkit-overflow-scrolling: touch;
+                overflow: hidden;
+
+                text-align: center;
+                .inner {
+                    // display: table;
+                    // width: 800px;
+                    // height: 100%;
+                    margin: 0 auto;
+                    .form-group {
+                        display: inline-block;
+
+                        vertical-align: middle;
+                        input[type="radio"] {
+                            display: none;
+                        }
+                        .time-slot {
+                            width: 150px;
+                            height: 40px;
+                            padding: 0 15px;
+                            margin: auto 10px;
+
+                            font-family: "blogger_sansregular";
+                            line-height: 40px;
+
+                            cursor: pointer;
+                            text-align: center;
+                            letter-spacing: 1px;
+
+                            opacity: .5;
+                            border: 1px solid #ccc;
+                            border-radius: 20px;
+
+                            @include rem(font-size, 18px);
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        input[type="radio"]:checked + label.time-slot {
+                            font-family: "blogger_sansmedium";
+
+                            opacity: 1;
+                            color: #555;
+                            border: none;
+                            background-color: #ffc107;
+                        }
+                    }
+                }
+            }
+            .group {
+                .discount-heading {
+                    padding-right: 15px;
+                    margin-bottom: 20px;
+
+                    font-family: "blogger_sansregular";
+
+                    @include rem(font-size, 16px);
+                }
+            }
+        }
+    }
+}
+
+#workflow_one {
+    cursor: default;
+}
+
+.content {
+    & .section-div {
+        ol {
+            padding: 20px 15px;
+            li {
+                margin-bottom: 15px;
+                overflow: hidden;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 16px);
+                span {
+                    &.name {
+                        float: left;
+                        width: 85%;
+                    }
+                    &:last-child {
+                        width: 10%;
+                        max-width: 140px;
+                        min-width: 60px;
+
+                        text-align: right;
+                    }
+                }
+            }
         }
     }
 }
