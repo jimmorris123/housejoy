@@ -86,6 +86,7 @@
 
                 display: inline-block;
                 h2 {
+                    float: left;
                     margin-bottom: 40px;
 
                     font-family: $blogger_M;
@@ -105,7 +106,8 @@
                     &:active {
                         outline: none;
                     }
-                    svg {
+                    svg,
+                    img {
                         width: 20px;
                         height: 20px;
                         margin-bottom: -4px;
@@ -124,12 +126,30 @@
                 }
                 p {
                     margin-bottom: 5px;
+                    clear: left;
 
                     font-family: $blogger_R;
 
                     color: rgba(255,255,255,.8);
 
                     @include rem(font-size, 18px);
+                }
+            }
+            .trial {
+                @include medmx(767px) {
+                    float: left !important;
+                    button {
+                        margin-top: 10px;
+                        margin-left: 70px;
+                    }
+                }
+                button {
+                    max-width: 160px;
+                    min-width: 140px;
+
+                    color: #fff;
+                    border: 2px solid #fff;
+                    background-color: transparent;
                 }
             }
             // .notify-btn {

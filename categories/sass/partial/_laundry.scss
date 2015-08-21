@@ -30,10 +30,10 @@
 
             margin: 30px auto;
 
-            @include transform(translate(-50%, -50%));
             @include medmx(767px) {
                 width: 100%;
             }
+            @include transform(translate(-50%, -50%));
         }
         &.house-cleaning-bg {
             .container {
@@ -63,13 +63,13 @@
 
                 background-color: $white;
 
-                @include transform(rotate(30deg));
                 @include medmx(767px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
+                @include transform(rotate(30deg));
             }
         }
         .title {
@@ -95,32 +95,32 @@
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 40px);
+                    @include rem(font-size, 70px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 56px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 50px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 56px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 40px);
                     }
-                    @include rem(font-size, 70px);
                 }
                 &.l-left-title {
                     font-family: $bebasneue_R;
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 30px);
+                    @include rem(font-size, 60px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 46px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 48px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 46px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 30px);
                     }
-                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -129,12 +129,12 @@
                 max-width: 100px;
                 min-width: 80px;
 
+                @include rem(font-size, 16px);
                 @include medmx(767px) {
                     float: none;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
-                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
@@ -205,12 +205,13 @@
             a {
                 // display: table-cell;
                 display: block;
-                padding: 40px 15px;
+                padding: 40px 15px 30px;
+
                 img,
                 svg {
                     width: 50px;
                     height: 50px;
-                    margin-bottom: 10px;
+                    margin-bottom: 25px;
 
                     color: $yellow;
                 }
@@ -260,8 +261,8 @@
 
                     color: $white;
 
-                    @include rem(font-size, 30px);
                     @include transform(translateY(-50%));
+                    @include rem(font-size, 30px);
                 }
             }
         }
@@ -321,8 +322,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(font-size, 16px);
                     @include rem(line-height, 22px);
+                    @include rem(font-size, 16px);
                 }
             }
         }
@@ -371,6 +372,98 @@
             @include rem(font-size, 20px);
         }
     }
+    .row-wrap {
+        display: table-row;
+
+        @include medmx(767px) {
+            display: block;
+        }
+        .faq-accordian {
+            display: table-cell;
+            float: none;
+
+            vertical-align: middle;
+
+            @include medmx(767px) {
+                display: block;
+                padding: 0;
+            }
+            .panel {
+                .panel-heading {
+                    font-family: $blogger_R;
+
+                    color: $dark-gray;
+                    background-color: #fff;
+
+                    @include rem(font-size, 20px);
+                    a.collapsed + .arrow-icon {
+                        @include transform(rotate(360deg));
+                    }
+                    .arrow-icon {
+                        display: inline-block;
+                        float: right;
+                        width: 18px;
+                        height: 18px;
+
+                        @include transform(rotate(180deg));
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .panel-collapse {
+                .panel-body {
+                    font-family: $blogger_L;
+
+                    color: $dark-gray;
+                    background-color: #fafafa;
+
+                    @include rem(font-size, 16px);
+                    @include rem(line-height, 22px);
+                }
+            }
+        }
+        .faq-tagline {
+            display: table-cell;
+            float: none;
+
+            vertical-align: middle;
+
+            @include medmx(767px) {
+                display: block;
+                padding: 0;
+            }
+            .wrap {
+                display: table-cell;
+
+                text-align: right;
+                vertical-align: middle;
+
+                @include medmx(767px) {
+                    text-align: center;
+                }
+                h1 {
+                    margin-bottom: 15px;
+
+                    font-family: $blogger_L;
+
+                    text-transform: uppercase;
+
+                    color: $dark-gray;
+
+                    @include rem(font-size, 30px);
+                    @include rem(line-height, 34px);
+                    text-right: right;
+                }
+                button {
+                    display: inline-block;
+                    max-width: 130px;
+                }
+            }
+        }
+    }
 }
 
 .service-section {
@@ -390,15 +483,16 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 20px);
         @include medmx(479px) {
             min-height: 25px;
             margin-bottom: 6px;
         }
+        @include rem(font-size, 20px);
     }
     p {
         float: none;
         margin: 0 auto;
+        margin-bottom: 10px;
 
         font-family: $blogger_L;
 
@@ -412,11 +506,11 @@
     & > div {
         margin-bottom: 20px;
 
-        @include medmx(479 px) {
-            padding: 6px;
-        }
         @include medmn(480px) {
             margin-bottom: 26px;
+        }
+        @include medmx(479 px) {
+            padding: 6px;
         }
     }
 }

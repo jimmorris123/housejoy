@@ -87,6 +87,7 @@
 
                         color: $medium-gray;
 
+                        @include rem(font-size, 18px);
                         @include placeholder {
                             font-family: $blogger_R;
 
@@ -94,7 +95,6 @@
 
                             @include rem(font-size, 18px);
                         }
-                        @include rem(font-size, 18px);
                     }
                     .image-upload {
                         display: inline-block;
@@ -213,11 +213,11 @@
 
                 color: $dark-gray;
 
-                @include rem(font-size, 18px);
-                @include rem(line-height, 22px);
                 @include medmxn(768px, 991px) {
                     @include rem(font-size, 16px);
                 }
+                @include rem(line-height, 22px);
+                @include rem(font-size, 18px);
                 &.remove-box {
                     display: inline-block;
                     width: 25%;
@@ -261,6 +261,40 @@
             }
             button {
                 height: 50px;
+            }
+        }
+        &.empty-cart {
+            display: table;
+            padding: 100px 5px 30px;
+
+            text-align: center;
+            .inner-cart {
+                display: table-cell;
+
+                vertical-align: middle;
+                img {
+                    margin-bottom: 20px;
+                }
+                h2 {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_L;
+                    font-style: italic;
+
+                    opacity: .8;
+                    color: $dark-gray;
+
+                    @include rem(font-size, 18px);
+                }
+                p {
+                    font-family: $blogger_L;
+                    font-style: italic;
+
+                    opacity: .5;
+                    color: $dark-gray;
+
+                    @include rem(font-size, 14px);
+                }
             }
         }
     }
@@ -346,6 +380,77 @@
         input[type="checkbox"]:checked + label {
             color: $green;
             border-bottom: 1px solid $green;
+        }
+    }
+}
+
+.content-rates {
+    padding: 0;
+    & .section-div {
+        overflow: hidden;
+        ol {
+            float: none;
+            padding: 20px 15px;
+            margin: 0 auto;
+            li {
+                margin-bottom: 15px;
+                overflow: hidden;
+
+                font-family: $blogger_R;
+
+                color: $dark-gray;
+
+                @include rem(font-size, 16px);
+                span {
+                    &.name {
+                        float: left;
+                        width: 85%;
+
+                        @include medmx(767px) {
+                            width: 75%;
+                        }
+                    }
+                    &:last-child {
+                        width: 10%;
+                        max-width: 140px;
+                        min-width: 60px;
+
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    .note {
+        display: block;
+        padding-left: 20px;
+        & > div {
+            float: none;
+            padding: 0;
+            margin: 0 auto;
+            h4 {
+                margin-bottom: 10px;
+
+                font-family: $blogger_R;
+
+                color: #999;
+
+                @include rem(font-size, 18px);
+            }
+            ol {
+                padding-left: 20px;
+
+                list-style-type: decimal;
+                li {
+                    margin-bottom: 10px;
+
+                    font-family: $blogger_R;
+
+                    color: #999;
+
+                    @include rem(font-size, 16px);
+                }
+            }
         }
     }
 }
