@@ -19,12 +19,13 @@
 					<div class="navbar-header">
 						<div class="logo-div text-center">
 							<a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
-	                    	<!-- <a class="hide visible-xs" href="#"><img class="img-responsive" src="../images/logo-green.png" alt=""></a> -->
 							<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
 								<span class="hamb-top"></span>
 								<span class="hamb-middle"></span>
 								<span class="hamb-bottom"></span>
 							</button>
+							<span class="hide visible-xs"><a href="#"><img class="img-responsive" src="../images/svg/email.svg" alt=""></a></span>
+							<span class="hide visible-xs"><a href="#"><img class="img-responsive" src="../images/svg/call.svg" alt=""></a></span>
 						</div>
 					</div>
 					<div class="navbar-inverse side-collapse in">
@@ -56,18 +57,21 @@
 										</ul>
 									</div>
 								</li>
+								<li><a href="#" class="text-uppercase">Rate Card</a></li>
+								<li><a href="#" class="text-uppercase">How it works</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
 								<li class="hide visible-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login or Signup</a></li>
 								<li class="hide visible-xs"><a class="text-uppercase" href="#">Home</a></li>
 								<li class="hide visible-xs"><a class="text-uppercase" href="#">Services</a></li>
 								<li class="hide visible-xs"><a class="text-uppercase" href="#">About Us</a></li>
-								<li><a class="text-uppercase" href="#">Help</a></li>
-								<li class=" hidden-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login</a></li>
+								<li class="hide visible-xs"><a href="#" class="text-uppercase">Rate Card</a></li>
+								<li class="hide visible-xs"><a href="#" class="text-uppercase">How it works</a></li>
 								<li class=" hidden-xs"><a href="#"><img src="../images/svg/call.svg" alt=""></a></li>
 								<li class=" hidden-xs"><a href="#"><img src="../images/svg/email.svg" alt=""></a></li>
-							<li class=" hidden-xs"><a href="#"><img src="../images/svg/android_os_copyrighted.svg" alt=""></a></li>
-							<li class=" hidden-xs"><a href="#"><img src="../images/svg/Apple_logo_black.svg" alt=""></a></li>
+								<li class=" hidden-xs hidden-sm"><a href="#"><img src="../images/svg/android_os_copyrighted.svg" alt=""></a></li>
+								<li class=" hidden-xs hidden-sm"><a href="#"><img src="../images/svg/Apple_logo_black.svg" alt=""></a></li>
+								<li class=" hidden-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login</a></li>
 							</ul>
 							<div class="play-store hide visible-xs">
 								<span class="text">Download our App</span>
@@ -79,131 +83,135 @@
 					</div>
 				</header>
 			</div>
-			<nav class="page-nav">
-				<ul>
-					<li class="col-xs-4 ">
-						<a href="checkout-schedule-appointment.html">
-							<span class="tab-icon">
-								<span class="schedule"></span>
-							</span>
-							<span class="tab-text">Schedule an Appointment</span>
-						</a>
-					</li>
-					<li class="col-xs-4 active">
-						<a href="checkout-personal-details.html">
-							<span class="tab-icon">
-								<span class="credit-card"></span>
-							</span>
-							<span class="tab-text">Your Details</span>
-						</a>
-					</li>
-					<li class="col-xs-4">
-						<a href="checkout-make-payment.html">
-							<span class="tab-icon no-border-right">
-								<span class="make-payment"></span>
-							</span>
-							<span class="tab-text">Make Payment</span>
-						</a>
-					</li>									
-				</ul>
-			</nav>
-			<div class="page-content-wrapper">
-				<div class="page-content">
-					<div class="section-div" id="one">
-						<div class="left-user-div">
-							<div class="row sections">
-								<div class="row social-login">
-									<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button fb-button">Continue with Facebook</a></div>
-									<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button gmail-button">Continue with Goolge</a></div>
-								</div>
-							</div>
-							<div class="left-section-head left-section-head-top-margin">Enter your Details</div>
-							<div class="row sections">
-								<div class="section-head">Email Address</div>
-								<input placeholder="Enter you email">
-							</div>
-							<div class="row sections">
-								<div class="checkbox-div">
-									<!-- <div class="checkbox-icon-label-div">
-										<div class="checkbox-icon-div">
-											<input type="checkbox" name="same_address" id="same_address" value="same-address" checked="checked" />
-											<label class="checkbox-style" for="same_address">
-					                        </label>
-				                        </div>
-				                        <div class="checkbox-label-text">
-				                        	<span class="same-address-label">I have a password</span>
-				                        </div>
-			                        </div> -->
-			                        <div class="check-div">
-										<label for="have-password">
-											<span class="check-button-div">
-												<input type="checkbox" value="preferred-payment2" name="have-password" id="have-password" checked="checked">
-												<span class="check-button">
-													<svg class="icon ">
-														<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
-													</svg>
-												</span>
-											</span>
-											<span class="text-div">
-											I have a password
-											</span>
-										</label>
-				                    </div>
-								</div>
-							</div>
-							<div class="row sections enter-password-section initial-hide">
-								<div class="section-head">Password</div>
-								<input id="userpassword" name="userpassword" type="password" class="form-control" placeholder="Johndoe@email.co" required="" >
-							</div>
-							<div class="row sections text-r-c display-personal-details-form-row">
-								<button type="button" id="display-personal-details-form" class="btn btn-default checkout-yellow-button">Continue</button>
-							</div>
-							<div class="personal-details-div initial-hide">
-								<div class="row sections">
-									<div class="section-head">Username</div>
-									<input id="username" name="username" type="email" class="form-control" placeholder="Johndoe@email.co" required="">
-								</div>
-								<div class="row sections">
-									<div class="section-head">Password</div>
-									<input id="userpassword2" name="userpassword2" type="password" class="form-control" placeholder="" required="">
-								</div>
-								<div class="row sections">
-									<div class="section-head">Mobile Number</div>
-									<input id="usernumber" name="usernumber" type="text" class="form-control" placeholder="9999999999" required="">
-								</div>
-								<div class="row sections text-r-c">
-									<button type="button" id="submit-form" class="btn btn-default checkout-yellow-button">Continue</button>
-								</div>
-							</div>
-						</div>
-						<div class="right-summary-div">
-							<span class="summary-head">Summary</span>
-							<span class="summary-sub-text">Selected Services for Plumbing</span>
-							<ul class="service-list">
-								<li>Leak Detection</li>
-								<li>Shower Repair</li>
-								<li>Tap Repair</li>									
-							</ul>
-							<div class="group MT40-imp">
-                                <div class="input-wrap">
-                                    <input type="text" placeholder="Eg : “Hair Color”, “Nail Color”" required="">
-                                    <span class="highlight"></span>
-                                    <span class="bar yellow-bg"></span>
-                                    <label class="input-material active-input">Comments</label>
-                                </div>
-                            </div>									
 
-							<div class="time-and-price-div">
-								<div class="time-div">
-									for 2 hours
+			<div class="side-collapse-container">
+			<div class="overlay after-slide"></div>
+				<nav class="page-nav">
+					<ul>
+						<li class="col-xs-4 ">
+							<a href="checkout-schedule-appointment.html">
+								<span class="tab-icon">
+									<span class="schedule"></span>
+								</span>
+								<span class="tab-text">Schedule an Appointment</span>
+							</a>
+						</li>
+						<li class="col-xs-4 active">
+							<a href="checkout-personal-details.html">
+								<span class="tab-icon">
+									<span class="credit-card"></span>
+								</span>
+								<span class="tab-text">Your Details</span>
+							</a>
+						</li>
+						<li class="col-xs-4">
+							<a href="checkout-make-payment.html">
+								<span class="tab-icon no-border-right">
+									<span class="make-payment"></span>
+								</span>
+								<span class="tab-text">Make Payment</span>
+							</a>
+						</li>									
+					</ul>
+				</nav>
+				<div class="page-content-wrapper">
+					<div class="page-content">
+						<div class="section-div" id="one">
+							<div class="left-user-div">
+								<div class="row sections">
+									<div class="row social-login">
+										<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button fb-button">Continue with Facebook</a></div>
+										<div class="col-xs-12 col-sm-6"><a href="#" class="social-login-button gmail-button">Continue with Goolge</a></div>
+									</div>
 								</div>
-								<div class="price-div">
-									$599
+								<div class="left-section-head left-section-head-top-margin">Enter your Details</div>
+								<div class="row sections">
+									<div class="section-head">Email Address</div>
+									<input placeholder="Enter you email">
+								</div>
+								<div class="row sections">
+									<div class="checkbox-div">
+										<!-- <div class="checkbox-icon-label-div">
+											<div class="checkbox-icon-div">
+												<input type="checkbox" name="same_address" id="same_address" value="same-address" checked="checked" />
+												<label class="checkbox-style" for="same_address">
+						                        </label>
+					                        </div>
+					                        <div class="checkbox-label-text">
+					                        	<span class="same-address-label">I have a password</span>
+					                        </div>
+				                        </div> -->
+				                        <div class="check-div">
+											<label for="have-password">
+												<span class="check-button-div">
+													<input type="checkbox" value="preferred-payment2" name="have-password" id="have-password" checked="checked">
+													<span class="check-button">
+														<svg class="icon ">
+															<use xlink:href="../images/profile_images/svg-icon.svg#icon-checkmark"></use>
+														</svg>
+													</span>
+												</span>
+												<span class="text-div">
+												I have a password
+												</span>
+											</label>
+					                    </div>
+									</div>
+								</div>
+								<div class="row sections enter-password-section initial-hide">
+									<div class="section-head">Password</div>
+									<input id="userpassword" name="userpassword" type="password" class="form-control" placeholder="Johndoe@email.co" required="" >
+								</div>
+								<div class="row sections text-r-c display-personal-details-form-row">
+									<button type="button" id="display-personal-details-form" class="btn btn-default checkout-yellow-button">Continue</button>
+								</div>
+								<div class="personal-details-div initial-hide">
+									<div class="row sections">
+										<div class="section-head">Username</div>
+										<input id="username" name="username" type="email" class="form-control" placeholder="Johndoe@email.co" required="">
+									</div>
+									<div class="row sections">
+										<div class="section-head">Password</div>
+										<input id="userpassword2" name="userpassword2" type="password" class="form-control" placeholder="" required="">
+									</div>
+									<div class="row sections">
+										<div class="section-head">Mobile Number</div>
+										<input id="usernumber" name="usernumber" type="text" class="form-control" placeholder="9999999999" required="">
+									</div>
+									<div class="row sections text-r-c">
+										<button type="button" id="submit-form" class="btn btn-default checkout-yellow-button">Continue</button>
+									</div>
 								</div>
 							</div>
-						</div>
-						
-					</div>											
+							<div class="right-summary-div">
+								<span class="summary-head">Summary</span>
+								<span class="summary-sub-text">Selected Services for Plumbing</span>
+								<ul class="service-list">
+									<li>Leak Detection</li>
+									<li>Shower Repair</li>
+									<li>Tap Repair</li>									
+								</ul>
+								<div class="group MT40-imp">
+	                                <div class="input-wrap">
+	                                    <input type="text" placeholder="Eg : “Hair Color”, “Nail Color”" required="">
+	                                    <span class="highlight"></span>
+	                                    <span class="bar yellow-bg"></span>
+	                                    <label class="input-material active-input">Comments</label>
+	                                </div>
+	                            </div>									
+
+								<div class="time-and-price-div">
+									<div class="time-div">
+										for 2 hours
+									</div>
+									<div class="price-div">
+										$599
+									</div>
+								</div>
+							</div>
+							
+						</div>											
+					</div>
 				</div>
 			</div>
 		</div>

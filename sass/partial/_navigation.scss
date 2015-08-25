@@ -2,7 +2,7 @@
 // New nav list-style
 .side-collapse-container {
     .overlay {
-        .after-slide {
+        &.after-slide {
             display: none;
         }
     }
@@ -34,7 +34,7 @@
         }
         .overlay {
             &.after-slide {
-                z-index: 1;
+                z-index: 2;
 
                 display: block;
             }
@@ -171,6 +171,8 @@
     top: 50%;
 
     margin-top: -2px;
+
+    background-color: #555;
 }
 .hamburger.is-open .hamb-top {
     -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08);
@@ -250,7 +252,10 @@
             }
             .hamburger.is-open {
                 // display: none !important;
-                left: 82%;
+                left: 70%;
+                z-index: 999999;
+
+                width: 16px;
             }
             .notify-btn {
                 position: absolute;
@@ -273,6 +278,18 @@
                 @include border-radius(100%);
                 @include rem(font-size, 20px);
             }
+            span.hide {
+                float: right;
+                width: 22px;
+                height: 22px;
+                margin-right: 20px;
+                &:last-child {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
         }
         .navbar-inverse {
             border: none;
@@ -290,9 +307,13 @@
                 }
             }
             .navbar-collapse {
-                padding: 0 25px;
+                padding: 0;
 
                 border: none;
+
+                @include medmx(767px) {
+                    padding: 0 25px;
+                }
                 .navbar-nav {
                     background-color: transparent;
                     li {
@@ -302,7 +323,7 @@
                             }
                         }
                         a {
-                            padding: 20px 15px;
+                            padding: 20px 10px;
 
                             font-family: $blogger_R;
 
@@ -310,6 +331,7 @@
 
                             @include rem(font-size, 16px);
                             @include medmx(767px) {
+                                padding: 20px 5px;
                                 padding-bottom: 0;
 
                                 white-space: nowrap;

@@ -15,16 +15,17 @@
 <body class="o-flow-y-sc">
     <div class="page-wrapper">
         <div class="header">
-            <header class="navbar navbar-default navbar-inverse">
+            <header class="navbar navbar-default">
                 <div class="navbar-header">
                     <div class="logo-div text-center">
                         <a href="#"><img src="../images/housejoy-logo.png" alt=""></a>
-                        <div class="notify-btn hide visible-xs button-default" data-toggle="modal" data-target="#summaryModal">3</div>
                         <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left hamburger is-closed hide visible-xs">
                             <span class="hamb-top"></span>
                             <span class="hamb-middle"></span>
                             <span class="hamb-bottom"></span>
                         </button>
+                        <span class="hide visible-xs"><a href="#"><img class="img-responsive" src="../images/svg/email.svg" alt=""></a></span>
+                        <span class="hide visible-xs"><a href="#"><img class="img-responsive" src="../images/svg/call.svg" alt=""></a></span>
                     </div>
                 </div>
                 <div class="navbar-inverse side-collapse in">
@@ -32,8 +33,8 @@
                         <a href="#"><img src="../images/logo-green.png" alt=""></a>
                     </div>
                     <nav class="navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="hidden-xs">
+                        <ul class="nav navbar-nav hidden-xs">
+                            <li>
                                 <div class="dropdown dropdown-select">
                                     <button class="btn btn-default dropdown-toggle text-left" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                                         Bangalore
@@ -56,18 +57,21 @@
                                     </ul>
                                 </div>
                             </li>
+                            <li><a href="#" class="text-uppercase">Rate Card</a></li>
+                            <li><a href="#" class="text-uppercase">How it works</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="hide visible-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login or Signup</a></li>
                             <li class="hide visible-xs"><a class="text-uppercase" href="#">Home</a></li>
                             <li class="hide visible-xs"><a class="text-uppercase" href="#">Services</a></li>
                             <li class="hide visible-xs"><a class="text-uppercase" href="#">About Us</a></li>
-                            <li><a class="text-uppercase" href="#">Help</a></li>
-                            <li class=" hidden-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login</a></li>
+                            <li class="hide visible-xs"><a href="#" class="text-uppercase">Rate Card</a></li>
+                            <li class="hide visible-xs"><a href="#" class="text-uppercase">How it works</a></li>
                             <li class=" hidden-xs"><a href="#"><img src="../images/svg/call.svg" alt=""></a></li>
                             <li class=" hidden-xs"><a href="#"><img src="../images/svg/email.svg" alt=""></a></li>
-                            <li class=" hidden-xs"><a href="#"><img src="../images/svg/android_os_copyrighted.svg" alt=""></a></li>
-                            <li class=" hidden-xs"><a href="#"><img src="../images/svg/Apple_logo_black.svg" alt=""></a></li>
+                            <li class=" hidden-xs hidden-sm"><a href="#"><img src="../images/svg/android_os_copyrighted.svg" alt=""></a></li>
+                            <li class=" hidden-xs hidden-sm"><a href="#"><img src="../images/svg/Apple_logo_black.svg" alt=""></a></li>
+                            <li class=" hidden-xs"><a class="text-uppercase" data-toggle="modal" href="#loginModal">Login</a></li>
                         </ul>
                         <div class="play-store hide visible-xs">
                             <span class="text">Download our App</span>
@@ -79,7 +83,8 @@
                 </div>
             </header>
         </div>
-        <div class="housing-wrapper">
+        <div class="housing-wrapper side-collapse-container">
+        <div class="overlay after-slide"></div>
             <div class="page-content PD0-imp">
                 <div class="top-heading carpentry-bg">
                     <div class="overlay inside-linearBg"></div>

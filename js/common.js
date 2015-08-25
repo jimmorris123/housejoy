@@ -54,7 +54,7 @@ $(document).ready(function() {
      $(this).parents('.dropdown-menu').find('li').removeClass('active');
      $(this).parent('li').addClass('active');
      //Displays selected text on dropdown-toggle button
-     $(this).parents('.dropdown-select').find('.dropdown-toggle').html(target + '<span class="caret pull-right"><svg><use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use></svg></span>');
+     $(this).parents('.dropdown-select').find('.dropdown-toggle').html('<span class="pull-left">' + target + '</span>' + '<span class="caret pull-right"><svg><use xlink:href="../images/profile_images/svg-icon.svg#icon-down"></use></svg></span>');
   });//end
 
   // login and register modal script
@@ -88,5 +88,22 @@ $(document).ready(function() {
 });
 
 
+// fade animation for elements on scroll
+var header = $('.fadeElem');
+var range = 800;
+$(window).on('scroll', function () {
+    var st = $(this).scrollTop();
+    header.each(function () {
+        var offset = $(this).offset().top;
+        var height = $(this).outerHeight();
+        offset = offset + height / 2;
+        $(this).css({ 'opacity': 1.6 - (st - offset + range) / range });
+    });
+});
 
-    
+
+// $(document).on('click', function(){
+//   $('.navbar-inverse.side-collapse').addClass('in');
+//   $('.side-collapse-container').removeClass('out');
+//   $('.hamburger').addClass('is-open');
+// })

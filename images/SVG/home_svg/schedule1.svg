@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1024px" height="768px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve">
+        <style type="text/css">
+        <![CDATA[ .st0 {
+            fill: #FFFFFF;
+            stroke: #58595B;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+        
+        .hand_2 {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 20;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+        
+        .hand {
+            fill: none;
+            stroke: #fff;
+            stroke-width: 20;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            stroke-miterlimit: 10;
+        }
+        
+        .st2 {
+            fill: none;
+            stroke: #FCC400;
+            stroke-miterlimit: 10;
+        }
+        
+        .st3 {
+            fill: #FCC400;
+        }
+        
+        .st4 {
+            fill: #FFFFFF;
+        }
+        
+        .st5 {
+            fill: #FFFFFF;
+            stroke: #58595B;
+            stroke-width: 1.5;
+            stroke-miterlimit: 10;
+        }
+        
+        .hand {
+            -webkit-transform-origin: 512px 400px;
+            -moz-transform-origin: 512px 400px;
+            -ms-transform-origin: 512px 400px;
+            transform-origin: 512px 400px;
+            -webkit-animation: spin_1 3s linear infinite;
+            -moz-animation: spin_1 3s linear infinite;
+            -ms-animation: spin_1 3s linear infinite;
+            animation: spin_1 3s linear infinite;
+            -webkit-animation-play-state: running;
+            -moz-animation-play-state: running;
+            -ms-animation-play-state: running;
+            animation-play-state: running;
+        }
+        
+        .hand_2 {
+            -webkit-transform-origin: 514px 400px;
+            -moz-transform-origin: 514px 400px;
+            -ms-transform-origin: 514px 400px;
+            transform-origin: 514px 400px;
+            -webkit-animation: spin_1 8s linear infinite;
+            -moz-animation: spin_1 8s linear infinite;
+            -ms-animation: spin_1 8s linear infinite;
+            animation: spin_1 8s linear infinite;
+            -webkit-animation-play-state: running;
+            -moz-animation-play-state: running;
+            -ms-animation-play-state: running;
+            animation-play-state: running;
+        }
+        
+        .clock:hover .hand {
+            -webkit-animation-play-state: running;
+            -moz-animation-play-state: running;
+            -ms-animation-play-state: running;
+            animation-play-state: running;
+        }
+        
+        @-webkit-keyframes spin_1 {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-moz-keyframes spin_1 {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-ms-keyframes spin_1 {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin_1 {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        
+        @-webkit-keyframes spin_2 {
+            100% {
+                -webkit-transform: rotate(420deg);
+                transform: rotate(420deg);
+            }
+        }
+        
+        @keyframes spin_2 {
+            100% {
+                -webkit-transform: rotate(420deg);
+                transform: rotate(420deg);
+            }
+        }
+        
+        ]]>
+        </style>
+        <path class="st0" d="M688.333,738.662c5.068,9.984,0.921,22.119-8.909,27.188l0,0c-9.982,5.068-22.118,0.922-27.188-8.908
+		l-33.791-66.97c-5.069-9.983-0.922-22.119,9.062-27.188l0,0c9.984-5.069,22.119-0.922,27.188,8.908L688.333,738.662z" />
+        <path class="st0" d="M337.971,739.431c-4.762,10.139-0.461,22.118,9.677,26.88l0,0c10.138,4.763,22.119,0.462,26.88-9.677
+			l31.949-67.892c4.763-10.138,0.461-22.118-9.677-26.88l0,0c-10.137-4.763-22.118-0.461-26.88,9.677L337.971,739.431z" />
+        <path class="st5" d="M567.143,54.989c0,30.413-24.729,55.143-55.143,55.143s-55.143-24.73-55.143-55.143
+				c0-30.566,24.729-55.143,55.143-55.143C542.566-0.307,567.143,24.422,567.143,54.989z" />
+        <path class="st5" d="M861.286,404.736c-3.532,192.921-162.815,346.367-355.737,342.835
+					c-192.768-3.533-346.214-162.662-342.835-355.584C166.247,199.065,325.53,45.619,518.298,49.152
+					C711.219,52.685,864.819,211.814,861.286,404.736z" />
+        <path class="st3" d="M792.013,398.285c0,154.675-125.338,280.013-280.013,280.013S231.987,552.96,231.987,398.285
+						c0-154.676,125.337-280.013,280.013-280.013C666.675,118.426,792.013,243.763,792.013,398.285z" />
+        <path class="st4" d="M548.25,398.285c0,19.968-16.282,36.249-36.25,36.249s-36.25-16.281-36.25-36.249
+							c0-19.969,16.282-36.25,36.25-36.25C531.968,362.188,548.25,378.316,548.25,398.285z" />
+        <path class="st4" d="M527.36,165.273c0,8.448-6.912,15.36-15.36,15.36s-15.36-6.912-15.36-15.36c0-8.448,6.912-15.36,15.36-15.36
+								C520.448,149.76,527.36,156.672,527.36,165.273z" />
+        <path class="st4" d="M527.36,636.211c0,8.448-6.912,15.36-15.36,15.36s-15.36-6.912-15.36-15.36c0-8.447,6.912-15.359,15.36-15.359
+									S527.36,627.764,527.36,636.211z" />
+        <path class="hand_2" d="M514.021,402.587c35.621,36.659,71.621,73.659,107.49,110.588" />
+        <path class="hand" d="M427.209,206.896c26.436,62.35,53.436,124.35,80.182,186.092" />
+        <path class="st4" d="M747.469,416.103c-8.447,0-15.359-6.911-15.359-15.359s6.912-15.359,15.359-15.359
+										c8.448,0,15.36,6.911,15.36,15.359C762.982,409.19,756.07,416.103,747.469,416.103z" />
+        <path class="st4" d="M276.531,416.103c-8.448,0-15.36-6.911-15.36-15.359s6.912-15.359,15.36-15.359
+											c8.448,0,15.36,6.911,15.36,15.359S284.979,416.103,276.531,416.103z" />
+        <path class="st4" d="M667.597,578.15c-5.989-5.99-5.989-15.82,0-21.813c5.99-5.99,15.821-5.99,21.813,0
+												c5.99,5.991,5.99,15.821,0,21.813C683.419,584.141,673.587,584.141,667.597,578.15z" />
+        <path class="st4" d="M334.592,245.146c-5.99-5.99-5.99-15.821,0-21.811c5.991-5.99,15.821-5.99,21.812,0
+													c5.99,5.99,5.99,15.821,0,21.811C350.259,251.136,340.583,251.136,334.592,245.146z" />
+        <path class="st4" d="M334.592,556.339c5.991-5.99,15.821-5.99,21.812,0c5.99,5.991,5.99,15.821,0,21.813
+														c-5.991,5.989-15.821,5.989-21.812,0C328.602,572.16,328.602,562.483,334.592,556.339z" />
+        <path class="st4" d="M667.597,223.334c5.99-5.991,15.821-5.991,21.813,0c5.99,5.99,5.99,15.821,0,21.811
+															c-5.99,5.99-15.821,5.99-21.813,0C661.605,239.155,661.606,229.325,667.597,223.334z" />
+        <circle class="st2" cx="507.391" cy="392.988" r="158.857" />
+        <circle class="st2" cx="507.391" cy="392.988" r="196.914" />
+    </svg>

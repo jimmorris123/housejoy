@@ -1456,6 +1456,7 @@ a.submit-button {
         float: right;
         // width: 300px;
         padding: 20px;
+        padding-right: 0;
         padding-left: 0;
 
         font-family: $blogger_L;
@@ -1530,8 +1531,11 @@ a.submit-button {
         padding-right: 4rem;
         margin: 0 auto;
         margin: 20px;
+        margin-right: 0;
         margin-bottom: .5rem;
+        margin-left: 0;
         // font-size: 1.2rem;
+        overflow: hidden;
 
         line-height: 1.5rem;
     }
@@ -1565,7 +1569,7 @@ a.submit-button {
 
         min-width: 4rem;
         padding-left: 4px;
-        margin-right: -35px;
+        // margin-right: -35px;
 
         text-align: right;
 
@@ -1791,4 +1795,9 @@ a.submit-button {
             }
         }
     }
+}
+
+#accept,
+#decline {
+    position: fixed;
 }
