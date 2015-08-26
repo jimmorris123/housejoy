@@ -30,10 +30,10 @@
 
             margin: 30px auto;
 
-            @include transform(translate(-50%, -50%));
             @include medmx(767px) {
                 width: 100%;
             }
+            @include transform(translate(-50%, -50%));
         }
         &.house-cleaning-bg {
             .container {
@@ -63,13 +63,13 @@
 
                 background-color: $white;
 
-                @include transform(rotate(30deg));
                 @include medmx(767px) {
                     width: 20%;
                     height: 2px;
 
                     transform: rotate(0);
                 }
+                @include transform(rotate(30deg));
             }
         }
         .title {
@@ -95,32 +95,32 @@
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 40px);
+                    @include rem(font-size, 70px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 56px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 50px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 56px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 40px);
                     }
-                    @include rem(font-size, 70px);
                 }
                 &.l-left-title {
                     font-family: $bebasneue_R;
 
                     color: $white;
 
-                    @include medmx(767px) {
-                        @include rem(font-size, 30px);
+                    @include rem(font-size, 60px);
+                    @include medmxn(992px, 1199px) {
+                        @include rem(font-size, 46px);
                     }
                     @include medmxn(768px, 991px) {
                         @include rem(font-size, 48px);
                     }
-                    @include medmxn(992px, 1199px) {
-                        @include rem(font-size, 46px);
+                    @include medmx(767px) {
+                        @include rem(font-size, 30px);
                     }
-                    @include rem(font-size, 60px);
                 }
             }
             .yellow-btn {
@@ -129,12 +129,12 @@
                 max-width: 100px;
                 min-width: 80px;
 
+                @include rem(font-size, 16px);
                 @include medmx(767px) {
-                    float: none;
+                    float: none !important;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
-                @include rem(font-size, 16px);
             }
             p {
                 height: 30px;
@@ -190,7 +190,7 @@
             background-color: rgba(0,0,0,.8);
         }
         .f-block {
-            display: table;
+            display: table-cell;
             height: 200px;
             min-height: 100%;
             padding: 0;
@@ -261,8 +261,8 @@
 
                     color: $white;
 
-                    @include rem(font-size, 30px);
                     @include transform(translateY(-50%));
+                    @include rem(font-size, 30px);
                 }
             }
         }
@@ -322,8 +322,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(font-size, 16px);
                     @include rem(line-height, 22px);
+                    @include rem(font-size, 16px);
                 }
             }
         }
@@ -420,8 +420,8 @@
                     color: $dark-gray;
                     background-color: #fafafa;
 
-                    @include rem(line-height, 22px);
                     @include rem(font-size, 16px);
+                    @include rem(line-height, 22px);
                 }
             }
         }
@@ -453,8 +453,8 @@
 
                     color: $dark-gray;
 
-                    @include rem(line-height, 34px);
                     @include rem(font-size, 30px);
+                    @include rem(line-height, 34px);
                     text-right: right;
                 }
                 button {
@@ -483,11 +483,11 @@
 
         color: $dark-gray;
 
-        @include rem(font-size, 20px);
         @include medmx(479px) {
             min-height: 25px;
             margin-bottom: 6px;
         }
+        @include rem(font-size, 20px);
     }
     p {
         float: none;
@@ -506,11 +506,11 @@
     & > div {
         margin-bottom: 20px;
 
-        @include medmx(479 px) {
-            padding: 6px;
-        }
         @include medmn(480px) {
             margin-bottom: 26px;
+        }
+        @include medmx(479 px) {
+            padding: 6px;
         }
     }
 }
