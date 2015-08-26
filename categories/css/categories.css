@@ -1780,6 +1780,7 @@ svg {
 /* line 110, ../../sass/partial/_ui-elem.scss */
 .radio-div label span {
   display: inline-block;
+  margin-left: 2px;
   vertical-align: top;
 }
 /* line 115, ../../sass/partial/_ui-elem.scss */
@@ -1947,14 +1948,14 @@ svg {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
 }
 /* line 295, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
@@ -2060,13 +2061,13 @@ svg {
   border: none;
   outline: none;
   background-color: #ffc400;
-  font-size: 16px;
-  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
   /* line 407, ../../sass/partial/_ui-elem.scss */
@@ -2549,18 +2550,19 @@ svg {
 .home-footer {
   padding: 20px;
   padding-bottom: 0;
+  clear: both;
   background-color: #222;
 }
-/* line 6, ../../sass/home_footer.scss */
+/* line 7, ../../sass/home_footer.scss */
 .home-footer .foot-content {
   margin-bottom: 10px;
 }
-/* line 8, ../../sass/home_footer.scss */
+/* line 9, ../../sass/home_footer.scss */
 .home-footer .foot-content .heading {
   padding-top: 10px;
   color: #fff;
 }
-/* line 12, ../../sass/home_footer.scss */
+/* line 13, ../../sass/home_footer.scss */
 .home-footer .foot-content .heading .border-top {
   position: absolute;
   top: 0;
@@ -2569,14 +2571,14 @@ svg {
   height: 2px;
   background-color: #ffc400;
 }
-/* line 24, ../../sass/home_footer.scss */
+/* line 25, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li {
   float: left;
   min-width: 45%;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 29, ../../sass/home_footer.scss */
+/* line 30, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li a {
   font-family: "blogger_sansregular";
   opacity: .7;
@@ -2584,16 +2586,16 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 36, ../../sass/home_footer.scss */
+/* line 37, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li a:hover {
   opacity: 1;
 }
-/* line 42, ../../sass/home_footer.scss */
+/* line 43, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 46, ../../sass/home_footer.scss */
+/* line 47, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter input[type="text"] {
   font-family: "blogger_sansregular";
   color: #fff;
@@ -2603,26 +2605,26 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 56, ../../sass/home_footer.scss */
+/* line 57, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter .arrow {
   position: absolute;
   top: 7px;
   right: 10px;
 }
-/* line 60, ../../sass/home_footer.scss */
+/* line 61, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter .arrow i {
   color: #fff;
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 67, ../../sass/home_footer.scss */
+/* line 68, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials {
   display: table;
   margin-left: -12px;
   border-spacing: 12px;
   border-collapse: separate;
 }
-/* line 73, ../../sass/home_footer.scss */
+/* line 74, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a {
   position: relative;
   display: table-cell;
@@ -2633,53 +2635,53 @@ svg {
   vertical-align: middle;
   color: #fff;
   background: transparent;
+  font-size: 16px;
+  font-size: 1.6rem;
   -moz-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
-/* line 89, ../../sass/home_footer.scss */
+/* line 90, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:hover {
   border-radius: 50%;
 }
-/* line 93, ../../sass/home_footer.scss */
+/* line 94, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(1) {
   color: #fff;
   background: #3b5998;
 }
-/* line 97, ../../sass/home_footer.scss */
+/* line 98, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(1):hover {
   color: #3b5998;
   background: #fff;
 }
-/* line 102, ../../sass/home_footer.scss */
+/* line 103, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(2) {
   color: #fff;
   background: #00a0d1;
 }
-/* line 106, ../../sass/home_footer.scss */
+/* line 107, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(2):hover {
   color: #00a0d1;
   background: #fff;
 }
-/* line 111, ../../sass/home_footer.scss */
+/* line 112, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(3) {
   color: #fff;
   background: #db4a39;
 }
-/* line 115, ../../sass/home_footer.scss */
+/* line 116, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(3):hover {
   color: #db4a39;
   background: #fff;
 }
-/* line 122, ../../sass/home_footer.scss */
+/* line 123, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul {
   padding: 20px 0 10px 0;
   border-top: 1px solid #555;
 }
-/* line 126, ../../sass/home_footer.scss */
+/* line 127, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul li {
   display: inline-block;
   float: none;
@@ -2687,17 +2689,17 @@ svg {
   margin-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 126, ../../sass/home_footer.scss */
+  /* line 127, ../../sass/home_footer.scss */
   .home-footer .foot-content.bottom ul li {
     margin-bottom: 10px;
   }
 }
-/* line 135, ../../sass/home_footer.scss */
+/* line 136, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul li a {
   padding: 10px;
 }
 
-/* line 143, ../../sass/home_footer.scss */
+/* line 144, ../../sass/home_footer.scss */
 .copyrights {
   padding: 20px 15px;
   font-family: "blogger_sansregular";
@@ -3768,22 +3770,23 @@ svg {
 }
 /* line 129, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .img-wrap {
+  position: relative;
   display: inline-block;
-  width: 200px;
+  max-width: 200px;
   margin-right: 15px;
 }
-/* line 134, ../sass/partial/_plumbing.scss */
+/* line 136, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .thumbnail {
   padding: 0;
   border: 2px solid #ffc400;
 }
-/* line 141, ../sass/partial/_plumbing.scss */
+/* line 143, ../sass/partial/_plumbing.scss */
 .left-section .plumbing-content .panel .panel-collapse .panel-body .result .remove_pict {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -5px;
+  right: -5px;
   padding: 3px 5px;
-  font-family: "blogger_sanslight";
+  font-family: "blogger_sansregular";
   font-weight: bold;
   color: #777;
   border-radius: 50%;
@@ -3792,16 +3795,16 @@ svg {
   font-size: 1.2rem;
 }
 
-/* line 163, ../sass/partial/_plumbing.scss */
+/* line 165, ../sass/partial/_plumbing.scss */
 .right-section {
   margin-bottom: 60px;
 }
-/* line 166, ../sass/partial/_plumbing.scss */
+/* line 168, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading {
   padding: 20px 15px;
   border-bottom: 1px solid #ccc;
 }
-/* line 170, ../sass/partial/_plumbing.scss */
+/* line 172, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading h4 {
   margin-bottom: 5px;
   font-family: "blogger_sanslight";
@@ -3810,26 +3813,26 @@ svg {
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 180, ../sass/partial/_plumbing.scss */
+/* line 182, ../sass/partial/_plumbing.scss */
 .right-section .cart .heading p {
   font-family: "blogger_sansregular";
   color: #999;
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 188, ../sass/partial/_plumbing.scss */
+/* line 190, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues {
   padding: 15px;
   border-bottom: 1px solid #ccc;
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* line 188, ../sass/partial/_plumbing.scss */
+  /* line 190, ../sass/partial/_plumbing.scss */
   .right-section .cart .plumbing-issues {
     padding-right: 0;
     padding-left: 0;
   }
 }
-/* line 197, ../sass/partial/_plumbing.scss */
+/* line 199, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues.input {
   padding: 20px 0 15px 0;
   padding-right: 0;
@@ -3837,7 +3840,7 @@ svg {
   margin-bottom: 40px;
   border-bottom: none;
 }
-/* line 205, ../sass/partial/_plumbing.scss */
+/* line 207, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span {
   display: inline-block;
   float: none;
@@ -3851,40 +3854,40 @@ svg {
   line-height: 2.2rem;
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* line 205, ../sass/partial/_plumbing.scss */
+  /* line 207, ../sass/partial/_plumbing.scss */
   .right-section .cart .plumbing-issues > span {
     font-size: 16px;
     font-size: 1.6rem;
   }
 }
-/* line 221, ../sass/partial/_plumbing.scss */
+/* line 223, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box {
   display: inline-block;
   width: 25%;
   text-align: right;
   vertical-align: top;
 }
-/* line 227, ../sass/partial/_plumbing.scss */
+/* line 229, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box .multiple-items {
   margin-right: 10px;
 }
-/* line 230, ../sass/partial/_plumbing.scss */
+/* line 232, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box img {
   width: 18px;
   height: 18px;
   margin-bottom: -2px;
   opacity: .5;
 }
-/* line 236, ../sass/partial/_plumbing.scss */
+/* line 238, ../sass/partial/_plumbing.scss */
 .right-section .cart .plumbing-issues > span.remove-box img:hover {
   opacity: 1;
 }
-/* line 244, ../sass/partial/_plumbing.scss */
+/* line 246, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount {
   padding: 10px 0;
   overflow: hidden;
 }
-/* line 247, ../sass/partial/_plumbing.scss */
+/* line 249, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span {
   margin-top: 10px;
   font-family: "blogger_sansregular";
@@ -3892,32 +3895,32 @@ svg {
   font-size: 14px;
   font-size: 1.4rem;
 }
-/* line 255, ../sass/partial/_plumbing.scss */
+/* line 257, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action .cart-amount span:last-child {
   margin-top: 0;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 262, ../sass/partial/_plumbing.scss */
+/* line 264, ../sass/partial/_plumbing.scss */
 .right-section .cart .bottom-action button {
   height: 50px;
 }
-/* line 266, ../sass/partial/_plumbing.scss */
+/* line 268, ../sass/partial/_plumbing.scss */
 .right-section .cart.empty-cart {
   display: table;
   padding: 100px 5px 30px;
   text-align: center;
 }
-/* line 271, ../sass/partial/_plumbing.scss */
+/* line 273, ../sass/partial/_plumbing.scss */
 .right-section .cart.empty-cart .inner-cart {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 275, ../sass/partial/_plumbing.scss */
+/* line 277, ../sass/partial/_plumbing.scss */
 .right-section .cart.empty-cart .inner-cart img {
   margin-bottom: 20px;
 }
-/* line 278, ../sass/partial/_plumbing.scss */
+/* line 280, ../sass/partial/_plumbing.scss */
 .right-section .cart.empty-cart .inner-cart h2 {
   margin-bottom: 10px;
   font-family: "blogger_sanslight";
@@ -3927,7 +3930,7 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 289, ../sass/partial/_plumbing.scss */
+/* line 291, ../sass/partial/_plumbing.scss */
 .right-section .cart.empty-cart .inner-cart p {
   font-family: "blogger_sanslight";
   font-style: italic;
@@ -3937,15 +3940,15 @@ svg {
   font-size: 1.4rem;
 }
 
-/* line 303, ../sass/partial/_plumbing.scss */
+/* line 305, ../sass/partial/_plumbing.scss */
 .summary-modal {
   height: 600px;
 }
-/* line 305, ../sass/partial/_plumbing.scss */
+/* line 307, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog {
   margin: 0;
 }
-/* line 308, ../sass/partial/_plumbing.scss */
+/* line 310, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-content {
   height: 100%;
   border: none;
@@ -3953,45 +3956,45 @@ svg {
   background-clip: none;
   box-shadow: none;
 }
-/* line 316, ../sass/partial/_plumbing.scss */
+/* line 318, ../sass/partial/_plumbing.scss */
 .summary-modal .modal-dialog .modal-header {
   border-bottom: none;
 }
-/* line 320, ../sass/partial/_plumbing.scss */
+/* line 322, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body {
   padding-top: 0 !important;
   background-color: #fff;
 }
-/* line 325, ../sass/partial/_plumbing.scss */
+/* line 327, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body .right-section {
   margin-bottom: 0;
 }
-/* line 328, ../sass/partial/_plumbing.scss */
+/* line 330, ../sass/partial/_plumbing.scss */
 .summary-modal .M-summary-body .right-section .cart .heading {
   padding-top: 0;
 }
 
-/* line 340, ../sass/partial/_plumbing.scss */
+/* line 342, ../sass/partial/_plumbing.scss */
 .beauty-accordian .panel-title a .title {
   width: 68%;
   line-height: 22px;
   line-height: 2.2rem;
 }
-/* line 345, ../sass/partial/_plumbing.scss */
+/* line 347, ../sass/partial/_plumbing.scss */
 .beauty-accordian .panel-title a .price {
   width: 30%;
   text-align: right;
 }
 
-/* line 357, ../sass/partial/_plumbing.scss */
+/* line 359, ../sass/partial/_plumbing.scss */
 .select-days h4 {
   clear: both;
 }
-/* line 360, ../sass/partial/_plumbing.scss */
+/* line 362, ../sass/partial/_plumbing.scss */
 .select-days .checkbox {
   padding-left: 15px;
 }
-/* line 362, ../sass/partial/_plumbing.scss */
+/* line 364, ../sass/partial/_plumbing.scss */
 .select-days .checkbox label {
   width: auto;
   height: auto;
@@ -4005,31 +4008,31 @@ svg {
   border-bottom: 1px solid transparent;
   border-radius: 0;
 }
-/* line 377, ../sass/partial/_plumbing.scss */
+/* line 379, ../sass/partial/_plumbing.scss */
 .select-days .checkbox:nth-of-type(1) {
   padding-left: 0;
 }
-/* line 380, ../sass/partial/_plumbing.scss */
+/* line 382, ../sass/partial/_plumbing.scss */
 .select-days .checkbox input[type="checkbox"]:checked + label {
   color: #009688;
   border-bottom: 1px solid #009688;
 }
 
-/* line 387, ../sass/partial/_plumbing.scss */
+/* line 389, ../sass/partial/_plumbing.scss */
 .content-rates {
   padding: 0;
 }
-/* line 389, ../sass/partial/_plumbing.scss */
+/* line 391, ../sass/partial/_plumbing.scss */
 .content-rates .section-div {
   overflow: hidden;
 }
-/* line 391, ../sass/partial/_plumbing.scss */
+/* line 393, ../sass/partial/_plumbing.scss */
 .content-rates .section-div ol {
   float: none;
   padding: 20px 15px;
   margin: 0 auto;
 }
-/* line 395, ../sass/partial/_plumbing.scss */
+/* line 397, ../sass/partial/_plumbing.scss */
 .content-rates .section-div ol li {
   margin-bottom: 15px;
   overflow: hidden;
@@ -4038,36 +4041,36 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 405, ../sass/partial/_plumbing.scss */
+/* line 407, ../sass/partial/_plumbing.scss */
 .content-rates .section-div ol li span.name {
   float: left;
   width: 85%;
 }
 @media all and (max-width: 767px) {
-  /* line 405, ../sass/partial/_plumbing.scss */
+  /* line 407, ../sass/partial/_plumbing.scss */
   .content-rates .section-div ol li span.name {
     width: 75%;
   }
 }
-/* line 413, ../sass/partial/_plumbing.scss */
+/* line 415, ../sass/partial/_plumbing.scss */
 .content-rates .section-div ol li span:last-child {
   width: 10%;
   max-width: 140px;
   min-width: 60px;
   text-align: right;
 }
-/* line 424, ../sass/partial/_plumbing.scss */
+/* line 426, ../sass/partial/_plumbing.scss */
 .content-rates .note {
   display: block;
   padding-left: 20px;
 }
-/* line 427, ../sass/partial/_plumbing.scss */
+/* line 429, ../sass/partial/_plumbing.scss */
 .content-rates .note > div {
   float: none;
   padding: 0;
   margin: 0 auto;
 }
-/* line 431, ../sass/partial/_plumbing.scss */
+/* line 433, ../sass/partial/_plumbing.scss */
 .content-rates .note > div h4 {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -4075,12 +4078,12 @@ svg {
   font-size: 18px;
   font-size: 1.8rem;
 }
-/* line 440, ../sass/partial/_plumbing.scss */
+/* line 442, ../sass/partial/_plumbing.scss */
 .content-rates .note > div ol {
   padding-left: 20px;
   list-style-type: decimal;
 }
-/* line 444, ../sass/partial/_plumbing.scss */
+/* line 446, ../sass/partial/_plumbing.scss */
 .content-rates .note > div ol li {
   margin-bottom: 10px;
   font-family: "blogger_sansregular";
@@ -4127,22 +4130,25 @@ svg {
 }
 /* line 38, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .dropdown-group .dropdown-select button span {
-  position: absolute;
-  right: 10px;
   display: inline;
   float: none !important;
 }
-/* line 48, ../sass/partial/_beauty.scss */
+/* line 44, ../sass/partial/_beauty.scss */
+.left-section .panel .panel-body .dropdown-group .dropdown-select button span.caret {
+  position: absolute;
+  right: 10px;
+}
+/* line 52, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .info {
   margin-bottom: 20px;
 }
 @media all and (max-width: 768px) {
-  /* line 48, ../sass/partial/_beauty.scss */
+  /* line 52, ../sass/partial/_beauty.scss */
   .left-section .panel .panel-body .info {
     padding: 0;
   }
 }
-/* line 54, ../sass/partial/_beauty.scss */
+/* line 58, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .info p {
   font-family: "blogger_sansregular";
   opacity: .8;
@@ -4152,61 +4158,61 @@ svg {
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 64, ../sass/partial/_beauty.scss */
+/* line 68, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .action {
   margin-bottom: 10px;
   text-align: right;
 }
 @media all and (max-width: 767px) {
-  /* line 64, ../sass/partial/_beauty.scss */
+  /* line 68, ../sass/partial/_beauty.scss */
   .left-section .panel .panel-body .action {
     text-align: left;
   }
 }
-/* line 72, ../sass/partial/_beauty.scss */
+/* line 76, ../sass/partial/_beauty.scss */
 .left-section .panel .panel-body .action button {
   margin-top: 20px;
   text-transform: uppercase;
 }
 
-/* line 81, ../sass/partial/_beauty.scss */
+/* line 85, ../sass/partial/_beauty.scss */
 .right-section {
   padding-left: 30px;
 }
 @media all and (max-width: 767px) {
-  /* line 81, ../sass/partial/_beauty.scss */
+  /* line 85, ../sass/partial/_beauty.scss */
   .right-section {
     padding-left: 0;
   }
 }
 
-/* line 89, ../sass/partial/_beauty.scss */
+/* line 93, ../sass/partial/_beauty.scss */
 .price-tabs {
   padding: 0 15px;
 }
 @media all and (max-width: 767px) {
-  /* line 91, ../sass/partial/_beauty.scss */
+  /* line 95, ../sass/partial/_beauty.scss */
   .price-tabs .scroll-tabs {
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 98, ../sass/partial/_beauty.scss */
+/* line 102, ../sass/partial/_beauty.scss */
 .price-tabs .scroll-tabs .nav-tabs {
   margin: 0 15px;
 }
 @media all and (max-width: 767px) {
-  /* line 98, ../sass/partial/_beauty.scss */
+  /* line 102, ../sass/partial/_beauty.scss */
   .price-tabs .scroll-tabs .nav-tabs {
     width: 800px;
   }
 }
-/* line 106, ../sass/partial/_beauty.scss */
+/* line 110, ../sass/partial/_beauty.scss */
 .price-tabs .scroll-tabs .nav-tabs li:first-child a {
   padding-left: 0;
 }
-/* line 110, ../sass/partial/_beauty.scss */
+/* line 114, ../sass/partial/_beauty.scss */
 .price-tabs .scroll-tabs .nav-tabs li a {
   font-family: "blogger_sanslight";
   opacity: .5;
@@ -4216,7 +4222,7 @@ svg {
   font-size: 2.4rem;
 }
 @media all and (max-width: 767px) {
-  /* line 110, ../sass/partial/_beauty.scss */
+  /* line 114, ../sass/partial/_beauty.scss */
   .price-tabs .scroll-tabs .nav-tabs li a {
     padding-right: 5px;
     padding-left: 5px;
@@ -4224,14 +4230,14 @@ svg {
     font-size: 1.8rem;
   }
 }
-/* line 124, ../sass/partial/_beauty.scss */
+/* line 128, ../sass/partial/_beauty.scss */
 .price-tabs .scroll-tabs .nav-tabs li a:hover, .price-tabs .scroll-tabs .nav-tabs li a:focus, .price-tabs .scroll-tabs .nav-tabs li a:active {
   opacity: 1;
   color: #009688;
   border-bottom-color: #009688;
   background-color: transparent;
 }
-/* line 134, ../sass/partial/_beauty.scss */
+/* line 138, ../sass/partial/_beauty.scss */
 .price-tabs .scroll-tabs .nav-tabs li.active a {
   opacity: 1;
   color: #009688;
@@ -4239,40 +4245,40 @@ svg {
   border-bottom: 3px solid #009688;
   background-color: transparent;
 }
-/* line 145, ../sass/partial/_beauty.scss */
+/* line 149, ../sass/partial/_beauty.scss */
 .price-tabs .price-list {
   padding-top: 40px;
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* line 147, ../sass/partial/_beauty.scss */
+  /* line 151, ../sass/partial/_beauty.scss */
   .price-tabs .price-list .tab-pane {
     padding: 0 5px;
   }
 }
-/* line 169, ../sass/partial/_beauty.scss */
+/* line 173, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane.grid .grid-item {
   width: calc((100% / 4) - 30px);
   margin-bottom: 30px;
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* line 169, ../sass/partial/_beauty.scss */
+  /* line 173, ../sass/partial/_beauty.scss */
   .price-tabs .price-list .tab-pane.grid .grid-item {
     width: calc((100% / 3) - 30px);
   }
 }
 @media all and (max-width: 767px) {
-  /* line 169, ../sass/partial/_beauty.scss */
+  /* line 173, ../sass/partial/_beauty.scss */
   .price-tabs .price-list .tab-pane.grid .grid-item {
     width: calc((100% / 2) - 30px);
   }
 }
 @media all and (max-width: 479px) {
-  /* line 169, ../sass/partial/_beauty.scss */
+  /* line 173, ../sass/partial/_beauty.scss */
   .price-tabs .price-list .tab-pane.grid .grid-item {
     width: 100%;
   }
 }
-/* line 183, ../sass/partial/_beauty.scss */
+/* line 187, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box {
   padding: 20px;
   border: 1px solid #ccc;
@@ -4280,29 +4286,29 @@ svg {
   background-color: #fff;
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
-  /* line 183, ../sass/partial/_beauty.scss */
+  /* line 187, ../sass/partial/_beauty.scss */
   .price-tabs .price-list .tab-pane .rates-box {
     padding: 10px;
   }
 }
-/* line 193, ../sass/partial/_beauty.scss */
+/* line 197, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box h4 {
   font-family: "blogger_sansmedium";
   color: #777;
   font-size: 24px;
   font-size: 2.4rem;
 }
-/* line 201, ../sass/partial/_beauty.scss */
+/* line 205, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box ul li {
   margin-bottom: 15px;
   clear: both;
   overflow: hidden;
 }
-/* line 205, ../sass/partial/_beauty.scss */
+/* line 209, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box ul li:first-child {
   margin-top: 20px;
 }
-/* line 208, ../sass/partial/_beauty.scss */
+/* line 212, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box ul li span {
   font-family: "blogger_sanslight";
   color: #777;
@@ -4311,12 +4317,12 @@ svg {
   line-height: 20px;
   line-height: 2rem;
 }
-/* line 215, ../sass/partial/_beauty.scss */
+/* line 219, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box ul li span.type {
   width: 70%;
   float: left;
 }
-/* line 219, ../sass/partial/_beauty.scss */
+/* line 223, ../sass/partial/_beauty.scss */
 .price-tabs .price-list .tab-pane .rates-box ul li span.price {
   float: right;
   width: 25%;

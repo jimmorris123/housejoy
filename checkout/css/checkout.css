@@ -1780,6 +1780,7 @@ svg {
 /* line 110, ../../sass/partial/_ui-elem.scss */
 .radio-div label span {
   display: inline-block;
+  margin-left: 2px;
   vertical-align: top;
 }
 /* line 115, ../../sass/partial/_ui-elem.scss */
@@ -1947,14 +1948,14 @@ svg {
   margin-right: 10px;
   font-family: "blogger_sansregular";
   color: #555;
+  line-height: 24px;
+  line-height: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  font-size: 22px;
-  font-size: 2.2rem;
-  line-height: 24px;
-  line-height: 2.4rem;
 }
 /* line 295, ../../sass/partial/_ui-elem.scss */
 .tabs-row .tabs li:hover a, .tabs-row .tabs li:focus a, .tabs-row .tabs li:active a, .tabs-row .tabs li.active a {
@@ -2060,13 +2061,13 @@ svg {
   border: none;
   outline: none;
   background-color: #ffc400;
-  font-size: 16px;
-  font-size: 1.6rem;
   -moz-border-radius: 4px;
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
+  font-size: 16px;
+  font-size: 1.6rem;
 }
 @media all and (max-width: 768px) {
   /* line 407, ../../sass/partial/_ui-elem.scss */
@@ -2549,18 +2550,19 @@ svg {
 .home-footer {
   padding: 20px;
   padding-bottom: 0;
+  clear: both;
   background-color: #222;
 }
-/* line 6, ../../sass/home_footer.scss */
+/* line 7, ../../sass/home_footer.scss */
 .home-footer .foot-content {
   margin-bottom: 10px;
 }
-/* line 8, ../../sass/home_footer.scss */
+/* line 9, ../../sass/home_footer.scss */
 .home-footer .foot-content .heading {
   padding-top: 10px;
   color: #fff;
 }
-/* line 12, ../../sass/home_footer.scss */
+/* line 13, ../../sass/home_footer.scss */
 .home-footer .foot-content .heading .border-top {
   position: absolute;
   top: 0;
@@ -2569,14 +2571,14 @@ svg {
   height: 2px;
   background-color: #ffc400;
 }
-/* line 24, ../../sass/home_footer.scss */
+/* line 25, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li {
   float: left;
   min-width: 45%;
   margin-right: 10px;
   margin-bottom: 10px;
 }
-/* line 29, ../../sass/home_footer.scss */
+/* line 30, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li a {
   font-family: "blogger_sansregular";
   opacity: .7;
@@ -2584,16 +2586,16 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 36, ../../sass/home_footer.scss */
+/* line 37, ../../sass/home_footer.scss */
 .home-footer .foot-content ul li a:hover {
   opacity: 1;
 }
-/* line 42, ../../sass/home_footer.scss */
+/* line 43, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 46, ../../sass/home_footer.scss */
+/* line 47, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter input[type="text"] {
   font-family: "blogger_sansregular";
   color: #fff;
@@ -2603,26 +2605,26 @@ svg {
   font-size: 16px;
   font-size: 1.6rem;
 }
-/* line 56, ../../sass/home_footer.scss */
+/* line 57, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter .arrow {
   position: absolute;
   top: 7px;
   right: 10px;
 }
-/* line 60, ../../sass/home_footer.scss */
+/* line 61, ../../sass/home_footer.scss */
 .home-footer .foot-content .newsletter .arrow i {
   color: #fff;
   font-size: 20px;
   font-size: 2rem;
 }
-/* line 67, ../../sass/home_footer.scss */
+/* line 68, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials {
   display: table;
   margin-left: -12px;
   border-spacing: 12px;
   border-collapse: separate;
 }
-/* line 73, ../../sass/home_footer.scss */
+/* line 74, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a {
   position: relative;
   display: table-cell;
@@ -2633,53 +2635,53 @@ svg {
   vertical-align: middle;
   color: #fff;
   background: transparent;
+  font-size: 16px;
+  font-size: 1.6rem;
   -moz-transition: all 0.15s ease;
   -o-transition: all 0.15s ease;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
-  font-size: 16px;
-  font-size: 1.6rem;
 }
-/* line 89, ../../sass/home_footer.scss */
+/* line 90, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:hover {
   border-radius: 50%;
 }
-/* line 93, ../../sass/home_footer.scss */
+/* line 94, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(1) {
   color: #fff;
   background: #3b5998;
 }
-/* line 97, ../../sass/home_footer.scss */
+/* line 98, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(1):hover {
   color: #3b5998;
   background: #fff;
 }
-/* line 102, ../../sass/home_footer.scss */
+/* line 103, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(2) {
   color: #fff;
   background: #00a0d1;
 }
-/* line 106, ../../sass/home_footer.scss */
+/* line 107, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(2):hover {
   color: #00a0d1;
   background: #fff;
 }
-/* line 111, ../../sass/home_footer.scss */
+/* line 112, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(3) {
   color: #fff;
   background: #db4a39;
 }
-/* line 115, ../../sass/home_footer.scss */
+/* line 116, ../../sass/home_footer.scss */
 .home-footer .foot-content .socials a:nth-child(3):hover {
   color: #db4a39;
   background: #fff;
 }
-/* line 122, ../../sass/home_footer.scss */
+/* line 123, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul {
   padding: 20px 0 10px 0;
   border-top: 1px solid #555;
 }
-/* line 126, ../../sass/home_footer.scss */
+/* line 127, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul li {
   display: inline-block;
   float: none;
@@ -2687,17 +2689,17 @@ svg {
   margin-bottom: 0;
 }
 @media all and (max-width: 768px) {
-  /* line 126, ../../sass/home_footer.scss */
+  /* line 127, ../../sass/home_footer.scss */
   .home-footer .foot-content.bottom ul li {
     margin-bottom: 10px;
   }
 }
-/* line 135, ../../sass/home_footer.scss */
+/* line 136, ../../sass/home_footer.scss */
 .home-footer .foot-content.bottom ul li a {
   padding: 10px;
 }
 
-/* line 143, ../../sass/home_footer.scss */
+/* line 144, ../../sass/home_footer.scss */
 .copyrights {
   padding: 20px 15px;
   font-family: "blogger_sansregular";
@@ -3157,13 +3159,11 @@ svg {
 .page-content-wrapper {
   width: 100%;
   clear: both;
-  overflow: hidden;
 }
 
 /* line 388, ../sass/checkout.scss */
 .page-content {
   clear: both;
-  overflow: hidden;
   width: 970px;
   margin: 30px auto 30px;
   padding: 0;
@@ -3654,7 +3654,7 @@ svg {
   font-family: "blogger_sanslight";
   font-size: 16px;
   font-size: 1.6rem;
-  line-height: 1;
+  line-height: 18px;
   color: #555;
   vertical-align: middle;
 }

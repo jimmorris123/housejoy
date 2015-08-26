@@ -1,6 +1,7 @@
 .home-footer {
     padding: 20px;
     padding-bottom: 0;
+    clear: both;
 
     background-color: #222;
     .foot-content {
@@ -84,8 +85,8 @@
                 color: $white;
                 background: transparent;
 
-                @include transition(all .15s ease);
                 @include rem(font-size, 16px);
+                @include transition(all .15s ease);
                 &:hover {
                     border-radius: 50%;
                 }

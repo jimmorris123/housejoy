@@ -109,7 +109,7 @@
         }
         span {
             display: inline-block;
-            // margin-left: 2px;
+            margin-left: 2px;
 
             vertical-align: top;
             input {
@@ -288,9 +288,9 @@
 
                 color: $dark-gray;
 
-                @include transition(all .2s ease-in-out);
-                @include rem(font-size, 22px);
                 @include rem(line-height, 24px);
+                @include rem(font-size, 22px);
+                @include transition(all .2s ease-in-out);
             }
             &:hover a,
             &:focus a,
@@ -421,6 +421,8 @@
     outline: none;
     background-color: #ffc400;
 
+    @include border-radius(4px);
+    @include rem(font-size, 16px);
     @include medmx(768px) {
         display: block;
         // float: none;
@@ -429,8 +431,6 @@
         margin-left: auto;
         clear: both;
     }
-    @include rem(font-size, 16px);
-    @include border-radius(4px);
     &:last-child {
         margin-right: 0;
 
@@ -467,7 +467,6 @@
     border: 1px solid $green;
     background-color: transparent;
 
-    @include border-radius(4px);
     @include medmx(768px) {
         position: relative;
         top: auto;
@@ -479,6 +478,7 @@
 
         border: none;
     }
+    @include border-radius(4px);
     .button-icon {
         display: inline-block;
         // float: left;
@@ -509,6 +509,7 @@
 
         color: $green;
 
+        @include rem(font-size, 16px);
         @include medmx(768px) {
             display: inline-block;
             margin-left: 5px;
@@ -517,6 +518,5 @@
 
             @include rem(font-size, 14px);
         }
-        @include rem(font-size, 16px);
     }
 }
