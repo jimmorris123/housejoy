@@ -1,3 +1,577 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 4, ../sass/print.scss */
+html,
+body {
+  font-size: 62.5%;
+}
+@media (max-width: 767px) {
+  /* line 4, ../sass/print.scss */
+  html,
+  body {
+    font-size: 50%;
+  }
+}
+
+@font-face {
+  font-family: Barkentina;
+  src: url("../fonts/BARKENTINA.otf");
+}
+@font-face {
+  font-family: gothamNBook;
+  src: url("../fonts/GOTHAMNARROW-BOOK.otf");
+}
+@font-face {
+  font-family: gothamNLight;
+  src: url("../fonts/GOTHAMNARROW-LIGHT.otf");
+}
+@font-face {
+  font-family: gothamNMedium;
+  src: url("../fonts/GOTHAMNARROW-MEDIUM.otf");
+}
+@font-face {
+  font-family: playfairdisplayR;
+  src: url("../fonts/PLAYFAIRDISPLAY-REGULAR.ttf");
+}
+@font-face {
+  font-family: "brandon_grotesqueRgIt";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/brandon_reg_it-webfont.eot");
+  src: url("../fonts/brandon_reg_it-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon_reg_it-webfont.woff2") format("woff2"), url("../fonts/brandon_reg_it-webfont.woff") format("woff"), url("../fonts/brandon_reg_it-webfont.ttf") format("truetype"), url("../fonts/brandon_reg_it-webfont.svg#brandon_grotesqueRgIt") format("svg");
+}
+@font-face {
+  font-family: "blogger_sansregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blogger_sans-webfont.eot");
+  src: url("../fonts/blogger_sans-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blogger_sans-webfont.woff2") format("woff2"), url("../fonts/blogger_sans-webfont.woff") format("woff"), url("../fonts/blogger_sans-webfont.ttf") format("truetype"), url("../fonts/blogger_sans-webfont.svg#blogger_sansregular") format("svg");
+}
+@font-face {
+  font-family: "blogger_sansbold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blogger_sans-bold-webfont.eot");
+  src: url("../fonts/blogger_sans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blogger_sans-bold-webfont.woff2") format("woff2"), url("../fonts/blogger_sans-bold-webfont.woff") format("woff"), url("../fonts/blogger_sans-bold-webfont.ttf") format("truetype"), url("../fonts/blogger_sans-bold-webfont.svg#blogger_sansbold") format("svg");
+}
+@font-face {
+  font-family: "blogger_sanslight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blogger_sans-light-webfont.eot");
+  src: url("../fonts/blogger_sans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blogger_sans-light-webfont.woff2") format("woff2"), url("../fonts/blogger_sans-light-webfont.woff") format("woff"), url("../fonts/blogger_sans-light-webfont.ttf") format("truetype"), url("../fonts/blogger_sans-light-webfont.svg#blogger_sanslight") format("svg");
+}
+@font-face {
+  font-family: "blogger_sansmedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/blogger_sans-medium-webfont.eot");
+  src: url("../fonts/blogger_sans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/blogger_sans-medium-webfont.woff2") format("woff2"), url("../fonts/blogger_sans-medium-webfont.woff") format("woff"), url("../fonts/blogger_sans-medium-webfont.ttf") format("truetype"), url("../fonts/blogger_sans-medium-webfont.svg#blogger_sansmedium") format("svg");
+}
+@font-face {
+  font-family: "bebas_neueregular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/bebasneue-webfont.eot");
+  src: url("../fonts/bebasneue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue-webfont.woff2") format("woff2"), url("../fonts/bebasneue-webfont.woff") format("woff"), url("../fonts/bebasneue-webfont.ttf") format("truetype"), url("../fonts/bebasneue-webfont.svg#bebas_neueregular") format("svg");
+}
+@page {
+  margin: 0;
+  size: A4;
+}
+@media all {
+  /* line 141, ../sass/print.scss */
+  body {
+    width: 794px;
+    height: 1122px;
+    margin-right: auto;
+    /* to centre page on screen*/
+    margin-left: auto;
+    font-family: "blogger_sansregular";
+    background-color: #f6f6f6;
+  }
+
+  /* line 152, ../sass/print.scss */
+  .page {
+    padding: 40px 30px;
+    background-color: #fff;
+  }
+  /* line 156, ../sass/print.scss */
+  .page .wrap {
+    overflow: hidden;
+  }
+  /* line 160, ../sass/print.scss */
+  .page .wrap .header {
+    display: table;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  /* line 168, ../sass/print.scss */
+  .page .wrap .left {
+    display: table-cell;
+    float: none;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+  }
+  /* line 175, ../sass/print.scss */
+  .page .wrap .left span {
+    padding: 50px 15px;
+  }
+  /* line 177, ../sass/print.scss */
+  .page .wrap .left span.logo-icon {
+    padding-left: 0;
+    border-right: 1px solid #20bbb5;
+  }
+  /* line 181, ../sass/print.scss */
+  .page .wrap .left span.logo-icon img {
+    max-width: 150px;
+  }
+  /* line 185, ../sass/print.scss */
+  .page .wrap .left span.text {
+    font-size: 36px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #555;
+  }
+  /* line 194, ../sass/print.scss */
+  .page .wrap .left p.address {
+    margin-bottom: 0;
+    font-family: "blogger_sansregular";
+    font-size: 18px;
+    line-height: 24px;
+  }
+  /* line 200, ../sass/print.scss */
+  .page .wrap .left p.address:nth-of-type(1) {
+    font-family: "blogger_sansmedium";
+    font-size: 22px;
+  }
+  /* line 206, ../sass/print.scss */
+  .page .wrap .right {
+    display: table-cell;
+    float: none;
+    padding: 0;
+    text-align: right;
+    vertical-align: top;
+  }
+  /* line 213, ../sass/print.scss */
+  .page .wrap .right p {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #555;
+  }
+  /* line 221, ../sass/print.scss */
+  .page .wrap .invoice-details {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  /* line 225, ../sass/print.scss */
+  .page .wrap .invoice-details .left,
+  .page .wrap .invoice-details .right {
+    display: block;
+    float: left;
+  }
+  /* line 231, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box {
+    display: inline-block;
+    width: 32%;
+    padding: 15px;
+    text-align: center;
+    background-color: #20bbb5;
+  }
+  /* line 239, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(1) {
+    background-color: #d4f1f0;
+  }
+  /* line 242, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(2) {
+    background-color: #e9f8f7;
+  }
+  /* line 245, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(3) {
+    background-color: #f2fbfb;
+  }
+  /* line 248, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box h4 {
+    font-family: "blogger_sansregular";
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  /* line 254, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box p {
+    font-family: "blogger_sansmedium";
+    font-size: 20px;
+  }
+  /* line 262, ../sass/print.scss */
+  .page .wrap .service-details .title {
+    padding: 10px 0;
+    font-family: "blogger_sansregular";
+    font-size: 22px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 270, ../sass/print.scss */
+  .page .wrap .service-details .title img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: sub;
+  }
+  /* line 279, ../sass/print.scss */
+  .page .wrap .service-details .service-discription {
+    padding: 0;
+  }
+  /* line 281, ../sass/print.scss */
+  .page .wrap .service-details .service-discription h4 {
+    padding: 10px 15px;
+    font-family: "blogger_sansbold";
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #29b8b4;
+  }
+  /* line 291, ../sass/print.scss */
+  .page .wrap .service-details .service-discription ul {
+    padding: 0;
+    margin: 0;
+  }
+  /* line 294, ../sass/print.scss */
+  .page .wrap .service-details .service-discription ul li {
+    padding: 10px 15px;
+    font-family: "blogger_sansregular";
+    font-size: 15px;
+    list-style-type: none;
+    color: #555;
+    background-color: #fafafa;
+  }
+  /* line 303, ../sass/print.scss */
+  .page .wrap .service-details .service-discription ul li:nth-child(odd) {
+    background-color: #d4f1f0;
+  }
+  /* line 309, ../sass/print.scss */
+  .page .wrap .service-details .service-discription.right-align h4,
+  .page .wrap .service-details .service-discription.right-align ul li {
+    text-align: right !important;
+  }
+  /* line 315, ../sass/print.scss */
+  .page .wrap .service-details .service-discription.center-align h4,
+  .page .wrap .service-details .service-discription.center-align ul li {
+    text-align: center !important;
+  }
+  /* line 321, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount,
+  .page .wrap .service-details .net-amount {
+    padding: 10px 0;
+  }
+  /* line 324, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount .wrap,
+  .page .wrap .service-details .net-amount .wrap {
+    margin-bottom: 10px;
+  }
+  /* line 326, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount .wrap:last-child,
+  .page .wrap .service-details .net-amount .wrap:last-child {
+    margin-bottom: 0;
+  }
+  /* line 329, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount .wrap span,
+  .page .wrap .service-details .net-amount .wrap span {
+    font-family: "blogger_sansregular";
+    font-size: 16px;
+    color: #fff;
+  }
+  /* line 334, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount .wrap span:last-child,
+  .page .wrap .service-details .net-amount .wrap span:last-child {
+    float: right;
+  }
+  /* line 340, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount {
+    background-color: #94dbd9;
+  }
+  /* line 343, ../sass/print.scss */
+  .page .wrap .service-details .net-amount {
+    background-color: #29b8b4;
+  }
+  /* line 346, ../sass/print.scss */
+  .page .wrap .service-details .net-amount .wrap span {
+    font-family: "blogger_sansbold";
+    font-size: 18px;
+  }
+  /* line 353, ../sass/print.scss */
+  .page .wrap .thaks {
+    display: table;
+    padding: 15px;
+    font-family: "blogger_sansregular";
+    font-size: 22px;
+    text-align: center;
+    white-space: nowrap;
+    color: #29b8b4;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 365, ../sass/print.scss */
+  .page .wrap .thaks:before, .page .wrap .thaks:after {
+    position: relative;
+    top: 16px;
+    display: table-cell;
+    width: 4%;
+    content: "";
+    border-top: 2px solid #f1fafa;
+  }
+  /* line 377, ../sass/print.scss */
+  .page .wrap .thaks:before {
+    right: -28%;
+  }
+  /* line 380, ../sass/print.scss */
+  .page .wrap .thaks:after {
+    left: -28%;
+  }
+  /* line 385, ../sass/print.scss */
+  .page .wrap .terms-condition h4 {
+    font-family: "blogger_sansregular";
+    font-size: 16px;
+    color: #555;
+  }
+  /* line 391, ../sass/print.scss */
+  .page .wrap .terms-condition ul {
+    padding: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    list-style-type: decimal;
+  }
+  /* line 397, ../sass/print.scss */
+  .page .wrap .terms-condition ul li {
+    font-family: "blogger_sansregular";
+    font-size: 16px;
+    color: #777;
+  }
+  /* line 404, ../sass/print.scss */
+  .page .wrap .terms-condition .note {
+    padding-bottom: 20px;
+    font-family: "blogger_sansregular";
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px solid #ccc;
+  }
+  /* line 414, ../sass/print.scss */
+  .page .wrap .footer {
+    display: table;
+    padding: 15px 0;
+  }
+  /* line 417, ../sass/print.scss */
+  .page .wrap .footer .logo-img {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+  /* line 423, ../sass/print.scss */
+  .page .wrap .footer .address {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+  }
+  /* line 428, ../sass/print.scss */
+  .page .wrap .footer .address p {
+    margin-bottom: 0;
+    font-family: "blogger_sansbold";
+    font-size: 16px;
+    color: #29b8b4;
+  }
+  /* line 435, ../sass/print.scss */
+  .page .wrap .footer .address p:last-child {
+    font-family: "blogger_sansregular";
+    color: #555;
+  }
+  /* line 442, ../sass/print.scss */
+  .page .wrap .footer .social {
+    display: table-cell;
+    float: none;
+    padding: 0;
+    vertical-align: middle;
+  }
+  /* line 449, ../sass/print.scss */
+  .page .wrap .footer .social span i {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 5px;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+    background-color: #999;
+  }
+  /* line 465, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(1) i {
+    background-color: #19cbeb;
+  }
+  /* line 470, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(2) i {
+    background-color: #d73c3c;
+  }
+  /* line 475, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(3) i {
+    background-color: #277b9a;
+  }
+}
+@media print {
+  /* line 488, ../sass/print.scss */
+  * {
+    text-shadow: none !important;
+    -ms-filter: none !important;
+    filter: none !important;
+  }
+
+  /* line 495, ../sass/print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 499, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 502, ../sass/print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 505, ../sass/print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 569, ../sass/print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 572, ../sass/print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 578, ../sass/print.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 638, ../sass/print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 642, ../sass/print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 646, ../sass/print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 652, ../sass/print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 656, ../sass/print.scss */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #333 !important;
+  }
+
+  /* line 664, ../sass/print.scss */
+  .page {
+    padding: 0 30px;
+  }
+
+  /* line 667, ../sass/print.scss */
+  i {
+    color: #999;
+  }
+
+  /* line 672, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(1) {
+    background-color: #d4f1f0 !important;
+  }
+  /* line 675, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(2) {
+    background-color: #e9f8f7 !important;
+  }
+  /* line 678, ../sass/print.scss */
+  .page .wrap .invoice-details .right .box:nth-of-type(3) {
+    background-color: #f2fbfb !important;
+  }
+
+  /* line 683, ../sass/print.scss */
+  .page .wrap .service-details .service-discription ul li {
+    background-color: #fafafa !important;
+  }
+
+  /* line 686, ../sass/print.scss */
+  .page .wrap .service-details .service-discription ul li:nth-child(odd) {
+    background-color: #d4f1f0 !important;
+  }
+
+  /* line 689, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount {
+    background-color: #94dbd9 !important;
+  }
+  /* line 692, ../sass/print.scss */
+  .page .wrap .service-details .gross-amount .wrap span {
+    color: #fff !important;
+  }
+
+  /* line 697, ../sass/print.scss */
+  .page .wrap .service-details .net-amount {
+    background-color: #29b8b4 !important;
+  }
+  /* line 700, ../sass/print.scss */
+  .page .wrap .service-details .net-amount .wrap span {
+    color: #fff !important;
+  }
+
+  /* line 705, ../sass/print.scss */
+  .page .wrap .footer .social span i {
+    color: #fff !important;
+  }
+
+  /* line 708, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(1) i {
+    background-color: #19cbeb !important;
+  }
+
+  /* line 711, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(2) i {
+    background-color: #d73c3c !important;
+  }
+
+  /* line 714, ../sass/print.scss */
+  .page .wrap .footer .social span:nth-of-type(3) i {
+    background-color: #277b9a !important;
+  }
+}
